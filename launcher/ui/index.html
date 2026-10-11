@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DisasterZone Launcher</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="win">
+  <header class="head" data-tauri-drag-region>
+    <div class="art" data-tauri-drag-region></div>
+    <div class="brand" data-tauri-drag-region>
+      <div class="halo"></div>
+      <img class="seal" src="seal.png" alt="" draggable="false">
+      <div class="titles" data-tauri-drag-region>
+        <div class="kicker" id="kicker" data-tauri-drag-region>LAUNCHER</div>
+        <div class="title" data-tauri-drag-region>DisasterZone</div>
+      </div>
+    </div>
+    <div class="winctl">
+      <button id="wmin" title="Minimize" aria-label="Minimize"><svg viewBox="0 0 10 10"><path d="M1 5.5h8"/></svg></button>
+      <button id="wclose" class="x" title="Close" aria-label="Close"><svg viewBox="0 0 10 10"><path d="M1.5 1.5l7 7M8.5 1.5l-7 7"/></svg></button>
+    </div>
+    <nav class="tabs">
+      <button class="tab active" data-tab="home">Home</button>
+      <button class="tab" data-tab="changelog">Changelog</button>
+      <button class="tab" data-tab="backups">Backups</button>
+      <button class="tab" data-tab="settings">Settings</button>
+    </nav>
+  </header>
+
+  <div class="lbar hidden" id="lbar"><span id="lbar-text"></span><button class="btn primary" id="lbar-btn">Install and restart</button></div>
+  <main>
+    <!-- Home -->
+    <section class="page active" id="page-home">
+      <div class="grid">
+        <div class="card hero">
+          <div class="chip" id="state-chip">Checking</div>
+          <div class="ver"><span id="ver-main">…</span><span class="ver-next" id="ver-next"></span></div>
+          <div class="detail" id="detail">Looking for the newest release…</div>
+          <div class="progress hidden" id="progress"><div class="bar"><i id="bar"></i></div><div class="ptext" id="ptext"></div></div>
+          <div class="notice hidden" id="notice"></div>
+          <div class="actions">
+            <button class="btn primary big" id="btn-update" disabled>Update</button>
+            <button class="btn big" id="btn-play">Play</button>
+            <button class="ibtn" id="btn-check" title="Check again" aria-label="Check again"><svg viewBox="0 0 16 16"><path d="M13.5 8a5.5 5.5 0 1 1-1.6-3.9M13.5 2.5v3h-3"/></svg></button>
+          </div>
+        </div>
+        <div class="card news">
+          <div class="news-head">
+            <div class="label">What's new</div>
+            <button class="link" data-goto="changelog">Full changelog</button>
+          </div>
+          <div id="news"><div class="muted">Nothing yet.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Changelog -->
+    <section class="page" id="page-changelog">
+      <div class="scroll" id="changelog"><div class="muted">The changelog shows once the release list has been read.</div></div>
+    </section>
+
+    <!-- Backups -->
+    <section class="page" id="page-backups">
+      <div class="page-head">
+        <p class="muted">Every update first saves the addon folders and your DisasterZone saved variables. Restore one to go back to that version.</p>
+        <button class="btn" id="btn-open-backups">Open folder</button>
+      </div>
+      <div class="scroll" id="backups"></div>
+    </section>
+
+    <!-- Settings -->
+    <section class="page" id="page-settings">
+      <div class="scroll">
+        <div class="rows">
+          <div class="row">
+            <div class="rl"><div class="rt">World of Warcraft folder</div><div class="rd" id="set-path">Not set</div></div>
+            <div class="rc"><button class="btn" id="btn-pick">Change…</button></div>
+          </div>
+          <div class="row hidden" id="row-installs">
+            <div class="rl"><div class="rt">Found on this computer</div><div class="rd">The launcher found more than one install: pick yours.</div></div>
+            <div class="rc seg" id="set-installs"></div>
+          </div>
+          <div class="row">
+            <div class="rl"><div class="rt">Game version</div><div class="rd">Which game folder the addon goes into.</div></div>
+            <div class="rc seg" id="set-flavor"></div>
+          </div>
+          <div class="row">
+            <div class="rl"><div class="rt">Release channel</div><div class="rd">Beta gets new versions first, for testers.</div></div>
+            <div class="rc seg" id="set-channel">
+              <button class="btn" data-v="stable">Stable</button><button class="btn" data-v="beta">Beta</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="rl"><div class="rt">Backups to keep</div><div class="rd">Each backup is a full copy of the addon (about 60 MB).</div></div>
+            <div class="rc stepper"><button class="ibtn" id="keep-minus" aria-label="Fewer">−</button><span id="keep">3</span><button class="ibtn" id="keep-plus" aria-label="More">+</button></div>
+          </div>
+          <div class="row">
+            <div class="rl"><div class="rt">Check for updates on start</div><div class="rd">Look for a new release every time the launcher opens.</div></div>
+            <div class="rc"><button class="toggle" id="set-check" role="switch" aria-checked="true"><i></i></button></div>
+          </div>
+          <div class="row">
+            <div class="rl"><div class="rt">Battle.net launch code</div><div class="rd">Optional. With a code (e.g. WoWC) Play starts the game; empty opens Battle.net.</div></div>
+            <div class="rc"><input class="field" id="set-code" placeholder="empty" spellcheck="false"></div>
+          </div>
+          <div class="row">
+            <div class="rl"><div class="rt">Play command</div><div class="rd">Optional, mostly for Linux: run this instead of Battle.net.</div></div>
+            <div class="rc"><input class="field wide" id="set-cmd" placeholder="e.g. lutris lutris:rungame/battlenet" spellcheck="false"></div>
+          </div>
+          <div class="row">
+            <div class="rl"><div class="rt">Release source</div><div class="rd">Leave empty. For testing: another address or a local folder.</div></div>
+            <div class="rc"><input class="field wide" id="set-source" spellcheck="false"></div>
+          </div>
+        </div>
+        <div class="about" id="about"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <button class="link" id="foot-path">No game folder</button>
+    <span id="foot-ver"></span>
+  </footer>
+
+  <div class="modal hidden" id="modal">
+    <div class="dialog">
+      <div class="dtitle" id="m-title"></div>
+      <div class="dbody" id="m-body"></div>
+      <div class="dactions"><button class="btn" id="m-cancel">Cancel</button><button class="btn primary" id="m-ok">OK</button></div>
+    </div>
+  </div>
+  <div class="toast hidden" id="toast"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

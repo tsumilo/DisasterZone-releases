@@ -1,0 +1,88 @@
+# Builds the DisasterZone Launcher for Windows, macOS and Linux and publishes the installers as a GitHub release.
+# Lives in the public releases repository as .github/workflows/launcher.yml (copied there by
+# `dev/tools/release.py launcher-push`, which also pushes the tag launcher-v<version> that starts it).
+# The launcher's self-update reads latest.json from the fixed release "launcher-latest".
+name: Launcher
+
+on:
+  push:
+    tags: ["launcher-v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: windows-latest
+            args: ""
+          - platform: macos-latest
+            args: "--target universal-apple-darwin"
+          - platform: ubuntu-22.04
+            args: ""
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.platform == 'macos-latest' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
+
+      - name: Linux build packages
+        if: matrix.platform == 'ubuntu-22.04'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf libssl-dev
+
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: "launcher/src-tauri -> target"
+
+      - name: npm ci
+        working-directory: launcher
+        run: npm ci
+
+      - uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        with:
+          projectPath: launcher
+          tagName: ${{ github.ref_name }}
+          releaseName: "DisasterZone Launcher __VERSION__"
+          releaseBody: |
+            Download the installer for your computer:
+            - Windows: the -setup.exe file
+            - macOS: the .dmg file (first start: right-click the app, Open)
+            - Linux: the .AppImage file (chmod +x, then run it) or the .deb
+            The launcher keeps itself and the addon up to date after that.
+          releaseDraft: false
+          prerelease: false
+          includeUpdaterJson: true
+          args: ${{ matrix.args }}
+
+  feed:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Point the self-update feed at this release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          gh release download "$TAG" --repo "$REPO" --pattern latest.json
+          if ! gh release view launcher-latest --repo "$REPO" > /dev/null 2>&1; then
+            gh release create launcher-latest --repo "$REPO" --prerelease --title "Launcher update feed" \
+              --notes "Read by the launcher's self-update. To install the launcher, take the newest 'DisasterZone Launcher' release."
+          fi
+          gh release upload launcher-latest latest.json --repo "$REPO" --clobber

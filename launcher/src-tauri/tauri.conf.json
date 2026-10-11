@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "DisasterZone Launcher",
+  "version": "0.1.0",
+  "identifier": "com.disasterzone.launcher",
+  "build": {
+    "frontendDist": "../ui"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "DisasterZone Launcher",
+        "width": 980,
+        "height": 640,
+        "minWidth": 780,
+        "minHeight": 540,
+        "center": true,
+        "decorations": false,
+        "transparent": false,
+        "shadow": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "publisher": "DisasterZone",
+    "shortDescription": "Installs and updates the DisasterZone addon",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "createUpdaterArtifacts": true
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDdBQzYyNUVGQkRFOUM5NDgKUldSSXllbTk3eVhHZWxwbUVCb1l2MVcvZTlEZlpZMG9zNWxlNlFRWXErVDBRM0dxenRram5TZmgK",
+      "endpoints": [
+        "https://github.com/tsumilo/DisasterZone-releases/releases/download/launcher-latest/latest.json"
+      ],
+      "windows": {
+        "installMode": "passive"
+      }
+    }
+  }
+}
