@@ -27,10 +27,6 @@
   &nbsp;·&nbsp; <b>Linux</b>: make the <code>.AppImage</code> executable, then run it.
 </sub></p>
 
-<p align="center">
-  <img src="assets/launcher-home.png" width="90%" alt="The DisasterZone Launcher: an update is ready, with what's new in it">
-</p>
-
 <table align="center">
   <tr>
     <td align="center" width="25%"><b>Finds the game</b><br><sub>Windows, macOS, and Linux under Wine, Lutris, Bottles or Steam</sub></td>
@@ -39,47 +35,6 @@
     <td align="center" width="25%"><b>Signed</b><br><sub>Only installs releases signed by the DisasterZone key</sub></td>
   </tr>
 </table>
-
-<p align="center"><img src="assets/divider.png" width="70%" alt=""></p>
-
-<h2 align="center">What DisasterZone does</h2>
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <b>Gear</b><br>
-      A best-in-slot list for every phase, with gems and enchants, a gear sim, consumables, and an Atlas loot browser with a shopping list.
-    </td>
-    <td width="50%" valign="top">
-      <b>Loot Council</b><br>
-      The council sees who has each drop on their list, raiders roll or pass, and every award goes into a shared loot log with its reason. DisasterZone suggests; the council decides.
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <b>Raids</b><br>
-      Sign-ups, teams and lineups with their raid nights, a waitlist, guests, attendance that counts the time you were there, and loot rules everyone can read.
-    </td>
-    <td valign="top">
-      <b>Strategy boards</b><br>
-      Plan every boss on its own room, in 2D or 3D, and edit it together with the other raid leaders.
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <b>Guild</b><br>
-      Members, professions and recipes, a dungeon finder, events, polls, a guild map, and a home calendar.
-    </td>
-    <td valign="top">
-      <b>In the fight</b><br>
-      Damage and threat meters, and class tools such as paladin blessings, shaman totems and a seal-twist swing timer. Plus games: Karazhan Chess and Azeromon.
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <img src="assets/launcher-changelog.png" width="90%" alt="The launcher's changelog tab">
-</p>
 
 <p align="center"><img src="assets/divider.png" width="70%" alt=""></p>
 
