@@ -1,24 +1,114 @@
-# DisasterZone
+<p align="center">
+  <img src="assets/banner.png" alt="DisasterZone — BiS lists, Loot Council, Raids, Strategy boards" width="100%">
+</p>
 
-Releases of the DisasterZone World of Warcraft addon, and the **DisasterZone Launcher** that installs and updates it.
+<p align="center">
+  <b>The guild addon of &lt;Casual Disaster&gt;</b> for the World of Warcraft TBC Anniversary realms.<br>
+  <sub>Best-in-slot lists · a Loot Council that sees them · raid sign-ups and teams · strategy boards · and a few games on the side</sub>
+</p>
 
-## Install
+<p align="center"><img src="assets/divider.png" width="70%" alt=""></p>
 
-**With the launcher (recommended):** take the newest *DisasterZone Launcher* release from
-[Releases](https://github.com/tsumilo/DisasterZone-releases/releases) and download the file for your computer:
+<h2 align="center">Get the launcher</h2>
 
-- **Windows:** `…-setup.exe`. Windows may say "Windows protected your PC": click *More info*, then *Run anyway*.
-- **macOS:** `.dmg`. The first time, right-click the app and choose *Open*.
-- **Linux:** `.AppImage` (make it executable, then run it) or `.deb`.
+<p align="center">
+  One click installs DisasterZone, keeps it up to date, and keeps backups you can go back to.
+</p>
 
-The launcher finds World of Warcraft, installs the addon, and keeps it (and itself) up to date. Before every
-update it backs up the addon and your DisasterZone saved variables, so you can always go back.
+<p align="center">
+  <a href="https://github.com/tsumilo/DisasterZone-releases/releases/latest"><img src="assets/btn-windows.png" width="240" alt="Download for Windows"></a>&nbsp;
+  <a href="https://github.com/tsumilo/DisasterZone-releases/releases/latest"><img src="assets/btn-macos.png" width="240" alt="Download for macOS"></a>&nbsp;
+  <a href="https://github.com/tsumilo/DisasterZone-releases/releases/latest"><img src="assets/btn-linux.png" width="240" alt="Download for Linux"></a>
+</p>
 
-**By hand:** download `DisasterZone-<version>.zip` from the newest addon release and unzip it into
-`World of Warcraft\_anniversary_\Interface\AddOns` (it contains two folders, `DisasterZone` and `DisasterZone_Rooms`).
+<p align="center"><sub>
+  <b>Windows</b> may say <i>Windows protected your PC</i>: click <i>More info</i>, then <i>Run anyway</i>.
+  &nbsp;·&nbsp; <b>macOS</b>: the first time, right-click the app and choose <i>Open</i>.
+  &nbsp;·&nbsp; <b>Linux</b>: make the <code>.AppImage</code> executable, then run it.
+</sub></p>
 
-## What is in this repository
+<p align="center">
+  <img src="assets/launcher-home.png" width="90%" alt="The DisasterZone Launcher: an update is ready, with what's new in it">
+</p>
 
-- `channels/` — the signed release lists the launcher reads (`stable`, `beta`).
-- `objects/` — the addon's files, one per version of each file, named by their SHA-256.
-- `launcher/` — the launcher's source; `.github/workflows/launcher.yml` builds it.
+<table align="center">
+  <tr>
+    <td align="center" width="25%"><b>Finds the game</b><br><sub>Windows, macOS, and Linux under Wine, Lutris, Bottles or Steam</sub></td>
+    <td align="center" width="25%"><b>Small updates</b><br><sub>Downloads only the files that changed, and checks every one</sub></td>
+    <td align="center" width="25%"><b>Safe to undo</b><br><sub>Backs up the addon and your saved variables before each update</sub></td>
+    <td align="center" width="25%"><b>Signed</b><br><sub>Only installs releases signed by the DisasterZone key</sub></td>
+  </tr>
+</table>
+
+<p align="center"><img src="assets/divider.png" width="70%" alt=""></p>
+
+<h2 align="center">What DisasterZone does</h2>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <b>Gear</b><br>
+      A best-in-slot list for every phase, with gems and enchants, a gear sim, consumables, and an Atlas loot browser with a shopping list.
+    </td>
+    <td width="50%" valign="top">
+      <b>Loot Council</b><br>
+      The council sees who has each drop on their list, raiders roll or pass, and every award goes into a shared loot log with its reason. DisasterZone suggests; the council decides.
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <b>Raids</b><br>
+      Sign-ups, teams and lineups with their raid nights, a waitlist, guests, attendance that counts the time you were there, and loot rules everyone can read.
+    </td>
+    <td valign="top">
+      <b>Strategy boards</b><br>
+      Plan every boss on its own room, in 2D or 3D, and edit it together with the other raid leaders.
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <b>Guild</b><br>
+      Members, professions and recipes, a dungeon finder, events, polls, a guild map, and a home calendar.
+    </td>
+    <td valign="top">
+      <b>In the fight</b><br>
+      Damage and threat meters, and class tools such as paladin blessings, shaman totems and a seal-twist swing timer. Plus games: Karazhan Chess and Azeromon.
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="assets/launcher-changelog.png" width="90%" alt="The launcher's changelog tab">
+</p>
+
+<p align="center"><img src="assets/divider.png" width="70%" alt=""></p>
+
+<h2 align="center">Install by hand</h2>
+
+<p align="center">
+  <a href="https://github.com/tsumilo/DisasterZone-releases/releases"><img src="assets/btn-zip.png" width="280" alt="Download the addon zip"></a>
+</p>
+
+<p align="center">
+  Take <code>DisasterZone-&lt;version&gt;.zip</code> from the newest <b>DisasterZone</b> release and unzip it into<br>
+  <code>World of Warcraft\_anniversary_\Interface\AddOns</code>. It holds two folders, <code>DisasterZone</code> and <code>DisasterZone_Rooms</code>.<br>
+  <sub>Small fixes also arrive in game, from guildmates who already have them, no download needed.</sub>
+</p>
+
+<p align="center"><img src="assets/divider.png" width="70%" alt=""></p>
+
+<details>
+  <summary><b>What is in this repository</b></summary>
+  <br>
+
+  - `channels/` — the signed release lists the launcher reads (`stable`, `beta`).
+  - `objects/` — the addon's files, one per version of each file, named by their SHA-256.
+  - `launcher/` — the launcher's source (Tauri: Rust + HTML); `.github/workflows/launcher.yml` builds it for every platform.
+  - Releases — each addon version as a zip, and each launcher version with its installers.
+</details>
+
+<p align="center">
+  <br>
+  <img src="launcher/src-tauri/icons/128x128.png" width="56" alt="DisasterZone seal"><br>
+  <sub>Made for &lt;Casual Disaster&gt;</sub>
+</p>
