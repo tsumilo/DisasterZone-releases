@@ -20,7 +20,11 @@ A development copy (BuildInfo id `"dev"`, or a linked folder) is never touched.
 ## Building the launcher itself
 
 - Here: `npm install`, then `npx tauri dev` (window with live reload) or `npx tauri build` (installers in
-  `src-tauri\target\release\bundle`).
+  `src-tauri\target\release\bundle`). `tauri build` signs the self-update files, so it needs
+  `TAURI_SIGNING_PRIVATE_KEY` (contents of `dev\keys\updater.key`) and `TAURI_SIGNING_PRIVATE_KEY_PASSWORD`
+  (`dev\keys\updater_password.txt`) in the environment; CI has both as repository secrets.
+- Self-update: the launcher reads `latest.json` from the release `launcher-latest` (set in `tauri.conf.json`,
+  public key from `dev\keys\updater.key.pub`). Losing `updater.key` means members must reinstall the launcher by hand.
 - All three OSes: `dev\tools\release.py launcher-push` copies this folder into the releases repository and pushes
   tag `launcher-v<version>`; `ci/launcher.yml` builds and publishes the installers. Raise the version in
   `src-tauri/tauri.conf.json`, `src-tauri/Cargo.toml` and `package.json` first.

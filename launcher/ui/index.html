@@ -75,6 +75,7 @@
     <section class="page" id="page-settings">
       <div class="scroll">
         <div class="rows">
+          <div class="group first">Game</div>
           <div class="row">
             <div class="rl"><div class="rt">World of Warcraft folder</div><div class="rd" id="set-path">Not set</div></div>
             <div class="rc"><button class="btn" id="btn-pick">Change…</button></div>
@@ -101,6 +102,20 @@
             <div class="rl"><div class="rt">Check for updates on start</div><div class="rd">Look for a new release every time the launcher opens.</div></div>
             <div class="rc"><button class="toggle" id="set-check" role="switch" aria-checked="true"><i></i></button></div>
           </div>
+          <div class="group">Background</div>
+          <div class="row">
+            <div class="rl"><div class="rt">Keep running in the tray</div><div class="rd">Closing the window keeps the launcher in the tray. It checks for a new release every 5 minutes and tells you when one is out.</div></div>
+            <div class="rc"><button class="toggle" id="set-tray" role="switch" aria-checked="false"><i></i></button></div>
+          </div>
+          <div class="row sub" id="row-auto">
+            <div class="rl"><div class="rt">Install updates by itself</div><div class="rd">Installs a new release in the background while World of Warcraft is closed, and tells you when it's done. The launcher updates itself the same way.</div></div>
+            <div class="rc"><button class="toggle" id="set-auto" role="switch" aria-checked="false"><i></i></button></div>
+          </div>
+          <div class="row sub" id="row-autostart">
+            <div class="rl"><div class="rt">Start with the computer</div><div class="rd">Starts quietly in the tray when you log in.</div></div>
+            <div class="rc"><button class="toggle" id="set-autostart" role="switch" aria-checked="false"><i></i></button></div>
+          </div>
+          <div class="group">Play</div>
           <div class="row">
             <div class="rl"><div class="rt">Battle.net launch code</div><div class="rd">Optional. With a code (e.g. WoWC) Play starts the game; empty opens Battle.net.</div></div>
             <div class="rc"><input class="field" id="set-code" placeholder="empty" spellcheck="false"></div>
@@ -109,6 +124,7 @@
             <div class="rl"><div class="rt">Play command</div><div class="rd">Optional, mostly for Linux: run this instead of Battle.net.</div></div>
             <div class="rc"><input class="field wide" id="set-cmd" placeholder="e.g. lutris lutris:rungame/battlenet" spellcheck="false"></div>
           </div>
+          <div class="group">Advanced</div>
           <div class="row">
             <div class="rl"><div class="rt">Release source</div><div class="rd">Leave empty. For testing: another address or a local folder.</div></div>
             <div class="rc"><input class="field wide" id="set-source" spellcheck="false"></div>

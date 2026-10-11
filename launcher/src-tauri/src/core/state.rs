@@ -27,6 +27,20 @@ pub struct Settings {
     pub launch_code: String,
     /// Linux (or any OS): a shell command Play runs instead of Battle.net, e.g. "lutris lutris:rungame/battlenet"
     pub play_command: String,
+    /// opt-in: closing the window keeps the launcher in the tray, checking every 5 minutes
+    pub tray: bool,
+    /// opt-in (needs tray): install a new release in the background while WoW is closed
+    pub auto_install: bool,
+    /// opt-in (needs tray): start hidden in the tray when the user logs in
+    pub autostart: bool,
+    /// highest seq a notification was shown for, per channel (one notification per release)
+    pub notified_seq: BTreeMap<String, u64>,
+    /// launcher version the "a new launcher is ready" notification was shown for
+    pub notified_launcher: String,
+    /// the "still running in the tray" hint was shown once
+    pub tray_hint_shown: bool,
+    /// set before the launcher restarts after updating itself in the background: start hidden in the tray
+    pub start_hidden_once: bool,
 }
 
 impl Default for Settings {
@@ -42,6 +56,13 @@ impl Default for Settings {
             source: None,
             launch_code: String::new(),
             play_command: String::new(),
+            tray: false,
+            auto_install: false,
+            autostart: false,
+            notified_seq: BTreeMap::new(),
+            notified_launcher: String::new(),
+            tray_hint_shown: false,
+            start_hidden_once: false,
         }
     }
 }
@@ -61,7 +82,11 @@ fn path() -> PathBuf {
 }
 
 pub fn load() -> Settings {
-    fs::read(path()).ok().and_then(|d| serde_json::from_slice(&d).ok()).unwrap_or_default()
+    // (a file saved by a Windows editor may start with a byte-order mark, which serde_json refuses)
+    fs::read(path())
+        .ok()
+        .and_then(|d| serde_json::from_slice(d.strip_prefix(b"\xEF\xBB\xBF").unwrap_or(&d)).ok())
+        .unwrap_or_default()
 }
 
 pub fn save(s: &Settings) -> Result<()> {

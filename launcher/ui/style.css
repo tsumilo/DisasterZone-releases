@@ -161,6 +161,12 @@ main { flex: 1; position: relative; min-height: 0; }
 .field.wide { width: 300px; }
 .field:focus { border-color: var(--gold); }
 .field::placeholder { color: var(--faint); }
+.group { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); font-weight: 600;
+  padding: 22px 0 4px; }
+.group.first { padding-top: 0; }
+.row.sub .rl { padding-left: 18px; border-left: 2px solid rgb(46, 46, 52); }
+.row.off { opacity: .45; }
+.row.off .toggle { pointer-events: none; }
 .about { color: var(--faint); font-size: 12px; padding: 16px 0 4px; }
 
 /* ---------- Buttons (SLEEK primary / secondary / chosen / danger) ---------- */

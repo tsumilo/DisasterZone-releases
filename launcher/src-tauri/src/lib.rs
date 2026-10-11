@@ -1,5 +1,6 @@
 //! DisasterZone Launcher: the Tauri commands the window (ui/) calls. The work is in core/.
 
+mod background;
 pub mod core;
 
 use crate::core::error::msg;
@@ -12,10 +13,12 @@ use crate::core::Result;
 use serde::Serialize;
 use std::path::PathBuf;
 use std::sync::Arc;
-use tauri::{AppHandle, Emitter, State};
+use tauri::{AppHandle, Emitter, Manager, State, WindowEvent};
+use tauri_plugin_autostart::ManagerExt;
 
+/// One install / restore at a time (the window and the tray's background check share it).
 #[derive(Default)]
-struct Busy(tokio::sync::Mutex<()>);
+pub(crate) struct Busy(tokio::sync::Mutex<()>);
 
 #[derive(Serialize)]
 #[serde(rename_all = "camelCase")]
@@ -30,7 +33,7 @@ struct Status {
     source: String,
 }
 
-fn layout(s: &Settings) -> Result<Layout> {
+pub(crate) fn layout(s: &Settings) -> Result<Layout> {
     match s.flavor_dir() {
         Some(d) if d.is_dir() => Ok(Layout::new(d)),
         Some(d) => msg(format!("{} does not exist: pick your World of Warcraft folder in Settings", d.display())),
@@ -90,13 +93,18 @@ fn set_wow_path(path: String, flavor: Option<String>) -> Result<Settings> {
 }
 
 #[tauri::command]
+#[allow(clippy::too_many_arguments)]
 fn set_settings(
+    app: AppHandle,
     channel: Option<String>,
     keep_backups: Option<usize>,
     check_on_start: Option<bool>,
     source: Option<String>,
     launch_code: Option<String>,
     play_command: Option<String>,
+    tray: Option<bool>,
+    auto_install: Option<bool>,
+    autostart: Option<bool>,
 ) -> Result<Settings> {
     let mut s = state::load();
     if let Some(c) = channel {
@@ -120,8 +128,28 @@ fn set_settings(
     if let Some(c) = play_command {
         s.play_command = c.trim().to_string();
     }
+    if let Some(t) = tray {
+        s.tray = t;
+    }
+    if let Some(a) = auto_install {
+        s.auto_install = a;
+    }
+    if let Some(a) = autostart {
+        s.autostart = a;
+    }
     state::save(&s)?;
+    background::sync_tray(&app).map_err(|e| crate::core::Error::Msg(e.to_string()))?;
+    apply_autostart(&app, &s);
     Ok(s)
+}
+
+/// Start with the computer only in tray mode (a window popping up at every login would be a nuisance).
+fn apply_autostart(app: &AppHandle, s: &Settings) {
+    let want = s.tray && s.autostart;
+    let auto = app.autolaunch();
+    if auto.is_enabled().unwrap_or(false) != want {
+        let _ = if want { auto.enable() } else { auto.disable() };
+    }
 }
 
 #[derive(Serialize)]
@@ -172,7 +200,13 @@ async fn check() -> Result<Check> {
 }
 
 #[tauri::command]
-async fn update(app: AppHandle, busy: State<'_, Busy>) -> Result<Outcome> {
+async fn update(app: AppHandle) -> Result<Outcome> {
+    run_update(&app).await
+}
+
+/// Install the newest release of the chosen channel (the Update button and the tray's install-by-itself).
+pub(crate) async fn run_update(app: &AppHandle) -> Result<Outcome> {
+    let busy = app.state::<Busy>();
     let _guard = busy.0.try_lock().map_err(|_| crate::core::Error::Msg("already working".into()))?;
     let mut s = state::load();
     let lay = layout(&s)?;
@@ -189,7 +223,9 @@ async fn update(app: AppHandle, busy: State<'_, Busy>) -> Result<Outcome> {
         let _ = emitter.emit("progress", p);
     });
     let out = install::update(&lay, &src, &m, s.keep_backups, progress).await?;
+    s = state::load(); // (settings may have changed during the download)
     s.seen_seq.insert(s.channel.clone(), m.seq.max(seen));
+    s.notified_seq.insert(s.channel.clone(), m.seq.max(seen));
     s.hold = false;
     state::save(&s)?;
     Ok(out)
@@ -231,12 +267,44 @@ fn play() -> Result<()> {
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
-    tauri::Builder::default()
+    let app = tauri::Builder::default()
+        // a second start (a click on the shortcut while it sits in the tray) shows the running launcher
+        .plugin(tauri_plugin_single_instance::init(|app, _args, _cwd| background::show_main(app)))
+        .plugin(tauri_plugin_autostart::init(
+            tauri_plugin_autostart::MacosLauncher::LaunchAgent,
+            Some(vec!["--hidden"]),
+        ))
+        .plugin(tauri_plugin_notification::init())
         .plugin(tauri_plugin_dialog::init())
         .plugin(tauri_plugin_opener::init())
         .plugin(tauri_plugin_updater::Builder::new().build())
         .plugin(tauri_plugin_process::init())
         .manage(Busy::default())
+        .setup(|app| {
+            let handle = app.handle().clone();
+            let mut s = state::load();
+            background::sync_tray(&handle)?;
+            apply_autostart(&handle, &s);
+            // started by the login autostart, or restarted after updating itself in the background: stay in the tray
+            let hidden = (std::env::args().any(|a| a == "--hidden") || s.start_hidden_once) && s.tray;
+            if s.start_hidden_once {
+                s.start_hidden_once = false;
+                let _ = state::save(&s);
+            }
+            if !hidden {
+                background::show_main(&handle);
+            }
+            background::spawn_loop(handle);
+            Ok(())
+        })
+        .on_window_event(|window, event| {
+            if let WindowEvent::CloseRequested { api, .. } = event {
+                if state::load().tray {
+                    api.prevent_close();
+                    background::hide_to_tray(window.app_handle());
+                }
+            }
+        })
         .invoke_handler(tauri::generate_handler![
             status,
             set_wow_path,
@@ -248,6 +316,13 @@ pub fn run() {
             open_folder,
             play
         ])
-        .run(tauri::generate_context!())
-        .expect("error while running the DisasterZone launcher");
+        .build(tauri::generate_context!())
+        .expect("error while starting the DisasterZone launcher");
+    app.run(|_app, _event| {
+        // macOS: a click on the Dock icon while the window is hidden brings it back
+        #[cfg(target_os = "macos")]
+        if let tauri::RunEvent::Reopen { .. } = _event {
+            background::show_main(_app);
+        }
+    });
 }
