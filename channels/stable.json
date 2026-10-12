@@ -1,8 +1,8 @@
 {
  "assetPack": 7,
- "build": "7b7ab65a16911ed4",
+ "build": "3e010b58ceba9c28",
  "channel": "stable",
- "commit": "23d270a997de1a6ec8acf06cf73e300f7ef18d73",
+ "commit": "241bbb547c0864d778a4fa4acd81fb2d2d312fae",
  "folders": {
   "DisasterZone": {
    "Bindings.xml": {
@@ -16,29 +16,29 @@
     "size": 35276
    },
    "Core/Attendance.lua": {
-    "gz": 20985,
-    "sha256": "b7883ef1537847198dd881929c833dcf5f8b2bbc60685a2ec0755beba7e72d31",
-    "size": 77032
+    "gz": 20857,
+    "sha256": "c9653bdb982f8c9c86b09b7e6db1d516d3a0f4419244ffa697cded05f979e367",
+    "size": 75924
    },
    "Core/BiS.lua": {
-    "gz": 13318,
-    "sha256": "876cb501cb97cfb6f25c91a304521e95e2e0896ff6f54218f80c962b0108a3f0",
-    "size": 53839
+    "gz": 13275,
+    "sha256": "99a7b37629ebdaaa1706640048e7eb276a6233bf1c38e1272fda5d8928f6c577",
+    "size": 53686
    },
    "Core/BiSExport.lua": {
-    "gz": 4162,
-    "sha256": "c35289550bbf870dc5db7b614e153328487d1e88e8f836f8fa3e19fa6029c675",
-    "size": 12734
+    "gz": 4134,
+    "sha256": "602031e2ee97d1b129b9bfcf9412e65f63cc4aea4054445f96b42bf9606d20a6",
+    "size": 12678
    },
    "Core/BiSImport.lua": {
-    "gz": 9152,
-    "sha256": "bb639db586f7f32803caf6c67eaf8a5038b93b412e423c1ae948c6eba24b4aed",
-    "size": 31155
+    "gz": 9125,
+    "sha256": "d818be25dceed8b52f31c10a6a32a617e62cf0c234a82842797f4909db66d3cb",
+    "size": 31016
    },
    "Core/Blessings.lua": {
-    "gz": 13845,
-    "sha256": "9e4f037a418c256426ffdf225e990b3baa2189217bbde1a4dc731124cb8bccc2",
-    "size": 53635
+    "gz": 11320,
+    "sha256": "808a6368497b00fbbe38c471b4d6329f4718524dfbead7fe982cf072fe08c0a4",
+    "size": 42419
    },
    "Core/Boot.lua": {
     "gz": 7798,
@@ -52,18 +52,28 @@
    },
    "Core/BuildInfo.lua": {
     "gz": 220,
-    "sha256": "fcebbb9ef5e90a75c3e656c46fe9620bf143206b2ee63ae363bf3d0d70a106dd",
+    "sha256": "8578040d5f13de0e975ae722c8fdc26f4ab6f94908fb31efb7f089df4763e530",
     "size": 270
    },
    "Core/ClassKit.lua": {
-    "gz": 2470,
-    "sha256": "b21bc6f7297f02b3a81e7875d7cf829caf748a7198101941408a1719d528a084",
-    "size": 7125
+    "gz": 2446,
+    "sha256": "9b417446cec7c42258deeb2bcb2ca7c5872c9c5d0617c65857252e426b001521",
+    "size": 7029
+   },
+   "Core/ClassPlanner.lua": {
+    "gz": 5907,
+    "sha256": "ced3c34c0d7207fb4ad16aa2c8da77c89042cd417e8a4c6c9d8dbb5ea29fce29",
+    "size": 19369
    },
    "Core/Codec.lua": {
     "gz": 3566,
     "sha256": "b14317cee2e7ca34fc53ceeaeaa6ed30f020148350767370285cef2d058c5f08",
     "size": 12698
+   },
+   "Core/CombatLog.lua": {
+    "gz": 2136,
+    "sha256": "70a07c2da85b1e43b0a6cacc91ceeacbc4011d6b62830809507e8f020f9d7a71",
+    "size": 5725
    },
    "Core/Comm.lua": {
     "gz": 7472,
@@ -71,9 +81,9 @@
     "size": 24673
    },
    "Core/Constants.lua": {
-    "gz": 6400,
-    "sha256": "467e994b3ab969fdc1eec4fde2525f106562b8f7acb57fe5b4536996babdde42",
-    "size": 21203
+    "gz": 7673,
+    "sha256": "0b4015eed36e38f9a160f00c5e42185d53cc69e0432388d22e556379dabfb439",
+    "size": 25644
    },
    "Core/Currency.lua": {
     "gz": 6380,
@@ -81,19 +91,24 @@
     "size": 20717
    },
    "Core/DB.lua": {
-    "gz": 5730,
-    "sha256": "fa657298381ee62e83a58d28f7405becf3c1b68ce61a59077355dfa2f61292f3",
-    "size": 15454
+    "gz": 6113,
+    "sha256": "f227a3e680cceb59cbc9b3cd2b7bf6368b83b4c84c4931588451a35bc6ec796d",
+    "size": 16838
    },
    "Core/Demo.lua": {
-    "gz": 8416,
-    "sha256": "82e796ba30a605d93391ec4b1275b485cf65a13d45360d37510b419c3b06f410",
-    "size": 27455
+    "gz": 8342,
+    "sha256": "71abcc3a2c41df0bb844b22dea98cc321e503ddbe284a185d906e0771ccbf1db",
+    "size": 27215
    },
    "Core/DemoScenarios.lua": {
     "gz": 3893,
     "sha256": "c5e329ff734111161321f915e1b25d1ba030c8102d5032d5ea50113ce7efbd75",
     "size": 11208
+   },
+   "Core/DigestSync.lua": {
+    "gz": 6453,
+    "sha256": "637032bc4062569e1c755e794dfc19c2285938e6fc3e24ea7cdd4540d65525a8",
+    "size": 21236
    },
    "Core/Dungeon.lua": {
     "gz": 4804,
@@ -101,9 +116,9 @@
     "size": 17066
    },
    "Core/DungeonRuns.lua": {
-    "gz": 24609,
-    "sha256": "435ac53da86cb069be707bdca2b1de80e625cb5fdc8b359163a9573a749b48e9",
-    "size": 88179
+    "gz": 24963,
+    "sha256": "7212f065df6359e50e17daa8528d03982878d80f3f397db9365e7cfa94efb18e",
+    "size": 89566
    },
    "Core/EventBlocks.lua": {
     "gz": 31981,
@@ -116,34 +131,34 @@
     "size": 119003
    },
    "Core/EventLive.lua": {
-    "gz": 25377,
-    "sha256": "4b79f07005b384050ae1ccf67e5e8f54a6b37d848c99e901f452c9a822b9eaf9",
-    "size": 91098
+    "gz": 25344,
+    "sha256": "5d149017dfff518fb2351221591176046c55a37f7f6930e198751e1280da5177",
+    "size": 91050
    },
    "Core/EventSensors.lua": {
-    "gz": 10742,
-    "sha256": "c5d951352e29f0b782f33720e70f6d195a4893340ed2048a1faa0397fca4e3d5",
-    "size": 36260
+    "gz": 10722,
+    "sha256": "1949f191c2e511ce58a3cfe2b56fa2d836d98548612a79fcfd66b5f3304dc084",
+    "size": 36189
    },
    "Core/Events.lua": {
-    "gz": 19866,
-    "sha256": "10409c1d4c405e55c6fe213f19b78abf516eb368dd9466ff547f52f4a1241f2a",
-    "size": 72976
+    "gz": 18601,
+    "sha256": "36c79da8c5c53e413b9b51a89ece977211178f74f78a64de7b6045854daafdc7",
+    "size": 66868
    },
    "Core/Feedback.lua": {
-    "gz": 15711,
-    "sha256": "6369e5f202a09ff69c96e04819672dd28ef45709823815d90680c4629405475c",
-    "size": 55876
+    "gz": 15555,
+    "sha256": "24bd66d7ccfeb144500183f72acf6b0439a8892abaa66819c737147924e0db5d",
+    "size": 55285
    },
    "Core/Gems.lua": {
-    "gz": 11578,
-    "sha256": "e6d8bb44e595861a5b64fb301569b9585b674dfdb8605a2ef8d61a6766d9c7de",
-    "size": 42391
+    "gz": 11772,
+    "sha256": "34b4b69d2cfc37cf425fa354e23665f8b8709c6723debac751e12b3cf00ae7dc",
+    "size": 43259
    },
    "Core/GroupFinder.lua": {
-    "gz": 6978,
-    "sha256": "a0e1e3d7af95bf56ad71642b90cbc4f6093361d0cb6930261b938ce31a51ba39",
-    "size": 23715
+    "gz": 6939,
+    "sha256": "4fce8b8e68bd637c39bd0a1ce0c215c50ba75e384de8a9a6d77c8c10a8bfad43",
+    "size": 23569
    },
    "Core/GroupRules.lua": {
     "gz": 16631,
@@ -151,19 +166,19 @@
     "size": 63069
    },
    "Core/GuestBook.lua": {
-    "gz": 11539,
-    "sha256": "a15141ecdf860b078c81003c8e1fb4047a93aaa5d03772c5248b95b572a75b28",
-    "size": 41259
+    "gz": 11485,
+    "sha256": "cac04d6dd4424734721f01baefb31b10267da45ef829544b10bf416b9f8af29b",
+    "size": 40292
    },
    "Core/Guild.lua": {
-    "gz": 23847,
-    "sha256": "34c3ce93393aa1f89e542b8a1fc33dd610e499fdf9e949e7b0fcd35f2d5836d2",
-    "size": 92936
+    "gz": 23746,
+    "sha256": "d3fc11ad486e80c1a4198b96d424d6e5843f5b106ce93a39f820fbb902d74ab7",
+    "size": 92313
    },
    "Core/GuildMap.lua": {
-    "gz": 7859,
-    "sha256": "4fba1b489d20fc313fd03e99c1b7cfd099d9207e1601a6b454dbdb198e3e5b7a",
-    "size": 24548
+    "gz": 7773,
+    "sha256": "29e324c552821aaa88e6eb4f9b4648d7758840c8d9807a2f0d28ee96f291d6c7",
+    "size": 24126
    },
    "Core/Init.lua": {
     "gz": 6749,
@@ -171,9 +186,9 @@
     "size": 21532
    },
    "Core/ItemDB.lua": {
-    "gz": 13428,
-    "sha256": "e6c1cc8eb1c40f4a78a781ea89ec1c8af95b429e5dfc12b845e6285af5ec89ad",
-    "size": 54827
+    "gz": 14710,
+    "sha256": "113e347a67f49ab7251486ca62454d940475d4391f4554b70f767822c8424396",
+    "size": 59081
    },
    "Core/Kit.lua": {
     "gz": 7166,
@@ -182,53 +197,53 @@
    },
    "Core/Ledger.lua": {
     "gz": 14665,
-    "sha256": "b969fc6f963695250beae1cb2cee67671d3fadbfdc4bb757db87aad733da7c30",
-    "size": 53357
+    "sha256": "1126d5130a3c95dcd801441aac3b654b4b6ac0fde24ee5719c4c36332dad080e",
+    "size": 53202
    },
    "Core/Loon.lua": {
-    "gz": 3384,
-    "sha256": "20ea2edbfa47b8a1082e729b8bb28d6c85e068ab124bac7b2711247a0d90a924",
-    "size": 10661
+    "gz": 3343,
+    "sha256": "17c4665730d26c29308be6c5c55c1e62f85d96e2bbb9dc5b505575828f9b2452",
+    "size": 10546
    },
    "Core/Loot.lua": {
-    "gz": 17165,
-    "sha256": "0da0f69a8d91086ec365d4cec3fa533f4a537ceef1dc9dc9c779a2f7cb61c90e",
-    "size": 63888
+    "gz": 17133,
+    "sha256": "713973a3d20e2c29a4a6d18553a3205e0e398c9f13aaeb2ce073e682b3e15818",
+    "size": 63762
    },
    "Core/Materials.lua": {
-    "gz": 5247,
-    "sha256": "5cf1f523e9ffcebe954f0310cf62d8bdf3f280c9e348fdf343e5c64e9faed661",
-    "size": 17664
+    "gz": 5208,
+    "sha256": "5265eb33a36bb874a448f8b8a077d0be6a2ab0f7fe605cbc1b10f7de3d01ede1",
+    "size": 17494
    },
    "Core/Meter.lua": {
-    "gz": 10877,
-    "sha256": "b8fdf7131b4be13dc7ee318f1b9cc15e28170ba243dda58d2ab7e94119318901",
-    "size": 36422
+    "gz": 10889,
+    "sha256": "774a5870a4832dc1816cd56fb8eb57c6986fb9cac86dd3e1774c5ceaef31baf6",
+    "size": 36245
    },
    "Core/MeterDemo.lua": {
-    "gz": 6737,
-    "sha256": "b1c8ffa253573e22491b98c716f8222fb6f8e93141bc626e8edb6e018105b252",
-    "size": 19855
+    "gz": 6748,
+    "sha256": "318bf8c88298267b5a373cd8898d9c151426bda089821300a547a0fb6dedd3ff",
+    "size": 19872
    },
    "Core/MyLog.lua": {
-    "gz": 14978,
-    "sha256": "ccd8db89a64bdba41a1d6aad159df2831a217df8639f520e0479bb423b0c4cbb",
-    "size": 52306
+    "gz": 15280,
+    "sha256": "c2d7728487c49a889a03a3a925b88af90699d41b9624d504854403496a49b300",
+    "size": 52953
    },
    "Core/MyLogDemo.lua": {
-    "gz": 6985,
-    "sha256": "a5159051373ad72828a1b9cf7184eba9aee3223b3929e85f9b5d74353f27f6c7",
-    "size": 21224
+    "gz": 6994,
+    "sha256": "ade7301178f09f4fdb121b83dc58f8f6a762fdb1dc8888cecee29901ab1856e7",
+    "size": 21227
    },
    "Core/Notify.lua": {
-    "gz": 5715,
-    "sha256": "d2c00f1f062e1024d4a2c3d68a6d89f173f1cb66fb391600fbdc1c96c93f6bdb",
-    "size": 20234
+    "gz": 5683,
+    "sha256": "be5b3557d0fa3cdca24abbe423378768adf2181efc01926316508044bb9f7319",
+    "size": 20103
    },
    "Core/OfficerNotes.lua": {
-    "gz": 2879,
-    "sha256": "e38b131615026dd39c195a23952d01fe2e8f52c47008a90614508701f64f8f28",
-    "size": 8704
+    "gz": 2780,
+    "sha256": "1c31cb98ff1fbe241a9b0750555e15ed1d82b8b815768181230b7469577f55e5",
+    "size": 8266
    },
    "Core/Outbox.lua": {
     "gz": 146,
@@ -251,29 +266,29 @@
     "size": 30485
    },
    "Core/Polls.lua": {
-    "gz": 11979,
-    "sha256": "342706fffedc904d7aa7f809650bacd05bc1a75ee5cf63026e4848c011551d74",
-    "size": 44645
+    "gz": 10765,
+    "sha256": "b2d3730eac0794d5d7e01e463a97557d44c3dbe3fa12252d49fce0a3e924ee84",
+    "size": 38681
    },
    "Core/Prized.lua": {
-    "gz": 16285,
-    "sha256": "bfbaacf446bd24fd862560aff3561e8de9a26a8cea16bbd912f93622a3eed474",
-    "size": 59715
+    "gz": 14944,
+    "sha256": "0e668ba360eb621cdb4d00b4592d47ad15ed512b7e16afb9e35505d663979e39",
+    "size": 53607
    },
    "Core/Professions.lua": {
-    "gz": 15527,
-    "sha256": "b360e49593ba287e87f6349f4ee410903722dc821a5cc66b4e487bfb2ef0aff9",
-    "size": 57190
+    "gz": 16661,
+    "sha256": "918bec9eb1ae4283661216f5ee07c64e4f2affef8feb11305d93457e7e011c98",
+    "size": 61096
    },
    "Core/RaidComp.lua": {
-    "gz": 11181,
-    "sha256": "73a306d3ded2b1c626040745bdd3a5bf9df99cc6be845b6d63e9fc5a6955a501",
-    "size": 40325
+    "gz": 10754,
+    "sha256": "16e12893badf2e2736375de43987cce1c3cab0b62d6ee88b7e5dd52cc8aee90b",
+    "size": 38896
    },
    "Core/RaidInvite.lua": {
-    "gz": 5459,
-    "sha256": "ef0d80c49383ed43d92a2890ef51d30f7e838baf4cf1fcdf16bb92a709ec5fbe",
-    "size": 19202
+    "gz": 5453,
+    "sha256": "5674edaf14c8122fea252edcfd3ad1379cf1f2fb1c4d367d63b0cb03b90810a0",
+    "size": 19175
    },
    "Core/RaidLink.lua": {
     "gz": 2258,
@@ -281,24 +296,24 @@
     "size": 5934
    },
    "Core/RaidLog.lua": {
-    "gz": 18823,
-    "sha256": "6091ffb6635fe051a240aa98afb0881e620ff3f23063b46184097527159bd10f",
-    "size": 69745
+    "gz": 18813,
+    "sha256": "386e640dd58be44b66984db678df9c4e224e3d932c30759cd1eee65bfedb4ece",
+    "size": 69511
    },
    "Core/RaidNights.lua": {
-    "gz": 2445,
-    "sha256": "6f39f8940ba8484c41d928f6622974886270480cea91f83b7335f6e150adb76d",
-    "size": 6595
+    "gz": 2400,
+    "sha256": "a2e13806f30c24db24f2e2af8e2477b3bcde9f559d8f310cab833705d301d8d4",
+    "size": 6482
    },
    "Core/RaidPlan.lua": {
-    "gz": 49486,
-    "sha256": "d4cb2e42c8824f12bbba854aaefe25758fd9223d0ff1d0cfea7d6efa88e438ff",
-    "size": 189593
+    "gz": 48498,
+    "sha256": "ce185ac1df7949f0986a23032d40faf6603592835d1e2ae15b1016a000db1ace",
+    "size": 184724
    },
    "Core/Roll.lua": {
-    "gz": 31981,
-    "sha256": "51b89210fcf0381c11147aaf3edab654ec05dd5f0d90fb93c4f2f6ce25665502",
-    "size": 119294
+    "gz": 31956,
+    "sha256": "e287d5dba87cd28c9d4b938d6707323bc49fe76c2080357216a09e4324a75a8b",
+    "size": 119189
    },
    "Core/Sha256.lua": {
     "gz": 2364,
@@ -311,19 +326,19 @@
     "size": 17715
    },
    "Core/Store.lua": {
-    "gz": 12080,
-    "sha256": "462165ca1f59ae4c4d9efe46efdf6c3692183e3b2082289532d37c0770c7262e",
-    "size": 45173
+    "gz": 12041,
+    "sha256": "006a3f3ffcb87172a078ecdd1a2fb40c87fc2b07b712c41fe545aa9b8994e87e",
+    "size": 44975
    },
    "Core/Strategy.lua": {
-    "gz": 20559,
-    "sha256": "d97068b49cdd8f9a9cb568adb37cf840fbcbd6e85e4b24cd74b5ee857c2702e3",
-    "size": 76910
+    "gz": 19019,
+    "sha256": "420b644521d9fa513ee0e34b70f07fb958abf00e2e43022a6fdeb48e8b2dc21f",
+    "size": 71128
    },
    "Core/StrategyCollab.lua": {
-    "gz": 12476,
-    "sha256": "eab9c77db9365f9489ad19999f3361e1ea99622ecf40340d53c20254d0ed94d0",
-    "size": 46061
+    "gz": 12463,
+    "sha256": "ccef1798b62f06125e659c76526c5777389be4a9ec3d0934683572ed3657be23",
+    "size": 46026
    },
    "Core/StrategyLive.lua": {
     "gz": 14030,
@@ -336,9 +351,9 @@
     "size": 10559
    },
    "Core/StrategyPractice.lua": {
-    "gz": 4163,
-    "sha256": "d5d3675d6a181e800196561f06f89e4c785e2a4fad7751edf5606ef6a377a91b",
-    "size": 14044
+    "gz": 4159,
+    "sha256": "496a247660be3f953c4718b64bc6ca8a7d6e1703eb9289565b56de1960623842",
+    "size": 14003
    },
    "Core/SwingPractice.lua": {
     "gz": 10550,
@@ -346,29 +361,34 @@
     "size": 35544
    },
    "Core/SwingTimer.lua": {
-    "gz": 7916,
-    "sha256": "d816fd59a243b06b41c85adb4a1d3db6d4ffc661390100f743bd7f8dbca66a25",
-    "size": 25611
+    "gz": 7999,
+    "sha256": "63320e46500d292334203d7717f168052b7ee67fc9d5ffbd1b69e5b8918abafd",
+    "size": 25862
    },
    "Core/Sync.lua": {
-    "gz": 12861,
-    "sha256": "0ceb89ec66861f9b1326d8490629579aee60985cba2062499ef000d8351d1681",
-    "size": 47976
+    "gz": 13002,
+    "sha256": "f96780b4ba44c4ea6a6901ba3e4f95d1f742a21de4880d428aec2af56300db13",
+    "size": 47652
    },
    "Core/Threat.lua": {
-    "gz": 3211,
-    "sha256": "639637604beaee74bde148c4fdbb3761ec367b77217ec3d055252f18f515260a",
-    "size": 8997
+    "gz": 3216,
+    "sha256": "055f69f3eaecfbb9bd52a674d03a822f6480d9d226cb7ef2e88b02c4c9cb42f5",
+    "size": 8969
    },
    "Core/Totems.lua": {
-    "gz": 15774,
-    "sha256": "9c02cf20ae305236d683563ae4479f5c50124bfa2109d82e2de33af7f2af927f",
-    "size": 61463
+    "gz": 13630,
+    "sha256": "cad78b2c941a8fef9585f9b27581dd1407a7d94221b8a0d2d85a4d9286d76a29",
+    "size": 51411
    },
    "Core/Util.lua": {
-    "gz": 6704,
-    "sha256": "483429bd31aebe57f8fa533a6b37af57612eccc4baea7bcc9d2360676b6c7fb3",
-    "size": 23970
+    "gz": 7815,
+    "sha256": "218deae80e5c882c09da3e19c2cce75b7824ee36e8caf09cb69fbecfce0da5c6",
+    "size": 26931
+   },
+   "Core/WornGems.lua": {
+    "gz": 3293,
+    "sha256": "67b03e63cc091b849946a41a8789511f70cbfccbc544de2362e3a9ed3424ff62",
+    "size": 10299
    },
    "Data/Atlas.lua": {
     "gz": 141075,
@@ -396,9 +416,9 @@
     "size": 9381
    },
    "Data/Changelog.lua": {
-    "gz": 38591,
-    "sha256": "6fea8d8bb855e972f2fbe5cc208d2bc0994e86923fa3a3a719d9f5c16a985cc0",
-    "size": 130561
+    "gz": 40029,
+    "sha256": "d204a8b2be8577793bbe35f24abaf7326b81d4bd41015ae265be5130c81bcc17",
+    "size": 136050
    },
    "Data/Classes/Paladin.lua": {
     "gz": 1676,
@@ -460,6 +480,11 @@
     "sha256": "7e4c687db3bc6c9cf962ddca9cb604efe42e490b89a245ebcc50d6b354645c3c",
     "size": 4627
    },
+   "Data/Raids.lua": {
+    "gz": 1485,
+    "sha256": "81d8fa70f127f9f111f34d4fe0e752bfdce421aae369a4408081abb77eba645e",
+    "size": 3928
+   },
    "Data/SimAPL.lua": {
     "gz": 17536,
     "sha256": "e5331fffc66a4e96bb77ad5406cfa9b2bbac4e381af41577b7cb8241f3704995",
@@ -481,19 +506,19 @@
     "size": 27387
    },
    "Data/Tours/Strategy.lua": {
-    "gz": 12472,
-    "sha256": "de6dfd9be679aeeeb7ddf31a9ea75360cf1659587b70788c7fa335142a2c0e31",
-    "size": 48845
+    "gz": 12490,
+    "sha256": "a9672f75e43dadaa87dd7e505cfad6b29a44a462b5c1182139cd64e85779a243",
+    "size": 48881
    },
    "Data/Tours/Welcome.lua": {
-    "gz": 5126,
-    "sha256": "1bed82e8a791260efef254dabf784452eab2219ce623a9b8af5f60265fff83ea",
-    "size": 17167
+    "gz": 5134,
+    "sha256": "2eb14ca83dba3f1b7ecbbf3d2d4ff7cc55e126b4a7575799540313f6de2c6bf2",
+    "size": 17168
    },
    "DisasterZone.toc": {
-    "gz": 2038,
-    "sha256": "d1886aaa7cd185734008e17f61db7c803f2d87debdfe256697be0ad166536bc1",
-    "size": 5878
+    "gz": 2125,
+    "sha256": "911254ddb193ee25c0d04808f7417d5b948938f389a9df23d3c16e33dd9ca866",
+    "size": 6165
    },
    "Games/Azeromon/Achievements.lua": {
     "gz": 7132,
@@ -541,14 +566,14 @@
     "size": 69268
    },
    "Games/Azeromon/GuildBoard.lua": {
-    "gz": 6223,
-    "sha256": "180fa33b427f799ec6b0820915b3c676d712035dafde4252f129d1d292fd0d58",
-    "size": 19645
+    "gz": 6193,
+    "sha256": "52ee88c323d11b00f98cbac24407a24e61f1a0e13c212667a5e5fb95df7cd9ad",
+    "size": 19571
    },
    "Games/Azeromon/Hideout.lua": {
-    "gz": 4772,
-    "sha256": "7b96e8c342d090f3ebe7cb33ea888dd7d1a6bded2f53a0319e4e8e7cd3596150",
-    "size": 15275
+    "gz": 4756,
+    "sha256": "3c5458866dd73dbe442762af3dc7aed4d52e7cef09e3992a81d4208e1d2b37f7",
+    "size": 15208
    },
    "Games/Azeromon/Maps.lua": {
     "gz": 13200,
@@ -566,14 +591,14 @@
     "size": 8414
    },
    "Games/Azeromon/Net.lua": {
-    "gz": 3581,
-    "sha256": "27ffc04782ef22a26e2f54146ce2b6476efe5a04b19cbd86ecaac3d93bb0d4ae",
-    "size": 10410
+    "gz": 3549,
+    "sha256": "f0a11f06cedb7ab6747ce62971281aacc6eed296e124fb3e4860d896daeda117",
+    "size": 10316
    },
    "Games/Azeromon/PvP.lua": {
-    "gz": 8214,
-    "sha256": "0edc4f3bbcd14b16bbe697e5200e7a12031abda227445350b459c5de201a72b3",
-    "size": 26992
+    "gz": 8187,
+    "sha256": "ea577ee9d809cf0a9645b1c724e56efdd56f53a9905216ac0453d2300f1b2ad6",
+    "size": 27421
    },
    "Games/Azeromon/Sound.lua": {
     "gz": 3661,
@@ -581,19 +606,19 @@
     "size": 11289
    },
    "Games/Azeromon/Trade.lua": {
-    "gz": 8920,
-    "sha256": "2cb1d83eb4b8a8efd2eb16e9f1be0e8709f6a54723e6912aa34bae81ba971096",
-    "size": 32547
+    "gz": 8902,
+    "sha256": "84d3d66028e459eb7172b0f133d401725af0da1524cba17fb487e9348437385e",
+    "size": 33317
    },
    "Games/Azeromon/UI.lua": {
-    "gz": 53977,
-    "sha256": "3a49fdd005f9362aba509c2f58c3a70903150f5bd5343d630eb1ff9b3545e10a",
-    "size": 202661
+    "gz": 53999,
+    "sha256": "bfe347e0eab98a846cfba04e9500b98cd4045710b1e71891a7d3419b543e6f8f",
+    "size": 202685
    },
    "Games/Azeromon/Watch.lua": {
-    "gz": 2414,
-    "sha256": "04ce0152399964295daba74cb2dc7130f39d599952f6cf48067829b46eea607d",
-    "size": 6697
+    "gz": 2362,
+    "sha256": "3abd95883e2ae13c73263a7818fbe447a59270ef7ae4dc2111bcb3048c5758ea",
+    "size": 6687
    },
    "Games/Azeromon/WorldMap.lua": {
     "gz": 9444,
@@ -601,9 +626,9 @@
     "size": 30766
    },
    "Games/Bingo/Bingo.lua": {
-    "gz": 3796,
-    "sha256": "3f73699b5f86a58a315e42a836c0e33f63c02b29d6a4354498e5cad967602469",
-    "size": 13097
+    "gz": 3778,
+    "sha256": "e89727efaf19b221b1d7af7de14431f2d05c4c7f3233e071418018ed6d682e33",
+    "size": 13069
    },
    "Games/Bingo/Card.lua": {
     "gz": 1293,
@@ -611,9 +636,9 @@
     "size": 3174
    },
    "Games/Bingo/Detect.lua": {
-    "gz": 5014,
-    "sha256": "995f2fbdaa9aaee06cfaf4591a101b4f399ddf8d1d31a5c6f912b23737ed25b4",
-    "size": 17018
+    "gz": 5037,
+    "sha256": "da172c5e65aa981ea9ea3a85ac029f59ee2d840e53cc67c6ba867536340feae6",
+    "size": 17106
    },
    "Games/Bingo/Squares.lua": {
     "gz": 2697,
@@ -621,9 +646,9 @@
     "size": 8479
    },
    "Games/Bingo/UI.lua": {
-    "gz": 12966,
-    "sha256": "dbdaa332af971b2399d16f49b845e86217d9ef6bf0109fcd083cb696c9377be4",
-    "size": 49380
+    "gz": 12952,
+    "sha256": "eddee505a079f71220bed87826bd8c2e32a566a83aa6ce00e5a6f53675f73cca",
+    "size": 49176
    },
    "Games/Chess/AI.lua": {
     "gz": 4740,
@@ -631,9 +656,9 @@
     "size": 15344
    },
    "Games/Chess/Board3D.lua": {
-    "gz": 9787,
-    "sha256": "e2184c52e745a2377b318cbb7491327cf0942569a1fa5082838fdf91725cdd09",
-    "size": 32855
+    "gz": 9282,
+    "sha256": "08699dd873db9b761d95e97864435cdf07590dbb9837599b025204373f6c3efb",
+    "size": 30684
    },
    "Games/Chess/Cheats.lua": {
     "gz": 3736,
@@ -642,8 +667,8 @@
    },
    "Games/Chess/Chess.lua": {
     "gz": 10140,
-    "sha256": "f02a677cf94620de7736d611e319430ab1ad8019a6ac0f86156d60375129f8e3",
-    "size": 36159
+    "sha256": "2db3b64a7835bd0986a08a1b4419f7a7a448a35f71a02b05a9da6e9713ccc17a",
+    "size": 36026
    },
    "Games/Chess/Rules.lua": {
     "gz": 6640,
@@ -651,39 +676,39 @@
     "size": 25379
    },
    "Games/Chess/UI.lua": {
-    "gz": 14175,
-    "sha256": "b90959314e1cce725b0dc20d5808770c70a60518acb32405d6e5526bfb9987c8",
-    "size": 52257
+    "gz": 13801,
+    "sha256": "a62700a460a4bba65e6e43b012f4119bf59b89249a818016bacf2e702ceeaba8",
+    "size": 51084
    },
    "Games/Hub.lua": {
-    "gz": 1493,
-    "sha256": "1f1a12fc0032b7bcd95198c9a9bcd8c91c0b3da83524c9a102e49d2dcfa3842d",
-    "size": 3852
+    "gz": 2036,
+    "sha256": "d402f797480a5856a39f70f9e8582518b0cb00fbf42fdd9c87728bf845ef271e",
+    "size": 5377
    },
    "Games/HubUI.lua": {
-    "gz": 22164,
-    "sha256": "00d1d23eb101e58e3275120af258bb072d9d8ecc1f2ed89cc476a50df093f07d",
-    "size": 78597
+    "gz": 22188,
+    "sha256": "4713c9a6a7d65c62d7c3f5e38c380d0e78086e28afe264a7b4bd2a742bd2acda",
+    "size": 78449
    },
    "Games/Trainer/Encounters/LadyVashj.lua": {
-    "gz": 8474,
-    "sha256": "0ce7f0ef81b121822c9c9ef8b6cf614cfb250e1bd203c1cf347afc886a25779f",
-    "size": 25684
+    "gz": 8552,
+    "sha256": "90054c47072e2cc72361cdab86fce77fefecdbf24c5bd844460df0a0ade50eb8",
+    "size": 25843
    },
    "Games/Trainer/Encounters/TeronGorefiend.lua": {
-    "gz": 6523,
-    "sha256": "419ab8e524542c4e7ff8334a3288245a2f4e04e71e99270a6794821c9d78be81",
-    "size": 19001
+    "gz": 6600,
+    "sha256": "33f6e26c02880184ddcf844734fbe4dc02df73ddd409da668949f3cdb81cd89e",
+    "size": 19160
    },
    "Games/Trainer/Engine.lua": {
-    "gz": 9426,
-    "sha256": "9a4d9312f855994272b4e2fc3fcf9a5920fc3758d53a403c4beaf729ab492674",
-    "size": 28290
+    "gz": 9325,
+    "sha256": "8de627a53f9df52b608b5b0005d131746767eb397edb38ea82947444717aa2e9",
+    "size": 27779
    },
    "Games/Trainer/UI.lua": {
-    "gz": 24034,
-    "sha256": "0dd62c703e25c8ffa2dfb8cd159354d273f64c0c318235b3fe5077085021d81d",
-    "size": 88124
+    "gz": 23655,
+    "sha256": "e3fff6ac33bbec611b5a2fb0451c3bb399c676163fe03695a7ca7dd6df7ef117",
+    "size": 86784
    },
    "Libs/AceComm-3.0/AceComm-3.0.lua": {
     "gz": 3775,
@@ -1247,23 +1272,23 @@
    },
    "README.md": {
     "gz": 24787,
-    "sha256": "e8a18e7c185fcea71c0273a9008e315c63b4147ec670b47fd00d355b81b9211f",
+    "sha256": "01e75df1fcf03e71bae096cefa1d16270a9a6d3b9089ee47c795536095b06cd7",
     "size": 70028
    },
    "Render3D/Probe.lua": {
-    "gz": 36192,
-    "sha256": "d8e960366adc1d9c4bb8d59a5995c5e5b742460bee498b36fae28d0b04c1d185",
-    "size": 118651
+    "gz": 36204,
+    "sha256": "2a8ac6241d199c2822dfe63f7027d206c5d7866b61aefa2510c6d553f014511c",
+    "size": 118663
    },
    "Render3D/Room.lua": {
-    "gz": 44188,
-    "sha256": "efa26c8a24a80b32c14adb3ed45a37fe6544d7a5293b76d6e883f2b17136fc39",
-    "size": 150691
+    "gz": 44546,
+    "sha256": "9c584307efd417fd65b82eec951cbb4296b8a35f5135c47cb10158beed90f764",
+    "size": 151651
    },
    "Render3D/Rooms.lua": {
-    "gz": 7823,
-    "sha256": "9ba049f02547a57150f7993a65e22f1a3b19227675f5d8429156393c3462d95e",
-    "size": 22561
+    "gz": 8314,
+    "sha256": "dbfcaaf997f863aafda925bef6f5e511bbc143b08f9f51b4e61b015d5cfd43fa",
+    "size": 23837
    },
    "Render3D/Rooms/Index.lua": {
     "gz": 10454,
@@ -1276,9 +1301,9 @@
     "size": 43618
    },
    "Render3D/View.lua": {
-    "gz": 4709,
-    "sha256": "f8c9dd4fd2ce1708b2dc0e86f5e684564d63f65063eb9907f52adf8a25228870",
-    "size": 14021
+    "gz": 8938,
+    "sha256": "a8746b996255bee68219aa99f7738d74d93347e0b531411eadf79f3eba9eb609",
+    "size": 26587
    },
    "Sim/APL.lua": {
     "gz": 13607,
@@ -1286,9 +1311,9 @@
     "size": 56381
    },
    "Sim/Attack.lua": {
-    "gz": 4763,
-    "sha256": "e0adb4c22554310eb1388f349777527ac37898608b9671e6b22d4b59c15006d6",
-    "size": 18877
+    "gz": 4750,
+    "sha256": "60f6c8693928345caf4af7ee83bb5dc8f58d2b723889be30f03f273143dd5a1e",
+    "size": 18832
    },
    "Sim/BuffPresets.lua": {
     "gz": 9283,
@@ -1296,19 +1321,19 @@
     "size": 33358
    },
    "Sim/Buffs.lua": {
-    "gz": 15196,
-    "sha256": "117def87cd311b6d78287adfc9a5accb7141a1eb4678e007972598b1d8ff3015",
-    "size": 63323
+    "gz": 15175,
+    "sha256": "621fca776b05f472cdae7a19da296897bc216e6e592f15e8ec3c28b279ea6064",
+    "size": 63212
    },
    "Sim/Character.lua": {
-    "gz": 7701,
-    "sha256": "fb897aa0a8a88250ffbd38f10e7aad77994bc3f8630f5ed2899a6d5e4c2cce3a",
-    "size": 24208
+    "gz": 7967,
+    "sha256": "f3b04e393fa05f0fcd4fe708ff49921c2bfc6625a782fbd3e36a128e50bb0185",
+    "size": 24895
    },
    "Sim/Core.lua": {
-    "gz": 4511,
-    "sha256": "c5f38c27f0874617819223b3cd5e2e37601aa5532a172bd13e53eeeed97c69e7",
-    "size": 14403
+    "gz": 5086,
+    "sha256": "407dd4107153969ff328197560df7c879567bfd441f696997160d0d40ee3c626",
+    "size": 15929
    },
    "Sim/Data.lua": {
     "gz": 1811,
@@ -1316,14 +1341,14 @@
     "size": 5558
    },
    "Sim/Dot.lua": {
-    "gz": 3032,
-    "sha256": "91db73dd3198cacb4e62214bf9603a9dd554a109278b492420da2f1fea5d4ac2",
-    "size": 10034
+    "gz": 3243,
+    "sha256": "66be3a3ad65652ebff2849e28d8b4324e00a770d34d0910535ec39402934c21c",
+    "size": 10662
    },
    "Sim/Druid.lua": {
-    "gz": 10431,
-    "sha256": "3401682d1aad96454266f9376dc01c833b1d0b941bd28d5bd036967278c29e96",
-    "size": 40862
+    "gz": 10511,
+    "sha256": "a421fdd102496875471be71f4d4b4710ebdd3a4eab92cfd0ae8e6020877fd3a3",
+    "size": 40833
    },
    "Sim/History.lua": {
     "gz": 3564,
@@ -1331,24 +1356,24 @@
     "size": 10264
    },
    "Sim/Hunter.lua": {
-    "gz": 10267,
-    "sha256": "958d50b920ae7d5ef740bdba9e8964488866f4eca71e7671dbe323c3a5f40aaa",
-    "size": 39136
+    "gz": 10205,
+    "sha256": "42f4d6e85524cd17c4124e13b0809f253a0565de3c5d8b755dfd73f894a84731",
+    "size": 38838
    },
    "Sim/Items.lua": {
-    "gz": 7625,
-    "sha256": "d4f2933662b730674f5b6bf89aeaa1e4d2dee635c4c503f1334549d60491863b",
-    "size": 28752
+    "gz": 7598,
+    "sha256": "dfef0b4c83afa05aca82e4f4b089c22ec6efaa6b7574393d3c702d169a54f598",
+    "size": 28791
    },
    "Sim/Mage.lua": {
-    "gz": 8026,
-    "sha256": "8255ec7e797fb2c16eea9d221d221d5f74c7e4fd61a438a7a6de9f4990516fb5",
-    "size": 31779
+    "gz": 7953,
+    "sha256": "4ae17d5c1b6a79156902ca9bdcfdd7cb156ba8a2ce9291019e1c0a69ba75177c",
+    "size": 31663
    },
    "Sim/Paladin.lua": {
-    "gz": 7843,
-    "sha256": "510cff7724bae88f0146444458c7725a9a7266a940a78e41872f85e5a4f5fa2d",
-    "size": 30151
+    "gz": 7929,
+    "sha256": "9286097d819c648275989a460899e52d1f057fcead7ba2479127e45b1715d1e8",
+    "size": 30444
    },
    "Sim/Pet.lua": {
     "gz": 3092,
@@ -1356,9 +1381,9 @@
     "size": 8767
    },
    "Sim/Priest.lua": {
-    "gz": 5740,
-    "sha256": "f391baac9853ff542ba6b9ca8f92f8d8e95927f006758dc53fdb2c96d4a22007",
-    "size": 20028
+    "gz": 5652,
+    "sha256": "1e10c5ea71bc99c23529dee4b99f7b8192835839a45fd027221100abad51ec63",
+    "size": 19757
    },
    "Sim/Resources.lua": {
     "gz": 2316,
@@ -1366,9 +1391,9 @@
     "size": 8638
    },
    "Sim/Rogue.lua": {
-    "gz": 7635,
-    "sha256": "f2ffef46e4250b2dffd96a362f733075aa9911d51a98b8a5042560d7dbf425f8",
-    "size": 34168
+    "gz": 7702,
+    "sha256": "96582e78286e704f982d25e3b73aeee46cd937573f29b6b2603137cf944dbf4b",
+    "size": 34443
    },
    "Sim/Runner.lua": {
     "gz": 15493,
@@ -1376,14 +1401,14 @@
     "size": 52111
    },
    "Sim/Setup.lua": {
-    "gz": 1907,
-    "sha256": "83077fd97e21910e061eec53d6021b71021a43a53307bca296bc7753cfc69540",
-    "size": 5778
+    "gz": 1801,
+    "sha256": "66a8c72077d303e84f57e36f169771c8a31a4492516aef46719d6aed439c3377",
+    "size": 4464
    },
    "Sim/Shaman.lua": {
-    "gz": 12349,
-    "sha256": "24d3b52ba86a4b347e94435e9477d250a86bcff8515779f28fce86e0bd93b028",
-    "size": 51651
+    "gz": 12335,
+    "sha256": "eead9b12b1047711e21ae1dcb2d2de57b262a6369ad7e63109ec25f8b9b5774e",
+    "size": 51404
    },
    "Sim/Spell.lua": {
     "gz": 12487,
@@ -1396,425 +1421,475 @@
     "size": 36407
    },
    "Sim/Warlock.lua": {
-    "gz": 9615,
-    "sha256": "3a5bb155da35d8975aa2ed42af168cbfa7e30c75ba405887f9124bad6e0f42a1",
-    "size": 37851
+    "gz": 9448,
+    "sha256": "370e9fc974a77d81171e1e6a60ff822ec2ee471488fc27750293f660f6f510da",
+    "size": 37378
    },
    "Sim/Warrior.lua": {
-    "gz": 8925,
-    "sha256": "9cfb9e928c51b4a9554041bda718d0476bf1e73fb6bad93c24c58d495e62a4ef",
-    "size": 41185
+    "gz": 8990,
+    "sha256": "fcddfc5b847a4fb7bd84d67a5242b8e54c249600822e6d36921dd634cee0806f",
+    "size": 41413
    },
    "UI/Atlas.lua": {
-    "gz": 23877,
-    "sha256": "ff47af6a34e626443f5bfb3f28cc6373d2f6443608744b07aca99b7d11ba37cd",
-    "size": 87781
+    "gz": 23665,
+    "sha256": "7bdd8fa49a172303fa45b9c32ca67cc190589c35744b9c66419b3333860e3e65",
+    "size": 84276
    },
    "UI/AtlasShop.lua": {
-    "gz": 8619,
-    "sha256": "d646beb60b720c79cd3c9e50a6327ac2215afca0cb647f56c8e02c0577441758",
-    "size": 32172
+    "gz": 8948,
+    "sha256": "fdf2d362f97256ca4b1550642adc31836ba7e58f175f34144a70347f8122d1a1",
+    "size": 32237
    },
    "UI/AttendanceUI.lua": {
-    "gz": 29027,
-    "sha256": "226f21a5a9228dc8b3232493722137f7ddbb847c4b154d83cc1c85ec456b547f",
-    "size": 116760
+    "gz": 28635,
+    "sha256": "6f1ed32c1f2eb7c621384382fc883c20b3944b8bdbb4d2007e415fe695ac8a1f",
+    "size": 110477
    },
    "UI/BarFace.lua": {
-    "gz": 9988,
-    "sha256": "3dd62492602754598a14ba6c876a172c92b16c5cee6972592ebace952bcd1b66",
-    "size": 35360
+    "gz": 9590,
+    "sha256": "2df8ac34d0c834f366c4d6324020be005110fce29a899c47276ca981f41a474f",
+    "size": 33093
    },
    "UI/BlessingsBar.lua": {
-    "gz": 12360,
-    "sha256": "a796548077aafbc4eddcf6d7b4cf8391a7d91400b005969b092c44b056d25540",
-    "size": 42913
+    "gz": 11126,
+    "sha256": "d3e889f576bc392f220cbf8b76c6c33eb61299d7a904949140b9f47c6a164655",
+    "size": 38448
    },
    "UI/BlessingsUI.lua": {
-    "gz": 10367,
-    "sha256": "712a670fa7c4487556cf3fe7b52a2a6e3998c1058a588c749723219055fc3797",
-    "size": 40080
+    "gz": 7726,
+    "sha256": "d6669433c5e8af85b4d03e601ead58e64e80264a0882072598545ab57a6ee9e1",
+    "size": 27797
    },
    "UI/Changelog.lua": {
-    "gz": 23751,
-    "sha256": "616595707dd46f786e97c214b265af74237bc5940eb6f9fffb4755f6d411ccc4",
-    "size": 95163
+    "gz": 22892,
+    "sha256": "bab612cec641c45a58485fdb2ce88cd21fd87f54c9a9807b127eed90b8687910",
+    "size": 85463
+   },
+   "UI/ClassBar.lua": {
+    "gz": 3282,
+    "sha256": "80439fd8152fc6e9f6c912d03aa42767d2dd586d7cdd68ba8256da13efaecb07",
+    "size": 9138
+   },
+   "UI/Comp/Controls.lua": {
+    "gz": 12944,
+    "sha256": "cdf087f1fad21fde743567a31c81d97b87e1a40602948a7adb6a7ef5ad6a3eff",
+    "size": 45798
+   },
+   "UI/Comp/Layouts.lua": {
+    "gz": 10139,
+    "sha256": "2ef8a80e07a8b1c05be5d7e41688bbe040adc64d6d14b124fa669bd9903078cd",
+    "size": 35041
+   },
+   "UI/Comp/MapArt.lua": {
+    "gz": 1897,
+    "sha256": "9c67b6ffe9bf141a0fca14444be6723de01532a833bb3b1658072a8aa867c843",
+    "size": 5294
+   },
+   "UI/Comp/Overlays.lua": {
+    "gz": 11344,
+    "sha256": "e750f1407bbf6b15de0245ab5b0584ba450939fa2b640d824818fc8623b9e52e",
+    "size": 38204
+   },
+   "UI/Comp/PageParts.lua": {
+    "gz": 12068,
+    "sha256": "59410649d63e19725dd0ff2f4c0077e388eb1ec03d27f171bf357eb1d8aef29c",
+    "size": 41888
+   },
+   "UI/Comp/Surfaces.lua": {
+    "gz": 9731,
+    "sha256": "31de17f8367e80f0dcce529725421f96a4b6137b0942eccd454cfb2a74a18c35",
+    "size": 34317
+   },
+   "UI/Comp/Themes.lua": {
+    "gz": 2639,
+    "sha256": "ed6e109bf1459363fb8b96433ed3aa713ccc74793777f6c05aaafb00349f165f",
+    "size": 8055
    },
    "UI/Council.lua": {
-    "gz": 39647,
-    "sha256": "8260677f0ad7abd2c15711cd213928b0254a1a1cce222b914230d6798060c51d",
-    "size": 155646
+    "gz": 39158,
+    "sha256": "1fba1db18978fb7e944c2f7f2748a15351a63e1daa57b94d0d287351de589c24",
+    "size": 148299
    },
    "UI/CouncilRules.lua": {
-    "gz": 11103,
-    "sha256": "ba03a9bfd31283a376466812e78fd7c3195068488366b286d2cb24874374ec67",
-    "size": 36105
+    "gz": 9329,
+    "sha256": "288c73d1791ff6e255b21f054d4aac6fb8c5ee3f98cbc44d417db681024e1085",
+    "size": 28759
    },
    "UI/Dashboard.lua": {
-    "gz": 30166,
-    "sha256": "90fb0dc7d71760414142e507b430e2cb9e2afa54857cf6caead4edd79e18fb06",
-    "size": 106030
+    "gz": 27707,
+    "sha256": "f8598816836c5ed883d0a0e3a4a14a8c6287f9d55434057c8ab36ce511ef51d5",
+    "size": 93718
    },
    "UI/DatePicker.lua": {
-    "gz": 3257,
-    "sha256": "f8e85355762f6147bc906aa43e82b029c0d6217cd23d30e5a610d0c60d9b9fb9",
-    "size": 9735
+    "gz": 3224,
+    "sha256": "b2ca58f6febbaaac0fbe9686e0ab20090b0b59fe682c90e78bf1b71ba13d4eda",
+    "size": 9397
    },
    "UI/DropPanel.lua": {
-    "gz": 51246,
-    "sha256": "e1bfc14098a3ba331027b1e74f65d194272280d6195d5bfda9064ef32ba6d2cf",
-    "size": 189804
+    "gz": 48978,
+    "sha256": "1195d84b17504865d7e6cfaf4b2bb18bdf4fd5f41cbece5c6517baad84d0a9e6",
+    "size": 177948
    },
    "UI/DungeonsTab.lua": {
-    "gz": 25362,
-    "sha256": "06aab497470737c982ac9ea274514f98cc0c750ded8202a224b288c372fb6732",
-    "size": 98652
+    "gz": 24817,
+    "sha256": "2757340263202348b97f44d170c40cd821c84a397cb79d84695a168a23f9b5eb",
+    "size": 91103
    },
    "UI/EventBoard.lua": {
-    "gz": 47754,
-    "sha256": "73934cff36728c4361a857d404ee197f90a864c741d8bc53a118ab511e10a121",
-    "size": 186295
+    "gz": 46764,
+    "sha256": "0f87b3bfd0748610430ee8f9c32e05fcc6e8614094e906834a2cadb95921a69b",
+    "size": 176170
    },
    "UI/EventBuilder.lua": {
-    "gz": 80480,
-    "sha256": "6dbd3bfb4ae3ff0731aadc6ec29da8a99ecfc93147c671644f0846059d71fa76",
-    "size": 318220
+    "gz": 80542,
+    "sha256": "4abf2819efbb01965d59747cf0073b970eb9343c92b63240bbd7baa566179124",
+    "size": 305502
    },
    "UI/EventPieces.lua": {
-    "gz": 15816,
-    "sha256": "276dcf9a2a1ba8db526530982a9bbe76fa7bab9b45912f5d34f1e789f109d8c0",
-    "size": 56079
+    "gz": 15869,
+    "sha256": "e2e891c0a879d9920f9145fdf6062a5196c3be86aa8d6a9d27477158f0a9fb74",
+    "size": 56126
    },
    "UI/EventTracker.lua": {
-    "gz": 28010,
-    "sha256": "092d7bbc1bd92e24b8a5cf22ca0265c46803333eff1c167693bcc7a639ac05be",
-    "size": 105910
+    "gz": 27973,
+    "sha256": "893c8511869f576874dc334813fb035ab520cfc9dccd63a0bad13d6a929922a8",
+    "size": 101204
    },
    "UI/EventWidgets.lua": {
-    "gz": 15876,
-    "sha256": "511c14db29387fab29f5b5a2926465c48f5c855122c644f8dc55b1138851b1d6",
-    "size": 58224
+    "gz": 13942,
+    "sha256": "7d1b4dadd35e9e04b6727db43636feeed7eb92e7e1e55770e691105da889bc5b",
+    "size": 48522
    },
    "UI/EventsTab.lua": {
-    "gz": 71891,
-    "sha256": "1b118f10405f086f2e1691ac6a0615472f63e55c7471a42345a74971da2f2677",
-    "size": 265870
+    "gz": 71149,
+    "sha256": "cc67423dc445c61b43f50497c2a6add3be8907e1f7d61bdbf428736c697b9a80",
+    "size": 253889
    },
    "UI/Feedback.lua": {
-    "gz": 15236,
-    "sha256": "2467e20cbd9549f3d666902042221c5cd188771c669ba95a454235689e865b5b",
-    "size": 57850
+    "gz": 15061,
+    "sha256": "f5ee6191668229a20b34dc3e3fad80cc5e6763e26686c520e6ac49bb98b24f2d",
+    "size": 53391
    },
    "UI/FeedbackSheet.lua": {
-    "gz": 10856,
-    "sha256": "ba656f7830a6aea4227762cf08294666502db8626aa4a3fe18c8dec9305b0317",
-    "size": 39105
+    "gz": 11116,
+    "sha256": "f175d3720aa6b2326fde9ef692e815a7a0db02b239f665f6b16f37e9cd604075",
+    "size": 38409
    },
    "UI/GemEditor.lua": {
-    "gz": 7855,
-    "sha256": "b6936d342befbac0994f9f39a2b0c8f3a18a0dc3b4e8177c63b45a68fe661b71",
-    "size": 29783
+    "gz": 7481,
+    "sha256": "70ca6be99fe59bcc3e4f5d079344d34c75d718a3a70f739e0ce73ca4e5a472c6",
+    "size": 27093
    },
    "UI/GuestBook.lua": {
-    "gz": 18814,
-    "sha256": "5db494536d8e42cea7aa0c5ed94a286f9da1b0d557655f2ce5614e64729841d7",
-    "size": 74656
+    "gz": 16667,
+    "sha256": "229941ce48eb62dbbd091a21c9de98824bdc3101cdf97d4f5f0ac1cd2e0ecaef",
+    "size": 61605
    },
    "UI/GuildMapUI.lua": {
-    "gz": 16355,
-    "sha256": "96c030481ac204508dbcb1cecbf2e9af05cae8a92beb389f206629979df1a3ca",
-    "size": 58889
+    "gz": 16459,
+    "sha256": "d8ee26375c79ec71574684e114700c6743e91fb7ddb25e7360f4ae34a9343819",
+    "size": 56970
    },
    "UI/ImportExport.lua": {
-    "gz": 9163,
-    "sha256": "345a10d7770b698358fedb813b760c4d4530a7acf4a212f9e449dc0f3d8a923c",
-    "size": 34111
+    "gz": 9012,
+    "sha256": "e3b0aaffd2c362cdb5fb8fd602022c1c4ee04e087fc0ba013f3e12ad96e28a6f",
+    "size": 31534
    },
    "UI/KitView.lua": {
-    "gz": 8961,
-    "sha256": "344973a2dde3b4545ec2e610ad059cf818d53f4f9d6331010027dc12b3b2a53a",
-    "size": 31804
+    "gz": 9544,
+    "sha256": "0f74f2914faa776df8a2c776afc12875d260705ead146b47e193faec72c73743",
+    "size": 32650
    },
    "UI/LootLog.lua": {
-    "gz": 9220,
-    "sha256": "fce07ac333937a4df4db874d809681cf06853b53c6d4b6fee76276df4d6dd1fa",
-    "size": 34569
+    "gz": 9678,
+    "sha256": "a644f2bc4d7a0c03de9a6e36263afc954c58e23e4ad49ef8ca65d766e82331d5",
+    "size": 34928
    },
    "UI/LootRulesUI.lua": {
-    "gz": 11581,
-    "sha256": "7b3c1ce718626741b1ce6a3b27b5ec6025ac7d7de15d9ac3ef069014d2293e30",
-    "size": 42164
+    "gz": 10147,
+    "sha256": "ce6c1c58656eaa34952e6ce48cbdf61eadca43633cbcb6a93cce2f16f54bd324",
+    "size": 33632
    },
    "UI/MainFrame.lua": {
-    "gz": 11774,
-    "sha256": "7234d45f2dfc749dab8f164c18e58363dfbf425975c1520737868955c12043f9",
-    "size": 39636
+    "gz": 12007,
+    "sha256": "a995d70977f7717801fbb5a40aaf37cb3cbaf51fb3f6952e66422c3fba6f5f5f",
+    "size": 40226
    },
    "UI/Members.lua": {
-    "gz": 21847,
-    "sha256": "4b95e5340c40208158f9d230ee7c827f1f3bbdef1dca634e72006319c623538b",
-    "size": 82671
+    "gz": 22606,
+    "sha256": "e1bd7afdc607b23ebd836b79766392f142d68d2d8a99baa61d60879fcdb8deb3",
+    "size": 82593
    },
    "UI/Menu.lua": {
-    "gz": 9162,
-    "sha256": "71cff1fe739deccfebec36df6a5d67808f0c7de24d085a7aa212665ac27c0928",
-    "size": 31792
+    "gz": 9083,
+    "sha256": "37b923a0bc5e37fd1516e7af82c54cb2e41e1218636a237b6ea6cf42474333d0",
+    "size": 31537
    },
    "UI/MeterDetail.lua": {
-    "gz": 13699,
-    "sha256": "6ab7964c96f97ee91b86060c4da8febd87b92fe8dafc6a1bf010ed6ceed0910f",
-    "size": 53058
+    "gz": 14148,
+    "sha256": "faec6222a04b24dfdfbd3e869143f24ad55dfc430fcfc2c6fc008ee40283205f",
+    "size": 52528
    },
    "UI/MeterPanels.lua": {
-    "gz": 30865,
-    "sha256": "4dfdef17a81e310444ed9a4f33e6cc6bf4c77517e66582a5f5016aec99c3dbf1",
-    "size": 114550
+    "gz": 31139,
+    "sha256": "acfd0c84376a65e73d59042873b3220941614ceb4d58f11d0db30625ba25ff68",
+    "size": 113011
    },
    "UI/MeterTheme.lua": {
-    "gz": 8716,
-    "sha256": "cf15c8d4e4965edf10df3fe34de047f619d5069620e42ea5f743f4d412271808",
-    "size": 31361
+    "gz": 8626,
+    "sha256": "549c177fc01f8baebcfa1d8822858131b56eeae13942123117c8e6ab7e74bbca",
+    "size": 29545
    },
    "UI/MeterWindow.lua": {
-    "gz": 4286,
-    "sha256": "86ce143deff99259a0705562b319d88691f74995e4fa4f9f2fc33d67cd6f91db",
-    "size": 11888
+    "gz": 3093,
+    "sha256": "3e377d0d418c131a7860c926e5c95a55baef8aec63b16efbd493b9edb80506ee",
+    "size": 8206
    },
    "UI/MinimapArc.lua": {
-    "gz": 4673,
-    "sha256": "ecec7fa0ef3707c056f5662edfde2650487eb2f6f1da9c0e59f9c85f8f6545cb",
-    "size": 15107
+    "gz": 4677,
+    "sha256": "31103006757243d235ae32c5445eca044b325b9efc738f7d13062c5333da872c",
+    "size": 14970
    },
    "UI/MyBiS.lua": {
-    "gz": 24155,
-    "sha256": "56aeb2cb9a7cab71785808af9430b036553d0365e70f08238b49e2cd417c0975",
-    "size": 88326
+    "gz": 27009,
+    "sha256": "1e6d1b4c7a6251c21093393adc5cfd2a59cc211c0fb7f6aa44c02b7bca5968be",
+    "size": 100200
    },
    "UI/MyLogDetail.lua": {
-    "gz": 12196,
-    "sha256": "202f32fcd079d6047aedcbce2261ed3d212952980f15792b9e28d7cdf9b29be5",
-    "size": 46250
+    "gz": 12821,
+    "sha256": "18e110bd8c3001eb297c8883f9648834cddb7ead05d0835343959a4c0ab84f66",
+    "size": 45746
    },
    "UI/MyLogKit.lua": {
-    "gz": 9835,
-    "sha256": "0a23cbac0bc0ecfd140f38f095808fe6bea9aae0afa2d97adaaefaab8e7ad91d",
-    "size": 38531
+    "gz": 7972,
+    "sha256": "ae794e37ae4d8ab4226a0e9a0676d225e04dcad2b63b98e483e7789b057a03e9",
+    "size": 29311
    },
    "UI/MyLogTimeline.lua": {
-    "gz": 4482,
-    "sha256": "aab1b9cc28304d88b277d88a95033cc5b82e1d981a925fd9558c9b64ba7d0108",
-    "size": 14742
+    "gz": 4587,
+    "sha256": "b4a0855d30319b16f6508c9a13af6d311c8d03b556f4ce9524d3dce84e467803",
+    "size": 14781
    },
    "UI/MyLogUI.lua": {
-    "gz": 8725,
-    "sha256": "8c0b6aa7935c1a9a23de74842cddae10d55c05a39a41ce48ece64385f7fdc308",
-    "size": 30170
+    "gz": 9122,
+    "sha256": "14ce4f7794797569722f8d412bd35e84941db72ccc53f2e74d5379f65f56e1a3",
+    "size": 29359
    },
    "UI/NavMenu.lua": {
-    "gz": 11744,
-    "sha256": "53488b9deb8c8965cd6f3054f907005a949c8985584d055057979967a0bc0ce6",
-    "size": 40552
+    "gz": 10254,
+    "sha256": "60d38726d5881faac92fa8a248123db5edb6dea2759d92e9333e4c3fbe8d32c2",
+    "size": 32467
    },
    "UI/Notify.lua": {
-    "gz": 10065,
-    "sha256": "40df28e7d656c2378d1a6a6c82c03468addb94a748e625d70a1816acd20cc781",
-    "size": 39029
+    "gz": 9920,
+    "sha256": "5dc4b552c250bc14153c0cdfbc65ad798c175d0c5ec90dd6b7ca372b50401c8d",
+    "size": 33493
    },
    "UI/NotifySources.lua": {
-    "gz": 5949,
-    "sha256": "aa055e9d0927d10882fd9de0559e1a500c2320853d61236876f70004c4520d3a",
-    "size": 22691
+    "gz": 5944,
+    "sha256": "df4b88439fbf81400359b9c4a9f69f29a352deabef7e514890be982e69aab36e",
+    "size": 22664
    },
    "UI/PaperDoll.lua": {
-    "gz": 10009,
-    "sha256": "466b41829282410aad9991300a468760e846ff2fddf82e230ea9b33ccc241e85",
-    "size": 37535
+    "gz": 11484,
+    "sha256": "461b3fb8e77b83e39673eab3fe67df8e97526d608fd75e2afefa87f783cf50a8",
+    "size": 41506
    },
    "UI/PatchUI.lua": {
-    "gz": 1120,
-    "sha256": "c91d7fb966f5aeeb9fb5ddd9dfed10c35f761c64a49b3a28bf5cb8206839f978",
-    "size": 2822
+    "gz": 1177,
+    "sha256": "69d3b8ac7ecaee8064b8446bcdb2332569a2d5c7ce03795e3e169668c0d51c61",
+    "size": 2947
    },
    "UI/PerfUI.lua": {
-    "gz": 17090,
-    "sha256": "8478934a0209c270cdca877eaf65d17686cb790ae61a516c74e6f1392844341d",
-    "size": 63704
+    "gz": 16228,
+    "sha256": "2c62880540eb64bf2692f337f1d9a5a0184fa842518787538accf1397c83a59a",
+    "size": 58679
    },
    "UI/Picker.lua": {
-    "gz": 11970,
-    "sha256": "9ae9e77fb3a5c94c07a1420d56e68fd3896a3221ac0ec4e9aac4c777162cc73c",
-    "size": 44819
+    "gz": 11974,
+    "sha256": "4c4b328ce802a3ee074a8758487336b6bde01d97911cb725f4dd7171e34c790a",
+    "size": 43823
+   },
+   "UI/PlannerWindow.lua": {
+    "gz": 4955,
+    "sha256": "c1df1738798252d8fc5c530278c53d54350c1d73744803db63b2fcac6d9a4016",
+    "size": 15398
    },
    "UI/PollsTab.lua": {
-    "gz": 27274,
-    "sha256": "e8b0d8da2568e1fee8ec2d277057b2fb9f1680d851f4e4455e31e07dd605656f",
-    "size": 111280
+    "gz": 26853,
+    "sha256": "a5286ff8f3a7172b24402c5ed5c30ab098eb2f2b3141dd9199ee55f33f251900",
+    "size": 103636
    },
    "UI/Popup.lua": {
-    "gz": 4655,
-    "sha256": "4b19f44172f09a0d4a41684939d471a691b1079e509019db85d1447c95376947",
-    "size": 15825
+    "gz": 7121,
+    "sha256": "340b3ce346ec7edbc197951e422d5f4cdf20860f57f741a8e8c6575f075eb4bb",
+    "size": 25573
    },
    "UI/PrizedUI.lua": {
-    "gz": 18021,
-    "sha256": "09a4ff7de6435e0af457122100da718cc167e90959c50294467b889812816659",
-    "size": 70580
+    "gz": 17012,
+    "sha256": "5fe370714d20ea0168ccdbac62e6dc81ba335d45b8f411a3d9b000e6f99838de",
+    "size": 61448
    },
    "UI/RaidGroups.lua": {
-    "gz": 18649,
-    "sha256": "ff61a870d38e226dcf088cabf989758bae3a6ae7a2c55fb1a267a20e308e341e",
-    "size": 73724
+    "gz": 18621,
+    "sha256": "ed796fbd9202f631102cda002bbe5cbdafac376a331b199833bd41d9956f458a",
+    "size": 72519
    },
    "UI/RaidLeadersUI.lua": {
-    "gz": 2224,
-    "sha256": "5a12ade371cb651b9705b395df417c96cba716b986472e5a50e39bea92e9cdbe",
-    "size": 6723
+    "gz": 2579,
+    "sha256": "533f24334c1d9551a6b4c1663783c4b66c749424cfdb6cd194dd25e8eb575670",
+    "size": 7299
    },
    "UI/RaidPlanUI.lua": {
-    "gz": 87422,
-    "sha256": "413292f0d7858a9265ea6867732cbeb9722171475c9db8e0537d30b3a1b4a732",
-    "size": 338066
+    "gz": 81886,
+    "sha256": "1b86852357676a14ba895a24d1e414beaea854fb7134ebf4798d3c98e5027daa",
+    "size": 306391
    },
    "UI/RaidSheet.lua": {
-    "gz": 16094,
-    "sha256": "604d899ae5bb5b563253935b073b0afaab48f971d4220e36891635e60a044362",
-    "size": 56384
+    "gz": 15640,
+    "sha256": "d0fd51fccf8c80dc743d4a70e1cd07484c9c4f2b9488c9d31de7893c78e45d45",
+    "size": 54197
    },
    "UI/RaidsTab.lua": {
-    "gz": 15791,
-    "sha256": "1bccb4913af2eac897738ad0d7bf192564c4ddb4b6e4dd9bfd828b788aef710f",
-    "size": 58250
+    "gz": 14394,
+    "sha256": "c0957ee3f70ec6048786c30a359b5ed60f8b3b15bc3f1f2c2c45994a94fdc9d1",
+    "size": 49182
    },
    "UI/RollFrame.lua": {
-    "gz": 14065,
-    "sha256": "695bd8e7b63ea060bb3b743caceec537e1e0d75356641c5fce85170d6a2f0203",
-    "size": 53130
+    "gz": 13555,
+    "sha256": "0ccfc6186ef808d2f3ab462eb8f3f9e1af4f034a54c820242159644f49823986",
+    "size": 49505
    },
    "UI/SessionBar.lua": {
-    "gz": 6482,
-    "sha256": "7609531e8333a1560e53e7402825240352cd207da6c0c32c4460ef29f489517c",
-    "size": 21172
+    "gz": 6715,
+    "sha256": "3f2fb2b9d8a78111550c9b7a60e1cc82e9ae868e45d57bf0deec7b4ee78e71e9",
+    "size": 21302
    },
    "UI/Settings.lua": {
-    "gz": 31589,
-    "sha256": "179f8c7c7ef6221b202887b7bee3fd5cb574e46a30008d936cd2016d1a668461",
-    "size": 114740
+    "gz": 27255,
+    "sha256": "c2ce5fa1f2c74842237588131db967f81e4d9f944632abd49fe69be7733aa65c",
+    "size": 96966
    },
    "UI/Share.lua": {
-    "gz": 11512,
-    "sha256": "4ddcdf9f96a390099e44030af60258fa0e038684401c91e5884e859abbc80da0",
-    "size": 42577
+    "gz": 11748,
+    "sha256": "24f94177e298e77cb96ab3de19ec0ede8000f26c791652ef0b0dccb4764808dc",
+    "size": 43177
    },
    "UI/ShareWindow.lua": {
-    "gz": 4075,
-    "sha256": "574b07da6a9e306f1b6c18af6007b42295b5fe11dceebe6bcb00ba52d85b265d",
-    "size": 13462
+    "gz": 4334,
+    "sha256": "75b6a6a483d13552ea203ff0f679f042c90a2134854f1373669a750acbec4437",
+    "size": 13659
    },
    "UI/SimBuffs.lua": {
-    "gz": 6615,
-    "sha256": "21f5635bbe4f198b77e9c18bc6d606aafcd5d766577a8ec75e73f43bf10bac35",
-    "size": 22078
+    "gz": 6597,
+    "sha256": "c2f4c827ff994418b789ff66c1170635b4434f28687397143f5dfb2d65cafeb1",
+    "size": 20815
    },
    "UI/SimHistory.lua": {
-    "gz": 8057,
-    "sha256": "eb4135d984050fa1f8d6493e8f795c15cf70df0c8f9ea77754cefef14ca6058f",
-    "size": 26131
+    "gz": 7008,
+    "sha256": "5454373aab796ef9501a9d7aa2c98b6e2c2bf2b07b233ddc886c64408b0009b8",
+    "size": 21730
    },
    "UI/SimNerd.lua": {
-    "gz": 16496,
-    "sha256": "bc3c8f2402be3e03aec0919e8880038b7db8ad4651333e7cabf0cb30818cd4a6",
-    "size": 52997
+    "gz": 16441,
+    "sha256": "c08340325d1c298b705353b0b58f390debd482a319b4b142e81bfd68c2901608",
+    "size": 51914
    },
    "UI/SimPanel.lua": {
-    "gz": 12768,
-    "sha256": "21111deaf4e9600bfcf51ff287cb500e7f07de7b0943efc791b36503e31ec5b8",
-    "size": 44326
+    "gz": 13022,
+    "sha256": "a787127cc9c3f36e2aba9b3d2b555447df7201e58797c6bbd686b26f412f3845",
+    "size": 45032
    },
    "UI/SimStage.lua": {
-    "gz": 13519,
-    "sha256": "db09c966baa0fdea3b69d9b5630de61bb3373a706dee3f31038a3104c49762bd",
-    "size": 47044
+    "gz": 14505,
+    "sha256": "9cbc82eff316669c98fe8920cb435e0a71c85e7dcc9c6749d2ae0729f57cbf11",
+    "size": 48392
    },
    "UI/StrategiesView.lua": {
-    "gz": 16473,
-    "sha256": "6ab530de433e28383005b4e9d87c5f32c5c272efef295d5de6315cfed83a3e7e",
-    "size": 59832
+    "gz": 15736,
+    "sha256": "5e8391b9092670d80fbdc0ec88bdb5f3364a86b09e7efd5e7aeffc1186a50380",
+    "size": 55236
    },
    "UI/StrategyBlocks.lua": {
-    "gz": 19829,
-    "sha256": "d0dfb7248e6cff5e5184e1935fa8b0411d7a0e8a598fcaa89f5984e38958c5d6",
-    "size": 79732
+    "gz": 19378,
+    "sha256": "4c4a4c2eeb7fccf9d6065ef0d6a1f5c4664a0bbe9ffaa459111a52efe28ca2e0",
+    "size": 77333
    },
    "UI/StrategyBoard.lua": {
-    "gz": 37393,
-    "sha256": "1dd87fcd6b1ee32f8ae73331c6130a7c66243b7f048e70399c49bcb777c61e6a",
-    "size": 137587
+    "gz": 35878,
+    "sha256": "2f0257563252f3c653b1800531a2e74aae246cb613847254c50aaba886e04226",
+    "size": 129922
    },
    "UI/StrategyMap.lua": {
-    "gz": 26976,
-    "sha256": "56646817f0125fdee42e674ebcbfa584640c1c69b789a4092cf51dc903a239af",
-    "size": 104481
+    "gz": 26639,
+    "sha256": "d04ef5236112ccb5a24c9b86b94db7762c01410d9c7ec86b15590725803834f3",
+    "size": 102811
    },
    "UI/StrategyMap3D.lua": {
-    "gz": 36004,
-    "sha256": "7f88d225823ee0d22be336fcd241072eb9e4cba6fc71a3a87476db8cb577b255",
-    "size": 125494
+    "gz": 35348,
+    "sha256": "8791fffb93917254bfc641d17650256d94f0349c92a7bcba56408b702741a2d7",
+    "size": 122967
    },
    "UI/StrategyReminder.lua": {
-    "gz": 8312,
-    "sha256": "a7533bac9d2f0cd7ed6d0f5c551de47545bb9e4bc0d54d6654e1e8bae394c773",
-    "size": 31031
+    "gz": 8143,
+    "sha256": "bdb4c49d9f22a931c5466aefff5a900100b94536684da6373bc617398e6e58b0",
+    "size": 29585
+   },
+   "UI/Style.lua": {
+    "gz": 3305,
+    "sha256": "f57d8fa62113ef6f77511120698d9a0e1c2d62db884e028b624b977438f280f3",
+    "size": 8643
    },
    "UI/SwingPracticeUI.lua": {
-    "gz": 12059,
-    "sha256": "52c1397dae201f721abdd4625bdce3988ba58afdda55d168cdaa14b839561f15",
-    "size": 46213
+    "gz": 11947,
+    "sha256": "4de256fe8a6acfb0d817c733dbb27c416b7f6950b3947dd61129fc29d47c7659",
+    "size": 43962
    },
    "UI/SwingTimerHUD.lua": {
-    "gz": 8651,
-    "sha256": "934bce96b81e83f49bc9438be3ea7daba1f568ee69ad2054931bfe79f35ec71f",
-    "size": 27257
+    "gz": 8289,
+    "sha256": "03a9be4e5e3d1fad934f59360824ffb66c59c7f4bde2b4a21ab8dd4d00b2d184",
+    "size": 25486
    },
    "UI/Tooltip.lua": {
-    "gz": 11383,
-    "sha256": "1c8acb13f6478e1dbfdabeecf7729bb63cb448db7ada5824cc34986b41f5667b",
-    "size": 37807
+    "gz": 11320,
+    "sha256": "bf0b284b2146ecf22d8d56ce74002753fc15c0771432407cb16d7525c611632f",
+    "size": 37294
    },
    "UI/TooltipSkin.lua": {
-    "gz": 2247,
-    "sha256": "2b53e2b6efc49bf86fbdd8c6b93f762c5fd34d5656f043d773848e5ff7161d86",
-    "size": 6176
+    "gz": 2163,
+    "sha256": "9726e20ac760de8c8196b896a6835c95011a59dbc3a42ebcbf7173adcce6ea5b",
+    "size": 5863
    },
    "UI/TotemBar.lua": {
-    "gz": 9025,
-    "sha256": "420ffd636e5aef777fc03ae4784683e577381d1caf93e92492ea87d513e732b9",
-    "size": 31443
+    "gz": 7720,
+    "sha256": "1175c0a8d6c9981501319882d02e2b1f738be59f83b07c2683c7348d81ba6232",
+    "size": 26849
    },
    "UI/TotemsUI.lua": {
-    "gz": 14913,
-    "sha256": "49106090b8263615a57245f8f1c8424f23fdd098da5d890656f3ed70f1e84516",
-    "size": 58768
+    "gz": 12539,
+    "sha256": "139eb1234931fd6b5b8373d5e216b13bd6237878f84bb618a285a0e8ddd4f492",
+    "size": 45601
    },
    "UI/Tour.lua": {
-    "gz": 10190,
-    "sha256": "d811046f112f0fa3cb6770ea1869cee588140b94e75481b87dff34c8bfede593",
-    "size": 35221
+    "gz": 9925,
+    "sha256": "786d78ee66557cc383a64c75232ddb3cbd4cf501c8313629a3a4033f6ae11c15",
+    "size": 33711
    },
    "UI/WelcomeTour.lua": {
-    "gz": 7556,
-    "sha256": "49e64bb3eb81d8f0861f97e49b5f8180f65b2f355b9e30f664da5372432eaa9f",
-    "size": 25552
+    "gz": 6759,
+    "sha256": "6aad51f48bcd38de4ddf639ddec555b579aa5881668b49ba731e9be278d661b9",
+    "size": 22151
    },
    "UI/Widgets.lua": {
-    "gz": 45171,
-    "sha256": "7b8c346e7405713fac43ec8d6d46876d758c9af40eb46f792e714e6608b10f9c",
-    "size": 166774
+    "gz": 50767,
+    "sha256": "ed05a832734d30a377ca6c6e29da00fa4f096e7ceb4db9efdeec0f0929ac275a",
+    "size": 185139
    }
   },
   "DisasterZone_Rooms": {
    "DisasterZone_Rooms.toc": {
     "gz": 1187,
-    "sha256": "0c6df8f160817a6e99d636c8827e78eb153253fad9ca99f8142da70d647538ca",
+    "sha256": "020ff43932665f66f1db15822098bc0108bf09b6f3dc7287c1f8d414b2fbabb9",
     "size": 4477
    },
    "Load.lua": {
@@ -2378,6 +2453,132 @@
  "name": "DisasterZone",
  "notes": {
   "changelog": [
+   {
+    "date": "12 October 2026",
+    "sections": [
+     {
+      "area": "look",
+      "heading": "One look across every page",
+      "kind": "changed",
+      "lead": "Every page now shares the same banners, headings, lists and buttons.",
+      "lines": [
+       "Every page is built from the same parts now, so the whole addon looks and works alike.",
+       "Banners: a picked raid, guest, team, item or player opens under a picture banner.",
+       "Section headings, lists, chips and pills look the same wherever you meet them.",
+       "Rows light up the same way when you point at them or pick them, on every page.",
+       "Toolbars sit in one place: tabs on the left, filters, and the main button on the right.",
+       "Text sizes and colours follow one scale, so a title or a note reads alike everywhere.",
+       "An empty page says what goes there, with a small picture, instead of a bare line.",
+       "Can't change something? A short notice says it's read only, locked or still loading.",
+       "Questions, pop-ups and small notices are the same everywhere, over the window they fit.",
+       "Blessings and Totem planners, twist practice and the meter breakdown open as tool windows."
+      ]
+     },
+     {
+      "area": "gear",
+      "heading": "My BiS: gems and enchants for the gear you wear",
+      "kind": "new",
+      "lead": "",
+      "lines": [
+       "My BiS has an Equipped tab after the phases: your gear with the gems and enchants it has.",
+       "Suggest fills empty sockets and missing enchants from your spec's guide.",
+       "Click a slot's gems to plan your own; a gold dot marks what isn't on the item yet.",
+       "The centre counts what is socketed and enchanted and lists what is still to apply.",
+       "More > Shopping puts the gems and enchants still to apply on your shopping list."
+      ]
+     },
+     {
+      "area": "guild",
+      "heading": "Members: a card with a banner",
+      "kind": "changed",
+      "lead": "A player's card opens under a banner, like a raid or a guest.",
+      "lines": [
+       "A player's card opens under a banner: their class, name, online status and specs.",
+       "Whisper and Link in chat sit on the banner, with share, map and note beside them.",
+       "The card's tabs sit at the foot of its banner, like the other pages."
+      ]
+     },
+     {
+      "area": "look",
+      "heading": "Settings and Notifications: a side menu",
+      "kind": "changed",
+      "lead": "",
+      "lines": [
+       "Settings and Notifications have a side menu: pick a section on the left.",
+       "Sections only the Guild Master or the council can change say so: read only for you.",
+       "An empty Notifications section says so, with a small picture."
+      ]
+     },
+     {
+      "area": "look",
+      "heading": "Windows remember where you put them",
+      "kind": "changed",
+      "lead": "",
+      "lines": [
+       "Windows and small bars you drag keep their place, also after a /reload.",
+       "The meter breakdown now remembers its place too.",
+       "The roll window, the raid bar and the Bingo counter keep theirs, as before."
+      ]
+     },
+     {
+      "area": "gear",
+      "heading": "My Log counts overkill like the meters",
+      "kind": "changed",
+      "lead": "",
+      "lines": [
+       "My Log's damage done now counts the whole last hit (overkill), like the meters do.",
+       "So My Log and the damage meter show the same numbers for the same pull."
+      ]
+     },
+     {
+      "area": "guild",
+      "heading": "Your main stays put during a raid",
+      "kind": "changed",
+      "lead": "",
+      "lines": [
+       {
+        "for": "",
+        "text": "Your characters are one player: one main, the rest its alts (no more \"separate\")."
+       },
+       {
+        "for": "",
+        "text": "Your highest level character starts as the main; new characters join it by themselves."
+       },
+       {
+        "for": "",
+        "text": "While a raid runs, nobody can change their main (it decides items for mains only)."
+       },
+       {
+        "for": "",
+        "text": "Council, officers and the GM can unlock it for a player on their Members card."
+       }
+      ]
+     },
+     {
+      "area": "fixes",
+      "heading": "Fixes",
+      "kind": "fixed",
+      "lead": "",
+      "lines": [
+       {
+        "for": "",
+        "text": "No BiS list yet? The window no longer spins on \"Sharing with council\" forever."
+       },
+       "Blessings: some Pally Power messages no longer throw a Lua error.",
+       "Busy guilds: teams and raid series no longer go missing when raid plans sync.",
+       "Loot rules and prized items show Hyjal's own picture, not the generic one.",
+       "Bingo's messages travel with the other games, off the loot council's line.",
+       "The DZ seal at the top of the window now has its soft gold glow (it never showed).",
+       "Events no longer throw a Lua error in the first moments after you log in.",
+       "Dungeon runs from just after login now land in your guild's list.",
+       "My Log reads your talent points like the class tools (some clients saved 0/0/0).",
+       "Chess and the 3D strategy board size and centre models right on every client."
+      ]
+     }
+    ],
+    "title": "One look across every page",
+    "version": "1.4.0"
+   },
    {
     "date": "11 October 2026",
     "sections": [
@@ -3528,196 +3729,16 @@
     ],
     "title": "Events, the Group Finder, gems and enchants",
     "version": "1.3.2"
-   },
-   {
-    "date": "6 October 2026",
-    "sections": [
-     {
-      "area": "guild",
-      "heading": "Dungeons: the guild's own LFG",
-      "kind": "new",
-      "lead": "List a 5-man run or join one, inside the guild.",
-      "lines": [
-       "New Dungeons tab: list a 5-man run or join one, all inside the guild.",
-       "I'm up for a run: the guild sees you're free, and you get a ping when a run needs you.",
-       "Every run shows its open places; the one that wants your role glows. Join asks the leader.",
-       "Your run: Accept sends the invite. Guildies who are free and fit show up to invite.",
-       "Cards say what stops you (heroic key, lockout, level) or what drops your BiS there.",
-       "List a run: pick a dungeon, now or later, add a note; the preview is what the guild sees.",
-       "A star on a dungeon: online guildies with BiS there. DAILY: your daily quest for it.",
-       "Share your run in chat with the share icon; later runs show on the Home calendar."
-      ]
-     },
-     {
-      "area": "raids",
-      "heading": "Raids, redesigned",
-      "kind": "changed",
-      "lead": "Every raid as a card: answer right on it.",
-      "lines": [
-       "Upcoming: every raid is a card with its loading screen; answer right on the card.",
-       "A raid's page: a banner with the facts and your answer, then its tabs.",
-       "Your spec, character and note sit under your answer; the raid's note under the banner.",
-       "Sign-ups: four role columns with spec icons; bench, absent and no response below.",
-       "Groups: the five parties side by side, their buffs at the bottom, the raid's on top.",
-       "Drag a player: their card follows the mouse and the spot it lands on lights up.",
-       "Strategies: raids as art strips, strategy cards with Edit and a More menu.",
-       "Strategy board: a cleaner header, page tabs, a one-row toolbar, flat job cards.",
-       "Names, page names and notes are typed in place; Discard and Delete page ask first.",
-       "Assigning keeps the map full size: the raid's players sit above the tables, by role.",
-       "Raid log: raid cards, a banner, a Linked to picker, who came, and tabs.",
-       "Teams redone: team chips, a team card with its next raids, the raid page's groups.",
-       "Teams ask before unsaved changes are lost; Copy, Clear groups, Add several, spec by icon.",
-       "Teams draft a target comp: open spots show on the team card and in raid Sign-ups.",
-       "Comp tab: start from a preset, steppers per role, bench, LF message for the chat box.",
-       "Ranged players have their own role icon, a bow, so melee and ranged read apart."
-      ]
-     },
-     {
-      "area": "gear",
-      "heading": "My BiS and Home",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "My BiS: a Pre-raid list before P1 (dungeons, reputation, crafting, badges), just for you.",
-       "My BiS: phases as tabs, your gear around the model, what's still to get under it.",
-       "Home: a calmer calendar: today in gold, only the month's weeks, nothing cut off.",
-       "Home: the line under the next raid only shows what's missing.",
-       "Home: the banner slides through this week's raids; the bars or arrows pick one."
-      ]
-     },
-     {
-      "area": "look",
-      "heading": "A new look everywhere",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "The sync mark in the top bar turns while your list is shared, then draws a green check.",
-       "Atlas: loading-screen banners, item icons and a star count of your BiS picks per boss.",
-       "Atlas: hover an item and click + to add it to your BiS list.",
-       "Settings: sections in a side menu; every option a switch or a dropdown, explained.",
-       "Council roster: every BiS pick shows its icon; filter by class and role with one click.",
-       "Council items: raids with their art, who wants what as name chips, unwanted items folded."
-      ]
-     },
-     {
-      "area": "raids",
-      "heading": "Ask to join a locked raid",
-      "kind": "new",
-      "lead": "See locked raids and ask to join them.",
-      "lines": [
-       "Raids locked to a team are now listed for the whole guild, with their roster.",
-       "Outside the team? Pick an answer to ask to join; your note goes with it.",
-       "Who runs the raid sees Requests to join under the roster: click a name to approve or deny.",
-       "Approved: invited to that raid only, and you see its strategies. Absent takes it back.",
-       "Private (raid editor): the old way, hidden from the rest and no requests."
-      ]
-     },
-     {
-      "area": "loot",
-      "heading": "Loot council panel",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Once an item is awarded its rolls fold away; Show rolls at the top right opens them again.",
-       "Boss drop panel: item cards with BiS/Alt/OS tags, one gold Award, the rest in a menu.",
-       "Roll popup, BiS toast and raid bar restyled; raid options sit behind a gear icon."
-      ]
-     },
-     {
-      "area": "raids",
-      "heading": "Strategy boards: encounter objects",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "New strategies start with the fight's objects and helpers where the game puts them.",
-       "Vashj's generators, Magtheridon's cubes and channelers, Kil'jaeden's orbs and more.",
-       "Akama's channelers, Leotheras' spellbinders, Zul'jin's spirits, Netherspite's portals.",
-       "Right-click one, State: Active, Channelling, Dead...; selected ones switch together.",
-       "Beams show on the map and in 3D, with the spell's own effect where the game has one.",
-       "Icon > Encounter objects: a phase's spawns at their spots, like Kael's weapons.",
-       "Routes and areas: Jan'alai's hatchers and bombs, Felmyst's lanes, Aran's Blizzard.",
-       "Icon > From a model ID: place any creature or game object by NPC, object or display ID.",
-       "A Wowhead link works as well; the creature comes at the size the game draws it.",
-       "Strategies with these reach members once they run 1.3.1."
-      ]
-     },
-     {
-      "area": "raids",
-      "heading": "Walking in 3D",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "The walk button has its own icon: a figure striding over a ring.",
-       "Drag it into the room: a ring on the floor and a see-through you show where you will land.",
-       "The ring turns red where there is nothing to stand on, and letting go there does nothing."
-      ]
-     },
-     {
-      "area": "gear",
-      "heading": "Crafting materials",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "Hold Shift over anything crafted: its materials, and how many you have in bags and bank.",
-       "In Atlas and Members, Shift + mouse wheel sets how many to make; the materials add up.",
-       "Shift + click breaks them down a step (bolts into cloth); Shift + right-click goes back.",
-       "Atlas: Spellcloth, Shadowcloth and Primal Mooncloth are items again, with their icons."
-      ]
-     },
-     {
-      "area": "gear",
-      "heading": "Atlas: shopping list",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "Hover a craft in the Atlas or Members and click its bag; Shift sets how many first.",
-       "Your list sits at the top of the Atlas, grouped by who makes it: most of it first.",
-       "Materials add up with what's in your bags and bank; the missing ones come first.",
-       "Pick a crafter for their part of the list; Whisper types the ask with the links.",
-       "With Auctionator, one line says what the missing materials cost at the auction house."
-      ]
-     },
-     {
-      "area": "guild",
-      "heading": "Members",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "The roster lists online players first, then away, then offline; the highest level first.",
-       "A member's Characters card lists their raid teams: click one to open it in the Raids tab.",
-       "Hovering a member shows their team too.",
-       "A calmer roster with class circles, skill levels and a profession filter.",
-       "Member card: spec chips, the officer note under them, recipes fold out under professions."
-      ]
-     },
-     {
-      "area": "fixes",
-      "heading": "Fixes",
-      "kind": "fixed",
-      "lead": "",
-      "lines": [
-       "Someone walking in the room no longer makes a boss vanish or shows up white and jittering.",
-       "Nightbane's 3D room is the Master's Terrace again, not the chess hall and tower rooms.",
-       "Walking in a 3D room moves like the Raid Trainer: smooth strafing, mouse look and steps.",
-       "Magtheridon no longer has squares cut out of him in the 3D room.",
-       "Bosses in 3D stand on their spot: the Lurker and others were yards off their circle.",
-       "Karazhan and Sunwell 3D rooms show the right textures; many surfaces had the wrong one.",
-       "Prince Malchezaar's 3D room now shows his platform, not a floor far below it."
-      ]
-     }
-    ],
-    "title": "Dungeons tab, ask to join locked raids",
-    "version": "1.3.1"
    }
   ]
  },
- "published": "2026-10-11T22:13:49Z",
- "seq": 1,
- "version": "1.3.5",
+ "published": "2026-10-12T15:15:24Z",
+ "seq": 2,
+ "version": "1.4.0",
  "zip": {
-  "name": "DisasterZone-1.3.5.zip",
-  "sha256": "c9b3b0f1b347fac06dff1860d5788931f4b906042f0db5c577dfc2d8f7222a23",
-  "size": 30174932,
-  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.3.5/DisasterZone-1.3.5.zip"
+  "name": "DisasterZone-1.4.0.zip",
+  "sha256": "c1a8d47b606a8ad0ee078fd86e4b448393b11363eadbb48e5b4507ebe2093c8b",
+  "size": 30237004,
+  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.4.0/DisasterZone-1.4.0.zip"
  }
 }
