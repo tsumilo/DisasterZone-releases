@@ -1,8 +1,8 @@
 {
  "assetPack": 7,
- "build": "3e010b58ceba9c28",
+ "build": "1b352b4150866e4b",
  "channel": "stable",
- "commit": "241bbb547c0864d778a4fa4acd81fb2d2d312fae",
+ "commit": "6e78d6d6a3cfddc38de5ec5cc83ff6cab175b4bd",
  "folders": {
   "DisasterZone": {
    "Bindings.xml": {
@@ -51,8 +51,8 @@
     "size": 257
    },
    "Core/BuildInfo.lua": {
-    "gz": 220,
-    "sha256": "8578040d5f13de0e975ae722c8fdc26f4ab6f94908fb31efb7f089df4763e530",
+    "gz": 221,
+    "sha256": "13f6428c2c9b50a06627120a0fe4a5bdffc5a4d3e9f0f871aabcaf569664f598",
     "size": 270
    },
    "Core/ClassKit.lua": {
@@ -76,9 +76,9 @@
     "size": 5725
    },
    "Core/Comm.lua": {
-    "gz": 7472,
-    "sha256": "c4145d3f28affa1c76dde2ff6085fde91b5b4a1737066e3f766dbeaa281d3e69",
-    "size": 24673
+    "gz": 7765,
+    "sha256": "4b179d59b84f1fad3fc52dd4c989740d8848465aa77735e0345172f81b6bb1c8",
+    "size": 25553
    },
    "Core/Constants.lua": {
     "gz": 7673,
@@ -91,9 +91,9 @@
     "size": 20717
    },
    "Core/DB.lua": {
-    "gz": 6113,
-    "sha256": "f227a3e680cceb59cbc9b3cd2b7bf6368b83b4c84c4931588451a35bc6ec796d",
-    "size": 16838
+    "gz": 6370,
+    "sha256": "544c6c9ee061686d9a537ac1f041847b29bf661df8ed52ee1536a02de7f0ae1d",
+    "size": 17654
    },
    "Core/Demo.lua": {
     "gz": 8342,
@@ -106,9 +106,9 @@
     "size": 11208
    },
    "Core/DigestSync.lua": {
-    "gz": 6453,
-    "sha256": "637032bc4062569e1c755e794dfc19c2285938e6fc3e24ea7cdd4540d65525a8",
-    "size": 21236
+    "gz": 7935,
+    "sha256": "71c5d1b81b25579baeda51b9e98355f48d496653f1ad8d6af60efcede50fbb55",
+    "size": 27108
    },
    "Core/Dungeon.lua": {
     "gz": 4804,
@@ -116,9 +116,9 @@
     "size": 17066
    },
    "Core/DungeonRuns.lua": {
-    "gz": 24963,
-    "sha256": "7212f065df6359e50e17daa8528d03982878d80f3f397db9365e7cfa94efb18e",
-    "size": 89566
+    "gz": 25100,
+    "sha256": "38bf7f879d40fbd89b8b973a0b4ab2e0040e8a33afb18354a79bffc03971612c",
+    "size": 89724
    },
    "Core/EventBlocks.lua": {
     "gz": 31981,
@@ -141,9 +141,9 @@
     "size": 36189
    },
    "Core/Events.lua": {
-    "gz": 18601,
-    "sha256": "36c79da8c5c53e413b9b51a89ece977211178f74f78a64de7b6045854daafdc7",
-    "size": 66868
+    "gz": 19279,
+    "sha256": "5549846cbe5ff935d70b188c72edfa4a56787ee5c1b05067b94a83f35903fcad",
+    "size": 69044
    },
    "Core/Feedback.lua": {
     "gz": 15555,
@@ -166,24 +166,24 @@
     "size": 63069
    },
    "Core/GuestBook.lua": {
-    "gz": 11485,
-    "sha256": "cac04d6dd4424734721f01baefb31b10267da45ef829544b10bf416b9f8af29b",
-    "size": 40292
+    "gz": 11504,
+    "sha256": "312831c853aa8c43b5fcb73809252a34c745633ac40e0eb434471fe0c5e97c8f",
+    "size": 40342
    },
    "Core/Guild.lua": {
-    "gz": 23746,
-    "sha256": "d3fc11ad486e80c1a4198b96d424d6e5843f5b106ce93a39f820fbb902d74ab7",
-    "size": 92313
+    "gz": 24062,
+    "sha256": "ebe2a5c39fac44a518ea7dea25c766cbee2da71af47fdbae1676823c6938095a",
+    "size": 92801
    },
    "Core/GuildMap.lua": {
-    "gz": 7773,
-    "sha256": "29e324c552821aaa88e6eb4f9b4648d7758840c8d9807a2f0d28ee96f291d6c7",
-    "size": 24126
+    "gz": 7791,
+    "sha256": "d5b2bf856ba2526189aeeaf993cb06949516d40b28d2e6bfa0609df3974cd1fd",
+    "size": 24156
    },
    "Core/Init.lua": {
-    "gz": 6749,
-    "sha256": "bc2fe8ef5618e22c089d0dba741c32bd1a16a3654b5445c2948c15c3cd8edbfb",
-    "size": 21532
+    "gz": 6806,
+    "sha256": "f293ad3a12bb48757109cfab1c74f2ba3798590c17a3ff8717d4990e4c991d42",
+    "size": 21657
    },
    "Core/ItemDB.lua": {
     "gz": 14710,
@@ -266,19 +266,19 @@
     "size": 30485
    },
    "Core/Polls.lua": {
-    "gz": 10765,
-    "sha256": "b2d3730eac0794d5d7e01e463a97557d44c3dbe3fa12252d49fce0a3e924ee84",
-    "size": 38681
+    "gz": 12553,
+    "sha256": "342511d8e113fc3599042a24606b701fdc5ea93d3db79ce4b93aef4757de9f74",
+    "size": 44710
    },
    "Core/Prized.lua": {
-    "gz": 14944,
-    "sha256": "0e668ba360eb621cdb4d00b4592d47ad15ed512b7e16afb9e35505d663979e39",
-    "size": 53607
+    "gz": 17242,
+    "sha256": "8db9593b34489d1329ea63980e4c2bf09bdd2079f92fdc0b4afa4fdfc245afd9",
+    "size": 61000
    },
    "Core/Professions.lua": {
-    "gz": 16661,
-    "sha256": "918bec9eb1ae4283661216f5ee07c64e4f2affef8feb11305d93457e7e011c98",
-    "size": 61096
+    "gz": 16967,
+    "sha256": "18905b4deb5e889854bfc248fe1df2efb92b7a1b1591aab38aa350fce5a55b5e",
+    "size": 62290
    },
    "Core/RaidComp.lua": {
     "gz": 10754,
@@ -306,9 +306,9 @@
     "size": 6482
    },
    "Core/RaidPlan.lua": {
-    "gz": 48498,
-    "sha256": "ce185ac1df7949f0986a23032d40faf6603592835d1e2ae15b1016a000db1ace",
-    "size": 184724
+    "gz": 48516,
+    "sha256": "320d4063dbcc6db8c1a762fde98b0bf4058d96a96950f4278bea3c4deabe45ae",
+    "size": 184771
    },
    "Core/Roll.lua": {
     "gz": 31956,
@@ -325,15 +325,20 @@
     "sha256": "bf1a10d425469f081f2d30c764df4d0559b2f4e5f85b36dddd25b3ae8cd46638",
     "size": 17715
    },
+   "Core/ShotTimer.lua": {
+    "gz": 9227,
+    "sha256": "8f375fc6ed8e2f5431194faff3606960ee391cd181b6cdb7a03e7bb9451ce4b9",
+    "size": 31021
+   },
    "Core/Store.lua": {
     "gz": 12041,
     "sha256": "006a3f3ffcb87172a078ecdd1a2fb40c87fc2b07b712c41fe545aa9b8994e87e",
     "size": 44975
    },
    "Core/Strategy.lua": {
-    "gz": 19019,
-    "sha256": "420b644521d9fa513ee0e34b70f07fb958abf00e2e43022a6fdeb48e8b2dc21f",
-    "size": 71128
+    "gz": 19471,
+    "sha256": "732002d8fa098a862fb8c0080666f1caff5a6dc99f9acf29800e73f4aecf9752",
+    "size": 72419
    },
    "Core/StrategyCollab.lua": {
     "gz": 12463,
@@ -366,9 +371,9 @@
     "size": 25862
    },
    "Core/Sync.lua": {
-    "gz": 13002,
-    "sha256": "f96780b4ba44c4ea6a6901ba3e4f95d1f742a21de4880d428aec2af56300db13",
-    "size": 47652
+    "gz": 12944,
+    "sha256": "dae278821ba208caec6bd3e00092706a1d3a9d43d5100d925d073afc40e4fcc1",
+    "size": 47362
    },
    "Core/Threat.lua": {
     "gz": 3216,
@@ -416,9 +421,9 @@
     "size": 9381
    },
    "Data/Changelog.lua": {
-    "gz": 40029,
-    "sha256": "d204a8b2be8577793bbe35f24abaf7326b81d4bd41015ae265be5130c81bcc17",
-    "size": 136050
+    "gz": 41834,
+    "sha256": "4430b93b745064271e5c29029db2158883f01f5caa2ad3ca02469b2566b14ae4",
+    "size": 142322
    },
    "Data/Classes/Paladin.lua": {
     "gz": 1676,
@@ -516,9 +521,9 @@
     "size": 17168
    },
    "DisasterZone.toc": {
-    "gz": 2125,
-    "sha256": "911254ddb193ee25c0d04808f7417d5b948938f389a9df23d3c16e33dd9ca866",
-    "size": 6165
+    "gz": 2134,
+    "sha256": "3169939676fd74944857c1742beecdf3f3fa1abb576f7111aea00d8b031f86d8",
+    "size": 6204
    },
    "Games/Azeromon/Achievements.lua": {
     "gz": 7132,
@@ -626,29 +631,29 @@
     "size": 30766
    },
    "Games/Bingo/Bingo.lua": {
-    "gz": 3778,
-    "sha256": "e89727efaf19b221b1d7af7de14431f2d05c4c7f3233e071418018ed6d682e33",
-    "size": 13069
+    "gz": 6428,
+    "sha256": "0ad85fb67b90e9ef75db24fee28e77253061a19a1fe68c385eb9b9a028112df4",
+    "size": 22790
    },
    "Games/Bingo/Card.lua": {
-    "gz": 1293,
-    "sha256": "c51f017a515f956ad1e51538e0401d74ede875af90dea3c36c9cbf1752553c63",
-    "size": 3174
+    "gz": 2631,
+    "sha256": "d837013c6333426c0ee6aed7c24dca4c889bd8041181488788d8be11ea04f421",
+    "size": 7509
    },
    "Games/Bingo/Detect.lua": {
-    "gz": 5037,
-    "sha256": "da172c5e65aa981ea9ea3a85ac029f59ee2d840e53cc67c6ba867536340feae6",
-    "size": 17106
+    "gz": 13535,
+    "sha256": "330c71a1a9a7605a65b9a775a10e52fd4a9ec9923215bb7c11c6f60c3a4d8ac0",
+    "size": 46195
    },
    "Games/Bingo/Squares.lua": {
-    "gz": 2697,
-    "sha256": "b7cac6d3a71560fbf6abfd38877170566caff6e059ce62dfb93e85e1f86cda99",
-    "size": 8479
+    "gz": 5866,
+    "sha256": "fb25351d910e05a8060d56fd1c749f4d36074549589e7ec2a496edf07157bf95",
+    "size": 16197
    },
    "Games/Bingo/UI.lua": {
-    "gz": 12952,
-    "sha256": "eddee505a079f71220bed87826bd8c2e32a566a83aa6ce00e5a6f53675f73cca",
-    "size": 49176
+    "gz": 19798,
+    "sha256": "52a6ba19025f3ceae9638cb40bb445acd6369cee88e2a50fa8242231b73276c3",
+    "size": 78056
    },
    "Games/Chess/AI.lua": {
     "gz": 4740,
@@ -676,9 +681,9 @@
     "size": 25379
    },
    "Games/Chess/UI.lua": {
-    "gz": 13801,
-    "sha256": "a62700a460a4bba65e6e43b012f4119bf59b89249a818016bacf2e702ceeaba8",
-    "size": 51084
+    "gz": 14025,
+    "sha256": "f51761116770a3c5632221b7a090eb42310292ae801b6b7557447addc2e0e69f",
+    "size": 51708
    },
    "Games/Hub.lua": {
     "gz": 2036,
@@ -686,9 +691,9 @@
     "size": 5377
    },
    "Games/HubUI.lua": {
-    "gz": 22188,
-    "sha256": "4713c9a6a7d65c62d7c3f5e38c380d0e78086e28afe264a7b4bd2a742bd2acda",
-    "size": 78449
+    "gz": 22373,
+    "sha256": "9f56748edefaf586fbd08c0d5e7dff5f0728783891dbbae163e76b31aedd9ad6",
+    "size": 79170
    },
    "Games/Trainer/Encounters/LadyVashj.lua": {
     "gz": 8552,
@@ -1272,7 +1277,7 @@
    },
    "README.md": {
     "gz": 24787,
-    "sha256": "01e75df1fcf03e71bae096cefa1d16270a9a6d3b9089ee47c795536095b06cd7",
+    "sha256": "1193b335fec448c583a2ab26fa70fa1f1ace95c0e3bf48b77caba13ebb22da65",
     "size": 70028
    },
    "Render3D/Probe.lua": {
@@ -1286,9 +1291,9 @@
     "size": 151651
    },
    "Render3D/Rooms.lua": {
-    "gz": 8314,
-    "sha256": "dbfcaaf997f863aafda925bef6f5e511bbc143b08f9f51b4e61b015d5cfd43fa",
-    "size": 23837
+    "gz": 8354,
+    "sha256": "dc7f345dbc93c7229e97d21921f30e57b9921390d8e0e0b1c8aa01428a1d9825",
+    "size": 23929
    },
    "Render3D/Rooms/Index.lua": {
     "gz": 10454,
@@ -1461,9 +1466,9 @@
     "size": 27797
    },
    "UI/Changelog.lua": {
-    "gz": 22892,
-    "sha256": "bab612cec641c45a58485fdb2ce88cd21fd87f54c9a9807b127eed90b8687910",
-    "size": 85463
+    "gz": 23525,
+    "sha256": "150bc675b3dba0e1dc69ddd28356aa00e5b3bce655593fd8977e1d1f2c515473",
+    "size": 87537
    },
    "UI/ClassBar.lua": {
     "gz": 3282,
@@ -1476,9 +1481,9 @@
     "size": 45798
    },
    "UI/Comp/Layouts.lua": {
-    "gz": 10139,
-    "sha256": "2ef8a80e07a8b1c05be5d7e41688bbe040adc64d6d14b124fa669bd9903078cd",
-    "size": 35041
+    "gz": 10883,
+    "sha256": "ae5fe625d1aa1bdd57af102228a1c7686d45e5f0f94af031409586e53002cd59",
+    "size": 37805
    },
    "UI/Comp/MapArt.lua": {
     "gz": 1897,
@@ -1531,9 +1536,9 @@
     "size": 177948
    },
    "UI/DungeonsTab.lua": {
-    "gz": 24817,
-    "sha256": "2757340263202348b97f44d170c40cd821c84a397cb79d84695a168a23f9b5eb",
-    "size": 91103
+    "gz": 24870,
+    "sha256": "1b6a1dc0d346e7830cad3c85411333e407313f3d090a6def27dcf9ece45fa4c9",
+    "size": 91176
    },
    "UI/EventBoard.lua": {
     "gz": 46764,
@@ -1561,9 +1566,9 @@
     "size": 48522
    },
    "UI/EventsTab.lua": {
-    "gz": 71149,
-    "sha256": "cc67423dc445c61b43f50497c2a6add3be8907e1f7d61bdbf428736c697b9a80",
-    "size": 253889
+    "gz": 71204,
+    "sha256": "21b87446f0377b830a5b37c30b47e15b67b54ae2f96d17299067b9b91fa76411",
+    "size": 253964
    },
    "UI/Feedback.lua": {
     "gz": 15061,
@@ -1571,9 +1576,9 @@
     "size": 53391
    },
    "UI/FeedbackSheet.lua": {
-    "gz": 11116,
-    "sha256": "f175d3720aa6b2326fde9ef692e815a7a0db02b239f665f6b16f37e9cd604075",
-    "size": 38409
+    "gz": 11125,
+    "sha256": "7591a16fa46c0cbac5fa3f32b9e6143c1c8a3fee9de19db59d091f613366041e",
+    "size": 38447
    },
    "UI/GemEditor.lua": {
     "gz": 7481,
@@ -1616,9 +1621,9 @@
     "size": 40226
    },
    "UI/Members.lua": {
-    "gz": 22606,
-    "sha256": "e1bd7afdc607b23ebd836b79766392f142d68d2d8a99baa61d60879fcdb8deb3",
-    "size": 82593
+    "gz": 22805,
+    "sha256": "d92057ca2eb849e611adcd27b6d70ef6d6a70182aa490c97b0224d0b40c9d4e0",
+    "size": 83173
    },
    "UI/Menu.lua": {
     "gz": 9083,
@@ -1686,9 +1691,9 @@
     "size": 33493
    },
    "UI/NotifySources.lua": {
-    "gz": 5944,
-    "sha256": "df4b88439fbf81400359b9c4a9f69f29a352deabef7e514890be982e69aab36e",
-    "size": 22664
+    "gz": 5993,
+    "sha256": "e9f7a0848fa057d9773487e816473347ad8a525ba83396258ce73495b6d3abdc",
+    "size": 22804
    },
    "UI/PaperDoll.lua": {
     "gz": 11484,
@@ -1716,9 +1721,9 @@
     "size": 15398
    },
    "UI/PollsTab.lua": {
-    "gz": 26853,
-    "sha256": "a5286ff8f3a7172b24402c5ed5c30ab098eb2f2b3141dd9199ee55f33f251900",
-    "size": 103636
+    "gz": 29858,
+    "sha256": "3f67cce41833c0faf392360c25ab128ea3c227037edeb948cd272b8604505804",
+    "size": 113102
    },
    "UI/Popup.lua": {
     "gz": 7121,
@@ -1726,9 +1731,9 @@
     "size": 25573
    },
    "UI/PrizedUI.lua": {
-    "gz": 17012,
-    "sha256": "5fe370714d20ea0168ccdbac62e6dc81ba335d45b8f411a3d9b000e6f99838de",
-    "size": 61448
+    "gz": 17609,
+    "sha256": "a81286a47807c8c50c0a8db1de847e4756a6b81608c7ee2dcdf85cd1732b4027",
+    "size": 63685
    },
    "UI/RaidGroups.lua": {
     "gz": 18621,
@@ -1766,9 +1771,9 @@
     "size": 21302
    },
    "UI/Settings.lua": {
-    "gz": 27255,
-    "sha256": "c2ce5fa1f2c74842237588131db967f81e4d9f944632abd49fe69be7733aa65c",
-    "size": 96966
+    "gz": 27282,
+    "sha256": "426146dd024bc7f9c7b9f36baf6418d18912e143d9891d33c304b50eda39d233",
+    "size": 97063
    },
    "UI/Share.lua": {
     "gz": 11748,
@@ -1779,6 +1784,11 @@
     "gz": 4334,
     "sha256": "75b6a6a483d13552ea203ff0f679f042c90a2134854f1373669a750acbec4437",
     "size": 13659
+   },
+   "UI/ShotTimerHUD.lua": {
+    "gz": 3025,
+    "sha256": "9adcc33c038b3f5a0d29e87ba64d1c0c516bd35406e4f15af66dfa1281277227",
+    "size": 7751
    },
    "UI/SimBuffs.lua": {
     "gz": 6597,
@@ -1846,14 +1856,14 @@
     "size": 43962
    },
    "UI/SwingTimerHUD.lua": {
-    "gz": 8289,
-    "sha256": "03a9be4e5e3d1fad934f59360824ffb66c59c7f4bde2b4a21ab8dd4d00b2d184",
-    "size": 25486
+    "gz": 10784,
+    "sha256": "e591ab8736ca1825982f416d996f8905ede84209b1b15361c70f24241b3ed1cf",
+    "size": 35447
    },
    "UI/Tooltip.lua": {
-    "gz": 11320,
-    "sha256": "bf0b284b2146ecf22d8d56ce74002753fc15c0771432407cb16d7525c611632f",
-    "size": 37294
+    "gz": 11386,
+    "sha256": "4d97cb2293d7aded57349a41f4f067a873fe3217129c25a21d99220b09e14f9b",
+    "size": 37497
    },
    "UI/TooltipSkin.lua": {
     "gz": 2163,
@@ -1871,9 +1881,9 @@
     "size": 45601
    },
    "UI/Tour.lua": {
-    "gz": 9925,
-    "sha256": "786d78ee66557cc383a64c75232ddb3cbd4cf501c8313629a3a4033f6ae11c15",
-    "size": 33711
+    "gz": 10059,
+    "sha256": "33bf813e26829480d85410ae64196999999c5bc9e835664e55370e6e7ad70823",
+    "size": 34227
    },
    "UI/WelcomeTour.lua": {
     "gz": 6759,
@@ -1881,15 +1891,15 @@
     "size": 22151
    },
    "UI/Widgets.lua": {
-    "gz": 50767,
-    "sha256": "ed05a832734d30a377ca6c6e29da00fa4f096e7ceb4db9efdeec0f0929ac275a",
-    "size": 185139
+    "gz": 50874,
+    "sha256": "fc8dedd9edfea87590f17239acf3865765cdeaa4030ae966fd459a50a4482480",
+    "size": 185411
    }
   },
   "DisasterZone_Rooms": {
    "DisasterZone_Rooms.toc": {
     "gz": 1187,
-    "sha256": "020ff43932665f66f1db15822098bc0108bf09b6f3dc7287c1f8d414b2fbabb9",
+    "sha256": "5dde638d7afcc0f5f5d616b20a793335b70a1121a37256f0eb3b5f4a2f074e74",
     "size": 4477
    },
    "Load.lua": {
@@ -2453,6 +2463,142 @@
  "name": "DisasterZone",
  "notes": {
   "changelog": [
+   {
+    "date": "13 October 2026",
+    "sections": [
+     {
+      "area": "games",
+      "heading": "Council Bingo: a new card set",
+      "kind": "new",
+      "lead": "Every square is a named raid moment now.",
+      "lines": [
+       "Every square is a named moment with its spell's icon: Bubble Hearth, Leeroy, Mrglglgl.",
+       "Five qualities like items: common, uncommon, rare, epic and legendary.",
+       "Every card is dealt the same mix: 1 legendary, 2 epic, 4 rare, 7 uncommon, 10 common.",
+       "Each raid has its own pool of 10+ squares; up to 6 of yours come from it in there.",
+       "Piranha Snack, Wolf Pack, Nova Party, Rock Bottom, What Goes Up: every raid has its own.",
+       "The /roll filler is gone: one roll square is left (Critical Fail)."
+      ]
+     },
+     {
+      "area": "games",
+      "heading": "Council Bingo: rarity that means something",
+      "kind": "new",
+      "lead": "The rarer the square, the louder it lands.",
+      "lines": [
+       "Points by quality (1, 2, 3, 5, 10) plus 10 a line; the season ladder counts points.",
+       "Rare squares on your card pop a toast; epic ones toast the whole raid.",
+       "A legendary takes over the card for everyone, with the legendary loot toast.",
+       "Fated: when your legendary goes off it also daubs your best gap. It can win you the night.",
+       "A line one square short gets a gold thread, and 1 AWAY on the square you need.",
+       "The header says which line is one away; the race shows everyone's card as a dot map."
+      ]
+     },
+     {
+      "area": "games",
+      "heading": "Council Bingo: the Codex",
+      "kind": "new",
+      "lead": "",
+      "lines": [
+       "A Codex tab beside the card: every square, a silhouette until you've seen it happen.",
+       "Point at one for who set it off first, where, and how often you've seen it.",
+       "The season ladder and the legendaries you've witnessed sit beside it.",
+       "Demo mode shows a made-up game, with a button to try how each quality arrives."
+      ]
+     },
+     {
+      "area": "class",
+      "heading": "Shot timer (Hunters)",
+      "kind": "new",
+      "lead": "The swing timer's ring, for Auto Shot and Steady Shot.",
+      "lines": [
+       "New shot timer for every Hunter spec: the swing timer's ring, timed to your Auto Shot.",
+       "The orange window is when Steady Shot still fits before the next Auto Shot.",
+       "The red end is the next shot's windup: stand still and cast nothing there.",
+       "What to press comes from WoWSims' Hunter rotation, the one the gear sim plays.",
+       "Steady Shot when it fits, else Multi-Shot, else Arcane Shot; Kill Command after a crit.",
+       "Haste is read live: quiver, Rapid Fire, Bloodlust and haste rating all move the window.",
+       "Aspect hints: Viper when you run dry, Hawk once you have mana again.",
+       "After a fight: Auto Shots on time, clipped (and the time lost) and held by moving.",
+       "It skips shots you'd get under a quarter second to press (Reaction time in Settings).",
+       "Settings > Class tools > Shot timer; /dz shot. Demo mode plays the rotation by itself."
+      ]
+     },
+     {
+      "area": "class",
+      "heading": "Swing and shot timers: see the next press coming",
+      "kind": "changed",
+      "lead": "",
+      "lines": [
+       "The icon in the middle now has a cooldown swipe, like your action bars.",
+       "The dark part shrinks as the press comes closer; full colour means press it now."
+      ]
+     },
+     {
+      "area": "loot",
+      "heading": "Prized items: recipes and formulas",
+      "kind": "new",
+      "lead": "",
+      "lines": [
+       "New rule Profession: Enchanting 375 or higher (any profession, any skill).",
+       "Their alts can count, and someone who already knows the recipe can be left out.",
+       "Recipe / formula start: adding a recipe sets the profession and skill from the item."
+      ]
+     },
+     {
+      "area": "guild",
+      "heading": "Polls: several questions in one",
+      "kind": "new",
+      "lead": "",
+      "lines": [
+       {
+        "for": "",
+        "text": "A poll can ask up to five questions, each with its own kind and answers."
+       },
+       {
+        "for": "",
+        "text": "New poll: + Question adds one; who votes and when it closes are the whole poll's."
+       },
+       {
+        "for": "",
+        "text": "You answer question by question: it moves on to the next one by itself."
+       },
+       "Players still on an older version see each question as a poll of its own."
+      ]
+     },
+     {
+      "area": "guild",
+      "heading": "Your alts can change what you made",
+      "kind": "changed",
+      "lead": "",
+      "lines": [
+       "Strategies, polls and events you made: edit or remove them from any of your characters.",
+       "(Members still on 1.4.0 see those changes once they update.)"
+      ]
+     },
+     {
+      "area": "fixes",
+      "heading": "Fixes",
+      "kind": "fixed",
+      "lead": "",
+      "lines": [
+       "Deleted events and polls no longer come back when someone away for weeks logs in.",
+       "Removed prized items and deleted strategies stay gone after a long break too.",
+       "Calendar events and polls past their keep time no longer return from an old copy.",
+       "Reviews of an event deleted long ago no longer come back with it.",
+       "Chess: Resign asks first, so a stray click no longer ends your game.",
+       "The next raid's countdown and \"Pause pop-ups for an hour\" follow the server's clock.",
+       "Members: \"Last seen in\" times follow the server's clock too.",
+       "Members: unlocking someone's main is a lock icon, shown only while a raid runs.",
+       "Dungeon run notes are no longer cut in the middle of an accented letter.",
+       "Guests and pugs show in their class colour in more places.",
+       "The Events and Dungeons pages draw once when you open them, not twice."
+      ]
+     }
+    ],
+    "title": "Council Bingo, made epic",
+    "version": "1.4.1"
+   },
    {
     "date": "12 October 2026",
     "sections": [
@@ -3480,265 +3626,16 @@
     ],
     "title": "My Log, Teams and Karazhan Chess",
     "version": "1.3.3"
-   },
-   {
-    "date": "7 October 2026",
-    "sections": [
-     {
-      "area": "look",
-      "heading": "A shorter header",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "The header has five tabs now: Home, Raids, Gear, Dungeons and Guild, for everyone.",
-       "Raids holds Raids and Council; Gear: My BiS and Atlas; Guild: Members, Events, Games.",
-       "Hover Raids, Gear or Guild to see its pages; click it for the one you used last.",
-       "Every page is the same as before, only where you find it changed.",
-       "Tooltips get the flat look of the dropdowns and fade in the same way.",
-       "Smoother page switching: pages load in the background and fade in; faster to open."
-      ]
-     },
-     {
-      "area": "look",
-      "heading": "Minimap button",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "A new look: the DisasterZone seal instead of the blue bag, also in the AddOns list.",
-       "Left-click it and your pinned sections fan out around it; click one to go straight there.",
-       "The + at the end of the arc picks your pins (up to 6); right-click a pin to move it.",
-       "Pins are shared by all your characters. Right-click the button to open the window.",
-       "A new DisasterZone page in Options > AddOns: open any section, or right-click to pin it.",
-       "Its banner: your next raid's painting with embers, a countdown, who's online, your BiS."
-      ]
-     },
-     {
-      "area": "guild",
-      "heading": "Events",
-      "kind": "new",
-      "lead": "The guild's own events: duel cups, races, contests.",
-      "lines": [
-       "A new tab, Events: the guild's own events, like duel cups, races, hunts and contests.",
-       "It wears a small BETA tag for now: still being tested, so things may change or break.",
-       "Build one in the event builder: snap pieces together like a puzzle, no code.",
-       "Start from one of 8 examples: a duel cup, hide and seek, a mount race, a fishing derby...",
-       "Stages run along the top (Sign-up, Matches, Finals, Prizes); Always runs in each of them.",
-       "A few blocks build any event: tags (Hiders, Out), scores (Fish, Time), places, lists.",
-       "Places: stand on the spot and click Set, or pick it on the map.",
-       "Ask questions (votes, quizzes, judges' scores 1 to 10) and give players buttons (Hint).",
-       "One piece hears the game: a duel won, a kill, a fish caught, loot, a death, mounting.",
-       "Hide and seek: a seeker clicks a hider up close; a /target macro doesn't count.",
-       "Smart blocks do the big jobs: Sign-up, and Matches (elimination or round robin, best of).",
-       "Matches are won by a duel, or by your own pieces: a fishing duel, a quiz duel.",
-       "Open a smart block to see the pieces it's made of; make your own copy to change it.",
-       "Click a blank to pick what fits there, or drag a piece into it.",
-       "The addon tells players itself: banners on screen, lines in the tracker, prompts.",
-       "Guild chat only gets what you post there yourself, like the champion's name.",
-       "Practice first: your event runs with 16 dummies, and nothing is sent or saved.",
-       "Duels count by themselves: the game says who won, and nobody has to click a thing.",
-       "If the two players disagree, the event asks them, then the host decides.",
-       "Host it on a day and a place: it shows on the Home calendar with a purple dot.",
-       "The live board draws itself from the event: the bracket, scores, teams, the map, a race.",
-       "The host gets controls; if the host goes offline, another player takes over the event.",
-       "Under the minimap: when you're up, your team and score, an arrow to where you're going.",
-       "Signed up? From 30 min before, the tracker points you to where the event meets.",
-       "Every map shows you, the zone and each place; click a place to be shown the way.",
-       "If the host reloads or someone takes over, a quiz, a vote or a Hint goes on where it was.",
-       "Ranked events count for the season: points, badges and titles.",
-       "The GM, officers and guild council rank events; send yours in for a review.",
-       "They can also remove any event from the calendar or library, and clear the review lists.",
-       "Your title shows on your tooltip, with your place in the season.",
-       "Share an event in chat: the link opens its page, or the event in the builder."
-      ]
-     },
-     {
-      "area": "guild",
-      "heading": "Dungeons",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "A run's leader invites you: one pop-up, the run's own, no longer under Blizzard's.",
-       "Asked to join and the leader accepts? You join straight away: your Join was the answer.",
-       "Pass the party lead and the run goes with it, with everyone who asked to join.",
-       "Your run in Blizzard's Group Finder: click the eye on it (it looks around while listed).",
-       "Or switch Pugs on when you list a run: it goes into the Group Finder with the same click.",
-       "Players looking for that dungeon in the Group Finder show up on your run, roles and level.",
-       "Anyone who whispers you while you're listed shows up too, with what they wrote.",
-       "Invite, whisper or set aside each one; a pug joins as the open role they fit.",
-       "A run for later with Pugs on: a pop-up when it starts asks to list it in the Group Finder.",
-       "Its note is yours to type in Blizzard's window (addons can't): ... > Note opens it.",
-       "A run that ends by itself while listed there asks you to take the listing down.",
-       "Editing a listed run keeps the Group Finder in step (new dungeon, or later: taken out).",
-       "Your run: click someone's place to set their role (pugs who whispered you start as DPS).",
-       "The leader leaving the party leaves the run with it: the new leader runs it.",
-       "Saying no to a run's invite takes back your ask; a failed invite can be sent again.",
-       "In a group? No Join and no pings (no invite can reach you); leaders see you as in a group.",
-       "Asks are forgotten after 20 minutes on both sides; after a no, you may ask again in 10.",
-       "Pugs show their class on everyone's board; whispers with item links read cleanly."
-      ]
-     },
-     {
-      "area": "raids",
-      "heading": "Raids: team lineups and waitlists",
-      "kind": "new",
-      "lead": "One roster, many lineups, and a waitlist.",
-      "lines": [
-       "A team keeps one roster and any number of lineups: e.g. two 25s and three Kara 10s.",
-       "Each lineup has its own groups, specs and target comp: pick one with the chips.",
-       "+ Lineup adds a 10- or 25-man one; click the open one's chip to rename, copy or delete.",
-       "Not in a group is now Unassigned: on the roster, but not counted for the comp or buffs.",
-       "Waitlist: not on the roster, waiting for a spot. Join or leave it yourself on Teams.",
-       "Waitlisted players aren't invited to the team's raids and don't count for the comp.",
-       "Organizers move waitlisted players up or down, or drag them into a group to take them in.",
-       "A raid uses the team's lineup of its size; New raid > Teams picks one when there are more.",
-       "It invites that lineup's players (in its groups); a team without one invites its roster.",
-       "Who could fill an open spot lists Unassigned and the waitlist first.",
-       "Fixed: Add members on the Teams page opened its list behind the window."
-      ]
-     },
-     {
-      "area": "raids",
-      "heading": "Raids: New raid, redone; several raids in one",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "New raid opens over the Raids tab: raid tiles, a date strip, a live preview of the card.",
-       "Pick several raids for one night (Gruul + Mag): the order you click is the night's.",
-       "One sign-up, one set of groups and one comp for the whole night; mixed sizes allowed.",
-       "No size to pick: the raids you pick say it (the larger one wins).",
-       "When: a week of days (a dot where a raid is planned), the calendar for later, the time.",
-       "The calendar button drops a flat month calendar, with the same arrows as the rest.",
-       "Who: one search for teams and players; the teams on these raids lately come first.",
-       "Picks show as chips (teams in gold, with how many they invite); click one to drop it.",
-       "Any number of teams fits: the Who row stays two lines, the rest goes into \"+3 more\".",
-       "A raid for many teams names as many as fit on its card, then how many more.",
-       "Sign-ups: Everyone, Teams + invited or Private, in one choice.",
-       "Strategies and Assignments list every boss of the night, in order.",
-       "The board's raid filter finds a raid of several under each of them."
-      ]
-     },
-     {
-      "area": "raids",
-      "heading": "Raids: Guests, redone",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Guest book: now a view of the Raids tab, Raids > Guests (GM, officers, raid leaders).",
-       "Pick a player: their page shows their last raid's art, raids, boss kills and no-shows.",
-       "Their raids, next one first: the kills they were there for, bench, raids they missed.",
-       "The loot council also sees the items they received there.",
-       "Recruit and Add to a raid are on their page; a check marks raids they have a seat on.",
-       "Click the note (or the pencil) to change it right there; Enter saves, Escape undoes.",
-       "Type a name in the search box to add a player who hasn't raided with you yet.",
-       "Give a new player a class (and spec) as you add them: they can go straight into a raid.",
-       "The blacklist is a filter of the same list; type a name there to blacklist a player.",
-       "Right-click a player in the list for the quick actions.",
-       "Remove takes a player out of the book; they come back if they raid with you again."
-      ]
-     },
-     {
-      "area": "look",
-      "heading": "Switches",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Every on / off switch now moves: the knob slides over and the green follows it."
-      ]
-     },
-     {
-      "area": "look",
-      "heading": "Dropdowns and menus",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Every dropdown and right-click menu has the calendar's look: dark, flat, gold accents.",
-       "They drop in: a quick fade as they slide into place; submenus slide out to the side.",
-       "A dropdown's list opens right under it, and the dropdown lights up gold while it's open.",
-       "Check boxes and choices look like the invite list's; titles are gold, lines are thin.",
-       "Click the dropdown again, click elsewhere or press Escape to close it.",
-       "Tooltips no longer cover an open menu: they move to a free side, or hide if there is none."
-      ]
-     },
-     {
-      "area": "look",
-      "heading": "Buttons",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Every button has a finer finish: a soft light at the top, a deeper fill, softer corners.",
-       "Gold buttons are a richer gold with a quieter edge that lights up when you point at them.",
-       "Pointing at a button eases it in, and a soft light sweeps across it once.",
-       "Pressing dips it, letting go flashes it; picking an option fades the choice across.",
-       "Tabs: the gold underline grows out from the middle; pointing at a tab shows a faint one."
-      ]
-     },
-     {
-      "area": "look",
-      "heading": "Text fields",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "A name too long for its field shows its start with \"...\" after you click away.",
-       "Point at a cut-off name to read it in full."
-      ]
-     },
-     {
-      "area": "gear",
-      "heading": "Atlas: costs and your currencies",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "Items a vendor sells show their cost with icons: Honor, Arena Points, Badges, marks.",
-       "A cost is red while you hold less than it asks, white once you can buy it.",
-       "A bar at the bottom shows your Honor, Arena Points, Badges and what the page pays with.",
-       "Point at an item: its currencies light up and the bar says how many you lack or keep.",
-       "The tooltip lists each part of the cost: what you have, how many more you need.",
-       "Badges and marks in your bank count too; the bar reminds you to take them out first.",
-       "Arena and honor sets show what the set costs, or what is left once you own pieces.",
-       "Prices are your realm's own: every vendor you open teaches the addon its prices."
-      ]
-     },
-     {
-      "area": "gear",
-      "heading": "My BiS: gems and enchants",
-      "kind": "new",
-      "lead": "Sockets, gems and enchants on your BiS picks.",
-      "lines": [
-       "Every pick shows its sockets and enchant as small icons next to where it drops.",
-       "Click them to choose: each socket in its colour, the socket bonus, and the enchant.",
-       "Suggestions use WoWSims' gems and enchants for your spec, ranked by its stat weights.",
-       "A unique gem goes in once; a gem only skips the socket bonus when it's worth more.",
-       "Suggest > Fill empty sockets and enchants does the whole phase; what you chose stays.",
-       "Search in the gem list finds any other gem.",
-       "Under the obtained count: how many gems and enchants are still to choose.",
-       "... > Shopping puts the phase's crafted picks, gems and enchants on your shopping list.",
-       "Hover a pick: its tooltip shows the item with your gems and enchant.",
-       "Imports from Sixty Upgrades, WoWSims and Wowhead keep gems and enchants; exports too.",
-       "The council sees your gems and enchants on your list too."
-      ]
-     },
-     {
-      "area": "fixes",
-      "heading": "Fixes",
-      "kind": "fixed",
-      "lead": "",
-      "lines": [
-       "Item names no longer get stuck on \"Loading...\" until you switch views."
-      ]
-     }
-    ],
-    "title": "Events, the Group Finder, gems and enchants",
-    "version": "1.3.2"
    }
   ]
  },
- "published": "2026-10-12T15:15:24Z",
- "seq": 2,
- "version": "1.4.0",
+ "published": "2026-10-13T08:39:31Z",
+ "seq": 3,
+ "version": "1.4.1",
  "zip": {
-  "name": "DisasterZone-1.4.0.zip",
-  "sha256": "c1a8d47b606a8ad0ee078fd86e4b448393b11363eadbb48e5b4507ebe2093c8b",
-  "size": 30237004,
-  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.4.0/DisasterZone-1.4.0.zip"
+  "name": "DisasterZone-1.4.1.zip",
+  "sha256": "5acdd2108ffd83d7e963b28fb9a01f503489e049597551d25af53c4f5cd3e797",
+  "size": 30290497,
+  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.4.1/DisasterZone-1.4.1.zip"
  }
 }
