@@ -1,8 +1,8 @@
 {
  "assetPack": 10,
- "build": "e89959e2fae8452f",
+ "build": "bef6ba69fe3910db",
  "channel": "stable",
- "commit": "7f5252cfc4694b4a5814ea0eb24379a9fc0dc28d",
+ "commit": "f5f5219cb4587bc2579080b36e287e705d57e713",
  "folders": {
   "DisasterZone": {
    "Bindings.xml": {
@@ -72,7 +72,7 @@
    },
    "Core/BuildInfo.lua": {
     "gz": 220,
-    "sha256": "6c449dc8930cb748f0f6291aeb274f7fb54b0b65140954dc63c69fd4407180c8",
+    "sha256": "00dabf5bbc644c9cafe31552a940ec57b90c44081d03e8bd063d13a97c3a6c54",
     "size": 271
    },
    "Core/ClassKit.lua": {
@@ -116,14 +116,14 @@
     "size": 20717
    },
    "Core/DB.lua": {
-    "gz": 6417,
-    "sha256": "949c428f7190911abe6f3bbd75d7f8db0c46d12e14efc700aa1dab84d984d345",
-    "size": 17717
+    "gz": 6530,
+    "sha256": "90d6cd09d38c39a26377ed4e1f8ef40d338826c7f2e39c58fea8a477a21091de",
+    "size": 18027
    },
    "Core/Demo.lua": {
-    "gz": 8342,
-    "sha256": "71abcc3a2c41df0bb844b22dea98cc321e503ddbe284a185d906e0771ccbf1db",
-    "size": 27215
+    "gz": 8451,
+    "sha256": "040192f2a1b85c3428ff49828083f180f102de91056a69022d283aa132e30503",
+    "size": 27523
    },
    "Core/DemoScenarios.lua": {
     "gz": 3893,
@@ -186,9 +186,9 @@
     "size": 23569
    },
    "Core/GroupRules.lua": {
-    "gz": 16631,
-    "sha256": "f902c88e6e30fb50f9a060a03fc3a497ab823ad568036918f25904840313168d",
-    "size": 63069
+    "gz": 17025,
+    "sha256": "a544b00900776675fb96931bb2df00143b8a8d375e16c8a35ec2f6004d9b1f8c",
+    "size": 64371
    },
    "Core/GuestBook.lua": {
     "gz": 11504,
@@ -206,9 +206,9 @@
     "size": 24156
    },
    "Core/Init.lua": {
-    "gz": 7115,
-    "sha256": "c1d02c8644dc1329e026c1c36ef835ae55c622dff6060699932b6ed43911b588",
-    "size": 22498
+    "gz": 7166,
+    "sha256": "52f3d320dfc8bf9c6b6f4ab498e5a4f72bfcffa1e8a5d5ea53cf66ead57f0a11",
+    "size": 22701
    },
    "Core/ItemDB.lua": {
     "gz": 14710,
@@ -281,9 +281,9 @@
     "size": 172
    },
    "Core/Patch.lua": {
-    "gz": 15309,
-    "sha256": "6475d210b56924ce41f550cf9c993ece8168b6166570d610bda2a0f842b2b908",
-    "size": 52936
+    "gz": 15329,
+    "sha256": "50ea84c6775001e6c2da547bb3897509e7762723cb8566f3f917416e7708ed43",
+    "size": 52990
    },
    "Core/PatchKey.lua": {
     "gz": 342,
@@ -340,15 +340,40 @@
     "sha256": "0904dd1349645f05d3641a0ebede95efc6fae3856d347e6a0e4e7069a560b81f",
     "size": 188282
    },
+   "Core/ReserveChat.lua": {
+    "gz": 4175,
+    "sha256": "2af08f286211d98cffa86e78561a34b1a513d9f445493d65e71ff7e9f2154ca8",
+    "size": 13888
+   },
+   "Core/ReserveDemo.lua": {
+    "gz": 4723,
+    "sha256": "d853cd264f0847ecfaf9845737b8e7d32769272909fd492eabba0daedeee05ab",
+    "size": 13957
+   },
+   "Core/ReserveIO.lua": {
+    "gz": 3987,
+    "sha256": "4819b5355acfb60aa87bb1e9d9344e1a3f6fef115cc8258cfc78f882bbf05764",
+    "size": 12938
+   },
+   "Core/ReserveLR.lua": {
+    "gz": 5015,
+    "sha256": "667fbd38d41f8f822dd7f8bde294d2a263e972b8d4842db2f6ada1e1b1332206",
+    "size": 17434
+   },
+   "Core/Reserves.lua": {
+    "gz": 8368,
+    "sha256": "cefea468ec31aa39ff13aaa0be608c392c1f2fff4c1f06e2ea6adef8f49bf9fe",
+    "size": 30900
+   },
    "Core/Roll.lua": {
-    "gz": 31956,
-    "sha256": "e287d5dba87cd28c9d4b938d6707323bc49fe76c2080357216a09e4324a75a8b",
-    "size": 119189
+    "gz": 33747,
+    "sha256": "c747f8ef16c83132f6048c1700a0597a638218029a926e49f767fc9055aca2de",
+    "size": 125800
    },
    "Core/SessionInfo.lua": {
-    "gz": 6186,
-    "sha256": "d5424a9ccf21aeae6a1ee643b06e073e10c98385bbb19306715518f9ef07bdf5",
-    "size": 19471
+    "gz": 6200,
+    "sha256": "f14f88ae3783d8802fadc565265d2696a4a5468c2d0b5129edd4fa5bda6ddf8c",
+    "size": 19519
    },
    "Core/Sha256.lua": {
     "gz": 2364,
@@ -511,9 +536,9 @@
     "size": 9381
    },
    "Data/Changelog.lua": {
-    "gz": 46583,
-    "sha256": "5a55ea233b59d0b53c8c87ddcda11845d0ea9c9e3c28fa30c0efee8d8c608718",
-    "size": 158475
+    "gz": 47291,
+    "sha256": "8c7dafd7793f8a4a9c38788f22d3a91c81ba00871641355873d4954f59a539cb",
+    "size": 161035
    },
    "Data/Classes/Paladin.lua": {
     "gz": 1676,
@@ -581,9 +606,9 @@
     "size": 4627
    },
    "Data/Raids.lua": {
-    "gz": 1485,
-    "sha256": "81d8fa70f127f9f111f34d4fe0e752bfdce421aae369a4408081abb77eba645e",
-    "size": 3928
+    "gz": 1569,
+    "sha256": "19c608ad4238d36e858e6b195dabdcbc61bb4771fb4709ce7836b85640744a93",
+    "size": 4130
    },
    "Data/SimAPL.lua": {
     "gz": 17536,
@@ -616,9 +641,9 @@
     "size": 17187
    },
    "DisasterZone.toc": {
-    "gz": 2388,
-    "sha256": "e9f666daece067a3a479185f93afea5c666d92ce46a53d3bad1acf2f6c7cbaae",
-    "size": 7089
+    "gz": 2422,
+    "sha256": "63def147019306050cb33ad3856d1edc1bbd7c46508ee12434a53ed7272782e7",
+    "size": 7235
    },
    "Games/Azeromon/Achievements.lua": {
     "gz": 7132,
@@ -1567,7 +1592,7 @@
    },
    "README.md": {
     "gz": 24787,
-    "sha256": "34b4201d49a54464b0074f1439c1479f34a64573ed4ab14604f1594772b1b4f9",
+    "sha256": "42eb70b9442e463289192525bc6b023aa0615ff5a4b8561013809ca52b6969c5",
     "size": 70028
    },
    "Render3D/Probe.lua": {
@@ -1796,9 +1821,9 @@
     "size": 48763
    },
    "UI/CombatTextPen.lua": {
-    "gz": 10039,
-    "sha256": "c22165a9623f8b6732ba31b96528af24cbc856f92a3fdf4d6e2a7ddd88094a29",
-    "size": 32710
+    "gz": 10293,
+    "sha256": "c07f6c2882c773a8fb6a63e70cb505ecfb03bb286915ecf267535c897f248dee",
+    "size": 33587
    },
    "UI/Comp/Controls.lua": {
     "gz": 12944,
@@ -1861,9 +1886,9 @@
     "size": 21059
    },
    "UI/DropPanel.lua": {
-    "gz": 48984,
-    "sha256": "517fbc28763d40218f6c634516e58e1c8928cb88ca67a9d2990b7f7d0285839c",
-    "size": 177992
+    "gz": 49927,
+    "sha256": "2a479514eed96af3b9ef601ff9b1b9dc428262749f72ab32ec1909469aa22683",
+    "size": 181343
    },
    "UI/DungeonsTab.lua": {
     "gz": 24870,
@@ -1941,9 +1966,9 @@
     "size": 32650
    },
    "UI/Look.lua": {
-    "gz": 15385,
-    "sha256": "0a1ae450483b36a74e27cdbaf2b198a5397d11dbfab2307f47f3562a55cb2ba8",
-    "size": 53118
+    "gz": 16186,
+    "sha256": "0464917f98c93c57a65e2f6051ce9aa31a602706b311051aaa020af3c9e59a03",
+    "size": 56141
    },
    "UI/LookBags.lua": {
     "gz": 17826,
@@ -1976,9 +2001,9 @@
     "size": 31918
    },
    "UI/LookUnits.lua": {
-    "gz": 20035,
-    "sha256": "d9815d8692001a6cd4d60e6700ad3cdbe273d1928dfb1a081b076ac5d34b5cca",
-    "size": 75357
+    "gz": 20191,
+    "sha256": "7fdcd5e5eba44c80da9a43e2fa8ae7fa3ae6f427532572a9cd2932c64ba9d240",
+    "size": 75708
    },
    "UI/LootLog.lua": {
     "gz": 9678,
@@ -2095,6 +2120,16 @@
     "sha256": "c1df1738798252d8fc5c530278c53d54350c1d73744803db63b2fcac6d9a4016",
     "size": 15398
    },
+   "UI/PlateLooks.lua": {
+    "gz": 8615,
+    "sha256": "5169f99a952f84f0fcfa5045dd53cdec93b067b8b0340b31e2e1ff6ec7b833da",
+    "size": 31634
+   },
+   "UI/Plates.lua": {
+    "gz": 9367,
+    "sha256": "fac49d131600316f76d8b7882987b0d642045d1052258ac4bc7102f83fe53433",
+    "size": 29370
+   },
    "UI/PollsTab.lua": {
     "gz": 29858,
     "sha256": "3f67cce41833c0faf392360c25ab128ea3c227037edeb948cd272b8604505804",
@@ -2135,30 +2170,35 @@
     "sha256": "c0957ee3f70ec6048786c30a359b5ed60f8b3b15bc3f1f2c2c45994a94fdc9d1",
     "size": 49182
    },
+   "UI/Reserves.lua": {
+    "gz": 12045,
+    "sha256": "b69110e955304fd277aff7d0372627458017d5f4beab872f2878ec879c5b68c7",
+    "size": 46759
+   },
    "UI/RingFace.lua": {
     "gz": 7886,
     "sha256": "1c55ec6f4b1c134f62755a569e3ae143bfc8c62c59fabcec333f62f8fe9dc561",
     "size": 27566
    },
    "UI/RollFrame.lua": {
-    "gz": 13755,
-    "sha256": "d892550f0e3faf0f0de191b9c5418a0f4dcdb897ddcca1923b83a17b0157b46b",
-    "size": 49167
+    "gz": 14585,
+    "sha256": "caadc83083df04668e4c5e4d83f3f4ea0eb1dd7d1c401bffc02edcd6166a3d9e",
+    "size": 52034
    },
    "UI/SessionBar.lua": {
-    "gz": 16601,
-    "sha256": "e480e656b79de37db2340dfafd9551325af4d71800378cab0b34ccf9e9c0e57f",
-    "size": 58077
+    "gz": 17337,
+    "sha256": "b91c2b3998a38f23c251e13b0431c02a14b0d5a6524dfc560824158efb0b4378",
+    "size": 60719
    },
    "UI/SessionDrawer.lua": {
-    "gz": 7029,
-    "sha256": "c4a9928c6195520867848fd5005d98e50187cd4e689ea14c4687a64e697f9250",
-    "size": 24176
+    "gz": 8503,
+    "sha256": "36528a3813806140f914b473c2f0647a97018cde8baee663a9174e8f56a7aa83",
+    "size": 29944
    },
    "UI/Settings.lua": {
-    "gz": 60698,
-    "sha256": "4b93054e74da7b17c3ebc6ce793caecc56997ce265bc97f2ea2befef8e835543",
-    "size": 217696
+    "gz": 61633,
+    "sha256": "da5c5a7b4b38398e34bba477ade8929539e87764d5bc0f78e9ecf116a50bc909",
+    "size": 220886
    },
    "UI/Share.lua": {
     "gz": 12156,
@@ -2281,15 +2321,15 @@
     "size": 22151
    },
    "UI/Widgets.lua": {
-    "gz": 51652,
-    "sha256": "f61a46c941cfdee60c6c8f2438a0379ff8f6afabfed559cac0e6713cd15706d7",
-    "size": 187868
+    "gz": 51747,
+    "sha256": "e5d3dfbf6b617a4f59f35017f36124d7ee77abb436eff342c3a937f0f5b4b412",
+    "size": 188104
    }
   },
   "DisasterZone_Rooms": {
    "DisasterZone_Rooms.toc": {
     "gz": 1187,
-    "sha256": "0f36b42bd81549d8723b3df5ac674dc08debff30ba01c11015eab9f9c81e5e63",
+    "sha256": "729d1678aab6264e42690fe06961d88f30f127104514de6d940ca7ebfb924bf2",
     "size": 4477
    },
    "Load.lua": {
@@ -2853,6 +2893,56 @@
  "name": "DisasterZone",
  "notes": {
   "changelog": [
+   {
+    "date": "14 October 2026",
+    "sections": [
+     {
+      "area": "loot",
+      "heading": "Loot reserves",
+      "kind": "new",
+      "lead": "Soft reserves for pug nights, in the addon and with the tools pugs already use.",
+      "lines": [
+       "The crest has a new switch, Reserves; its drawer sets 1 to 3 each and opens them.",
+       "Who reserved an item rolls on it; one reserve takes it without a roll.",
+       "Nobody reserved it: up for grabs, everyone rolls.",
+       "Items the guild holds go to the loot council, among guild members, as today.",
+       "Pugs reserve by whisper (!sr), in LootReserve's own window, or from softres.it.",
+       "Raiders pick from the raid's loot: their BiS items marked, who else is on each.",
+       "The drop panel says how each item is decided. Reserves close at the first pull.",
+       "Import and export softres.it, Gargul and LootReserve lists; a wrap-up at the end.",
+       "Try it: Settings > Demo a roll > Loot reserves, or /dz reserves demo."
+      ]
+     },
+     {
+      "area": "other",
+      "heading": "Nameplates in our looks",
+      "kind": "new",
+      "lead": "The plates over mobs and players in every look, with casts, threat and your debuffs.",
+      "lines": [
+       "Interface > Looks > Nameplates: they follow your look; Blizzard keeps the game's.",
+       "Every caster's cast bar: gold you can kick, grey with a lock you can't.",
+       "Tanks see threat in the bar's colour; everyone else gets a glow when close to pulling.",
+       "Your own debuffs with their time; the raid's Sunder and curses as an option.",
+       "Your target stands out, the others sit back; plates stack instead of overlapping.",
+       "Friendly players show their name until they're hurt. Try it shows the Maulgar council.",
+       "Health bars slide, and what was just taken off lingers a moment before it drains."
+      ]
+     },
+     {
+      "area": "other",
+      "heading": "Moving health bars",
+      "kind": "changed",
+      "lead": "Unit, party and raid frames in our looks: health slides like the nameplates'.",
+      "lines": [
+       "A hit leaves a pale piece for a moment; it drains into the bar.",
+       "Switching targets jumps straight to the new one.",
+       "Animated health on each part's page turns it off."
+      ]
+     }
+    ],
+    "title": "Loot reserves and new nameplates",
+    "version": "1.4.3"
+   },
    {
     "date": "14 October 2026",
     "sections": [
@@ -3802,333 +3892,16 @@
     ],
     "title": "Raid nights, loot rules for everyone and a Welcome tour",
     "version": "1.3.5"
-   },
-   {
-    "date": "10 October 2026",
-    "sections": [
-     {
-      "area": "gear",
-      "heading": "Damage and threat meters",
-      "kind": "new",
-      "lead": "Built-in damage and threat meters, opt-in.",
-      "lines": [
-       "Built-in meters: no need for Details or a threat addon. Off until you turn them on.",
-       "Turn them on in Settings > Meters, or with /dz meter on and /dz threat on.",
-       "Damage, DPS, healing, damage taken, deaths, interrupts, dispels and active time.",
-       "Numbers match Details: the whole hit counts, and DPS is by each player's active time.",
-       "Threat comes from the game itself: the gold line marks where you pull aggro.",
-       "Near your pull point your bar turns red, the screen edges flash and a sound plays.",
-       "Tanks see how close everyone is to pulling, closest first.",
-       "Everything is a panel: + on a header adds one, x closes it, any panel shows any view.",
-       "Unlocked, drag a panel under another to dock it, or onto its header to make a tab.",
-       "Panels are as tall as their rows; drag the corner to set the width and the row count.",
-       "Hover a bar for top abilities. Click it for a full breakdown, or a death recap.",
-       "Your own bar stays in view, and melee shows your weapon's icon.",
-       "Nothing is shared or posted: each player counts their own combat log."
-      ]
-     },
-     {
-      "area": "gear",
-      "heading": "Gear sim",
-      "kind": "new",
-      "lead": "What a gear change is worth, in real DPS.",
-      "lines": [
-       "New Gear sim page (Gear menu): sim your gear and see what a change is worth, in real DPS.",
-       "It plays the fight out a thousand times with WoWSims' rotation, buffs and numbers.",
-       "The doll becomes your Working set: it starts as the gear you wear.",
-       "Click a slot for the item picker (your gear and bags first); picks go to the Working set.",
-       "Best for this slot sims what the picker lists (filters and search narrow it) and ranks it.",
-       "Click the round sigil to sim the Working set against your gear or a BiS phase, same luck.",
-       "You see the DPS change, how sure it is, and a verdict in plain words.",
-       "While it runs, the ticks light up and the average settles live under a running line.",
-       "The settings read as one sentence: click an underlined word to change it.",
-       "Fights: Quick (300), Normal (1,000) or Precise (3,000).",
-       "Changed slots are marked gold. It pauses in combat and only runs when you click.",
-       "Nerd stats: DPS per fight, every ability, swing outcomes, buff uptimes, mana, the run.",
-       "Stat weights on demand: one paired sim per stat, for your Working set.",
-       "A set it has simmed before is not simmed again: change one slot and only that set runs.",
-       "Fury and Arms Warriors can sim too, with WoWSims' Warrior rotations and raid setup.",
-       "Enhancement Shamans too: twisted totems, Stormstrike, shocks and the Fire Elemental.",
-       "Rogues too: Combat, Mutilate and Hemorrhage builds, poisons and their own Expose Armor.",
-       "Feral Druids too, in cat form: powershifting, Shred, Rip, Mangle and Ferocious Bite.",
-       "Elemental Shamans too: Lightning Bolt and Chain Lightning with overloads and totems.",
-       "Shadow Priests too: Mind Flay clipped as in WoWSims, Vampiric Touch and the Shadowfiend.",
-       "Balance Druids too: Starfire (downranked on low mana), Moonfire and Force of Nature.",
-       "Mages too: Arcane, Fire and Frost, with mana gems, Evocation, Ignite and Water Elemental.",
-       "Warlocks too: all three specs, with your curse, Life Tap and your demon or its sacrifice.",
-       "Hunters too: Auto Shot, Steady Shot, Kill Command and your pet, with its focus.",
-       "More item effects count: Thunderfury, Blinkstrike, The Night Blade, Rod of the Sun King...",
-       "Swapped-in items get gems that keep your meta gem on; the card warns when a meta is off.",
-       "The ... menu copies the exact sim input for WoWSims (Import > JSON), to compare both sims.",
-       "Build your own buff presets: New preset in the buffs list, then click buffs on or off.",
-       "Your presets are saved for all your characters; edit or delete them from the same list.",
-       "Each team lineup you are on shows in the buffs list and follows who is placed in it.",
-       "Your group's totems and shouts, blessings and debuffs come from the specs placed there.",
-       "The comp's open slots count as filled unless you untick it; your clicks stay on top."
-      ]
-     },
-     {
-      "area": "gear",
-      "heading": "Consumables",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "New Consumables page (Gear menu): the flask, food, stone or oil and potions for your spec.",
-       "Best picks for prog nights on the left, a cheaper pick for farm nights on the right.",
-       "The middle says what each one is for, like one flask or two elixirs, never both.",
-       "Each pick shows what it does, and a check when your bags hold enough for a night.",
-       "Missing ones name their guild crafter; the bag button puts them on your shopping list.",
-       "Add prog kit and Add farm kit put everything your bags lack on the list in one click.",
-       "Damage specs can Sim the kit: the gear sim gives each pick its DPS with the gear you wear.",
-       "With Auctionator, what a night's worth costs. Each spec tab has its own kit.",
-       "Click a pick to choose your own in the item picker: flasks, elixirs, food, potions...",
-       "Right-click a pick to drop it from the prog or farm kit, or go back to the guide's pick."
-      ]
-     },
-     {
-      "area": "guild",
-      "heading": "Feedback",
-      "kind": "new",
-      "lead": "Send the developer a bug, an idea or a change.",
-      "lines": [
-       "New speech bubble next to What's new: send feedback on a bug, an idea or a change.",
-       "Pick Something broke, I have an idea, Change something or I love this, and say it.",
-       "It reaches the developer even while offline: whoever is online carries it.",
-       "Everyone in the guild sees it and can say me too, so the most asked shows.",
-       "Point at it: go to the button or page you mean, right-click it, and it's named.",
-       "Or Ctrl+right-click anything in DisasterZone to start from it.",
-       "Version, zone, spec and DisasterZone's last Lua error go along with a bug.",
-       "Yours shows where each one stands: Sent, Received, Planned, Fixed in 1.3.5.",
-       "Officers can answer too: \"it's already there, under Settings...\".",
-       "A pop-up when somebody answers, and when yours is in a release you have.",
-       "Lines in this changelog name who asked for them; yours glow.",
-       "DisasterZone errors offer to report them (Settings > Notifications turns it off).",
-       "Demo mode shows a filled feedback page to try it out.",
-       "/dz bug, /dz idea and /dz feedback open the form.",
-       "The share icon in the top bar links the Feedback page, or the item you have open."
-      ]
-     },
-     {
-      "area": "guild",
-      "heading": "Guild polls",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "New Guild > Polls: the GM, officers and Guild Council ask, the people they pick answer.",
-       "Ask everyone, teams or lineups, officers, the council, raid leaders, ranks or players.",
-       "Four kinds: one answer, several answers, yes or no, and Pick days.",
-       "Pick days: tick each night can, if needed or can't; the best night is framed in gold.",
-       "Results show live, after you vote or when the poll closes. Names are always shown.",
-       "Polls that don't ask you never show up. One answer per player, from any character.",
-       "A pop-up when a poll arrives (never in combat): yes or no is answered right there.",
-       "The asker sees who hasn't answered and can nudge them, close the poll early or extend it.",
-       "Members who were offline get the poll and its answers when they log in."
-      ]
-     },
-     {
-      "area": "loot",
-      "heading": "Crafting materials (Nether Vortex)",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "A dropped Vortex lists who wants it: the crafts on their lists that use it.",
-       "Each craft shows who in the guild makes it, or that nobody does.",
-       "Squares show how many each person already has toward their craft.",
-       "Whoever it completes a craft for comes first, then whoever is closest.",
-       "The roll popup says what it's for: \"for Belt of Blasting \u00b7 you have 1 of 2\".",
-       "Two crafts on your lists? Click the craft in the popup to pick the one you want.",
-       "After the award: the craft it counts toward, and Whisper tells the crafter."
-      ]
-     },
-     {
-      "area": "class",
-      "heading": "Swing timer (Retribution)",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "New swing timer for seal twisting, built in: it shows on Retribution Paladins in combat.",
-       "The orange zone is when to press Seal of Blood, already moved earlier by your ping.",
-       "A red line warns when a GCD pressed now would cost you the twist.",
-       "Above the bar: what to press next, and Judgement when it is time for it.",
-       "Optional plan lane: the next 7 seconds of the rotation.",
-       "It follows WoWSims' Ret rotation and your haste; Exorcism and Consecration are opt-in.",
-       "After each fight: twists landed, late and clipped, in Settings and /dz swing report.",
-       "/dz swing unlock to move it, /dz swing for your latency and where the numbers come from."
-      ]
-     },
-     {
-      "area": "class",
-      "heading": "Paladin blessings (Pally Power, built in)",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "New Blessings planner for every paladin spec: paladins as rows, classes as columns.",
-       "Click a cell to pick a blessing, or drag one from the top onto a class or a whole paladin.",
-       "Right-click clears, the wheel steps through, Shift-click gives every class the same.",
-       "Exceptions: one player gets another blessing, like tanks on Light instead of Salvation.",
-       "Click a paladin's aura to set it; a red edge when two in one party run the same.",
-       "Live in every cell: who is missing the blessing and when it runs out.",
-       "Auto-assign fills it from everyone's talents: Kings first, then the best Might and Wisdom.",
-       "Presets save the plan per raid; Report posts who gives what to the raid.",
-       "It speaks Pally Power's language, so Pally Power users in the raid share the same plan.",
-       "The leader and assistants assign; paladins can let anyone assign them.",
-       "New buff bar in groups, in two looks: a rail of class rings or a strip of tiles.",
-       "Rings and lines drain as blessings run out; what to do next glows and says when.",
-       "Bless a class again and it eases back to calm with a soft golden bloom.",
-       "Click a class for what it needs next: its Greater Blessing first, then each exception.",
-       "Right-click a class for its players: click one to recast their blessing right away.",
-       "Scroll on a player there to give them a single blessing instead.",
-       "Pick the look in the planner's More menu or Settings > Class tools.",
-       "Set it to Always to keep it solo too: bless yourself with the one your spec wants.",
-       "Key binding \"Bless next\" casts whatever is due. /dz bless opens the planner."
-      ]
-     },
-     {
-      "area": "class",
-      "heading": "Shaman totems (ShamanPower, built in)",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "New Totem planner for every shaman spec: a row per shaman, a column per element.",
-       "Totems only reach the shaman's party, so each row shows the raid group and who is in it.",
-       "Click a totem to pick one (the menu says what each does); right-click clears it.",
-       "Twist Windfury with Grace of Air for Enhancement, right in the Air menu.",
-       "Earth Shield: pick the tank for each Restoration shaman, with the charges left on them.",
-       "Heroism is raid-wide: pick the one shaman who casts it and when, and a backup.",
-       "Two shamans set to cast it show in red: Exhaustion wastes the second one.",
-       "Groups without a shaman show in red with what they miss; Suggest a swap moves one in.",
-       "Or drag a shaman's card onto that row (leader or assistant, out of combat).",
-       "Boss tabs: change a totem for one fight only, like resistance totems for Hydross.",
-       "A boss can have a second totem for its next phase: it goes on right-click on the bar.",
-       "Auto-assign fills it from each party: Windfury and Strength of Earth for melee.",
-       "Casters get Wrath of Air and Totem of Wrath.",
-       "It speaks ShamanPower's language, so ShamanPower users in the raid share the same plan.",
-       "Shamans with no totem addon still get a row: the leader plans for them, Report posts it.",
-       "New totem bar in groups, a rail or a strip: rings drain as your totems run out.",
-       "Twisting: the Air ring is Windfury on the party's weapons, and says when to drop it again.",
-       "A red count on a totem shows party members out of its range; hover it for who.",
-       "Click a totem to drop it; right-click drops the other one (twist partner or next phase).",
-       "Mana Tide, Earth Shield and Heroism sit on the bar too.",
-       "Weapon imbue reminders are a setting, off by default.",
-       "/dz totems opens the planner. Demo mode shows it all with a made-up Serpentshrine raid."
-      ]
-     },
-     {
-      "area": "class",
-      "heading": "Class tools",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "New Settings > Class tools: everything DisasterZone adds for your class, in one place.",
-       "Each tool is a card that opens and closes for its settings; all start closed.",
-       "A switch on each card turns that tool on or off.",
-       "Demo mode shows every class's tools with a made-up raid, to try them anywhere."
-      ]
-     },
-     {
-      "area": "guild",
-      "heading": "Notifications",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "New bell left of the sync mark: its gold number counts what waits for your answer.",
-       "Click it for what needs you (polls, raids to answer, join requests) and the week's news.",
-       "Answer right there (Yes / No, Accept, Review); handled things leave by themselves.",
-       "All notifications opens a page with every section, and what you handled this week.",
-       "One pop-up look for everything, one at a time, never in combat; Later keeps it.",
-       "Counts show on the tabs, in the menus and on the minimap button; its tooltip lists them.",
-       "Settings > Notifications: per kind, pop-up, sound or a chat line; quiet for an hour.",
-       "Home's chips come from the same list, so Home and the bell always agree.",
-       "Several of one kind are one chip on Home (\"3 polls waiting\"); its tooltip lists them."
-      ]
-     },
-     {
-      "area": "look",
-      "heading": "A new window frame",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Every DisasterZone window has its own frame now, in place of the grey Blizzard one.",
-       "The main window's header shows the next raid's art, the seal and the guild's line.",
-       "The guild line says who is online and when the next raid starts.",
-       "Small windows get a slim strip of that art, the seal, the title and a flat close X.",
-       "A soft shadow and a gold glint under the header; nothing inside a window moved.",
-       "The window body has a faint stone grain and a soft light under the header."
-      ]
-     },
-     {
-      "area": "look",
-      "heading": "Raids, Gear and Guild menus",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "The menus under Raids, Gear and Guild are a spotlight now: the pages on the left.",
-       "The page under the mouse shows big on the right, with its art slowly drifting.",
-       "Each page shows what is going on: the next raid, items to decide, who is online.",
-       "Jump straight into a page's tabs from the menu: Teams, Strategies, Loot log, Recipes.",
-       "Gear holds My BiS, Gear sim, Consumables and Atlas; each bar shows only that page's tools."
-      ]
-     },
-     {
-      "area": "look",
-      "heading": "Cleaner counts",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Every count has one new look: the bell, tabs, menus, the minimap button, the waitlist.",
-       "A solid gold circle with sharp dark digits, like today on the calendar; no thin ring.",
-       "On a tab the count sits right after the name and never bumps into the next tab."
-      ]
-     },
-     {
-      "area": "speed",
-      "heading": "Lighter on memory",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "The 3D boss rooms moved into a second folder, DisasterZone_Rooms, in the same zip.",
-       "They load only when you open a 3D board, the Raid Trainer or chess: about 20 MB less.",
-       "Install both folders. The AddOn list shows the rooms as DisasterZone 3D rooms."
-      ]
-     },
-     {
-      "area": "fixes",
-      "heading": "Fixes",
-      "kind": "fixed",
-      "lead": "",
-      "lines": [
-       "Guild > Members: share and note icons click again on your own card and offline members'.",
-       "The top bar's share icon now works on Polls, Map, Atlas, My Log and Notifications too."
-      ]
-     },
-     {
-      "area": "games",
-      "heading": "Azeromon is back",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Disastercraft is gone: Azeromon, the beast-taming game, is back in Guild > Games.",
-       "Played it before? CONTINUE picks up your old save, beasts and badges included.",
-       "A /reload in the middle of a scene undoes it: no double gifts, prizes or skipped gates.",
-       "Trades can't copy a beast any more, and a slow turn gives only one player the win.",
-       "Messages and menus no longer freeze the game when a duel or trade arrives.",
-       "The guild board, bounties and Guild Hall trophies count right, and alts only once.",
-       "Every fix is listed in the game's own What's new, on its title screen."
-      ]
-     }
-    ],
-    "title": "A new window frame, gear sim, meters and Azeromon",
-    "version": "1.3.4"
    }
   ]
  },
- "published": "2026-10-14T01:02:25Z",
- "seq": 4,
- "version": "1.4.2",
+ "published": "2026-10-14T12:15:36Z",
+ "seq": 5,
+ "version": "1.4.3",
  "zip": {
-  "name": "DisasterZone-1.4.2.zip",
-  "sha256": "30a81157f49e708ecea1482d07cd5894444040907c8eae7acb7f6aee5ead695b",
-  "size": 31030217,
-  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.4.2/DisasterZone-1.4.2.zip"
+  "name": "DisasterZone-1.4.3.zip",
+  "sha256": "81976674f38911b9378fe5d5b1d94c7d744ae5cb63e08e920080eb57b0693007",
+  "size": 31097002,
+  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.4.3/DisasterZone-1.4.3.zip"
  }
 }
