@@ -1,8 +1,8 @@
 {
  "assetPack": 11,
- "build": "9c1bbec39433cafa",
+ "build": "12b15a766ec6d59e",
  "channel": "stable",
- "commit": "b4544193e6a71b5b1e3c6cd6796f91528659040f",
+ "commit": "25a781b620b909926c2615862f0cbf5d1349b4d9",
  "folders": {
   "DisasterZone": {
    "Bindings.xml": {
@@ -66,13 +66,18 @@
     "size": 41061
    },
    "Core/Bridge.lua": {
-    "gz": 7874,
-    "sha256": "08dd77bc1977a1d9f7315c39100dedccd7e7e94f597032764c78b9e306f3cad1",
-    "size": 25508
+    "gz": 10315,
+    "sha256": "c8283bcaae1a94a36351e0216f0d7a804410b509c92f54bc8a78fce27dfcb0b8",
+    "size": 33511
+   },
+   "Core/BridgeKey.lua": {
+    "gz": 333,
+    "sha256": "5989a7b5175c2af79d3accc05561931bdb850267c70302edd51be8556ff5f432",
+    "size": 461
    },
    "Core/BuildInfo.lua": {
-    "gz": 219,
-    "sha256": "d41d6911383c5aaf3a77a49848c9b7891fce59e786c1bccafa8205a262808a2f",
+    "gz": 220,
+    "sha256": "31f76140b7e5949b2cf61570a0f0c85645369ba2ad978619abf652eebecdb0fb",
     "size": 271
    },
    "Core/ClassKit.lua": {
@@ -336,9 +341,9 @@
     "size": 6482
    },
    "Core/RaidPlan.lua": {
-    "gz": 48974,
-    "sha256": "0904dd1349645f05d3641a0ebede95efc6fae3856d347e6a0e4e7069a560b81f",
-    "size": 188282
+    "gz": 48967,
+    "sha256": "1b0334289d449c816917910c61e1b41c67042d1e5b8fb989b598585e639a724b",
+    "size": 188185
    },
    "Core/ReserveChat.lua": {
     "gz": 4175,
@@ -536,9 +541,9 @@
     "size": 9381
    },
    "Data/Changelog.lua": {
-    "gz": 47879,
-    "sha256": "0622668b5e1733a5a28ed52be9b7fedec3eb6a38b32ebaaf995d7836c09913cb",
-    "size": 162881
+    "gz": 48235,
+    "sha256": "30c769d2a0d34b632de6be08c96bd6624204dfa6f9b5e04f9660130d74d9f277",
+    "size": 164230
    },
    "Data/Classes/Paladin.lua": {
     "gz": 1676,
@@ -641,9 +646,9 @@
     "size": 17187
    },
    "DisasterZone.toc": {
-    "gz": 2476,
-    "sha256": "a64464528a71d841c0076c2c8abfde655938ab92a7322634e441cfc3773109f9",
-    "size": 7481
+    "gz": 2479,
+    "sha256": "5fe34123561b58e7bd4e59bb43576df586308e451c79a66654da1a630a86cb49",
+    "size": 7500
    },
    "Games/Azeromon/Achievements.lua": {
     "gz": 7132,
@@ -3512,7 +3517,7 @@
    },
    "README.md": {
     "gz": 24787,
-    "sha256": "31a05a0bffbc726684ebd65caeab8f51c09a7a76073bc4c06d44910e0e6d6448",
+    "sha256": "cdfec7a9b2e86c45033d1aeebc80bdeb0dd427a02719b4f84c5980a821678450",
     "size": 70028
    },
    "Render3D/Probe.lua": {
@@ -4116,9 +4121,9 @@
     "size": 29944
    },
    "UI/Settings.lua": {
-    "gz": 61633,
-    "sha256": "da5c5a7b4b38398e34bba477ade8929539e87764d5bc0f78e9ecf116a50bc909",
-    "size": 220886
+    "gz": 61466,
+    "sha256": "5519984203bb409972ded0b387699b7ec5f4cd160ee4e81cb4c4c9090aebc196",
+    "size": 220214
    },
    "UI/Share.lua": {
     "gz": 12156,
@@ -4249,7 +4254,7 @@
   "DisasterZone_Rooms": {
    "DisasterZone_Rooms.toc": {
     "gz": 1187,
-    "sha256": "13a45b8daca9043a4fee085e6ce8e0deee93a60016928ba078342247d9cdbd74",
+    "sha256": "6743f034cea96d4806ddcc2eb0700dae9828d0428fb7293654710308f61ce57e",
     "size": 4477
    },
    "Load.lua": {
@@ -4817,6 +4822,38 @@
     "date": "14 October 2026",
     "sections": [
      {
+      "area": "guild",
+      "heading": "Discord without a host",
+      "kind": "changed",
+      "lead": "The guild's Discord bot runs on its own server now, always on.",
+      "lines": [
+       "Link your launcher once: /launcher in Discord, then paste the code in Settings > Discord.",
+       "After every save (login, /reload, logout) your game's raids and lists reach Discord.",
+       "Changes made in Discord reach the game when anyone linked logs in or reloads.",
+       "The first game to load them passes them on to everyone online.",
+       "Every change from Discord is signed by the bot: the game checks it and ignores fakes.",
+       "Guests from Discord wait for a raid leader; lists of non-addon players, for the council."
+      ]
+     },
+     {
+      "area": "other",
+      "heading": "The launcher",
+      "kind": "changed",
+      "lead": "Launcher 0.3.0 updates itself; it has a new Settings > Discord.",
+      "lines": [
+       "Settings > Discord: link, sync now, unlink, and when it last synced.",
+       "It asks the bot only while WoW runs, so it stays quiet the rest of the time.",
+       "Host mode is gone: nobody's PC has to run the bot any more."
+      ]
+     }
+    ],
+    "title": "Discord for everyone",
+    "version": "1.4.5"
+   },
+   {
+    "date": "14 October 2026",
+    "sections": [
+     {
       "area": "games",
       "heading": "The Binding of Illidan",
       "kind": "new",
@@ -5314,142 +5351,16 @@
     ],
     "title": "Council Bingo, made epic",
     "version": "1.4.1"
-   },
-   {
-    "date": "12 October 2026",
-    "sections": [
-     {
-      "area": "look",
-      "heading": "One look across every page",
-      "kind": "changed",
-      "lead": "Every page now shares the same banners, headings, lists and buttons.",
-      "lines": [
-       "Every page is built from the same parts now, so the whole addon looks and works alike.",
-       "Banners: a picked raid, guest, team, item or player opens under a picture banner.",
-       "Section headings, lists, chips and pills look the same wherever you meet them.",
-       "Rows light up the same way when you point at them or pick them, on every page.",
-       "Toolbars sit in one place: tabs on the left, filters, and the main button on the right.",
-       "Text sizes and colours follow one scale, so a title or a note reads alike everywhere.",
-       "An empty page says what goes there, with a small picture, instead of a bare line.",
-       "Can't change something? A short notice says it's read only, locked or still loading.",
-       "Questions, pop-ups and small notices are the same everywhere, over the window they fit.",
-       "Blessings and Totem planners, twist practice and the meter breakdown open as tool windows."
-      ]
-     },
-     {
-      "area": "gear",
-      "heading": "My BiS: gems and enchants for the gear you wear",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "My BiS has an Equipped tab after the phases: your gear with the gems and enchants it has.",
-       "Suggest fills empty sockets and missing enchants from your spec's guide.",
-       "Click a slot's gems to plan your own; a gold dot marks what isn't on the item yet.",
-       "The centre counts what is socketed and enchanted and lists what is still to apply.",
-       "More > Shopping puts the gems and enchants still to apply on your shopping list."
-      ]
-     },
-     {
-      "area": "guild",
-      "heading": "Members: a card with a banner",
-      "kind": "changed",
-      "lead": "A player's card opens under a banner, like a raid or a guest.",
-      "lines": [
-       "A player's card opens under a banner: their class, name, online status and specs.",
-       "Whisper and Link in chat sit on the banner, with share, map and note beside them.",
-       "The card's tabs sit at the foot of its banner, like the other pages."
-      ]
-     },
-     {
-      "area": "look",
-      "heading": "Settings and Notifications: a side menu",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Settings and Notifications have a side menu: pick a section on the left.",
-       "Sections only the Guild Master or the council can change say so: read only for you.",
-       "An empty Notifications section says so, with a small picture."
-      ]
-     },
-     {
-      "area": "look",
-      "heading": "Windows remember where you put them",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Windows and small bars you drag keep their place, also after a /reload.",
-       "The meter breakdown now remembers its place too.",
-       "The roll window, the raid bar and the Bingo counter keep theirs, as before."
-      ]
-     },
-     {
-      "area": "gear",
-      "heading": "My Log counts overkill like the meters",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "My Log's damage done now counts the whole last hit (overkill), like the meters do.",
-       "So My Log and the damage meter show the same numbers for the same pull."
-      ]
-     },
-     {
-      "area": "guild",
-      "heading": "Your main stays put during a raid",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       {
-        "for": "",
-        "text": "Your characters are one player: one main, the rest its alts (no more \"separate\")."
-       },
-       {
-        "for": "",
-        "text": "Your highest level character starts as the main; new characters join it by themselves."
-       },
-       {
-        "for": "",
-        "text": "While a raid runs, nobody can change their main (it decides items for mains only)."
-       },
-       {
-        "for": "",
-        "text": "Council, officers and the GM can unlock it for a player on their Members card."
-       }
-      ]
-     },
-     {
-      "area": "fixes",
-      "heading": "Fixes",
-      "kind": "fixed",
-      "lead": "",
-      "lines": [
-       {
-        "for": "",
-        "text": "No BiS list yet? The window no longer spins on \"Sharing with council\" forever."
-       },
-       "Blessings: some Pally Power messages no longer throw a Lua error.",
-       "Busy guilds: teams and raid series no longer go missing when raid plans sync.",
-       "Loot rules and prized items show Hyjal's own picture, not the generic one.",
-       "Bingo's messages travel with the other games, off the loot council's line.",
-       "The DZ seal at the top of the window now has its soft gold glow (it never showed).",
-       "Events no longer throw a Lua error in the first moments after you log in.",
-       "Dungeon runs from just after login now land in your guild's list.",
-       "My Log reads your talent points like the class tools (some clients saved 0/0/0).",
-       "Chess and the 3D strategy board size and centre models right on every client."
-      ]
-     }
-    ],
-    "title": "One look across every page",
-    "version": "1.4.0"
    }
   ]
  },
- "published": "2026-10-14T18:04:55Z",
- "seq": 6,
- "version": "1.4.4",
+ "published": "2026-10-14T20:39:53Z",
+ "seq": 7,
+ "version": "1.4.5",
  "zip": {
-  "name": "DisasterZone-1.4.4.zip",
-  "sha256": "665b64e2dbf5500c854fb6cdbfe8ed6f58a71a4d059567f75f7a1da3fef333fd",
-  "size": 33204745,
-  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.4.4/DisasterZone-1.4.4.zip"
+  "name": "DisasterZone-1.4.5.zip",
+  "sha256": "3e35b2aef008e2a01aafc21e67da4aec555de769f332ed18e0d7b1da52da3184",
+  "size": 33207825,
+  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.4.5/DisasterZone-1.4.5.zip"
  }
 }
