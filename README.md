@@ -62,6 +62,34 @@
   - Releases — each addon version as a zip, and each launcher version with its installers.
 </details>
 
+<details>
+  <summary><b>Code signing policy</b></summary>
+  <br>
+
+  Free code signing provided by [SignPath.io](https://about.signpath.io/), certificate by [SignPath Foundation](https://signpath.org/).
+  Applied for; until it is approved, launcher installers are unsigned.
+
+  - Only the launcher (`launcher/`) is signed. Its Windows installers are built by GitHub Actions from the source in this repository (`.github/workflows/launcher.yml`); nothing built on a personal computer is signed.
+  - Committers and reviewers: [tsumilo](https://github.com/tsumilo)
+  - Approvers: [tsumilo](https://github.com/tsumilo) — every signed release is approved by hand.
+</details>
+
+<details>
+  <summary><b>Privacy</b></summary>
+  <br>
+
+  The launcher collects no personal data and sends nothing about you or your computer anywhere.
+  It only connects to GitHub (`github.com`, `raw.githubusercontent.com`) to check for and download addon and launcher updates.
+  Its settings and backups stay on your computer.
+</details>
+
+<details>
+  <summary><b>License</b></summary>
+  <br>
+
+  The launcher's source (`launcher/`) is under the [MIT License](launcher/LICENSE).
+</details>
+
 <p align="center">
   <br>
   <img src="launcher/src-tauri/icons/128x128.png" width="56" alt="DisasterZone seal"><br>
