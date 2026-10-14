@@ -1,14 +1,14 @@
 {
- "assetPack": 7,
- "build": "1b352b4150866e4b",
+ "assetPack": 10,
+ "build": "e89959e2fae8452f",
  "channel": "stable",
- "commit": "6e78d6d6a3cfddc38de5ec5cc83ff6cab175b4bd",
+ "commit": "7f5252cfc4694b4a5814ea0eb24379a9fc0dc28d",
  "folders": {
   "DisasterZone": {
    "Bindings.xml": {
-    "gz": 132,
-    "sha256": "bec8420047c25f92ab736a2a3ea3c7e04cfbe574d4b73a209b851cb2a2027588",
-    "size": 132
+    "gz": 193,
+    "sha256": "429ea175beca76327d68995f256932e2e68bfcd118260613b78befca13393365",
+    "size": 342
    },
    "Core/Atlas.lua": {
     "gz": 10015,
@@ -21,9 +21,9 @@
     "size": 75924
    },
    "Core/BiS.lua": {
-    "gz": 13275,
-    "sha256": "99a7b37629ebdaaa1706640048e7eb276a6233bf1c38e1272fda5d8928f6c577",
-    "size": 53686
+    "gz": 13446,
+    "sha256": "d0c525b4488cd0a4eb9f5bf18c1a0da70bccf04b07f7045668cdd5376203b7a1",
+    "size": 54413
    },
    "Core/BiSExport.lua": {
     "gz": 4134,
@@ -36,9 +36,9 @@
     "size": 31016
    },
    "Core/Blessings.lua": {
-    "gz": 11320,
-    "sha256": "808a6368497b00fbbe38c471b4d6329f4718524dfbead7fe982cf072fe08c0a4",
-    "size": 42419
+    "gz": 11315,
+    "sha256": "a9fbdd405244535ef7f1eeb0a1e62992f895f471df6c66c0b6496981a78e8169",
+    "size": 42410
    },
    "Core/Boot.lua": {
     "gz": 7798,
@@ -50,10 +50,30 @@
     "sha256": "ff317f90695cd58317cbbe2b4b4f310cc71d17d523d56c1f34df1488c88744a7",
     "size": 257
    },
+   "Core/BossLearn.lua": {
+    "gz": 14548,
+    "sha256": "13f921d0c617ec6b9ab05ba6b450fdc45b7634aa1a66512247b69ca7734493e8",
+    "size": 51998
+   },
+   "Core/BossLearnMath.lua": {
+    "gz": 5788,
+    "sha256": "3b152b4a09b89957970af6ec88934c748b58f410163fc2743d6593f579709a6a",
+    "size": 18746
+   },
+   "Core/BossMod.lua": {
+    "gz": 11472,
+    "sha256": "bd162502c623bb95f6bfa7aac0b209ecbed60412df55b989e17f0d7ecb34d3e2",
+    "size": 41061
+   },
+   "Core/Bridge.lua": {
+    "gz": 7874,
+    "sha256": "08dd77bc1977a1d9f7315c39100dedccd7e7e94f597032764c78b9e306f3cad1",
+    "size": 25508
+   },
    "Core/BuildInfo.lua": {
-    "gz": 221,
-    "sha256": "13f6428c2c9b50a06627120a0fe4a5bdffc5a4d3e9f0f871aabcaf569664f598",
-    "size": 270
+    "gz": 220,
+    "sha256": "6c449dc8930cb748f0f6291aeb274f7fb54b0b65140954dc63c69fd4407180c8",
+    "size": 271
    },
    "Core/ClassKit.lua": {
     "gz": 2446,
@@ -61,9 +81,9 @@
     "size": 7029
    },
    "Core/ClassPlanner.lua": {
-    "gz": 5907,
-    "sha256": "ced3c34c0d7207fb4ad16aa2c8da77c89042cd417e8a4c6c9d8dbb5ea29fce29",
-    "size": 19369
+    "gz": 6042,
+    "sha256": "0e86e60c14bcf71101534177e86e4acb603743c6ea28dc3e1814088caef00c39",
+    "size": 19785
    },
    "Core/Codec.lua": {
     "gz": 3566,
@@ -75,10 +95,15 @@
     "sha256": "70a07c2da85b1e43b0a6cacc91ceeacbc4011d6b62830809507e8f020f9d7a71",
     "size": 5725
    },
+   "Core/CombatText.lua": {
+    "gz": 6048,
+    "sha256": "9fb1acf637f6b9625bac35691ac493dfbafec8fc40cde72643a62bfc8b0a1289",
+    "size": 19727
+   },
    "Core/Comm.lua": {
-    "gz": 7765,
-    "sha256": "4b179d59b84f1fad3fc52dd4c989740d8848465aa77735e0345172f81b6bb1c8",
-    "size": 25553
+    "gz": 7835,
+    "sha256": "cfb1c3f6c71384a23416170144632dbe2f6d2aa0249951b45882b16804f52cb1",
+    "size": 25722
    },
    "Core/Constants.lua": {
     "gz": 7673,
@@ -91,9 +116,9 @@
     "size": 20717
    },
    "Core/DB.lua": {
-    "gz": 6370,
-    "sha256": "544c6c9ee061686d9a537ac1f041847b29bf661df8ed52ee1536a02de7f0ae1d",
-    "size": 17654
+    "gz": 6417,
+    "sha256": "949c428f7190911abe6f3bbd75d7f8db0c46d12e14efc700aa1dab84d984d345",
+    "size": 17717
    },
    "Core/Demo.lua": {
     "gz": 8342,
@@ -171,9 +196,9 @@
     "size": 40342
    },
    "Core/Guild.lua": {
-    "gz": 24062,
-    "sha256": "ebe2a5c39fac44a518ea7dea25c766cbee2da71af47fdbae1676823c6938095a",
-    "size": 92801
+    "gz": 25066,
+    "sha256": "7be4d9eaeb2e3d373929e0e659085b8c5e0eb1bfd7bafa16b2f141e3cb165342",
+    "size": 96724
    },
    "Core/GuildMap.lua": {
     "gz": 7791,
@@ -181,9 +206,9 @@
     "size": 24156
    },
    "Core/Init.lua": {
-    "gz": 6806,
-    "sha256": "f293ad3a12bb48757109cfab1c74f2ba3798590c17a3ff8717d4990e4c991d42",
-    "size": 21657
+    "gz": 7115,
+    "sha256": "c1d02c8644dc1329e026c1c36ef835ae55c622dff6060699932b6ed43911b588",
+    "size": 22498
    },
    "Core/ItemDB.lua": {
     "gz": 14710,
@@ -194,6 +219,11 @@
     "gz": 7166,
     "sha256": "33a6f298a5a4167d3df6572dab60ad766b759da9357d171b58fc05c12d68ab9a",
     "size": 23677
+   },
+   "Core/Layout.lua": {
+    "gz": 10561,
+    "sha256": "d2708cffc9e1155b40fe4a2c54f8d50e4557f372e2813819fe915deb9b2882bb",
+    "size": 38998
    },
    "Core/Ledger.lua": {
     "gz": 14665,
@@ -296,9 +326,9 @@
     "size": 5934
    },
    "Core/RaidLog.lua": {
-    "gz": 18813,
-    "sha256": "386e640dd58be44b66984db678df9c4e224e3d932c30759cd1eee65bfedb4ece",
-    "size": 69511
+    "gz": 18912,
+    "sha256": "b45f21991fa36b28a581a779851537018834fbdd1a946cb6999a1838d0335572",
+    "size": 69788
    },
    "Core/RaidNights.lua": {
     "gz": 2400,
@@ -306,14 +336,19 @@
     "size": 6482
    },
    "Core/RaidPlan.lua": {
-    "gz": 48516,
-    "sha256": "320d4063dbcc6db8c1a762fde98b0bf4058d96a96950f4278bea3c4deabe45ae",
-    "size": 184771
+    "gz": 48974,
+    "sha256": "0904dd1349645f05d3641a0ebede95efc6fae3856d347e6a0e4e7069a560b81f",
+    "size": 188282
    },
    "Core/Roll.lua": {
     "gz": 31956,
     "sha256": "e287d5dba87cd28c9d4b938d6707323bc49fe76c2080357216a09e4324a75a8b",
     "size": 119189
+   },
+   "Core/SessionInfo.lua": {
+    "gz": 6186,
+    "sha256": "d5424a9ccf21aeae6a1ee643b06e073e10c98385bbb19306715518f9ef07bdf5",
+    "size": 19471
    },
    "Core/Sha256.lua": {
     "gz": 2364,
@@ -326,9 +361,9 @@
     "size": 17715
    },
    "Core/ShotTimer.lua": {
-    "gz": 9227,
-    "sha256": "8f375fc6ed8e2f5431194faff3606960ee391cd181b6cdb7a03e7bb9451ce4b9",
-    "size": 31021
+    "gz": 9221,
+    "sha256": "584022770eef408b9731f727f900bbc8b6d110ffc438cc5f2a2bf066cb48dae2",
+    "size": 30901
    },
    "Core/Store.lua": {
     "gz": 12041,
@@ -346,9 +381,9 @@
     "size": 46026
    },
    "Core/StrategyLive.lua": {
-    "gz": 14030,
-    "sha256": "197af46a1f82e88520384d2e0d236f4f874fd0d186ba71dafa39e2c2b0502892",
-    "size": 51445
+    "gz": 14420,
+    "sha256": "7427519812cc359d1eb4eac3dc957ae81b85c8481e8b5060740ff809bdcc84cd",
+    "size": 52986
    },
    "Core/StrategyObjects.lua": {
     "gz": 3350,
@@ -366,29 +401,39 @@
     "size": 35544
    },
    "Core/SwingTimer.lua": {
-    "gz": 7999,
-    "sha256": "63320e46500d292334203d7717f168052b7ee67fc9d5ffbd1b69e5b8918abafd",
-    "size": 25862
+    "gz": 7985,
+    "sha256": "1d98a0915c60dfc74ffe6d398492416b7f4afb169153ba08b160eb371c622d01",
+    "size": 25738
    },
    "Core/Sync.lua": {
     "gz": 12944,
     "sha256": "dae278821ba208caec6bd3e00092706a1d3a9d43d5100d925d073afc40e4fcc1",
     "size": 47362
    },
+   "Core/Tanks.lua": {
+    "gz": 3135,
+    "sha256": "eaeb421e6516699ab9ab84866441cd48721f1c4c0d256c8f9eddfe6d2a75e32f",
+    "size": 9586
+   },
    "Core/Threat.lua": {
-    "gz": 3216,
-    "sha256": "055f69f3eaecfbb9bd52a674d03a822f6480d9d226cb7ef2e88b02c4c9cb42f5",
-    "size": 8969
+    "gz": 3258,
+    "sha256": "ef43ab264e783474f6c8b6eeb2869d30f5d528c84a38350df0af452e1321c127",
+    "size": 9066
    },
    "Core/Totems.lua": {
-    "gz": 13630,
-    "sha256": "cad78b2c941a8fef9585f9b27581dd1407a7d94221b8a0d2d85a4d9286d76a29",
-    "size": 51411
+    "gz": 13623,
+    "sha256": "757bfcf212511c6ed921d878fb7f223a761f59b4f164dc0055f224eaa7903db1",
+    "size": 51402
    },
    "Core/Util.lua": {
     "gz": 7815,
     "sha256": "218deae80e5c882c09da3e19c2cce75b7824ee36e8caf09cb69fbecfce0da5c6",
     "size": 26931
+   },
+   "Core/Wardrobe.lua": {
+    "gz": 13186,
+    "sha256": "fc1814128a7ec345234a60abd04a66905d412d385c2ff89f4f112c4e99fb700a",
+    "size": 46254
    },
    "Core/WornGems.lua": {
     "gz": 3293,
@@ -415,15 +460,60 @@
     "sha256": "b34789e1e54bb6deaa37f2168ca6c6b66b45906d3a4df12c6380a28bfe5ad0ff",
     "size": 2231
    },
+   "Data/BossMods/BlackTemple.lua": {
+    "gz": 4683,
+    "sha256": "be0809eadeb1028d9d93df7b7f3e735a8643138f8114dffc6290b565d224b142",
+    "size": 15906
+   },
+   "Data/BossMods/GruulsLair.lua": {
+    "gz": 1485,
+    "sha256": "ab6950435d0518286b5166afc6c747c850071975f12c5e557adc61141531e994",
+    "size": 3531
+   },
+   "Data/BossMods/HyjalSummit.lua": {
+    "gz": 2772,
+    "sha256": "e377134831384461a6f0cf550f101ef0c45e9f04758ff0474c16b656ce45f9ec",
+    "size": 8006
+   },
+   "Data/BossMods/Karazhan.lua": {
+    "gz": 4838,
+    "sha256": "38a6322cd16f7a46c587e1324fe6e58cdf2b58cc3209ff3d3b14c137af8f7905",
+    "size": 14563
+   },
+   "Data/BossMods/MagtheridonsLair.lua": {
+    "gz": 1124,
+    "sha256": "d8deb168fe54ecb29b648c4bbe02d6d13f10108687f7d47629dd221340be2119",
+    "size": 2497
+   },
+   "Data/BossMods/SerpentshrineCavern.lua": {
+    "gz": 3554,
+    "sha256": "875f5692dcde6202dff6b9853776da57e5f7446ac4a8df5c5536b846271ce539",
+    "size": 10983
+   },
+   "Data/BossMods/SunwellPlateau.lua": {
+    "gz": 3923,
+    "sha256": "4824f51e0e33378e580d9441b0bca5f4c07312dd13769b30dda2f65b0a040558",
+    "size": 12489
+   },
+   "Data/BossMods/TempestKeep.lua": {
+    "gz": 2765,
+    "sha256": "af155c3152dc43b966b5004293e1ee2381cabdf5a51190a44bff8b1809de15d7",
+    "size": 7781
+   },
+   "Data/BossMods/ZulAman.lua": {
+    "gz": 2241,
+    "sha256": "e345d21ce2a75fa7a2f5d5efa5b9ca068dd618a4296a66ef771d559162a1bb6d",
+    "size": 7059
+   },
    "Data/BossPortraits.lua": {
     "gz": 3087,
     "sha256": "a42b94b709b080e6b3c6872118394462bfe17434184b4243885b5ec5e84eee59",
     "size": 9381
    },
    "Data/Changelog.lua": {
-    "gz": 41834,
-    "sha256": "4430b93b745064271e5c29029db2158883f01f5caa2ad3ca02469b2566b14ae4",
-    "size": 142322
+    "gz": 46583,
+    "sha256": "5a55ea233b59d0b53c8c87ddcda11845d0ea9c9e3c28fa30c0efee8d8c608718",
+    "size": 158475
    },
    "Data/Classes/Paladin.lua": {
     "gz": 1676,
@@ -434,6 +524,11 @@
     "gz": 2512,
     "sha256": "55b05e70a40f1301cc700cecbf84778a757870dd6baca709019a684bac5266b5",
     "size": 8216
+   },
+   "Data/ClassicArt.lua": {
+    "gz": 905,
+    "sha256": "1948e83f48988139a592e2f40228d166884a111b35aea6c85e1045196d177f1f",
+    "size": 4546
    },
    "Data/Consumables.lua": {
     "gz": 3645,
@@ -516,14 +611,14 @@
     "size": 48881
    },
    "Data/Tours/Welcome.lua": {
-    "gz": 5134,
-    "sha256": "2eb14ca83dba3f1b7ecbbf3d2d4ff7cc55e126b4a7575799540313f6de2c6bf2",
-    "size": 17168
+    "gz": 5156,
+    "sha256": "362f71edf2361bd95a79e4b1c815d61752ef46765899a043ec2d931f5a53763e",
+    "size": 17187
    },
    "DisasterZone.toc": {
-    "gz": 2134,
-    "sha256": "3169939676fd74944857c1742beecdf3f3fa1abb576f7111aea00d8b031f86d8",
-    "size": 6204
+    "gz": 2388,
+    "sha256": "e9f666daece067a3a479185f93afea5c666d92ce46a53d3bad1acf2f6c7cbaae",
+    "size": 7089
    },
    "Games/Azeromon/Achievements.lua": {
     "gz": 7132,
@@ -830,6 +925,46 @@
     "sha256": "5e3b02bfaeeddb83268afd50982f0d2d7447a339007ca26ef46ad76a40171e90",
     "size": 16428
    },
+   "Media/Classic/ironforge.tga": {
+    "gz": 7610,
+    "sha256": "eeffcbc22d2e368322d5b7c16cc4ad71da22b3eb6c15cb59b1ee09b39ed9ceab",
+    "size": 131116
+   },
+   "Media/Classic/ironforge_ground.tga": {
+    "gz": 60501,
+    "sha256": "9cf265d0ce2e7a8971ac4e3bf34abf831f5abbdba9acaa687a3befee20f58fe9",
+    "size": 262188
+   },
+   "Media/Classic/stormwind.tga": {
+    "gz": 10740,
+    "sha256": "1182a6e6e7f3c21e0c398e5ede81773ddd4ef15ba6e9d4c0b9fbc4f3c33bbc5c",
+    "size": 131116
+   },
+   "Media/Classic/stormwind_ground.tga": {
+    "gz": 49485,
+    "sha256": "2a75b8b90cc076cf571f8457f752b284ef8324fc248cc364b9bf91881b714878",
+    "size": 262188
+   },
+   "Media/Classic/vault.tga": {
+    "gz": 8200,
+    "sha256": "8119d05d48176fe9faa684fee24070a2783c55b177aec8f949adf1e6d152bbb1",
+    "size": 131116
+   },
+   "Media/Classic/vault_ground.tga": {
+    "gz": 78516,
+    "sha256": "304a6d1b75d71fd65eaaefab4668d846b5986cdb1ca13ec3fd144f1373d18aa0",
+    "size": 262188
+   },
+   "Media/Edit/dash_h.tga": {
+    "gz": 57,
+    "sha256": "dd8aadec2779a15ddd3db0983382ce73d9b2f7a56ae4ab82a797f8124d90f9c3",
+    "size": 300
+   },
+   "Media/Edit/dash_v.tga": {
+    "gz": 59,
+    "sha256": "4582f5039354d44df444031f62ad0a97f80ea66b9504d4e38a2192250a750792",
+    "size": 300
+   },
    "Media/Events/grid.tga": {
     "gz": 70,
     "sha256": "a5d642f08a04523b4e67c9f497fd6e97166df6f708f84696463febb1d0485ddb",
@@ -844,6 +979,36 @@
     "gz": 20744,
     "sha256": "9e45781086588a88c2a0f096de055893a563a05bc32c186d07f606eb010bbbf3",
     "size": 65580
+   },
+   "Media/Gilt/bezel.tga": {
+    "gz": 3235,
+    "sha256": "4559c4d557ba1b752b0bb51c3f134733fd0b5d648300a984e54a99263f9a1d97",
+    "size": 16428
+   },
+   "Media/Gilt/corner.tga": {
+    "gz": 1855,
+    "sha256": "237f0f3d2a5f04c4644bf45f1ed617d5b368941025abd2c9e154b2cb7f14f2d3",
+    "size": 4140
+   },
+   "Media/Gilt/grain.tga": {
+    "gz": 3949,
+    "sha256": "ba89cc18a7ddb3a3468de2039c1f45e1948ce7bf9c7c77d30a5453ad0d211569",
+    "size": 16428
+   },
+   "Media/Gilt/trim_h.tga": {
+    "gz": 3269,
+    "sha256": "f5c3e165b5a9aafa54c8b48617e8579559ec403eea80c3786dde4b7a5eaa168b",
+    "size": 4140
+   },
+   "Media/Gilt/trim_v.tga": {
+    "gz": 3353,
+    "sha256": "7fc75919d08af6ec9fa257c42d4796badf4b1d749fa14a0b0ce251df12681fa6",
+    "size": 4140
+   },
+   "Media/Icons/Discord.tga": {
+    "gz": 1913,
+    "sha256": "15b36c5ce99d78fa6c9b3d85bdfb026ec1485de34d84b88bc20190b3ce347b24",
+    "size": 16428
    },
    "Media/Icons/bis.tga": {
     "gz": 1831,
@@ -1200,6 +1365,126 @@
     "sha256": "de1e550fdc711550df42e91b69614263400a8dd3fa644b867490ddc3e2ae9615",
     "size": 524332
    },
+   "Media/Pen/arc1.tga": {
+    "gz": 7373,
+    "sha256": "dce7271f5881bc18f3665cf2d185243a2c5150f04bc82e5ca64c6d0cb9028e53",
+    "size": 262188
+   },
+   "Media/Pen/arc10.tga": {
+    "gz": 932,
+    "sha256": "74f72d41d011f61d2d34171839fb553314697844dbb5197c9d203eed4aee578d",
+    "size": 262188
+   },
+   "Media/Pen/arc11.tga": {
+    "gz": 961,
+    "sha256": "05a57f510db22c2d92537202e03ad00dee1dfff8374e701ede6a3980d5f51d8b",
+    "size": 262188
+   },
+   "Media/Pen/arc12.tga": {
+    "gz": 805,
+    "sha256": "ae61ac7540c8cfff56abfdd8575b910781d96af30b394ee83aa83d40fad6ed36",
+    "size": 262188
+   },
+   "Media/Pen/arc2.tga": {
+    "gz": 4240,
+    "sha256": "bf09b5b3f5be20af325b8b2d5a13f469f88b37c26d62839e1401e2a1926ccbcf",
+    "size": 262188
+   },
+   "Media/Pen/arc3.tga": {
+    "gz": 2713,
+    "sha256": "52427e9f8c29f6eaf2206d18c8cba4838f9cc6d53387fffb5966cc77146ddc08",
+    "size": 262188
+   },
+   "Media/Pen/arc4.tga": {
+    "gz": 2194,
+    "sha256": "eb8c7c032f844a5d49f40ae50ed4ee9a3a052c8b55353386866a0db98448adca",
+    "size": 262188
+   },
+   "Media/Pen/arc5.tga": {
+    "gz": 1771,
+    "sha256": "dfe8070c6b5ffed2ce851ef31cb9a67aa669a27616732de166508a38f2e22306",
+    "size": 262188
+   },
+   "Media/Pen/arc6.tga": {
+    "gz": 1548,
+    "sha256": "aaf2f6645e29967eda436d2edd646b05f66fa632213c6860fa449be701f2ec72",
+    "size": 262188
+   },
+   "Media/Pen/arc7.tga": {
+    "gz": 1356,
+    "sha256": "f162706b017ba918060ea8085082b52efa973a1bd1ddb708eea3c571c2222987",
+    "size": 262188
+   },
+   "Media/Pen/arc8.tga": {
+    "gz": 1206,
+    "sha256": "b8045efaa35be15ee57d39ab338274c4b55efd79c306e949766e965d48ba3235",
+    "size": 262188
+   },
+   "Media/Pen/arc9.tga": {
+    "gz": 1104,
+    "sha256": "1b15a627221cb71fa4a0430b72bac73c2eb6c703d6da601e1d23f346676f1274",
+    "size": 262188
+   },
+   "Media/Pen/diamond.tga": {
+    "gz": 459,
+    "sha256": "2217107b6acf57f71957c819a43311eb08c20879df14105986fca93cb8168047",
+    "size": 16428
+   },
+   "Media/Pen/diamondline.tga": {
+    "gz": 583,
+    "sha256": "3b7b7953d31541a9e66957ded4b40bf2ef33a4733058ea1a7ced8907bbc47305",
+    "size": 16428
+   },
+   "Media/Pen/disc.tga": {
+    "gz": 4739,
+    "sha256": "15996cc6e8a260d3d0050ef243029220b9fb1a59cd0e72537dcdce330b0255d8",
+    "size": 262188
+   },
+   "Media/Pen/pill.tga": {
+    "gz": 1247,
+    "sha256": "e2f9d88b1116eda69844c8f801484d36d9fc68976d46edac6c951fab01a7ba34",
+    "size": 65580
+   },
+   "Media/Pen/pillline.tga": {
+    "gz": 1649,
+    "sha256": "3049e4b639aa393e3d50cf06ee6d3b69dd25e83d87f3ad3edb9777f7aab5c91d",
+    "size": 65580
+   },
+   "Media/Pen/ring1.tga": {
+    "gz": 15286,
+    "sha256": "4692d6668c946998f9dc9ae46b3830bffe20de4fb73f2c65868bda622f5d142e",
+    "size": 1048620
+   },
+   "Media/Pen/ring2.tga": {
+    "gz": 7390,
+    "sha256": "433da5d2c8cb4cd0a280a5382100e7bb26865b30e7789243ec870c519135bb9b",
+    "size": 262188
+   },
+   "Media/Pen/ring3.tga": {
+    "gz": 7575,
+    "sha256": "8fe49f53ec29d5b4eeb81c259fead18cb8c7d00f81bf29b0c8bcb2b93c9b4854",
+    "size": 262188
+   },
+   "Media/Pen/ring4.tga": {
+    "gz": 7284,
+    "sha256": "8639d467112314db4d3b71d48dc0abece3c0ef5e364a96b8370af37159537df9",
+    "size": 262188
+   },
+   "Media/Pen/ring5.tga": {
+    "gz": 7216,
+    "sha256": "6a9654acc1f650a64fd9c879c80264094cf5cb07666b6ae7dce89d22c7395b95",
+    "size": 262188
+   },
+   "Media/Pen/ringglow.tga": {
+    "gz": 16882,
+    "sha256": "f4a7ac81957795a5f31443871d75b2a88b8f40f0920382c14ec74e3a1ecfd625",
+    "size": 262188
+   },
+   "Media/Pen/ringsoft.tga": {
+    "gz": 16375,
+    "sha256": "f1318a0288a4e8cf4f4b7a96e8ce628e439f7e84913c0b3c825579ecad23cc33",
+    "size": 262188
+   },
    "Media/Roles/ranged.tga": {
     "gz": 8490,
     "sha256": "879cf7f396c0589049d571a32cf310c1b05b259d7904c6f783a65fb32e115082",
@@ -1270,6 +1555,11 @@
     "sha256": "404aed454a6c7f60345970d77432e1ab78130100d28a100c624bac3702811b4d",
     "size": 1048620
    },
+   "Media/Strategy/uiglyphs.tga": {
+    "gz": 5560,
+    "sha256": "b14ed3a9c429f7b2d69086d29cc38bb9d18bd51b976c7a77f4a5bf1d520ea3f6",
+    "size": 262188
+   },
    "NOTICE.md": {
     "gz": 6003,
     "sha256": "515bc0e6bbb4cb08012f3cc009c721bc0cdd9167965b9923050dddfd591fc369",
@@ -1277,7 +1567,7 @@
    },
    "README.md": {
     "gz": 24787,
-    "sha256": "1193b335fec448c583a2ab26fa70fa1f1ace95c0e3bf48b77caba13ebb22da65",
+    "sha256": "34b4201d49a54464b0074f1439c1479f34a64573ed4ab14604f1594772b1b4f9",
     "size": 70028
    },
    "Render3D/Probe.lua": {
@@ -1451,19 +1741,39 @@
     "size": 110477
    },
    "UI/BarFace.lua": {
-    "gz": 9590,
-    "sha256": "2df8ac34d0c834f366c4d6324020be005110fce29a899c47276ca981f41a474f",
-    "size": 33093
+    "gz": 10583,
+    "sha256": "f5f82d438d5579b8684b94de534fde9e0c29c891bab2219623dc7c01043d76ff",
+    "size": 36930
    },
    "UI/BlessingsBar.lua": {
-    "gz": 11126,
-    "sha256": "d3e889f576bc392f220cbf8b76c6c33eb61299d7a904949140b9f47c6a164655",
-    "size": 38448
+    "gz": 11144,
+    "sha256": "6ae89438e40e9ed9d3fa4620d4aba6ee8af39e47b49ceca1b98276853a15b9ee",
+    "size": 38514
    },
    "UI/BlessingsUI.lua": {
     "gz": 7726,
     "sha256": "d6669433c5e8af85b4d03e601ead58e64e80264a0882072598545ab57a6ee9e1",
     "size": 27797
+   },
+   "UI/BossLearnUI.lua": {
+    "gz": 9175,
+    "sha256": "217646c27852d77979f8f3c582dfdbf5a727bee0e3c93295a6ea5d7e69b18e41",
+    "size": 30400
+   },
+   "UI/BossModLooks.lua": {
+    "gz": 9642,
+    "sha256": "39aced459f618fafbf7c8bef9b0f6bcb111d541185077a38abb0584f1704a7ac",
+    "size": 33029
+   },
+   "UI/BossModSettings.lua": {
+    "gz": 4644,
+    "sha256": "95a1360cff98d3acd75905a01e0114b7a600b68d2fcf69ab9b48b490838be9ca",
+    "size": 13808
+   },
+   "UI/BossModUI.lua": {
+    "gz": 9561,
+    "sha256": "8ee95fcdf16490c96bdce7188aa47be7d1126a31232c8b1e3786c94ab16d088c",
+    "size": 30415
    },
    "UI/Changelog.lua": {
     "gz": 23525,
@@ -1471,9 +1781,24 @@
     "size": 87537
    },
    "UI/ClassBar.lua": {
-    "gz": 3282,
-    "sha256": "80439fd8152fc6e9f6c912d03aa42767d2dd586d7cdd68ba8256da13efaecb07",
-    "size": 9138
+    "gz": 3755,
+    "sha256": "c3cfa736baa8047bbdb3ecd03124e0a6f41e59ae7301cd20b6e991350aa04693",
+    "size": 10732
+   },
+   "UI/CombatText.lua": {
+    "gz": 6680,
+    "sha256": "f5f6ab529c28609c21bdc4362e2ec10cc5314b6b6960a5e2e738a1b8b23e913c",
+    "size": 21160
+   },
+   "UI/CombatTextLooks.lua": {
+    "gz": 12678,
+    "sha256": "d0c43738d06014fcfb486fb987a29abd02f6a4ddfd32c38c6e05f12efd37f90d",
+    "size": 48763
+   },
+   "UI/CombatTextPen.lua": {
+    "gz": 10039,
+    "sha256": "c22165a9623f8b6732ba31b96528af24cbc856f92a3fdf4d6e2a7ddd88094a29",
+    "size": 32710
    },
    "UI/Comp/Controls.lua": {
     "gz": 12944,
@@ -1491,9 +1816,9 @@
     "size": 5294
    },
    "UI/Comp/Overlays.lua": {
-    "gz": 11344,
-    "sha256": "e750f1407bbf6b15de0245ab5b0584ba450939fa2b640d824818fc8623b9e52e",
-    "size": 38204
+    "gz": 11923,
+    "sha256": "a311ecc556e07099d4634817845679bae1c727afa5664b266ab4d3c030058c0d",
+    "size": 40218
    },
    "UI/Comp/PageParts.lua": {
     "gz": 12068,
@@ -1506,9 +1831,9 @@
     "size": 34317
    },
    "UI/Comp/Themes.lua": {
-    "gz": 2639,
-    "sha256": "ed6e109bf1459363fb8b96433ed3aa713ccc74793777f6c05aaafb00349f165f",
-    "size": 8055
+    "gz": 3056,
+    "sha256": "7c708f587b2c7fe49d3e01201600d6c5b50fa4a46983b9775f8a14ab6c84b940",
+    "size": 9400
    },
    "UI/Council.lua": {
     "gz": 39158,
@@ -1530,15 +1855,25 @@
     "sha256": "b2ca58f6febbaaac0fbe9686e0ab20090b0b59fe682c90e78bf1b71ba13d4eda",
     "size": 9397
    },
+   "UI/DockArt.lua": {
+    "gz": 6701,
+    "sha256": "69ea19a36db18501027df22f1598fa9fb36176cff1aeb84500d2fde65ab87d57",
+    "size": 21059
+   },
    "UI/DropPanel.lua": {
-    "gz": 48978,
-    "sha256": "1195d84b17504865d7e6cfaf4b2bb18bdf4fd5f41cbece5c6517baad84d0a9e6",
-    "size": 177948
+    "gz": 48984,
+    "sha256": "517fbc28763d40218f6c634516e58e1c8928cb88ca67a9d2990b7f7d0285839c",
+    "size": 177992
    },
    "UI/DungeonsTab.lua": {
     "gz": 24870,
     "sha256": "1b6a1dc0d346e7830cad3c85411333e407313f3d090a6def27dcf9ece45fa4c9",
     "size": 91176
+   },
+   "UI/EditMode.lua": {
+    "gz": 25589,
+    "sha256": "f5886616553a5c912c750eebfc6d8166d422cff9b3b0268ec10cb1421817806c",
+    "size": 93644
    },
    "UI/EventBoard.lua": {
     "gz": 46764,
@@ -1605,6 +1940,46 @@
     "sha256": "0f74f2914faa776df8a2c776afc12875d260705ead146b47e193faec72c73743",
     "size": 32650
    },
+   "UI/Look.lua": {
+    "gz": 15385,
+    "sha256": "0a1ae450483b36a74e27cdbaf2b198a5397d11dbfab2307f47f3562a55cb2ba8",
+    "size": 53118
+   },
+   "UI/LookBags.lua": {
+    "gz": 17826,
+    "sha256": "91ad3d3843febe9089413d259a5f545d1ccf1da186f0928dc54221295c1c22b7",
+    "size": 61667
+   },
+   "UI/LookBars.lua": {
+    "gz": 12287,
+    "sha256": "b794f8fed62e9f980039c17bcaf814e83b583553a034e786f3f26f32da3d7fbd",
+    "size": 46030
+   },
+   "UI/LookCast.lua": {
+    "gz": 5787,
+    "sha256": "9920d7550ff1efcaec4d8e50ae5eaa1339d67f46de27a97752289cc989385a84",
+    "size": 19781
+   },
+   "UI/LookDock.lua": {
+    "gz": 9933,
+    "sha256": "6a1e477357a14fb3c5a27ccd823619fa557b4988d65b745a12ca900b8bc8193f",
+    "size": 32780
+   },
+   "UI/LookMinimap.lua": {
+    "gz": 6339,
+    "sha256": "853fb82c25ae41b4a21f35303565555d975b7d26243968c3e46fb42784633bbb",
+    "size": 21626
+   },
+   "UI/LookTanks.lua": {
+    "gz": 8908,
+    "sha256": "a15b9870ff6ad0abdf3072ce1b1026df69dd5256c5e744169c25912e77a54b07",
+    "size": 31918
+   },
+   "UI/LookUnits.lua": {
+    "gz": 20035,
+    "sha256": "d9815d8692001a6cd4d60e6700ad3cdbe273d1928dfb1a081b076ac5d34b5cca",
+    "size": 75357
+   },
    "UI/LootLog.lua": {
     "gz": 9678,
     "sha256": "a644f2bc4d7a0c03de9a6e36263afc954c58e23e4ad49ef8ca65d766e82331d5",
@@ -1616,9 +1991,9 @@
     "size": 33632
    },
    "UI/MainFrame.lua": {
-    "gz": 12007,
-    "sha256": "a995d70977f7717801fbb5a40aaf37cb3cbaf51fb3f6952e66422c3fba6f5f5f",
-    "size": 40226
+    "gz": 12140,
+    "sha256": "3242c7cd4179f1ee51d604346b9a12085624a11c898fb4e04cd2775f1c098a9d",
+    "size": 40623
    },
    "UI/Members.lua": {
     "gz": 22805,
@@ -1626,9 +2001,9 @@
     "size": 83173
    },
    "UI/Menu.lua": {
-    "gz": 9083,
-    "sha256": "37b923a0bc5e37fd1516e7af82c54cb2e41e1218636a237b6ea6cf42474333d0",
-    "size": 31537
+    "gz": 9213,
+    "sha256": "f5186ccf34978a07a8267383f7fcdc79f5e672414d3dad42bac187482a7255c1",
+    "size": 31960
    },
    "UI/MeterDetail.lua": {
     "gz": 14148,
@@ -1636,14 +2011,14 @@
     "size": 52528
    },
    "UI/MeterPanels.lua": {
-    "gz": 31139,
-    "sha256": "acfd0c84376a65e73d59042873b3220941614ceb4d58f11d0db30625ba25ff68",
-    "size": 113011
+    "gz": 31839,
+    "sha256": "899e02342b6aa8144a79813bbf37315f5e6b7b5eda9534dc1d298b00e47eec2b",
+    "size": 115318
    },
    "UI/MeterTheme.lua": {
-    "gz": 8626,
-    "sha256": "549c177fc01f8baebcfa1d8822858131b56eeae13942123117c8e6ab7e74bbca",
-    "size": 29545
+    "gz": 9022,
+    "sha256": "4f0d4dea32a8097fb06b0218e334101df8d42da7a2ffcf456130d43ce39defb2",
+    "size": 31843
    },
    "UI/MeterWindow.lua": {
     "gz": 3093,
@@ -1651,9 +2026,9 @@
     "size": 8206
    },
    "UI/MinimapArc.lua": {
-    "gz": 4677,
-    "sha256": "31103006757243d235ae32c5445eca044b325b9efc738f7d13062c5333da872c",
-    "size": 14970
+    "gz": 4688,
+    "sha256": "fb0152e647dbe5abbe9726de61e60f9a6df4f8abf9d7ca30dda3384f1e983143",
+    "size": 14987
    },
    "UI/MyBiS.lua": {
     "gz": 27009,
@@ -1681,14 +2056,14 @@
     "size": 29359
    },
    "UI/NavMenu.lua": {
-    "gz": 10254,
-    "sha256": "60d38726d5881faac92fa8a248123db5edb6dea2759d92e9333e4c3fbe8d32c2",
-    "size": 32467
+    "gz": 10370,
+    "sha256": "982d9f8f3bb354654fc38c69096f79cd69741478cc087a54f38b95409a124a08",
+    "size": 32914
    },
    "UI/Notify.lua": {
-    "gz": 9920,
-    "sha256": "5dc4b552c250bc14153c0cdfbc65ad798c175d0c5ec90dd6b7ca372b50401c8d",
-    "size": 33493
+    "gz": 9966,
+    "sha256": "9ce7ea412c7bd34a505ac0b2fced2c0ff25721273f400ff10e5aef5c5193bcdb",
+    "size": 33600
    },
    "UI/NotifySources.lua": {
     "gz": 5993,
@@ -1760,25 +2135,35 @@
     "sha256": "c0957ee3f70ec6048786c30a359b5ed60f8b3b15bc3f1f2c2c45994a94fdc9d1",
     "size": 49182
    },
+   "UI/RingFace.lua": {
+    "gz": 7886,
+    "sha256": "1c55ec6f4b1c134f62755a569e3ae143bfc8c62c59fabcec333f62f8fe9dc561",
+    "size": 27566
+   },
    "UI/RollFrame.lua": {
-    "gz": 13555,
-    "sha256": "0ccfc6186ef808d2f3ab462eb8f3f9e1af4f034a54c820242159644f49823986",
-    "size": 49505
+    "gz": 13755,
+    "sha256": "d892550f0e3faf0f0de191b9c5418a0f4dcdb897ddcca1923b83a17b0157b46b",
+    "size": 49167
    },
    "UI/SessionBar.lua": {
-    "gz": 6715,
-    "sha256": "3f2fb2b9d8a78111550c9b7a60e1cc82e9ae868e45d57bf0deec7b4ee78e71e9",
-    "size": 21302
+    "gz": 16601,
+    "sha256": "e480e656b79de37db2340dfafd9551325af4d71800378cab0b34ccf9e9c0e57f",
+    "size": 58077
+   },
+   "UI/SessionDrawer.lua": {
+    "gz": 7029,
+    "sha256": "c4a9928c6195520867848fd5005d98e50187cd4e689ea14c4687a64e697f9250",
+    "size": 24176
    },
    "UI/Settings.lua": {
-    "gz": 27282,
-    "sha256": "426146dd024bc7f9c7b9f36baf6418d18912e143d9891d33c304b50eda39d233",
-    "size": 97063
+    "gz": 60698,
+    "sha256": "4b93054e74da7b17c3ebc6ce793caecc56997ce265bc97f2ea2befef8e835543",
+    "size": 217696
    },
    "UI/Share.lua": {
-    "gz": 11748,
-    "sha256": "24f94177e298e77cb96ab3de19ec0ede8000f26c791652ef0b0dccb4764808dc",
-    "size": 43177
+    "gz": 12156,
+    "sha256": "e352c68e2bfd312899d9b6032386392feec52c9ba48359957dc9d39feb49133d",
+    "size": 44631
    },
    "UI/ShareWindow.lua": {
     "gz": 4334,
@@ -1786,9 +2171,9 @@
     "size": 13659
    },
    "UI/ShotTimerHUD.lua": {
-    "gz": 3025,
-    "sha256": "9adcc33c038b3f5a0d29e87ba64d1c0c516bd35406e4f15af66dfa1281277227",
-    "size": 7751
+    "gz": 3020,
+    "sha256": "d153f3f93c72a699d56ad4835cc3541a4d53edbd712210886f0c5f3329fc80aa",
+    "size": 7742
    },
    "UI/SimBuffs.lua": {
     "gz": 6597,
@@ -1841,9 +2226,9 @@
     "size": 122967
    },
    "UI/StrategyReminder.lua": {
-    "gz": 8143,
-    "sha256": "bdb4c49d9f22a931c5466aefff5a900100b94536684da6373bc617398e6e58b0",
-    "size": 29585
+    "gz": 8542,
+    "sha256": "6278859fbf27bc8883871dc609e4d69e1f1f5f6d569207673e000cd2b42b5633",
+    "size": 30978
    },
    "UI/Style.lua": {
     "gz": 3305,
@@ -1856,9 +2241,9 @@
     "size": 43962
    },
    "UI/SwingTimerHUD.lua": {
-    "gz": 10784,
-    "sha256": "e591ab8736ca1825982f416d996f8905ede84209b1b15361c70f24241b3ed1cf",
-    "size": 35447
+    "gz": 8855,
+    "sha256": "1cff03b1063a40d4ac181e774861f5ff79a45c0498ed90987fbe4bf195c7ccf3",
+    "size": 27936
    },
    "UI/Tooltip.lua": {
     "gz": 11386,
@@ -1871,9 +2256,9 @@
     "size": 5863
    },
    "UI/TotemBar.lua": {
-    "gz": 7720,
-    "sha256": "1175c0a8d6c9981501319882d02e2b1f738be59f83b07c2683c7348d81ba6232",
-    "size": 26849
+    "gz": 7792,
+    "sha256": "61603b19c4dbb5967afced2de27d6394a8685bdb19351394861e0d998ab8054f",
+    "size": 27091
    },
    "UI/TotemsUI.lua": {
     "gz": 12539,
@@ -1885,21 +2270,26 @@
     "sha256": "33bf813e26829480d85410ae64196999999c5bc9e835664e55370e6e7ad70823",
     "size": 34227
    },
+   "UI/Wardrobe.lua": {
+    "gz": 10525,
+    "sha256": "2e72314f37b803cc76f015c4c011b99d73913c249dbf8a3dbd168a51087224e4",
+    "size": 35145
+   },
    "UI/WelcomeTour.lua": {
     "gz": 6759,
     "sha256": "6aad51f48bcd38de4ddf639ddec555b579aa5881668b49ba731e9be278d661b9",
     "size": 22151
    },
    "UI/Widgets.lua": {
-    "gz": 50874,
-    "sha256": "fc8dedd9edfea87590f17239acf3865765cdeaa4030ae966fd459a50a4482480",
-    "size": 185411
+    "gz": 51652,
+    "sha256": "f61a46c941cfdee60c6c8f2438a0379ff8f6afabfed559cac0e6713cd15706d7",
+    "size": 187868
    }
   },
   "DisasterZone_Rooms": {
    "DisasterZone_Rooms.toc": {
     "gz": 1187,
-    "sha256": "5dde638d7afcc0f5f5d616b20a793335b70a1121a37256f0eb3b5f4a2f074e74",
+    "sha256": "0f36b42bd81549d8723b3df5ac674dc08debff30ba01c11015eab9f9c81e5e63",
     "size": 4477
    },
    "Load.lua": {
@@ -2463,6 +2853,285 @@
  "name": "DisasterZone",
  "notes": {
   "changelog": [
+   {
+    "date": "14 October 2026",
+    "sections": [
+     {
+      "area": "raids",
+      "heading": "The raid session crest",
+      "kind": "changed",
+      "lead": "The session bar is now a small crest showing what waits on the leader and the council.",
+      "lines": [
+       "A round seal: the raid art, a bead per boss and the time; gold counts what waits on you.",
+       "Hover it: drops waiting on your vote, loot still to trade, who left, an unlinked raid.",
+       "Click it for the drawer: bosses, loot, council, attendance, the planned raid, End raid.",
+       "Next boss: Strategy, plus Pull 10 / Break 5 for the leader (DBM and BigWigs see them).",
+       "Before the start: the planned raid, who is here, three switches; Start raid in one click.",
+       "The switches apply at once; turning the loot council off mid-raid asks first.",
+       "In a boss fight it shows only the boss and the fight time, dimmed.",
+       "Raiders don't get it, only a pop-up when the raid starts. Settings > Loot > Raid session.",
+       "Right-click: hide it for this raid, its settings, or move it in Edit layout."
+      ]
+     },
+     {
+      "area": "look",
+      "heading": "Main tanks on the raid frames",
+      "kind": "new",
+      "lead": "Each main tank and the mob they hold, by your raid frames, in your look.",
+      "lines": [
+       "One row per main tank: click the tank to target them, the mob beside them to target it.",
+       "The mob's half shows its health; red with a name when it turns on someone not a tank.",
+       "Before the pull the boss plan's jobs show greyed; the leader sets them all in one click.",
+       "Leaders drag rows to reorder (the raid follows); the x at a row's end removes a tank.",
+       "Tanks' raid frames wear the shield and their number; threat and boss mods know them.",
+       "Raid frames mark your target with a white ring or outline, fainter under the mouse.",
+       "In a raid the party frames hide: your group already sits in the raid frames.",
+       "Looks > Party and raid: a switch shows them anyway, another turns the tank rows off."
+      ]
+     },
+     {
+      "area": "raids",
+      "heading": "Boss mods",
+      "kind": "new",
+      "lead": "Timers and warnings for every TBC raid boss, off until you switch them on.",
+      "lines": [
+       "Settings > Combat > Boss mods: bars, warnings and sounds for what wipes raids.",
+       "Every alert has its own switch; tank and healer alerts go only to that role.",
+       "Timers where the sources disagree count to the earliest time, then say 'within n s'.",
+       "/dz pull 10 and /dz break 5 reach DBM and BigWigs users too, and theirs reach you.",
+       "Hyjal: the next wave and 'Wave 4 of 8'. A range frame where the game can measure.",
+       "Your UI look or one of their own, a size of your choice, and a Try it for every fight."
+      ]
+     },
+     {
+      "area": "raids",
+      "heading": "Boss mods that learn",
+      "kind": "new",
+      "lead": "Timers tighten from our own pulls, and never change in the middle of one.",
+      "lines": [
+       "A timer moves only when 3 clean pulls agree on when the boss really casts.",
+       "Never more than a quarter away from DBM's and BigWigs' numbers.",
+       "A pull always runs on the timers it started with; bars follow the real casts.",
+       "A small line over the bars says a pull is recorded; a striped end shows the window.",
+       "After a pull that changed something, one note says what we learned.",
+       "Your pulls and the guild's fill each other's gaps: shared after the pull, checked first.",
+       "Settings > Boss mods > Bosses: each boss's page shows what every timer learned.",
+       "Turn off 'Learn from our pulls' to keep DBM's and BigWigs' numbers."
+      ]
+     },
+     {
+      "area": "raids",
+      "heading": "Raids on Discord",
+      "kind": "new",
+      "lead": "Our raids posted on the guild's Discord, with sign-ups right there.",
+      "lines": [
+       "The GM picks the Discord channels under Settings > Guild > Discord.",
+       "Each raid gets a post in the addon's look; it updates as people sign up.",
+       "Sign up from Discord: make your character there once (name, class, spec).",
+       "/raids lists the coming raids, /bis shows your list as a gear sheet to edit.",
+       "A reminder by DM an hour before; Running late or Can't make it tell the leader.",
+       "A small Discord mark after the names of characters made in Discord."
+      ]
+     },
+     {
+      "area": "other",
+      "heading": "Settings, sorted",
+      "kind": "changed",
+      "lead": "Six groups, a search, and every look in one place.",
+      "lines": [
+       "A rail of six groups, each with a line saying how it is set: General to Guild.",
+       "A group opens as tiles, one per feature: how it is set, and its on/off switch.",
+       "A tile opens the feature's page: main options first, the rest under More options.",
+       "A feature that is off shows one box with Switch on (and Try it), not greyed rows.",
+       "Options that need another switch on, like the threat warning, show only then.",
+       "Search finds any option, with a working switch; click its name to go there.",
+       "A gold dot marks what you changed; Back to defaults puts a card as it came.",
+       "Alerts: the BiS toast, its sound and chat line are now a row of the pop-up grid.",
+       "Interface > Looks: every look in one place, a page and a live sample per part.",
+       "Meter, class bar and timer themes moved there; their cards link to them.",
+       "Help, demo mode and About sit at the rail's foot; the GM's checklist is under Guild."
+      ]
+     },
+     {
+      "area": "gear",
+      "heading": "Wardrobe: outfits in one click",
+      "kind": "new",
+      "lead": "Outfits in one click: swaps everything at once; weapons even in combat.",
+      "lines": [
+       "Gear > Wardrobe: save what you wear, or your BiS list, as an outfit.",
+       "Each slot shows what Wear does: swaps in, in the bank, missing or keep current.",
+       "Wear swaps only what differs, all at once. In a fight the armour waits for the end.",
+       "With the bank open, the pieces in it come out to your bags first.",
+       "Wear automatically: a spec switch, a boss or zone, a fishing pole, a mount.",
+       "The quick-swap bar: a button per outfit in your bar theme; Edit layout moves it.",
+       "A key for Next outfit under Key Bindings > AddOns; /dz wardrobe opens it."
+      ]
+     },
+     {
+      "area": "look",
+      "heading": "The game's UI in DisasterZone's looks",
+      "kind": "new",
+      "lead": "Flat, Halo, Sigil, Slate or Gilded for the frames you play with.",
+      "lines": [
+       "Settings > Interface > Looks: one look for everything, or one of its own per part.",
+       "Unit frames: player, target, target of target, focus and pet, with combo points.",
+       "Health numbers sit inside the health bar; a long name is cut short, never drawn over them.",
+       "Party and raid frames in the same looks: range fade, and a light on what you can dispel.",
+       "Halo raid frames: capsules with name and missing health, a ring lit by dispels or aggro.",
+       "Cast bars: your latency at the end of your casts, a lock on casts you can't interrupt.",
+       "Action bars keep the game's buttons, in the look's frame, keys and range colour.",
+       "Minimap: round or square, the look's edge, zone and clock; addon buttons tidied away.",
+       "Blizzard stays the default: nothing changes until you pick a look.",
+       "Switching a replaced part back to the game's frames takes a reload (it asks)."
+      ]
+     },
+     {
+      "area": "look",
+      "heading": "Classic: our layouts in the game's own art",
+      "kind": "new",
+      "lead": "A seventh look: the Dock, bags and frames dressed in the game's textures.",
+      "lines": [
+       "Looks > Use Classic everywhere: frames, meters, class bars and timers at once.",
+       "Bar art for the Dock: Ironforge stone, Stormwind marble and gold, or the Guild Vault.",
+       "Stance and aura buttons stand on a step; at max level a band fills the experience slot.",
+       "Gryphons or lions at its ends match the art, or pick your own (or none).",
+       "Buttons wear the game's action button frame, its hover, pressed and proc glows.",
+       "Bags: the backpack grown into one window, a carved slot for every item.",
+       "Unit frames: the game's target frame, the gold dragon on bosses and elites.",
+       "Raid frames are the game's own cells; cast bars wear its border and shield.",
+       "Meters in the tooltip's frame; Blessings and totems as action buttons.",
+       "The swing and shot timers drawn as a cast bar, the next press in the spell alert.",
+       "Health is the game's green in Classic; raid cells stay in class colours."
+      ]
+     },
+     {
+      "area": "look",
+      "heading": "Combat text in every look",
+      "kind": "new",
+      "lead": "Your hits, heals and procs as numbers on screen, each look with a move of its own.",
+      "lines": [
+       "Looks > Combat text: off until you turn it on; numbers ride the mob's nameplate.",
+       "Flat: hits that land together, Windfury and ticks, count up as one line.",
+       "Halo: a crit fires a ring; Consecration's ticks circle the target like a clock.",
+       "Sigil: numbers stamp down, a crit's tile shatters, tally pips count the ticks.",
+       "Slate: a quiet feed beside the target, a hairline under each hit for its size.",
+       "Gilded: gold and silver numbers, sparks off crits, big crits in a gold frame.",
+       "Classic: the game's damage font, Hammer of Wrath! in its button's glow, low health.",
+       "Hits taken and heals beside you, with the healer's name; procs and alerts on top.",
+       "The game's own combat text steps aside while ours is on, and comes back after.",
+       "Try it plays a made-up pull. Edit layout moves you, the target spot and the alerts."
+      ]
+     },
+     {
+      "area": "look",
+      "heading": "Edit layout: everything on your screen, in one place",
+      "kind": "new",
+      "lead": "Move, line up and mirror every frame at once: /dz edit.",
+      "lines": [
+       "Every DisasterZone frame gets a faint dashed outline; the one you pick turns gold.",
+       "One slim bar at the top: what you picked, its tools, Grid, Snap, Names, Frames.",
+       "The bar fades back when the frame you picked is under it, and while you drag.",
+       "The game's own frames too: player, target, cast bar, action bars, minimap, buffs.",
+       "Frames snap to the middle of the screen (gold) and line up with each other (teal).",
+       "Drop a frame between two others and it lands exactly halfway (pink gaps).",
+       "Mirror two frames: move one and the other follows on the far side of the centre.",
+       "Pick several: line up their edges, give them equal gaps or centre them as a group.",
+       "Arrow keys move 1 px, Shift a grid step; hold Alt to place freely; Ctrl+Z undoes.",
+       "Frames that only show sometimes (rolls, the raid bar, reminders) show while you edit."
+      ]
+     },
+     {
+      "area": "look",
+      "heading": "Resize anything in Edit layout",
+      "kind": "new",
+      "lead": "",
+      "lines": [
+       "Pull a corner handle to scale a frame; Shift scales from its middle.",
+       "Side handles stretch cast bars and the XP bar wider or narrower.",
+       "Roll the mouse wheel over a picked frame: 5% a notch. Double-click a handle: 100%.",
+       "Pick several and they grow together, gaps and all.",
+       "The game's frames too, in the steps their own Edit Mode allows.",
+       "The game's Esc menu has a DisasterZone layout button, right under Edit Mode.",
+       "Fixed: the roll frame and raid session bar went back to their default spot after a reload.",
+       "Fixed: Addon buttons > In a drawer now gathers the minimap buttons under the \u00b7\u00b7\u00b7 knob."
+      ]
+     },
+     {
+      "area": "look",
+      "heading": "Layout profiles",
+      "kind": "new",
+      "lead": "",
+      "lines": [
+       "Each character picks its own profile: Raid, Solo, Healing, whatever you make.",
+       "Share a profile in chat: a guildmate who clicks the link can keep it.",
+       "Settings > Layout, or the minimap: pin Edit layout to the arc."
+      ]
+     },
+     {
+      "area": "look",
+      "heading": "No more Locked switches",
+      "kind": "changed",
+      "lead": "",
+      "lines": [
+       "Meters, the swing and shot timers and the class bars move in Edit layout now.",
+       "Their Locked switches are gone; /dz swing unlock (and the others) open Edit layout.",
+       "Where you had put them is kept."
+      ]
+     },
+     {
+      "area": "class",
+      "heading": "Swing and shot timers: rotation optional",
+      "kind": "changed",
+      "lead": "",
+      "lines": [
+       "Settings > Show rotation off hides the next presses and plan lane: just the timer."
+      ]
+     },
+     {
+      "area": "look",
+      "heading": "The Dock: every bottom bar on one grid",
+      "kind": "new",
+      "lead": "Action bars, bags, menu, stance, pet and XP built as one piece.",
+      "lines": [
+       "Bars 1 to 3 make one block; bags and the menu stand beside it at its exact height.",
+       "Stance and pet bars line up on top; the XP bar runs the block's width under it.",
+       "One plate behind it all in the look, with seams between the parts (Halo floats).",
+       "Bars 4 and 5 stand at the right edge in the same size and look.",
+       "Bar 1's page arrows get a slim strip beside the block, the page number between them.",
+       "Looks > Action bars: button size from Compact to Large; move it in Edit layout.",
+       "Every look made over: Halo's rings, Sigil and Gilded's gold, Slate's table show the state."
+      ]
+     },
+     {
+      "area": "look",
+      "heading": "Bags, key ring and bank in your look",
+      "kind": "new",
+      "lead": "One window for your bags, one for the bank, in the Dock's size and look.",
+      "lines": [
+       "Three layouts: One bag (the default), Shelves sorted by kind, or Bag by bag.",
+       "Shelves fold; Junk sells in one click at a vendor; new items glow until you look.",
+       "Search as you type, by name or type; junk and new work as words too.",
+       "Sort stacks partial stacks and orders everything at once: a full bag in under a second.",
+       "The key ring folds into the bags from the Dock's key ring or the footer.",
+       "At a banker the Bank window opens beside your bags, with bank bag slots to buy.",
+       "Items keep their slots: clicking, dragging and using them work exactly as before."
+      ]
+     },
+     {
+      "area": "class",
+      "heading": "Themes for the swing and shot timers",
+      "kind": "new",
+      "lead": "",
+      "lines": [
+       "Halo, Sigil, Slate, Gilded or Pips: the same looks as the Blessings and Totem bars.",
+       "Each timer picks its own in Settings > Interface > Looks > Timers.",
+       "Point at a theme to see it on your timer; the plan lane comes in the same look."
+      ]
+     }
+    ],
+    "title": "Edit layout and the UI in our looks",
+    "version": "1.4.2"
+   },
    {
     "date": "13 October 2026",
     "sections": [
@@ -3450,192 +4119,16 @@
     ],
     "title": "A new window frame, gear sim, meters and Azeromon",
     "version": "1.3.4"
-   },
-   {
-    "date": "9 October 2026",
-    "sections": [
-     {
-      "area": "gear",
-      "heading": "My Log (opt-in)",
-      "kind": "new",
-      "lead": "Record your own play in every boss pull. Opt-in.",
-      "lines": [
-       "New in Settings > My Log: record your own play in every raid boss pull. Off by default.",
-       "Saved on your PC only and never sent: nobody else can see it, the loot council included.",
-       "It records damage, healing, shields, damage taken, avoidance, casts, buffs and deaths.",
-       "Death recaps keep your last 10 seconds: every hit, heal and cast, with your health.",
-       "Heroic dungeon bosses too if you switch that on. /dz mylog last prints your latest pull.",
-       "Raids > My Log: each raid night against the one before, with four headline numbers.",
-       "A row per boss: your number, the change since your last kill, active time, last 8 kills.",
-       "It opens on your role's numbers; Damage, Healing and Tanking are there for everyone.",
-       "Click a boss: the fight second by second against another kill, with your idle gaps in red.",
-       "Under it, every ability (or what hit you) with its change, avoidable hits marked.",
-       "Deaths: what killed you most, and the last 10 seconds of each death with your health.",
-       "The boss's side is logged too: its casts, its shields and phases, yells, adds dying.",
-       "Timeline (on a boss): every cast you made, lane by lane, under the boss's own lane.",
-       "Idle gaps show red across the lanes. Hover for what happened; scroll to zoom in.",
-       "Demo mode fills My Log with made-up raid nights, so you can look around first."
-      ]
-     },
-     {
-      "area": "games",
-      "heading": "Games, in the spotlight",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Guild > Games opens on a spotlight: one game's poster in front, the others at its sides.",
-       "Turn it with the arrows, the mouse wheel or the dots, or click a poster at the side.",
-       "The posters are alive: your Bingo card fills in as the raid goes.",
-       "Raid Trainer's poster lists its bosses with your best clear time for each.",
-       "Each poster shows a result of yours and who in the guild is playing it right now.",
-       "During a raid's Bingo game the tab opens on Bingo, LIVE, saying how close your card is.",
-       "Opening a game: the poster grows and darkens into its backdrop, then the game rises in.",
-       "< GAMES at the top goes back the same way: the painting shrinks back into its place.",
-       "Council Bingo, redrawn: a header with the raid's painting, LIVE, your lines and squares.",
-       "The card fills the page: calm squares with the icon over the words.",
-       "Rare and legendary squares wear their colour like item quality; legendary ones shimmer.",
-       "Marked squares take your dauber's ink and its marker; completed lines turn gold.",
-       "The race, the latest squares and the season sit beside the card, your dauber under them."
-      ]
-     },
-     {
-      "area": "games",
-      "heading": "Karazhan Chess",
-      "kind": "new",
-      "lead": "Chess on Medivh's own board, in 3D.",
-      "lines": [
-       "New game in Guild > Games: chess on Medivh's own board in the Gamesman's Hall, in 3D.",
-       "The pieces are the event's creatures at their real sizes; the Echo of Medivh looks on.",
-       "Pieces walk to their square; a capture is a blow and a fall. Right-drag turns the camera.",
-       "While you play the board fills the page: only a light layer over it, the moves on request.",
-       "Play the Echo of Medivh as Apprentice, Magus or Guardian, Alliance or Horde.",
-       "He speaks his own lines from the event when pieces fall, and when he cheats.",
-       "Medivh cheats (switch it off if you like): fire under your pieces, a hand on his.",
-       "Fire burns under up to 3 of your pieces: move them out within 2 moves or they burn.",
-       "Hand of Medivh: up to 4 of his pieces may also step one square any way for 4 moves.",
-       "Or he mends his army: the last piece you took from him returns to the board.",
-       "His cheats never check you, never touch a king and always leave you a move.",
-       "Challenge a guild member: one move at a time, whenever you are both online.",
-       "A move made while they're offline reaches them when they log in. Resign or offer a draw.",
-       "Guild ladder: results of guild games go round the guild; everyone sees the same ratings.",
-       "A flat board too (before a client restart, or picked over the board).",
-       "Its poster is the hall in 3D, mid-fight, and says how many games wait for your move.",
-       "/dz chess opens it."
-      ]
-     },
-     {
-      "area": "raids",
-      "heading": "Teams, redesigned",
-      "kind": "changed",
-      "lead": "Every team as a banner, its lineups as tabs.",
-      "lines": [
-       "Raids > Teams opens on a board: every team as a banner, yours first, with its next raid.",
-       "Each team has a theme: pick the raid whose painting is its banner (... > Theme).",
-       "A team's lineups are tabs on its banner, each with how full it is.",
-       "Groups and Comp are one switch; the actions for each sit on the same row.",
-       "Players are cards like raid frames: spec icon, name, and the spec under it.",
-       "Empty seats are real drop spots as big as a card; the dragged card follows the cursor.",
-       "A label under the dragged card says where it lands, or who it swaps with.",
-       "With a target comp, its open slots wait in the empty seats: the spec, who could fill it.",
-       "Each group's title shows the party buffs it gets; drag it onto another group to swap them.",
-       "Unassigned players are cards under the groups (Kara lineups: beside the two groups).",
-       "The raid buffs sit next to Groups | Comp; unsaved changes are said on the banner.",
-       "Comp: a band per role with the same cards, five a row, and a pip per slot.",
-       "Comp: drag a player onto an open slot to fill it; they take its spec and its seat.",
-       "Comp: drag a slot's player to Unassigned to take them out of the groups.",
-       "Switching Groups and Comp slides the switch and glides the new view in.",
-       "The waitlist is an icon at the end of the lineup tabs, with a badge counting who waits.",
-       "Click it for the line: drag a player straight into a group, or join and leave it there.",
-       "Bloodlust / Heroism counts as a raid buff (raid-wide on these realms), not a group one."
-      ]
-     },
-     {
-      "area": "raids",
-      "heading": "Upcoming raids in the same look",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Raids > Upcoming: each raid is a banner of its painting, the date in gold when it's close.",
-       "Each banner has your answer (or Accept / Tentative), who accepted by role and a fill bar.",
-       "A raid's page has the Teams banner: date, name, where and who; the raid's note under them.",
-       "Your answer is one switch on the banner, with your spec, character and note under it.",
-       "Sign-ups, Groups and Assignments are tabs on the banner, each with how far along it is.",
-       "Raid leader, Edit, Cancel and Delete sit in the banner's ... menu; Share is the top icon.",
-       "Sign-ups: a band per role with players as cards, five a row; requests to join on top.",
-       "Approve or deny a request right on its card. Bench, absent and unanswered are bands below.",
-       "Tentative players fade and show a ?, a note shows its icon, guests say Guest.",
-       "Groups: the Teams groups (cards, empty seats, party buffs, drag a group's title to swap).",
-       "A raid locked to a team with a target comp shows its open slots in the empty seats.",
-       "Assignments: each boss is a card with its picture, strategy and how many slots are filled.",
-       "A strategy that still has to be picked shows in orange; a boss without one offers Create.",
-       "Each boss's strategy menu ends with No strategy: the raid goes without one for that boss."
-      ]
-     },
-     {
-      "area": "guild",
-      "heading": "Guild > Map (new)",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "See where guildmates are, on the game's own maps, fully explored. Opt-in: share to see.",
-       "Share your exact spot or only your zone; sharing your zone shows everyone by zone.",
-       "Always hidden in battlegrounds and arenas. The eye at the top right changes it.",
-       "Tabs per continent with how many are there. Click a region to open its map.",
-       "Right-click or the path at the top goes back out. The list beside it goes by zone.",
-       "Crowds are rings in their class colours; dungeons and raids sit at their entrance.",
-       "A white skull marks a dungeon, a gold one a raid.",
-       "Dots glide as people move; your arrow follows you and turns with you.",
-       "Right-click someone to whisper or invite them; click for their Members profile.",
-       "Members: the card says where they are, or the zone they were last seen in.",
-       "The game's world map (M) shows the same dots (... menu on the Map page).",
-       "Demo mode shows a crowded made-up guild on the map, no sharing needed."
-      ]
-     },
-     {
-      "area": "look",
-      "heading": "Menus",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "The Raids, Gear and Guild menus show each page with a line saying what it holds.",
-       "The page you're on has a gold bar; Events wears its BETA pill in the menu too."
-      ]
-     },
-     {
-      "area": "fixes",
-      "heading": "Raids: fixes",
-      "kind": "fixed",
-      "lead": "",
-      "lines": [
-       "Two officers saving the same team at once: both changes are kept, not only the later one.",
-       "The blacklist no longer loses players when an officer who missed a change edits it.",
-       "Deleted raids and teams no longer come back when someone returns after a month away.",
-       "A raid's lineup deleted or resized: the whole team counts for it, not another lineup.",
-       "A raid locked to teams that were all deleted is open to everyone, not shut to all.",
-       "Saved groups follow your answer: Absent takes you out, another character takes your seat.",
-       "Invite & sort skips players who answered Absent after the groups were saved.",
-       "Raid invites from someone with a dungeon run listed show the game's own invite.",
-       "Passing the lead to someone without DisasterZone no longer ends the raid session.",
-       "Invite & sort keeps going while the lead passes, and says so when the raid ends.",
-       "Missed the end of a raid? Your log ends it when you left, not when you came back.",
-       "Names typed in any case are the right player: \"rita\" on the blacklist blocks Rita.",
-       "Every week: each week moves to the day and time you pick, also across a clock change.",
-       "Every week can't move raids by a week or more: cancel a week to skip it."
-      ]
-     }
-    ],
-    "title": "My Log, Teams and Karazhan Chess",
-    "version": "1.3.3"
    }
   ]
  },
- "published": "2026-10-13T08:39:31Z",
- "seq": 3,
- "version": "1.4.1",
+ "published": "2026-10-14T01:02:25Z",
+ "seq": 4,
+ "version": "1.4.2",
  "zip": {
-  "name": "DisasterZone-1.4.1.zip",
-  "sha256": "5acdd2108ffd83d7e963b28fb9a01f503489e049597551d25af53c4f5cd3e797",
-  "size": 30290497,
-  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.4.1/DisasterZone-1.4.1.zip"
+  "name": "DisasterZone-1.4.2.zip",
+  "sha256": "30a81157f49e708ecea1482d07cd5894444040907c8eae7acb7f6aee5ead695b",
+  "size": 31030217,
+  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.4.2/DisasterZone-1.4.2.zip"
  }
 }
