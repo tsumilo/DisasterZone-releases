@@ -41,6 +41,10 @@ pub struct Settings {
     pub tray_hint_shown: bool,
     /// set before the launcher restarts after updating itself in the background: start hidden in the tray
     pub start_hidden_once: bool,
+    /// Discord sync: the bot's server (empty = sync::DEFAULT_SERVER)
+    pub sync_server: String,
+    /// the Discord name this PC's member key belongs to (the key itself is in the OS credential store)
+    pub sync_user: String,
 }
 
 impl Default for Settings {
@@ -63,6 +67,8 @@ impl Default for Settings {
             notified_launcher: String::new(),
             tray_hint_shown: false,
             start_hidden_once: false,
+            sync_server: String::new(),
+            sync_user: String::new(),
         }
     }
 }

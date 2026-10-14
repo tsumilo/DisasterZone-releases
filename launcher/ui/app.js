@@ -418,6 +418,7 @@ function renderSettings() {
     if (document.activeElement !== f) f.value = s[key] || "";
   }
   $("set-source").placeholder = status.source;
+  renderSync();
   $("about").textContent = "DisasterZone Launcher " + status.launcherVersion + " · releases from " + status.source;
 }
 
@@ -440,6 +441,66 @@ function wireSettings() {
   field("set-cmd", "playCommand");
   field("set-source", "source", true);
   $("btn-open-backups").onclick = () => api.invoke("open_folder", { kind: "backups" }).catch(toast);
+}
+
+// ---------------------------------------------------------------------------------------------------------------
+// Discord sync (sync.rs): this PC's game syncs with the guild's bot server once linked with a /launcher code
+// ---------------------------------------------------------------------------------------------------------------
+
+let sync = { linked: false, user: "", server: "", last: null, waiting: 0, error: null };
+
+function ago(t) {
+  const s = Math.max(0, Math.floor(Date.now() / 1000) - t);
+  return s < 60 ? "just now" : s < 3600 ? Math.floor(s / 60) + " min ago" : s < 86400 ? Math.floor(s / 3600) + " h ago" : Math.floor(s / 86400) + " days ago";
+}
+
+function renderSync() {
+  const st = $("sync-state");
+  $("row-link").classList.toggle("hidden", sync.linked);
+  $("sync-linked-btns").classList.toggle("hidden", !sync.linked);
+  if (!sync.linked) {
+    st.textContent = sync.server ? "Not linked." : "No bot server is set yet.";
+    st.style.color = "";
+  } else if (sync.error) {
+    st.textContent = "Linked as " + sync.user + " · " + sync.error;
+    st.style.color = "rgb(230, 110, 100)";
+  } else {
+    const waiting = sync.waiting ? " · " + sync.waiting + " change" + (sync.waiting === 1 ? "" : "s") + " from Discord waiting for the game" : "";
+    st.textContent = "Linked as " + sync.user + (sync.last ? " · synced " + ago(sync.last) : " · not synced yet") + waiting;
+    st.style.color = "rgb(77, 181, 99)";
+  }
+  const f = $("set-server");
+  if (document.activeElement !== f) f.value = status.settings.syncServer || "";
+  f.placeholder = sync.server || "not set";
+}
+
+async function syncCall(cmd, args) {
+  try {
+    sync = await api.invoke(cmd, args);
+  } catch (e) {
+    toast(e);
+    try { sync = await api.invoke("sync_status"); } catch (e2) { /* (shown as it was) */ }
+  }
+  renderSync();
+}
+
+function wireSync() {
+  const code = $("set-linkcode");
+  const link = () => {
+    const v = code.value.trim();
+    if (!v) { code.focus(); return; }
+    $("btn-link").disabled = true;
+    syncCall("sync_link", { code: v }).then(() => { $("btn-link").disabled = false; if (sync.linked) code.value = ""; });
+  };
+  $("btn-link").onclick = link;
+  code.addEventListener("keydown", (e) => { if (e.key === "Enter") link(); });
+  $("btn-sync").onclick = () => syncCall("sync_run");
+  $("btn-unlink").onclick = () => syncCall("sync_unlink");
+  const f = $("set-server");
+  f.addEventListener("change", () => {
+    if ((status.settings.syncServer || "") !== f.value.trim()) saveSettings({ syncServer: f.value }).then(() => syncCall("sync_status"));
+  });
+  f.addEventListener("keydown", (e) => { if (e.key === "Enter") f.blur(); });
 }
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -487,10 +548,14 @@ async function start() {
   $("btn-check").onclick = runCheck;
   $("btn-play").onclick = play;
   wireSettings();
+  wireSync();
+  await api.listen("sync-status", (e) => { sync = { ...sync, ...e.payload }; if (status) renderSync(); });
+  setInterval(() => { if (status) renderSync(); }, 30000);   // ("synced 2 min ago" moves on)
   await api.listen("progress", (e) => { if (working) showProgress(e.payload); });
   // the tray's background check installed something or found a new release
   await api.listen("state-changed", () => { if (!working) refreshAll(); });
   try {
+    sync = await api.invoke("sync_status");
     await loadStatus();
   } catch (e) {
     toast(e);
@@ -512,7 +577,8 @@ start();
 
 function demoApi() {
   const settings = { wowRoot: "C:\\World of Warcraft", flavor: "_anniversary_", channel: "stable", seenSeq: {}, hold: false,
-    keepBackups: 3, checkOnStart: true, source: null, launchCode: "", playCommand: "", tray: false, autoInstall: false, autostart: false };
+    keepBackups: 3, checkOnStart: true, source: null, launchCode: "", playCommand: "", tray: false, autoInstall: false, autostart: false,
+    syncServer: "", syncUser: "" };
   let installed = { present: true, version: "1.3.4", build: "f2965f70f965709b", assetPack: 7, dev: false, linked: false, rooms: true };
   const backups = [{ id: "20261009-201544-1.3.3", version: "1.3.3", build: "f60fe8911a371447", time: "", reason: "update", savedVariables: 3 }];
   // the real changelog of the last releases (demo-notes.json, from the published 1.3.5 manifest)
@@ -520,6 +586,7 @@ function demoApi() {
   const notesReady = fetch("demo-notes.json").then((r) => r.json()).then((n) => { notes.changelog = n.changelog; }).catch(() => {});
   const wait = (ms) => new Promise((r) => setTimeout(r, ms));
   let progressFn = null;
+  let demoSync = { linked: false, user: "", server: "https://bot.example", last: null, waiting: 0, error: null };
   return {
     async invoke(cmd, args) {
       await wait(250);
@@ -548,6 +615,13 @@ function demoApi() {
         case "restore": { const b = backups.find((x) => x.id === args.id); installed = { ...installed, version: b.version, build: b.build }; settings.hold = true; return null; }
         case "set_settings": for (const k in args) if (args[k] != null) settings[k] = args[k]; return { ...settings };
         case "set_wow_path": if (args.flavor) settings.flavor = args.flavor; return { ...settings };
+        case "sync_status": return { ...demoSync };
+        case "sync_link":
+          if (args.code.toUpperCase() !== "DEMO1234") throw "That code is unknown or older than 15 minutes: type /launcher in Discord for a new one. (Demo: DEMO1234)";
+          demoSync = { ...demoSync, linked: true, user: "Tsumil", last: Math.floor(Date.now() / 1000), waiting: 2 };
+          return { ...demoSync };
+        case "sync_run": demoSync.last = Math.floor(Date.now() / 1000); return { ...demoSync };
+        case "sync_unlink": demoSync = { ...demoSync, linked: false, user: "", last: null, waiting: 0 }; return { ...demoSync };
         case "play": throw "Demo: Play would start Battle.net here.";
         case "open_folder": throw "Demo: this would open the folder.";
       }

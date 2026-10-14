@@ -2,6 +2,7 @@
 
 mod background;
 pub mod core;
+mod sync;
 
 use crate::core::error::msg;
 use crate::core::install::{self, BackupInfo, Layout, Outcome, Progress};
@@ -105,6 +106,7 @@ fn set_settings(
     tray: Option<bool>,
     auto_install: Option<bool>,
     autostart: Option<bool>,
+    sync_server: Option<String>,
 ) -> Result<Settings> {
     let mut s = state::load();
     if let Some(c) = channel {
@@ -136,6 +138,9 @@ fn set_settings(
     }
     if let Some(a) = autostart {
         s.autostart = a;
+    }
+    if let Some(v) = sync_server {
+        s.sync_server = v.trim().to_string();
     }
     state::save(&s)?;
     background::sync_tray(&app).map_err(|e| crate::core::Error::Msg(e.to_string()))?;
@@ -260,6 +265,28 @@ fn open_folder(kind: String) -> Result<()> {
     tauri_plugin_opener::open_path(path, None::<&str>).map_err(|e| crate::core::Error::Msg(e.to_string()))
 }
 
+/// Settings > Discord: is this PC linked, when it last synced, what waits for the game.
+#[tauri::command]
+fn sync_status() -> sync::SyncView {
+    sync::view()
+}
+
+/// Link with a code from /launcher in Discord.
+#[tauri::command]
+async fn sync_link(app: AppHandle, code: String) -> Result<sync::SyncView> {
+    sync::link(&app, &code).await
+}
+
+#[tauri::command]
+fn sync_unlink(app: AppHandle) -> Result<sync::SyncView> {
+    sync::unlink(&app)
+}
+
+#[tauri::command]
+async fn sync_run(app: AppHandle) -> Result<sync::SyncView> {
+    sync::sync_now(&app).await
+}
+
 #[tauri::command]
 fn play() -> Result<()> {
     crate::core::play::play(&state::load())
@@ -294,6 +321,7 @@ pub fn run() {
             if !hidden {
                 background::show_main(&handle);
             }
+            sync::spawn_loop(handle.clone());
             background::spawn_loop(handle);
             Ok(())
         })
@@ -314,7 +342,11 @@ pub fn run() {
             backups,
             restore,
             open_folder,
-            play
+            play,
+            sync_status,
+            sync_link,
+            sync_unlink,
+            sync_run
         ])
         .build(tauri::generate_context!())
         .expect("error while starting the DisasterZone launcher");

@@ -124,10 +124,23 @@
             <div class="rl"><div class="rt">Play command</div><div class="rd">Optional, mostly for Linux: run this instead of Battle.net.</div></div>
             <div class="rc"><input class="field wide" id="set-cmd" placeholder="e.g. lutris lutris:rungame/battlenet" spellcheck="false"></div>
           </div>
+          <div class="group">Discord</div>
+          <div class="row">
+            <div class="rl"><div class="rt">Guild Discord sync</div><div class="rd" id="sync-state">Not linked.</div></div>
+            <div class="rc" id="sync-linked-btns"><button class="btn" id="btn-sync">Sync now</button><button class="btn" id="btn-unlink">Unlink</button></div>
+          </div>
+          <div class="row" id="row-link">
+            <div class="rl"><div class="rt">Link this launcher</div><div class="rd">Type /launcher in the guild's Discord and paste the code it gives you. Your game's sign-ups, BiS lists and raids then reach Discord after each save, and what people change in Discord reaches your game at its next login or /reload.</div></div>
+            <div class="rc"><input class="field" id="set-linkcode" placeholder="code" spellcheck="false" autocomplete="off" maxlength="12"><button class="btn primary" id="btn-link">Link</button></div>
+          </div>
           <div class="group">Advanced</div>
           <div class="row">
             <div class="rl"><div class="rt">Release source</div><div class="rd">Leave empty. For testing: another address or a local folder.</div></div>
             <div class="rc"><input class="field wide" id="set-source" spellcheck="false"></div>
+          </div>
+          <div class="row">
+            <div class="rl"><div class="rt">Bot server</div><div class="rd">Leave empty. For testing: another address, e.g. http://127.0.0.1:8787.</div></div>
+            <div class="rc"><input class="field wide" id="set-server" spellcheck="false"></div>
           </div>
         </div>
         <div class="about" id="about"></div>
