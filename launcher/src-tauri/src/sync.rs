@@ -70,10 +70,12 @@ pub fn view() -> SyncView {
 }
 
 fn set_view(app: &AppHandle, f: impl FnOnce(&mut SyncView)) {
-    let mut g = VIEW.lock().unwrap();
-    let v = g.get_or_insert_with(SyncView::default);
-    f(v);
-    let _ = app.emit("sync-status", v.clone());
+    {
+        let mut g = VIEW.lock().unwrap();
+        f(g.get_or_insert_with(SyncView::default));
+    }
+    // (the whole view, with linked / server / user filled in: the stored one leaves them to view())
+    let _ = app.emit("sync-status", view());
 }
 
 fn now() -> u64 {
