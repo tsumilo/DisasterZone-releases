@@ -1,19 +1,19 @@
 {
- "assetPack": 13,
- "build": "4fdd7b5e37571def",
+ "assetPack": 14,
+ "build": "8535417e49a60bd3",
  "channel": "stable",
- "commit": "bad1736b216b357af312cccc3147d385f4a5760c",
+ "commit": "98824a6384f66ef8d93193d665c80b12da9b51c5",
  "folders": {
   "DisasterZone": {
    "Bindings.xml": {
-    "gz": 225,
-    "sha256": "5be014903fc4daa2d8e027898fcc9ccce64ac6928864b74b685a72b5e2b26dd4",
-    "size": 538
+    "gz": 240,
+    "sha256": "438517bf8088dd48848384d94011c76051beacd8422fd05a1b39b9940f91d284",
+    "size": 640
    },
    "Core/Atlas.lua": {
-    "gz": 10015,
-    "sha256": "bb5dcd9bcaf0a33253cf045a6d7206158cc041d5042b74b980f06b5e24dae4d4",
-    "size": 35276
+    "gz": 11825,
+    "sha256": "7e4966921b5f058901f2f7e1c9a180870a8dbc6e9bb6ae9a58b6f7dea2bdee67",
+    "size": 41608
    },
    "Core/Attendance.lua": {
     "gz": 20857,
@@ -76,8 +76,8 @@
     "size": 461
    },
    "Core/BuildInfo.lua": {
-    "gz": 220,
-    "sha256": "282db8c29b986d56e5a104f351244c18ceda742e5f317accb1e450854f022a82",
+    "gz": 222,
+    "sha256": "7fafe34065da9f9b6b7c607566093997c967e915f20325e65c7d8f2f02d0040f",
     "size": 271
    },
    "Core/ClassKit.lua": {
@@ -121,9 +121,9 @@
     "size": 20717
    },
    "Core/DB.lua": {
-    "gz": 6530,
-    "sha256": "90d6cd09d38c39a26377ed4e1f8ef40d338826c7f2e39c58fea8a477a21091de",
-    "size": 18027
+    "gz": 6809,
+    "sha256": "72f9cee23b39c6fb2a8d3bff531c6cad1f92510b362ecc4ba521eff4f535f7bc",
+    "size": 18927
    },
    "Core/Demo.lua": {
     "gz": 8451,
@@ -216,9 +216,9 @@
     "size": 40342
    },
    "Core/Guild.lua": {
-    "gz": 25066,
-    "sha256": "7be4d9eaeb2e3d373929e0e659085b8c5e0eb1bfd7bafa16b2f141e3cb165342",
-    "size": 96724
+    "gz": 26205,
+    "sha256": "2b266d7b67fabfe825fa74c81833b5af8509e0b7d7dbf5d2b939363c18b43f0f",
+    "size": 100967
    },
    "Core/GuildMap.lua": {
     "gz": 7791,
@@ -365,6 +365,21 @@
     "sha256": "ff501a36e3b4dbcec851a8d7f06d9f80a6f206ca9d794282689c80acdf87a107",
     "size": 188636
    },
+   "Core/Recruit.lua": {
+    "gz": 15231,
+    "sha256": "e802d3729afa7d6b6e3e8b5822430cafe55f32fc09aec0e39ad7bbc564086163",
+    "size": 54176
+   },
+   "Core/RecruitIntro.lua": {
+    "gz": 3739,
+    "sha256": "0d3d903e5c7dcc42543e664e978083ef1f30d2ddbfc176183b8b6ebe64ac2d5f",
+    "size": 13068
+   },
+   "Core/RecruitMessage.lua": {
+    "gz": 8449,
+    "sha256": "99455dd65e65166f36b4962c277bcb176066ceaa85a9eef2f6cc71d0e763b22d",
+    "size": 27375
+   },
    "Core/ReserveChat.lua": {
     "gz": 4175,
     "sha256": "2af08f286211d98cffa86e78561a34b1a513d9f445493d65e71ff7e9f2154ca8",
@@ -426,9 +441,9 @@
     "size": 72419
    },
    "Core/StrategyCollab.lua": {
-    "gz": 12789,
-    "sha256": "7f0e802034c959091b162ebaf3b2457538f7110320994ba4034448409fce2d4a",
-    "size": 46814
+    "gz": 14312,
+    "sha256": "efa1fb94223a7b9e02824c4698b54f6a572d535d74a54b0640fc76f7d9f98bc5",
+    "size": 51681
    },
    "Core/StrategyLive.lua": {
     "gz": 14420,
@@ -485,6 +500,11 @@
     "sha256": "94e300310cb67c40dcdf58ae59f222cb3286a07d81f2c2750980abe15f521d4b",
     "size": 46279
    },
+   "Core/WarriorSwing.lua": {
+    "gz": 8897,
+    "sha256": "2f2e881775290b776a887a41da3d50ed012d5d388f133756caf026dadc2e0ff8",
+    "size": 29994
+   },
    "Core/WornGems.lua": {
     "gz": 3293,
     "sha256": "67b03e63cc091b849946a41a8789511f70cbfccbc544de2362e3a9ed3424ff62",
@@ -494,6 +514,16 @@
     "gz": 141075,
     "sha256": "f9a91020d51cc32324e3b0f356cecde044ebe88efaf05946e1057c72e0eb54f5",
     "size": 643550
+   },
+   "Data/AtlasClassic.lua": {
+    "gz": 111151,
+    "sha256": "6a99cf0414d13e2ebf2dfacb8954957cb69c3698bc92120b3193d1aba88e2794",
+    "size": 510633
+   },
+   "Data/AtlasPortraits.lua": {
+    "gz": 5520,
+    "sha256": "fa29374c08735e45dd16f59581c871e62d1d6574bb03e1684fe324b5f694c22e",
+    "size": 14083
    },
    "Data/BiSLists.lua": {
     "gz": 29991,
@@ -561,9 +591,9 @@
     "size": 9381
    },
    "Data/Changelog.lua": {
-    "gz": 51491,
-    "sha256": "46c66416ce3184cda85bc88a5e05e94e1e096406140cc0c671e13bef5f6aeea7",
-    "size": 175959
+    "gz": 53527,
+    "sha256": "7620f9473303eb6d3896e210395e3af9f5b64a83b6081b84fb0a335a7e3ac580",
+    "size": 182642
    },
    "Data/Classes/Paladin.lua": {
     "gz": 1676,
@@ -671,19 +701,24 @@
     "size": 48881
    },
    "Data/Tours/Welcome.lua": {
-    "gz": 5156,
-    "sha256": "362f71edf2361bd95a79e4b1c815d61752ef46765899a043ec2d931f5a53763e",
-    "size": 17187
+    "gz": 5284,
+    "sha256": "5bec0847b8dacb7273c99aba4661bcf1b176bae6c96c94b20c1edfb13d481655",
+    "size": 17640
    },
    "DisasterZone.toc": {
-    "gz": 2580,
-    "sha256": "f11beeb7c13e2ff8960c7e8364b05ee7ebaf309e967ad63638d2c248d7c57aa5",
-    "size": 7908
+    "gz": 2635,
+    "sha256": "4b2126bd1825d7e47965ad164bb56bd3b07e6fcbb6b4184934b4ccf97a5c8c8d",
+    "size": 8148
    },
    "Games/Azeromon/Achievements.lua": {
     "gz": 7499,
     "sha256": "54db2e3685f2d41f2e211eaa1776a96a00a114a06fa74c5de3a2951cf6a3de95",
     "size": 28838
+   },
+   "Games/Azeromon/Aftermath.lua": {
+    "gz": 3060,
+    "sha256": "e6f1a0ed869e34fac78c753dead5ef0472cd18db8938491d4b91ffebf602d068",
+    "size": 8737
    },
    "Games/Azeromon/Arena.lua": {
     "gz": 2141,
@@ -691,9 +726,9 @@
     "size": 5075
    },
    "Games/Azeromon/Atlas.lua": {
-    "gz": 4302,
-    "sha256": "ff98f1282efe66ea77e0a3081c8b84e780313a167e0adfb6162bc6d8d9803330",
-    "size": 17454
+    "gz": 4418,
+    "sha256": "0b8e77200e1b6a45d2ed6f962141e1a9fd8f7757910b61d63f676628db313c1a",
+    "size": 17839
    },
    "Games/Azeromon/Battle.lua": {
     "gz": 11253,
@@ -706,9 +741,9 @@
     "size": 12887
    },
    "Games/Azeromon/Changelog.lua": {
-    "gz": 6305,
-    "sha256": "91ab0a7ff86b487c281f83763b50dd839a7c31c6f72fa611e14446c2482be673",
-    "size": 18179
+    "gz": 7051,
+    "sha256": "bf64cc692903845576ae329fa27ab499d16b682d52a366949a5fd87682c087ba",
+    "size": 20480
    },
    "Games/Azeromon/Chat.lua": {
     "gz": 3151,
@@ -716,9 +751,9 @@
     "size": 8760
    },
    "Games/Azeromon/Crafting.lua": {
-    "gz": 11977,
-    "sha256": "83c917961d2aa0c37e9034be3091906e54a14f101ecc3bbe83de6089f132586d",
-    "size": 45885
+    "gz": 12049,
+    "sha256": "30a08ee0eae197ce6a1b4ef4abf5b32e8c30c451848d299f00c5fba2569f8174",
+    "size": 46074
    },
    "Games/Azeromon/Data.lua": {
     "gz": 38567,
@@ -726,24 +761,24 @@
     "size": 149914
    },
    "Games/Azeromon/Fishing.lua": {
-    "gz": 6068,
-    "sha256": "6745821c98e788f4fb9d53988e2151d12a7a840cffb0b8985b8c8b8126a94701",
-    "size": 18424
+    "gz": 6837,
+    "sha256": "297f9c6602e25046ced421506d64a762ad745924a18fe105f5046bccb12da0ff",
+    "size": 20727
    },
    "Games/Azeromon/Game.lua": {
-    "gz": 22452,
-    "sha256": "ce2670035badbead7012c6184473d9ed9868e9108afeb4be7dea496b1814041b",
-    "size": 77022
+    "gz": 22751,
+    "sha256": "0dc7ffc146b05636d494a7b4db944de717050673594d277570f0f01ab50d2341",
+    "size": 78059
    },
    "Games/Azeromon/Ground.lua": {
-    "gz": 8829,
-    "sha256": "645bd6f89a7491b6d91c1d7cd0dc5215584ba3c08a1c23e34ab8ac7cc017bf87",
+    "gz": 8832,
+    "sha256": "03a28ab89ad3fdb85721f1300c615253d88123e7074212d2d084383233b492fe",
     "size": 57786
    },
    "Games/Azeromon/GuildBoard.lua": {
-    "gz": 6198,
-    "sha256": "f0e47b0b2fa8249106cff48797ffee35c0580304aac92f7dd9f6205bde617be1",
-    "size": 19599
+    "gz": 6235,
+    "sha256": "a987026a586cbe84c973782ceb24bfa917eb54e7d2fe481b27b7bfe992d4a3a4",
+    "size": 19713
    },
    "Games/Azeromon/HallArt.lua": {
     "gz": 2349,
@@ -756,24 +791,24 @@
     "size": 17911
    },
    "Games/Azeromon/Maps.lua": {
-    "gz": 16986,
-    "sha256": "9519ebe345cacbcfcf43fc07e629da2fc4ca222f84b68d983d9ca63e95c39a40",
-    "size": 79622
+    "gz": 20047,
+    "sha256": "95485fa8545653c93492d4dd05e287b5f0823f8063c2eb018c901b38fe691f96",
+    "size": 94359
    },
    "Games/Azeromon/MapsBlackrock.lua": {
-    "gz": 8831,
-    "sha256": "823fa0f8e2ef15b2b51cd971d76851844c06b291c88a6e8399b27a2cbc5ca82b",
-    "size": 39246
+    "gz": 8855,
+    "sha256": "bbe6db6ce20bb777e1800beffd18e81daa8ff590ebf0200737000e1298501261",
+    "size": 39306
    },
    "Games/Azeromon/MapsStranglethorn.lua": {
-    "gz": 8188,
-    "sha256": "b5e15771c43f69d1909ac932681dde6b61de19ef6641249897d3c44063421c30",
-    "size": 41813
+    "gz": 8208,
+    "sha256": "8f5aab3a58cb0ea0ebe8069b759fa5cdfb1aa429560be827fa88440c53448a2e",
+    "size": 41870
    },
    "Games/Azeromon/Marks.lua": {
-    "gz": 2288,
-    "sha256": "5c3ddf1d4ba7cf9b08dbc41f41c67cc3ad8dbdc0b39a082b2c273c94a7bbd213",
-    "size": 6358
+    "gz": 5194,
+    "sha256": "8ca7f0fe9dc812cbf07885d0333e9fd64544d3873ed6fce4b69fdf816b6b60bb",
+    "size": 15542
    },
    "Games/Azeromon/Mon.lua": {
     "gz": 3254,
@@ -784,6 +819,11 @@
     "gz": 3788,
     "sha256": "ac93781af07138450b7ab40cba39d9cf106c59b7702c305f7c02e864466b407a",
     "size": 10885
+   },
+   "Games/Azeromon/People.lua": {
+    "gz": 4166,
+    "sha256": "3c324121ba3a9e0fcc7dbcb951009aff3653653b3d67f5a0ec955360f643aed0",
+    "size": 11822
    },
    "Games/Azeromon/Poster.lua": {
     "gz": 6087,
@@ -796,14 +836,14 @@
     "size": 27529
    },
    "Games/Azeromon/Routine.lua": {
-    "gz": 6690,
-    "sha256": "42e97df29409ca24411f40a3ef07924a7a9d27a3bd707c343b7a92889e486485",
-    "size": 22035
+    "gz": 8178,
+    "sha256": "6496d50e7293dea42b02bbfdd9e0ee8237d889ea3a69b23f515185943f720717",
+    "size": 26854
    },
    "Games/Azeromon/Sound.lua": {
-    "gz": 7378,
-    "sha256": "ee9f17379b93b8d1015c1dd263dbe380dffae2d87015cfbc313542ce44b24420",
-    "size": 23123
+    "gz": 7760,
+    "sha256": "573f37faab69a1a5ca569f89b4ca8fc8735dc79c03dbedac373511a6b2cfc7ce",
+    "size": 24559
    },
    "Games/Azeromon/Trade.lua": {
     "gz": 8902,
@@ -811,9 +851,9 @@
     "size": 33317
    },
    "Games/Azeromon/UI.lua": {
-    "gz": 77232,
-    "sha256": "1239edf49b85f6e1ab54360a4d3e2890f8759bdea7282cd929b1179bfd01a38c",
-    "size": 289366
+    "gz": 81033,
+    "sha256": "ad82a94320f690be432138a10c2ed317bdc50fe4a07fc7937d5724abd020bc5c",
+    "size": 304449
    },
    "Games/Azeromon/Watch.lua": {
     "gz": 2362,
@@ -822,7 +862,7 @@
    },
    "Games/Azeromon/WorldArt.lua": {
     "gz": 3220,
-    "sha256": "f7be0f05d5f54520b9f55e71fa2148140c23df18b4377c6db53436f162be5bbd",
+    "sha256": "a3ca404c15d662fe264fd140dfa97b758331fa82760006c63076120eabe69ef9",
     "size": 10337
    },
    "Games/Azeromon/WorldMap.lua": {
@@ -831,9 +871,9 @@
     "size": 56798
    },
    "Games/Bingo/Bingo.lua": {
-    "gz": 6428,
-    "sha256": "0ad85fb67b90e9ef75db24fee28e77253061a19a1fe68c385eb9b9a028112df4",
-    "size": 22790
+    "gz": 6431,
+    "sha256": "a79ac19a093fc1c9ed689d6d5dab748e3a949e167a54f1812d5c3b573bd977e4",
+    "size": 22754
    },
    "Games/Bingo/Card.lua": {
     "gz": 2631,
@@ -851,9 +891,9 @@
     "size": 16197
    },
    "Games/Bingo/UI.lua": {
-    "gz": 19798,
-    "sha256": "52a6ba19025f3ceae9638cb40bb445acd6369cee88e2a50fa8242231b73276c3",
-    "size": 78056
+    "gz": 19934,
+    "sha256": "952200b334a6e6389c0081231f25fcad4582d918e6108e33ea4a4440a1ca3bfe",
+    "size": 78526
    },
    "Games/Chess/AI.lua": {
     "gz": 4740,
@@ -871,9 +911,9 @@
     "size": 10785
    },
    "Games/Chess/Chess.lua": {
-    "gz": 10140,
-    "sha256": "2db3b64a7835bd0986a08a1b4419f7a7a448a35f71a02b05a9da6e9713ccc17a",
-    "size": 36026
+    "gz": 10128,
+    "sha256": "ba6246ed8eddeb88abc55e029ba3528ce42186c9b0abb3a8e9e27d92333edc94",
+    "size": 35994
    },
    "Games/Chess/Rules.lua": {
     "gz": 6640,
@@ -881,9 +921,9 @@
     "size": 25379
    },
    "Games/Chess/UI.lua": {
-    "gz": 14025,
-    "sha256": "f51761116770a3c5632221b7a090eb42310292ae801b6b7557447addc2e0e69f",
-    "size": 51708
+    "gz": 14154,
+    "sha256": "db3e6f5b4076fef0b68c64af1347bf53500352d1fb100d18884a585cc1fdd9a1",
+    "size": 52078
    },
    "Games/Hub.lua": {
     "gz": 2036,
@@ -891,9 +931,9 @@
     "size": 5377
    },
    "Games/HubUI.lua": {
-    "gz": 21542,
-    "sha256": "d1834902c23d7b6c3b71d57d785b1e2c87d79af4af5a668b3b9a7f4116e18564",
-    "size": 76584
+    "gz": 24629,
+    "sha256": "38ecd473c6b056cdd7b25d751b0551c90ba96f22d364290a54496de761d475b5",
+    "size": 86991
    },
    "Games/Illidan/Attract.lua": {
     "gz": 2170,
@@ -921,14 +961,14 @@
     "size": 47257
    },
    "Games/Illidan/Game.lua": {
-    "gz": 1615,
-    "sha256": "2508dfbe796edfc7e7e209f239e8f13b0e11ccc30f72e58eb7d19b9faf1dbd49",
-    "size": 3963
+    "gz": 1607,
+    "sha256": "d8193eeff39a9045c792aa43408d3c2d18e21790b03d9e6bbc8c8420161059f9",
+    "size": 3917
    },
    "Games/Illidan/UI.lua": {
-    "gz": 21567,
-    "sha256": "a4445bfc8ab735b2a4790ad03b45b88aa7e55a874b79f032fa6e515c19aa8419",
-    "size": 74294
+    "gz": 21735,
+    "sha256": "523f07195e6a646273edd5b634d94d60ed4a6a39ca27cfd945187e87bc120e6d",
+    "size": 74958
    },
    "Games/Trainer/Encounters/LadyVashj.lua": {
     "gz": 8552,
@@ -941,14 +981,14 @@
     "size": 19160
    },
    "Games/Trainer/Engine.lua": {
-    "gz": 9325,
-    "sha256": "8de627a53f9df52b608b5b0005d131746767eb397edb38ea82947444717aa2e9",
-    "size": 27779
+    "gz": 9333,
+    "sha256": "242f1d4eb05eb6267caf92550e5cbf1a1de4e368588df3f180bea1279275963b",
+    "size": 27762
    },
    "Games/Trainer/UI.lua": {
-    "gz": 23655,
-    "sha256": "e3fff6ac33bbec611b5a2fb0451c3bb399c676163fe03695a7ca7dd6df7ef117",
-    "size": 86784
+    "gz": 23985,
+    "sha256": "128be3738ba2e28c0dad63297b34b17dfa5fc5e119a9dd537be33afa102e621e",
+    "size": 87981
    },
    "Libs/AceComm-3.0/AceComm-3.0.lua": {
     "gz": 3775,
@@ -1391,8 +1431,8 @@
     "size": 196652
    },
    "Media/Azeromon/Ground/darkshire_1_1.tga": {
-    "gz": 10594,
-    "sha256": "4ffd77fc67466f7b114200912d69fb0d111b379406b258a62939e1d53b7960b8",
+    "gz": 10568,
+    "sha256": "01eb961325d8fbac4a26b400b9e8b28d2b63b8949d2c7479b6dff1d1f2f619ca",
     "size": 196652
    },
    "Media/Azeromon/Ground/darkshire_2_0.tga": {
@@ -3436,8 +3476,8 @@
     "size": 49196
    },
    "Media/Azeromon/Ground/westfall_0_0.tga": {
-    "gz": 8937,
-    "sha256": "6dc1067cb35560e0f38e7cb5c0aff3d175ca7f1d9848a4f10fd14fae33e48c80",
+    "gz": 8895,
+    "sha256": "cb11fc14c2b641900bb691d0d80d31700f56532a0e6f25119fa217b6e8516c34",
     "size": 196652
    },
    "Media/Azeromon/Ground/westfall_0_1.tga": {
@@ -3451,8 +3491,8 @@
     "size": 196652
    },
    "Media/Azeromon/Ground/westfall_1_0.tga": {
-    "gz": 13466,
-    "sha256": "6ff57c628b724d34bfc4e01faf8a3b830139b61b32ec8b1da7fdf27c2f9259ad",
+    "gz": 13355,
+    "sha256": "9c78545f0ae923ba437fe5c69d93c1e642e6e6f20b4edbead27d9f2222ebf70c",
     "size": 196652
    },
    "Media/Azeromon/Ground/westfall_1_1.tga": {
@@ -3716,8 +3756,8 @@
     "size": 32812
    },
    "Media/Azeromon/atlas.tga": {
-    "gz": 47526,
-    "sha256": "5474ba957d2a35936cfac159532874068ee70a6fdad66caa03c6b0e191be4111",
+    "gz": 48660,
+    "sha256": "0bebf2eb5630f9e8e85934f00ff8a2fdc36d57672a7d91b4ebbdb237fd0711cc",
     "size": 1048620
    },
    "Media/Azeromon/chars.tga": {
@@ -3839,6 +3879,26 @@
     "gz": 20744,
     "sha256": "9e45781086588a88c2a0f096de055893a563a05bc32c186d07f606eb010bbbf3",
     "size": 65580
+   },
+   "Media/Games/logo_bingo.tga": {
+    "gz": 66858,
+    "sha256": "2337a4d8b3e64ed76ecfb4ffabffa62b174ed64dd0658cc216f8c9a86a542065",
+    "size": 524332
+   },
+   "Media/Games/logo_chess.tga": {
+    "gz": 81963,
+    "sha256": "ad3975716be557ff77b4a8a1f44a6915747f08e83136dfde0cf2e55ee94ceb4a",
+    "size": 524332
+   },
+   "Media/Games/logo_illidan.tga": {
+    "gz": 102013,
+    "sha256": "caf4d6f06b9e6ae8a4d7018cfec4c932c9279af753bdc38194e9f477f9bfe95d",
+    "size": 524332
+   },
+   "Media/Games/logo_trainer.tga": {
+    "gz": 93780,
+    "sha256": "85213079bd1ec48e685a4d4466f49afeadc70ae289a633b3e068d88e4297fa46",
+    "size": 524332
    },
    "Media/Gilt/bezel.tga": {
     "gz": 3235,
@@ -4445,6 +4505,36 @@
     "sha256": "b14ed3a9c429f7b2d69086d29cc38bb9d18bd51b976c7a77f4a5bf1d520ea3f6",
     "size": 262188
    },
+   "Media/Warrior/fluid.tga": {
+    "gz": 10872,
+    "sha256": "c0644a3d19c8cdce503aea3a81a82901bcf91a1b5bb17c6083a685b7a264acc0",
+    "size": 65580
+   },
+   "Media/Warrior/glass_shade.tga": {
+    "gz": 9191,
+    "sha256": "1243165b3f7a97db7373ff450225ceba9d985045e26fe48a17f587943e5db9db",
+    "size": 65580
+   },
+   "Media/Warrior/glass_spec.tga": {
+    "gz": 10113,
+    "sha256": "45d098bc0b2903d660c2d97a64dd4cb8a5c5eebe191588e4fa95565413536227",
+    "size": 65580
+   },
+   "Media/Warrior/notch.tga": {
+    "gz": 2847,
+    "sha256": "168d2a25b5a4edba9425f94011bd34b0f29686c864a6ba45e1c82e4c41672e6c",
+    "size": 16428
+   },
+   "Media/Warrior/tank_shade.tga": {
+    "gz": 4240,
+    "sha256": "360dfbf33ce1ad5827b9c78cd8a919767ec3e6d9faa8e2ff76139a92e4944618",
+    "size": 65580
+   },
+   "Media/Warrior/tank_spec.tga": {
+    "gz": 5235,
+    "sha256": "192e330a7eb38f1fd39987c6e3dfd6d4531eff8efa4614f1af28ec4dd8061eb9",
+    "size": 65580
+   },
    "NOTICE.md": {
     "gz": 6082,
     "sha256": "2cc892a2de27183e74e15b1a73f431dc2b1b25d0afacc10e981afaaf62342c99",
@@ -4452,7 +4542,7 @@
    },
    "README.md": {
     "gz": 24786,
-    "sha256": "2cfd941712b7f6bac4eae15cb71039e7419b26604ab367012f5893e30b58f5e5",
+    "sha256": "9e7bbb37957cd10881c67b5ca928b0581256081bbb5c2e015ed697e69fe97a5f",
     "size": 70028
    },
    "Render3D/Probe.lua": {
@@ -4461,9 +4551,9 @@
     "size": 118663
    },
    "Render3D/Room.lua": {
-    "gz": 44546,
-    "sha256": "9c584307efd417fd65b82eec951cbb4296b8a35f5135c47cb10158beed90f764",
-    "size": 151651
+    "gz": 45085,
+    "sha256": "fdd243cf1e6f13224a82d9d4c7ccd5a9d18a279abd7a6170ecdf00517f96afbc",
+    "size": 153132
    },
    "Render3D/Rooms.lua": {
     "gz": 8354,
@@ -4611,14 +4701,19 @@
     "size": 41413
    },
    "UI/Atlas.lua": {
-    "gz": 23665,
-    "sha256": "7bdd8fa49a172303fa45b9c32ca67cc190589c35744b9c66419b3333860e3e65",
-    "size": 84276
+    "gz": 37661,
+    "sha256": "1043158814d334e23d6749c8232fa40452a23a824ea728277191b76a7d663593",
+    "size": 142791
+   },
+   "UI/AtlasNav.lua": {
+    "gz": 9040,
+    "sha256": "6d0b1763213eca21bff087a7389e852f280b99d7c1ccc1425b51465af5051a95",
+    "size": 33355
    },
    "UI/AtlasShop.lua": {
-    "gz": 8948,
-    "sha256": "fdf2d362f97256ca4b1550642adc31836ba7e58f175f34144a70347f8122d1a1",
-    "size": 32237
+    "gz": 9521,
+    "sha256": "bba53a69bef33f881adb0281c54d71cafc679be8baf1c69a92290a710b14e3a8",
+    "size": 35743
    },
    "UI/AttendanceUI.lua": {
     "gz": 28635,
@@ -4686,9 +4781,9 @@
     "size": 33587
    },
    "UI/Comp/Controls.lua": {
-    "gz": 12944,
-    "sha256": "cdf087f1fad21fde743567a31c81d97b87e1a40602948a7adb6a7ef5ad6a3eff",
-    "size": 45798
+    "gz": 13222,
+    "sha256": "08783867398ecd22c557799ea4cba5c1e87c5d15b04fb5bb617896090d920ad9",
+    "size": 46965
    },
    "UI/Comp/Layouts.lua": {
     "gz": 10883,
@@ -4826,9 +4921,9 @@
     "size": 77099
    },
    "UI/GuestBook.lua": {
-    "gz": 16667,
-    "sha256": "229941ce48eb62dbbd091a21c9de98824bdc3101cdf97d4f5f0ac1cd2e0ecaef",
-    "size": 61605
+    "gz": 17368,
+    "sha256": "76c9b347e5f3a12115e10887d40a7965d16e29343dd9adc8d30dfa70ab21abf5",
+    "size": 64043
    },
    "UI/GuildMapUI.lua": {
     "gz": 16459,
@@ -4906,14 +5001,14 @@
     "size": 33632
    },
    "UI/MainFrame.lua": {
-    "gz": 12194,
-    "sha256": "d1cd5d2506dde845a465114e84fef8085c09de4dfbca82cb4b2af4aff9c725a1",
-    "size": 40821
+    "gz": 12240,
+    "sha256": "8938a55adda5ee618cd9960c104e970599364935ee3eea2c6567019a59733496",
+    "size": 40916
    },
    "UI/Members.lua": {
-    "gz": 22805,
-    "sha256": "d92057ca2eb849e611adcd27b6d70ef6d6a70182aa490c97b0224d0b40c9d4e0",
-    "size": 83173
+    "gz": 23569,
+    "sha256": "b726cbe195d1828e12d4be791461a4672f93fdded8561e73411b60b6b9dc4a29",
+    "size": 85626
    },
    "UI/Menu.lua": {
     "gz": 9213,
@@ -4971,9 +5066,9 @@
     "size": 29359
    },
    "UI/NavMenu.lua": {
-    "gz": 10370,
-    "sha256": "982d9f8f3bb354654fc38c69096f79cd69741478cc087a54f38b95409a124a08",
-    "size": 32914
+    "gz": 10595,
+    "sha256": "3daf4ffd6a64b925fb23006a525c02ff3d0086495e42cf967ea3199ebf6e034e",
+    "size": 33654
    },
    "UI/Notify.lua": {
     "gz": 9966,
@@ -4981,9 +5076,9 @@
     "size": 33600
    },
    "UI/NotifySources.lua": {
-    "gz": 6015,
-    "sha256": "fb0158f253f38aa2164e8fff47ee6c86859ee00cd43173edaaa1295df6395d7e",
-    "size": 22835
+    "gz": 8623,
+    "sha256": "faa3efa179ac04bd14e427c01511ef5ce4ea0f0c86a662768a7504f09445484e",
+    "size": 34738
    },
    "UI/PaperDoll.lua": {
     "gz": 11484,
@@ -5065,15 +5160,20 @@
     "sha256": "c0957ee3f70ec6048786c30a359b5ed60f8b3b15bc3f1f2c2c45994a94fdc9d1",
     "size": 49182
    },
+   "UI/Recruit.lua": {
+    "gz": 21586,
+    "sha256": "36d8fdbec8d1a3a5e7b8d92aa9f7c8bb9c01d24be6a18bf60ea4ca7436226395",
+    "size": 78792
+   },
    "UI/Reserves.lua": {
     "gz": 12045,
     "sha256": "b69110e955304fd277aff7d0372627458017d5f4beab872f2878ec879c5b68c7",
     "size": 46759
    },
    "UI/RingFace.lua": {
-    "gz": 7886,
-    "sha256": "1c55ec6f4b1c134f62755a569e3ae143bfc8c62c59fabcec333f62f8fe9dc561",
-    "size": 27566
+    "gz": 13976,
+    "sha256": "e3a7de024a4fc994269c703276eef3ac290e8bab18c9fd645057d54f1c92bfb3",
+    "size": 51160
    },
    "UI/RollFrame.lua": {
     "gz": 14585,
@@ -5091,14 +5191,14 @@
     "size": 29944
    },
    "UI/Settings.lua": {
-    "gz": 63727,
-    "sha256": "bdc1bada69b6344d8dc7782efa04c29589e7eb1de185b0e45767a6a8bb43b31a",
-    "size": 227968
+    "gz": 64995,
+    "sha256": "9754023370fe5d4f52253ed586b5278611a9323f04965ecf548ce28cfe33c29e",
+    "size": 232791
    },
    "UI/Share.lua": {
-    "gz": 12266,
-    "sha256": "c427441b526ba5556965b2c0ae7e0b0ced98971e609f216b7f17194d87551683",
-    "size": 44833
+    "gz": 12330,
+    "sha256": "10cc8e49747da20eeaa748d8fbb1451d4ac6ed04c69601cb52d8537d6bad886f",
+    "size": 45036
    },
    "UI/ShareWindow.lua": {
     "gz": 4334,
@@ -5156,9 +5256,9 @@
     "size": 102811
    },
    "UI/StrategyMap3D.lua": {
-    "gz": 36028,
-    "sha256": "c0036ef4a5b9cdaad21964d3117eb09fc263a8a5b6d8daf3448d6caf08015e0d",
-    "size": 124561
+    "gz": 39817,
+    "sha256": "ab16bb305f5878201f4b8a50d64a694cdcd459f9008f52b9a6f2c57f5eef6f00",
+    "size": 136950
    },
    "UI/StrategyReminder.lua": {
     "gz": 8542,
@@ -5176,9 +5276,9 @@
     "size": 43962
    },
    "UI/SwingTimerHUD.lua": {
-    "gz": 8855,
-    "sha256": "1cff03b1063a40d4ac181e774861f5ff79a45c0498ed90987fbe4bf195c7ccf3",
-    "size": 27936
+    "gz": 9148,
+    "sha256": "2357d72773f0fdfc0c11c3dfe81b40b86bcca315aefa65a0f2a157c2586bdd76",
+    "size": 28878
    },
    "UI/Tooltip.lua": {
     "gz": 11386,
@@ -5210,6 +5310,11 @@
     "sha256": "43d680440bc33d7d0036ca438bc38cf2ebb78fddfa2c33440a94c20a32a02275",
     "size": 35267
    },
+   "UI/WarriorSwingHUD.lua": {
+    "gz": 3168,
+    "sha256": "bb803201e381b2a76f9b8999a14d984268a0dddf1c7eac0e8c50dbdbeb84146e",
+    "size": 8037
+   },
    "UI/WelcomeTour.lua": {
     "gz": 6759,
     "sha256": "6aad51f48bcd38de4ddf639ddec555b579aa5881668b49ba731e9be278d661b9",
@@ -5224,7 +5329,7 @@
   "DisasterZone_Rooms": {
    "DisasterZone_Rooms.toc": {
     "gz": 1187,
-    "sha256": "5694be450f23c84a21b320f91d833ebba7fbb10f3f21d63c05929a805f1b773f",
+    "sha256": "cefda3dda4f285563a091dd229b2e9ab5fcab5c3888c78df50f1f449d90e9572",
     "size": 4477
    },
    "Load.lua": {
@@ -5789,6 +5894,128 @@
  "notes": {
   "changelog": [
    {
+    "date": "16 October 2026",
+    "sections": [
+     {
+      "area": "guild",
+      "heading": "Recruitment",
+      "kind": "new",
+      "lead": "Guild > Recruitment: the people you talk to about joining, for the GM and officers.",
+      "lines": [
+       "Add someone from a name's right-click menu, from Raids > Guests, or by name.",
+       "What they want, their spec, the nights they can raid and their own words.",
+       "Fits a team: their nights beside each team's raid nights, and an open place.",
+       "Every officer's notes in one story, with their guest raids and milestones.",
+       "Follow-ups remind you when they're online: they go on your friends list.",
+       "Pass someone to another officer; introductions nobody took remind everyone.",
+       "Bring them along: a group invite, a guest seat in a raid, or a member.",
+       "Invite: a welcome in guild chat, the officer note, the team's bench, its leaders told.",
+       "Then check-ins after a week and a month, level 58 and 70, first raid, gone quiet.",
+       "Message: build it from your words + helpers (classes a team needs, its nights).",
+       "Post to any channel, Say or Yell, each every 30 s or more; a key posts what is due.",
+       "Raids > Guests: Recruit now puts the guest in Recruitment (one list, not two).",
+       "Every member can introduce a friend from Guild > Members.",
+       "The Guild Master sets it up in Settings > Guild > Recruitment."
+      ]
+     },
+     {
+      "area": "raids",
+      "heading": "Walking together in 3D",
+      "kind": "changed",
+      "lead": "The others walking in a strategy's room stay where they really are, as themselves.",
+      "lines": [
+       "No more snapping: they run down the steps and stop at walls just as they really do.",
+       "Turns, strafing, backing off and jumps show as they happen.",
+       "Positions never wait in a queue, so what you see is never seconds old.",
+       "Their own race, sex and gear (helm and cloak only when shown).",
+       "/dz 3d looks npc: walkers of the other sex as a dressed NPC of their race.",
+       "A whole raid can walk together: 25 stay smooth, only the nearest hide behind pillars.",
+       "Walking and turning cost far less: a touch coarser while you move, sharp when you stop."
+      ]
+     },
+     {
+      "area": "class",
+      "heading": "Swing timer (Warriors)",
+      "kind": "new",
+      "lead": "The swing timer's ring for Arms and Fury: both hands and your rage.",
+      "lines": [
+       "The main hand on the outer ring, the off hand on an inner ring (gone with a two-hander).",
+       "Rage as a globe in the middle; Slate, Pips and Classic show it as a third bar.",
+       "A Heroic Strike lamp where the swing lands: pulsing = queue it, gold = queued.",
+       "The gold line on your rage: queue over it. 40 rage, or 80 for Arms with a two-hander.",
+       "Next presses from WoWSims: Bloodthirst, Whirlwind, Mortal Strike, Slam after the swing.",
+       "Only what you have: known spells, your stance, Execute under 20%, Rampage when usable.",
+       "Every timer theme; Settings > Class tools > Swing timer, /dz war, and demo mode."
+      ]
+     },
+     {
+      "area": "gear",
+      "heading": "A new Atlas",
+      "kind": "changed",
+      "lead": "The Atlas is one wide page under a path you click: era, category, place, boss.",
+      "lines": [
+       "Each part of the path is a menu: any raid by phase, any boss by its portrait.",
+       "Your recent places sit at the top of that menu, Classic and Heroic ones too.",
+       "A raid or dungeon opens on all its loot, one section per boss.",
+       "Loot shows as tiles; chips filter weapons, armor, jewelry and tokens.",
+       "Search finds places and bosses as well as items, in both eras: try \"scar\".",
+       "Up, Down and Enter walk the results; Shift+Enter adds an item to your BiS list.",
+       "Ctrl+F jumps to the search. Click a category's name to see its places as pictures."
+      ]
+     },
+     {
+      "area": "gear",
+      "heading": "Shopping list, by crafter",
+      "kind": "changed",
+      "lead": "The shopping list has its own page behind the bag at the Atlas's top right.",
+      "lines": [
+       "One card per crafter, online first, each with its own Whisper button.",
+       "The materials sit beside the cards, with the auction house total under them.",
+       "+ List on a craft adds it, says who can make it and offers Undo."
+      ]
+     },
+     {
+      "area": "gear",
+      "heading": "Atlas: Classic too",
+      "kind": "new",
+      "lead": "Classic or TBC as the first step of the Atlas's path, for level 1-60 characters.",
+      "lines": [
+       "Classic: Molten Core to Ahn'Qiraj, every old dungeon, professions, factions and sets.",
+       "Dungeons are listed in level order, each with its levels beside it.",
+       "Below level 58 the Atlas opens on Classic, at the dungeon for your level.",
+       "Each side keeps where you were; a search says how many matches the other side has."
+      ]
+     },
+     {
+      "area": "games",
+      "heading": "Game posters, easier to read",
+      "kind": "changed",
+      "lead": "The Games posters say what's yours at a glance.",
+      "lines": [
+       "The label over the painting sits on a dark pill, so it reads on any art.",
+       "Your numbers stand out: big figures with a small label under each.",
+       "Raid Trainer's times say they are best clears, and mark the boss you played last.",
+       "PLAY at the foot of the front poster; side posters keep just your one number.",
+       "Between raids Bingo shows your last card faded, with its lines."
+      ]
+     },
+     {
+      "area": "games",
+      "heading": "A logo for every game",
+      "kind": "new",
+      "lead": "Bingo, Raid Trainer, Chess and Illidan have their own logos, like Azeromon.",
+      "lines": [
+       "The logos stand in for the names on the Games posters.",
+       "Illidan's title screen and the Chess lobby open with theirs.",
+       "Bingo's logo stands over the card until a game deals you one.",
+       "Raid Trainer's briefing card carries it above the boss's name."
+      ]
+     }
+    ],
+    "title": "Recruitment, a Warrior swing timer and walking together",
+    "version": "1.5.1"
+   },
+   {
     "date": "15 October 2026",
     "sections": [
      {
@@ -6119,66 +6346,16 @@
     ],
     "title": "The Binding of Illidan and a living Azeromon",
     "version": "1.4.4"
-   },
-   {
-    "date": "14 October 2026",
-    "sections": [
-     {
-      "area": "loot",
-      "heading": "Loot reserves",
-      "kind": "new",
-      "lead": "Soft reserves for pug nights, in the addon and with the tools pugs already use.",
-      "lines": [
-       "The crest has a new switch, Reserves; its drawer sets 1 to 3 each and opens them.",
-       "Who reserved an item rolls on it; one reserve takes it without a roll.",
-       "Nobody reserved it: up for grabs, everyone rolls.",
-       "Items the guild holds go to the loot council, among guild members, as today.",
-       "Pugs reserve by whisper (!sr), in LootReserve's own window, or from softres.it.",
-       "Raiders pick from the raid's loot: their BiS items marked, who else is on each.",
-       "The drop panel says how each item is decided. Reserves close at the first pull.",
-       "Import and export softres.it, Gargul and LootReserve lists; a wrap-up at the end.",
-       "Try it: Settings > Demo a roll > Loot reserves, or /dz reserves demo."
-      ]
-     },
-     {
-      "area": "other",
-      "heading": "Nameplates in our looks",
-      "kind": "new",
-      "lead": "The plates over mobs and players in every look, with casts, threat and your debuffs.",
-      "lines": [
-       "Interface > Looks > Nameplates: they follow your look; Blizzard keeps the game's.",
-       "Every caster's cast bar: gold you can kick, grey with a lock you can't.",
-       "Tanks see threat in the bar's colour; everyone else gets a glow when close to pulling.",
-       "Your own debuffs with their time; the raid's Sunder and curses as an option.",
-       "Your target stands out, the others sit back; plates stack instead of overlapping.",
-       "Friendly players show their name until they're hurt. Try it shows the Maulgar council.",
-       "Health bars slide, and what was just taken off lingers a moment before it drains."
-      ]
-     },
-     {
-      "area": "other",
-      "heading": "Moving health bars",
-      "kind": "changed",
-      "lead": "Unit, party and raid frames in our looks: health slides like the nameplates'.",
-      "lines": [
-       "A hit leaves a pale piece for a moment; it drains into the bar.",
-       "Switching targets jumps straight to the new one.",
-       "Animated health on each part's page turns it off."
-      ]
-     }
-    ],
-    "title": "Loot reserves and new nameplates",
-    "version": "1.4.3"
    }
   ]
  },
- "published": "2026-10-15T13:49:42Z",
- "seq": 9,
- "version": "1.5.0",
+ "published": "2026-10-15T22:38:38Z",
+ "seq": 10,
+ "version": "1.5.1",
  "zip": {
-  "name": "DisasterZone-1.5.0.zip",
-  "sha256": "93bf81db6d1dc3d2a67e26dc7d910040968eeba8207d5c4a5bbb95f1ffffcbea",
-  "size": 34331445,
-  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.5.0/DisasterZone-1.5.0.zip"
+  "name": "DisasterZone-1.5.1.zip",
+  "sha256": "1579c7070073b1a08de1d0f307106b972354631b9f2df7bce6d76b61622e28e1",
+  "size": 34972059,
+  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.5.1/DisasterZone-1.5.1.zip"
  }
 }
