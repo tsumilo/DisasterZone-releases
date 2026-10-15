@@ -1,8 +1,8 @@
 {
- "assetPack": 11,
- "build": "12b15a766ec6d59e",
+ "assetPack": 12,
+ "build": "8ff6946edd1c2866",
  "channel": "stable",
- "commit": "25a781b620b909926c2615862f0cbf5d1349b4d9",
+ "commit": "a1fd3fe2b68f5d9b893c71007ba920100d3f27be",
  "folders": {
   "DisasterZone": {
    "Bindings.xml": {
@@ -76,8 +76,8 @@
     "size": 461
    },
    "Core/BuildInfo.lua": {
-    "gz": 220,
-    "sha256": "31f76140b7e5949b2cf61570a0f0c85645369ba2ad978619abf652eebecdb0fb",
+    "gz": 221,
+    "sha256": "51b4aee0beb175fd0e06ee40655c586aa9142d00581ba05dac23edd84ac6f07b",
     "size": 271
    },
    "Core/ClassKit.lua": {
@@ -181,9 +181,9 @@
     "size": 55285
    },
    "Core/Gems.lua": {
-    "gz": 11772,
-    "sha256": "34b4b69d2cfc37cf425fa354e23665f8b8709c6723debac751e12b3cf00ae7dc",
-    "size": 43259
+    "gz": 13309,
+    "sha256": "6a95735c02d17aafc7d4390bacd7bc335177020fd55e4c0140037a59fc3de16a",
+    "size": 49814
    },
    "Core/GroupFinder.lua": {
     "gz": 6939,
@@ -406,9 +406,9 @@
     "size": 72419
    },
    "Core/StrategyCollab.lua": {
-    "gz": 12463,
-    "sha256": "ccef1798b62f06125e659c76526c5777389be4a9ec3d0934683572ed3657be23",
-    "size": 46026
+    "gz": 12789,
+    "sha256": "7f0e802034c959091b162ebaf3b2457538f7110320994ba4034448409fce2d4a",
+    "size": 46814
    },
    "Core/StrategyLive.lua": {
     "gz": 14420,
@@ -461,9 +461,9 @@
     "size": 26931
    },
    "Core/Wardrobe.lua": {
-    "gz": 13186,
-    "sha256": "fc1814128a7ec345234a60abd04a66905d412d385c2ff89f4f112c4e99fb700a",
-    "size": 46254
+    "gz": 13191,
+    "sha256": "94e300310cb67c40dcdf58ae59f222cb3286a07d81f2c2750980abe15f521d4b",
+    "size": 46279
    },
    "Core/WornGems.lua": {
     "gz": 3293,
@@ -541,9 +541,9 @@
     "size": 9381
    },
    "Data/Changelog.lua": {
-    "gz": 48235,
-    "sha256": "30c769d2a0d34b632de6be08c96bd6624204dfa6f9b5e04f9660130d74d9f277",
-    "size": 164230
+    "gz": 48993,
+    "sha256": "6ccdd5b3dcfb3f00d6e3cf01bf50830c6ff888f3c9972a4aa31c4c3918a5f011",
+    "size": 166629
    },
    "Data/Classes/Paladin.lua": {
     "gz": 1676,
@@ -646,29 +646,29 @@
     "size": 17187
    },
    "DisasterZone.toc": {
-    "gz": 2479,
-    "sha256": "5fe34123561b58e7bd4e59bb43576df586308e451c79a66654da1a630a86cb49",
-    "size": 7500
+    "gz": 2493,
+    "sha256": "8e591296c00fa17c8b2d6c29de49da142a5036bc841171aa5c025267b192de7b",
+    "size": 7561
    },
    "Games/Azeromon/Achievements.lua": {
-    "gz": 7132,
-    "sha256": "af827fa9f3b7d362f0c58d583c2ad3d6314e99d194132126c5550459366f8fd0",
-    "size": 27247
+    "gz": 7499,
+    "sha256": "54db2e3685f2d41f2e211eaa1776a96a00a114a06fa74c5de3a2951cf6a3de95",
+    "size": 28838
    },
    "Games/Azeromon/Arena.lua": {
-    "gz": 2131,
-    "sha256": "eb4b7cc6236db39894e9a38737b69137f9400fb2726a9067a2d64e60197fcfb9",
-    "size": 5054
+    "gz": 2141,
+    "sha256": "726c9a3eb43cfd7e521f54e9bac92fe1470d3df532577de36f7467618a739027",
+    "size": 5075
    },
    "Games/Azeromon/Atlas.lua": {
-    "gz": 2731,
-    "sha256": "e1e0d73dbc589eab738dc3dcd9c2b4c202b1871a6fd56b9aa95fdab1fad0bb14",
-    "size": 10416
+    "gz": 3407,
+    "sha256": "188bd0f379bffe2de4482d8680a88477ae2ee5038fe8f217c39b0c9c3fe8103d",
+    "size": 13110
    },
    "Games/Azeromon/Battle.lua": {
-    "gz": 9576,
-    "sha256": "2172ca38bba04fc7d2d26dcc49302316a787930809922920add128657e1a9ca1",
-    "size": 37206
+    "gz": 11253,
+    "sha256": "85272ceaae92281e95ff25fb47e6d8ed93fa9da0a12ac7b5b3032af978b7b18a",
+    "size": 44254
    },
    "Games/Azeromon/Bounties.lua": {
     "gz": 4260,
@@ -676,34 +676,34 @@
     "size": 12887
    },
    "Games/Azeromon/Changelog.lua": {
-    "gz": 4750,
-    "sha256": "0a6549cee88f6e7fc392c095a85d1c4d6c1e5be9667743158a8209bf7607b782",
-    "size": 13475
+    "gz": 5274,
+    "sha256": "adfa646fb44a0ae2ddd26d6aac55b249328b491817effa2694b6918c64a5ea74",
+    "size": 15063
    },
    "Games/Azeromon/Crafting.lua": {
-    "gz": 7734,
-    "sha256": "e1ded85ff0979e34dd5fba966a0707bfd35482f20817acb409d2a75dd562b698",
-    "size": 27621
+    "gz": 11928,
+    "sha256": "90a90917cea6931882883173f3c4a72f2d167d54765f8393c9b5e894489c13e2",
+    "size": 45755
    },
    "Games/Azeromon/Data.lua": {
-    "gz": 30906,
-    "sha256": "e4f3a365c5bfb124251199117e0b1895a1e3741935250d4ffb43c8de4d5ca917",
-    "size": 119990
+    "gz": 38502,
+    "sha256": "0b4980d5cd8eee69993ae85f947bb8776892ff438eaec079f8073e3ff34a32df",
+    "size": 149730
    },
    "Games/Azeromon/Game.lua": {
-    "gz": 20111,
-    "sha256": "34a70075c7ee1d00e58a7bab32222d7f08584394aa17b342eca1b394625dce47",
-    "size": 69383
+    "gz": 21552,
+    "sha256": "2f00170c3cd50f308113655ddf2231cfe43cfee7ffd286745727fc1acdce3223",
+    "size": 74025
    },
    "Games/Azeromon/Ground.lua": {
-    "gz": 6090,
-    "sha256": "15c0ce576143a4c364c8b76b45e5d5c5fe700ea585588d040902c7e4ac249d03",
-    "size": 37552
+    "gz": 8612,
+    "sha256": "4760e9cdbcaa363a76a9759de4a3da82b13cf7d83a894149d9afa908365d4fc7",
+    "size": 56236
    },
    "Games/Azeromon/GuildBoard.lua": {
-    "gz": 6193,
-    "sha256": "52ee88c323d11b00f98cbac24407a24e61f1a0e13c212667a5e5fb95df7cd9ad",
-    "size": 19571
+    "gz": 6198,
+    "sha256": "f0e47b0b2fa8249106cff48797ffee35c0580304aac92f7dd9f6205bde617be1",
+    "size": 19599
    },
    "Games/Azeromon/HallArt.lua": {
     "gz": 2404,
@@ -716,9 +716,14 @@
     "size": 17867
    },
    "Games/Azeromon/Maps.lua": {
-    "gz": 13199,
-    "sha256": "d4db72fe7404e48396cafd79907eac2dc457b4d9bf7c418b4d401ffa1c4d5010",
-    "size": 63834
+    "gz": 13371,
+    "sha256": "e5ff65adc5e2144f53180106d0fa182da14d3d8a5048f379870f983538af6e4f",
+    "size": 64712
+   },
+   "Games/Azeromon/MapsBlackrock.lua": {
+    "gz": 8259,
+    "sha256": "7d60a6f0eceaa99d7fccd2bd843c9534a6f00e87d5c7934fc1617c30785e2356",
+    "size": 37007
    },
    "Games/Azeromon/MapsStranglethorn.lua": {
     "gz": 7631,
@@ -726,9 +731,9 @@
     "size": 39814
    },
    "Games/Azeromon/Mon.lua": {
-    "gz": 2790,
-    "sha256": "1e9e6636a28b5ec568ae05f1c738e16b1b1d780168cc84d036e8ac6f4fb6b4a6",
-    "size": 8414
+    "gz": 3254,
+    "sha256": "4de2d245caf1b5b0a1e12a4d2b40bc8922f4b83ec5033224dbafed6eef4e1e4b",
+    "size": 10275
    },
    "Games/Azeromon/Net.lua": {
     "gz": 3549,
@@ -741,9 +746,9 @@
     "size": 20146
    },
    "Games/Azeromon/PvP.lua": {
-    "gz": 8187,
-    "sha256": "ea577ee9d809cf0a9645b1c724e56efdd56f53a9905216ac0453d2300f1b2ad6",
-    "size": 27421
+    "gz": 8225,
+    "sha256": "3acaf4b05dcaae673783cf742d892213664d5313d44caf3d552ec6be15d16263",
+    "size": 27529
    },
    "Games/Azeromon/Sound.lua": {
     "gz": 3661,
@@ -756,19 +761,24 @@
     "size": 33317
    },
    "Games/Azeromon/UI.lua": {
-    "gz": 68964,
-    "sha256": "bbd8cc5303f4d1a3d6f715de9ab92375c7f853354b425a707c222969bbdfd56b",
-    "size": 257478
+    "gz": 71514,
+    "sha256": "6d0e43339eaf5379e78a216dadde187a4b185a32e348230f6618745fc13c8c2f",
+    "size": 266928
    },
    "Games/Azeromon/Watch.lua": {
     "gz": 2362,
     "sha256": "3abd95883e2ae13c73263a7818fbe447a59270ef7ae4dc2111bcb3048c5758ea",
     "size": 6687
    },
+   "Games/Azeromon/WorldArt.lua": {
+    "gz": 3220,
+    "sha256": "29e58f0243a17b27e90fd89c707364bf2f910c32cd7d4858a409053e27b490c8",
+    "size": 10337
+   },
    "Games/Azeromon/WorldMap.lua": {
-    "gz": 9444,
-    "sha256": "9d5ae2cc19b35d7d1da131010d796e9b7345ecf6fd8d9996e09f668f295a3e39",
-    "size": 30766
+    "gz": 16737,
+    "sha256": "131d6a36eab25f8c0a0a601145e720a088b3e7e7c9e4f52422a532d131212134",
+    "size": 56787
    },
    "Games/Bingo/Bingo.lua": {
     "gz": 6428,
@@ -831,9 +841,9 @@
     "size": 5377
    },
    "Games/HubUI.lua": {
-    "gz": 21491,
-    "sha256": "18d88aabdb0a5de8d3726d1553347a4e682187832a0cd5bca05a39399996df92",
-    "size": 76408
+    "gz": 21542,
+    "sha256": "d1834902c23d7b6c3b71d57d785b1e2c87d79af4af5a668b3b9a7f4116e18564",
+    "size": 76584
    },
    "Games/Illidan/Attract.lua": {
     "gz": 2170,
@@ -990,6 +1000,11 @@
     "sha256": "841b3f9520282fc530e4c58c6d1c5cb5e84518d11f445ab7eb0f0f4d4bda1723",
     "size": 49196
    },
+   "Media/Azeromon/Ground/battle_depths.tga": {
+    "gz": 29308,
+    "sha256": "72605aafcf3ca99cfa80984fb994cec78718c7d1a32358fe323de746a81766b9",
+    "size": 196652
+   },
    "Media/Azeromon/Ground/battle_duskwood.tga": {
     "gz": 8258,
     "sha256": "40d3fe26eea5b3ccbd325de15bc3158bb6c0acd400f88c6338fd6f2590903f45",
@@ -998,6 +1013,11 @@
    "Media/Azeromon/Ground/battle_elwynn.tga": {
     "gz": 6414,
     "sha256": "64be0e933a90c9d5b86ddfc39f4ad6d4f9a32b91e250af053fbca02827a78eed",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/battle_gorge.tga": {
+    "gz": 21773,
+    "sha256": "ee5b63409fc48ab5e717ac97fb2f28114d3222dcd878cdd1cc43b7c09d58f626",
     "size": 196652
    },
    "Media/Azeromon/Ground/battle_jungle.tga": {
@@ -1010,9 +1030,24 @@
     "sha256": "cce068b3075048c4dd3531086956f94894f9b02bfe6ce3367e460a6eea756acc",
     "size": 196652
    },
+   "Media/Azeromon/Ground/battle_molten.tga": {
+    "gz": 30984,
+    "sha256": "a700645cc0f89c89dd94d7c62bcfd46a18985cfc7a06420fd7340093620e7b79",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/battle_redridge.tga": {
+    "gz": 16659,
+    "sha256": "83dca107edd9d9b26e30758c74dffe509fe7b7b238601d500e8c15ff6fcedeb0",
+    "size": 196652
+   },
    "Media/Azeromon/Ground/battle_room.tga": {
     "gz": 4560,
     "sha256": "a107b55d4cf3c82325781b41095fbdcb332d1d1e6cfdd39c0833958d9d9063d9",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/battle_steppes.tga": {
+    "gz": 19747,
+    "sha256": "ac1b0b3cfcad11e341e0bef9bc98432551f3524505460ef927bf138ab92f774f",
     "size": 196652
    },
    "Media/Azeromon/Ground/battle_westfall.tga": {
@@ -1100,6 +1135,131 @@
     "sha256": "a8a89519ef6a0f9f9d01ab3a21f4a4b97708b1c79996a360f3c9737686ebc898",
     "size": 196652
    },
+   "Media/Azeromon/Ground/brd_0_0.tga": {
+    "gz": 3742,
+    "sha256": "0ad47524dc431e50fd3145403ed42fccffb3ef48fe5469c7cc3a8b3de0cfaeb2",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brd_0_1.tga": {
+    "gz": 4237,
+    "sha256": "e0ab306b13f5cd50b73eab84c92c3c978def89e2918d714ccfb16e34f2d69675",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brd_1_0.tga": {
+    "gz": 9125,
+    "sha256": "7eab1582670546bdf04efa4766dc773f423ed0df7e131abeed7acc9a968c7cad",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brd_1_1.tga": {
+    "gz": 12071,
+    "sha256": "17a42f9259c49f786230f7f67ee807859a8e892a9e2cc25f9ccc5bed397d11af",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brd_2_0.tga": {
+    "gz": 1364,
+    "sha256": "dc5a4ab41ab536c550f9b3297342e56455029dbb45d7b8c98fc30d5105058837",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brd_2_1.tga": {
+    "gz": 1717,
+    "sha256": "5e83e5ad3496f42340c4388d5a9e527337f8073bdebad8c9c4d73d6160abf46e",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brd_n_0_0.tga": {
+    "gz": 535,
+    "sha256": "e32fea71ea5edbf589cb9505bcb5491deb3f24b883910671c261715e7e664388",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/brd_w1.tga": {
+    "gz": 2075,
+    "sha256": "3eab60ceb21dabdb7fa5380869b253bdb01868cff67b88c2b3c12e386a82dfc2",
+    "size": 131116
+   },
+   "Media/Azeromon/Ground/brd_w2.tga": {
+    "gz": 1183,
+    "sha256": "8de4f6ec47b10fee081657d8118dbb975c2ab87ef352ae3b04ff02f7181e6fa6",
+    "size": 65580
+   },
+   "Media/Azeromon/Ground/brm_0_0.tga": {
+    "gz": 4822,
+    "sha256": "65916b00d2b12ba403440d35830b6bb8ac002bca06bfeab6050bfad52c0e1e1d",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brm_0_1.tga": {
+    "gz": 5546,
+    "sha256": "56776423dba965b5c2ac586ec040e50cf98e76bde05010f8d45f1219b42092aa",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brm_0_2.tga": {
+    "gz": 480,
+    "sha256": "7672791fe7ef42d6c25c3418ae7003a9dceb06ad41ad493b8b28f8743109a247",
+    "size": 49196
+   },
+   "Media/Azeromon/Ground/brm_1_0.tga": {
+    "gz": 9404,
+    "sha256": "8b6da03502e6fcc38d3bee8d1227b060e1f143a7a8e6fc945ee1cd53993ca350",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brm_1_1.tga": {
+    "gz": 8816,
+    "sha256": "61e834311414a6cbdab5181c5eb9fad1abcc6f67f608c0b7425714a16f6cbfc3",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brm_1_2.tga": {
+    "gz": 393,
+    "sha256": "686a75faaf92c0214dd260c2a97cc5209fabfa771e06e660c87cb8dacee5c056",
+    "size": 49196
+   },
+   "Media/Azeromon/Ground/brm_2_0.tga": {
+    "gz": 5860,
+    "sha256": "efe567700383b75659f53e956853dde0a8fce19ca463207565ece5ad6f40064d",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brm_2_1.tga": {
+    "gz": 6732,
+    "sha256": "9a02d710609ba3b91668159053b19375d6c662249e0d9f58a4b2ce5e1aeffee7",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brm_2_2.tga": {
+    "gz": 393,
+    "sha256": "686a75faaf92c0214dd260c2a97cc5209fabfa771e06e660c87cb8dacee5c056",
+    "size": 49196
+   },
+   "Media/Azeromon/Ground/brm_3_0.tga": {
+    "gz": 381,
+    "sha256": "d3a3b72f97f85ece5c7d09bded41455b2b5109c406c1a2f036525ee7d74be95a",
+    "size": 24620
+   },
+   "Media/Azeromon/Ground/brm_3_1.tga": {
+    "gz": 356,
+    "sha256": "c7ffbcdd1da55a8336e5fdfbc1b5b56272771d42d43d12b45c41c5ce3e413d45",
+    "size": 24620
+   },
+   "Media/Azeromon/Ground/brm_3_2.tga": {
+    "gz": 292,
+    "sha256": "2077224e48eeb5c17b3e05ab6c0d73b62b9b1e1df7b43d081b39d56cea824bab",
+    "size": 6188
+   },
+   "Media/Azeromon/Ground/brm_n_0_0.tga": {
+    "gz": 1009,
+    "sha256": "3e7d59eb1de2b3eb90cfdd8d52d47337ccd889e293acc08e537fce63021fe0df",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/brm_w1.tga": {
+    "gz": 11646,
+    "sha256": "4528d6b258739bde4d136162faefbc5e1e1cbd07616192075846b9376753c9fa",
+    "size": 2097196
+   },
+   "Media/Azeromon/Ground/brm_w2.tga": {
+    "gz": 8780,
+    "sha256": "5f1572eb3b7fce1e4ee319f1cde947997ec2f5391996ed8a7e6c27550e0a80e9",
+    "size": 1048620
+   },
+   "Media/Azeromon/Ground/brm_w3.tga": {
+    "gz": 12076,
+    "sha256": "8bd2ed9d41e17a66d0da09ca96449243a149c8ed2f7e0e25a4ec2eeebf1d84a1",
+    "size": 2097196
+   },
    "Media/Azeromon/Ground/clouds.tga": {
     "gz": 1234,
     "sha256": "3fd061b58e9ee2827a226a2c34f98024b1cf90de7fad094dbe7e2d00b5b48066",
@@ -1151,8 +1311,8 @@
     "size": 196652
    },
    "Media/Azeromon/Ground/darkshire_1_0.tga": {
-    "gz": 10636,
-    "sha256": "e5dddeb771ed4c87ae49e0a7025da89e92e00c603e7455ba8cb47146b23d8055",
+    "gz": 13239,
+    "sha256": "0725a8df65364017d9570617e7abc32705fb5f53a9bdc4389179f812dfcacee7",
     "size": 196652
    },
    "Media/Azeromon/Ground/darkshire_1_1.tga": {
@@ -1380,6 +1540,136 @@
     "sha256": "2aadd31f4509185af9a9e06f3abf2274170eb64436197a7cb2a1761b2b19e91f",
     "size": 196652
    },
+   "Media/Azeromon/Ground/everstill_0_0.tga": {
+    "gz": 7546,
+    "sha256": "f61f5f28ccf8e28c1443769fd52bb91f57fffa6a27ed7c82d110fd21202cacf7",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/everstill_0_1.tga": {
+    "gz": 10605,
+    "sha256": "3d2ee1d8f9b29e4839582e129ae988520f7b8aa2874d3e6b4f9d6d336a2842dc",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/everstill_0_2.tga": {
+    "gz": 1857,
+    "sha256": "d0b2bf353537a86fdea68bc9a3c58faa6c0bdb5bdf2efbed683bf6f2a5257207",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/everstill_1_0.tga": {
+    "gz": 10805,
+    "sha256": "0ccae7cde3949c720677d6dbee72fb3d0015368e6d6d3ee7052d38fcde63dbc1",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/everstill_1_1.tga": {
+    "gz": 12390,
+    "sha256": "45030bc03526fbb63cc2e0a91c0627d865178e4f7413a24ce9c6cb984370e0ec",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/everstill_1_2.tga": {
+    "gz": 1607,
+    "sha256": "e67eca1d37e73da6547d5e8c3b9a7c838f886111f86507cf9bf0354011a6eaeb",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/everstill_2_0.tga": {
+    "gz": 12368,
+    "sha256": "68fb8eb011c8e033305c25022b72468f10761a2ad4feca7051619291937c3939",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/everstill_2_1.tga": {
+    "gz": 13482,
+    "sha256": "42ff4c1a83a1a349e2d9678889f56c367074717413c9618d9f1bb00ad408be76",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/everstill_2_2.tga": {
+    "gz": 1739,
+    "sha256": "9a9bde6c834051e77c7eb2e5c6158699ad5adee28f2f16524de349e4decb6aec",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/everstill_3_0.tga": {
+    "gz": 2166,
+    "sha256": "a9cd24f973f2c6fdff392b5195bbb23bfde366bc5c99477192cb16ba8e1461a3",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/everstill_3_1.tga": {
+    "gz": 2274,
+    "sha256": "23301a51813592f91f445975576b1beca10ec932f0d32ec4ac9f88b35967bc18",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/everstill_3_2.tga": {
+    "gz": 1185,
+    "sha256": "fb24cc08a50ce656da539b4735d94e7a399ddc7747c91b5a1e388555cfba5267",
+    "size": 49196
+   },
+   "Media/Azeromon/Ground/everstill_d_0_0.tga": {
+    "gz": 262,
+    "sha256": "435bb3589881b07ac1a29d723cab7f7cd944478845e96755080be36f0550bcbe",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/everstill_m1.tga": {
+    "gz": 841,
+    "sha256": "f85483a49a7bf4737f0071e871c73423c5dc81f3e7d7425085c06c08e995a9dc",
+    "size": 32812
+   },
+   "Media/Azeromon/Ground/everstill_m10.tga": {
+    "gz": 507,
+    "sha256": "194e7b2b9a7578b07137cbe79735c37e3b2fc73857dabf812aa1fedafa358a74",
+    "size": 16428
+   },
+   "Media/Azeromon/Ground/everstill_m11.tga": {
+    "gz": 494,
+    "sha256": "25825ed627fc5a89647f31dee3ad40d116b2d425259274d629c15fac720d7008",
+    "size": 16428
+   },
+   "Media/Azeromon/Ground/everstill_m12.tga": {
+    "gz": 793,
+    "sha256": "244fe4ce2acb4d7c2a2eae14efb4739536c2f5ae5ac64323148fb1b3ca0005f4",
+    "size": 32812
+   },
+   "Media/Azeromon/Ground/everstill_m2.tga": {
+    "gz": 579,
+    "sha256": "b7cbe4b33e0217f60186b5c38bed2b186d9530eb5649871dd3acc88657f1a6c0",
+    "size": 16428
+   },
+   "Media/Azeromon/Ground/everstill_m3.tga": {
+    "gz": 1225,
+    "sha256": "053a6fde14b949ee1c6981cd9756b2727ebeebac0baab06b95064821e6391c6b",
+    "size": 65580
+   },
+   "Media/Azeromon/Ground/everstill_m4.tga": {
+    "gz": 3304,
+    "sha256": "6565d172ef907785f6f7091eb32f29a2257f49369528fa4305ae093788297a96",
+    "size": 262188
+   },
+   "Media/Azeromon/Ground/everstill_m5.tga": {
+    "gz": 405,
+    "sha256": "33210c7945a0b382543fe0fbd6466878bc680b3f3d46cdc8e07ff2f6bf037058",
+    "size": 8236
+   },
+   "Media/Azeromon/Ground/everstill_m6.tga": {
+    "gz": 266,
+    "sha256": "efa25f0c06baea80da2e0469c4fab6f3dda24c1c7a8dcdd3d96cf496e1b32a6e",
+    "size": 4140
+   },
+   "Media/Azeromon/Ground/everstill_m7.tga": {
+    "gz": 403,
+    "sha256": "32e6e0501478c82cc6ccfc28f8ad76e48eb3a63d26eb2d15b094cc31d545e176",
+    "size": 8236
+   },
+   "Media/Azeromon/Ground/everstill_m8.tga": {
+    "gz": 207,
+    "sha256": "6b51474335739fff20c8dc79122f5f8f89be8d9b14457494a06929f4d331ec4a",
+    "size": 2092
+   },
+   "Media/Azeromon/Ground/everstill_m9.tga": {
+    "gz": 786,
+    "sha256": "97063f4f6e70eb56bcb5a0e6da0de98bd3a1780f09923fb20810f199a64da399",
+    "size": 16428
+   },
+   "Media/Azeromon/Ground/everstill_n_0_0.tga": {
+    "gz": 262,
+    "sha256": "224439ea3fe80e50a89edd6ea4e5328a8b2caceac6e05352f70616abed5cfd1a",
+    "size": 196652
+   },
    "Media/Azeromon/Ground/forestedge_0_0.tga": {
     "gz": 8277,
     "sha256": "cbf26399616b446fa46bce582b54dc3eb977949f10ab17b3f2ececa02072dc13",
@@ -1429,6 +1719,91 @@
     "gz": 291,
     "sha256": "7f466c33ab020359350464f052e8c2a6f5a6dc28a0ef22058474d34eed43a0a0",
     "size": 98348
+   },
+   "Media/Azeromon/Ground/gorge_0_0.tga": {
+    "gz": 4013,
+    "sha256": "e59c94753d6a3d4bc3c6c4a81641d01bd6d2542b8f17a173b88ac828a068e670",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/gorge_0_1.tga": {
+    "gz": 4436,
+    "sha256": "ddb97bb4adcdf4605e52207e42eeb299591f31aa51131a80a3c3e25df7724098",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/gorge_0_2.tga": {
+    "gz": 682,
+    "sha256": "7183a13acd1a8e21cdf8d40361ffaedd54c6f6988626e9e226c7b0a9e64d0209",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/gorge_1_0.tga": {
+    "gz": 10101,
+    "sha256": "3fb760b4b921eab99ba034f71c39910593fce34ccfc5d1ba60c40997799c1736",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/gorge_1_1.tga": {
+    "gz": 11066,
+    "sha256": "132d445c052a910f44312de8decb2e643656e61761b90df2c61ed62c9379f235",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/gorge_1_2.tga": {
+    "gz": 3770,
+    "sha256": "96153b98b076c49e20d9089bbfc877e6a1813d28621d5f46dbcc178d34417e3c",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/gorge_2_0.tga": {
+    "gz": 6056,
+    "sha256": "ff3ae7ad01c4e90e63bf101329e0abf57e77c0fddee72812b935595a71896035",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/gorge_2_1.tga": {
+    "gz": 11954,
+    "sha256": "3c032f3a86a553ea4268d746237ea0fcb33fd3f1d732425b61b1cc1e7807a50a",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/gorge_2_2.tga": {
+    "gz": 1265,
+    "sha256": "14cb29a193a551c1b33f1a0a6c8553e745421d466d5dd7fb26d7c110f26de763",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/gorge_3_0.tga": {
+    "gz": 801,
+    "sha256": "1cc3f460058a3eec0b1c9e18311df13cb04cc7f18b3fda40beacbd88af04cf08",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/gorge_3_1.tga": {
+    "gz": 765,
+    "sha256": "0a4f75268bcf115ef713ee89976b1bed068e355355f6479c1fa6bcf869462d3b",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/gorge_3_2.tga": {
+    "gz": 499,
+    "sha256": "2527043e6ab48f19d6058f5093eb92831513b1083eea5a21741189021d3fcf31",
+    "size": 49196
+   },
+   "Media/Azeromon/Ground/gorge_d_0_0.tga": {
+    "gz": 625,
+    "sha256": "9fb3947498ef901a76d803a14f33ab4df5727406eb671c268b6a3793e1486708",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/gorge_m1.tga": {
+    "gz": 825,
+    "sha256": "e81f9090335d4255d282e7c4d34420ba80531e7d56eb3c207cc70947d7702cfb",
+    "size": 32812
+   },
+   "Media/Azeromon/Ground/gorge_m2.tga": {
+    "gz": 1466,
+    "sha256": "711c5d0d653c77d8335c62a52a0f4220511e708020e423f3ec4c5b62eaf623fe",
+    "size": 65580
+   },
+   "Media/Azeromon/Ground/gorge_m3.tga": {
+    "gz": 1155,
+    "sha256": "bb2ba1c9d4195a262f334fe22b6bd88a83fd70aae5b200569da774c346562674",
+    "size": 65580
+   },
+   "Media/Azeromon/Ground/gorge_n_0_0.tga": {
+    "gz": 624,
+    "sha256": "967d40b9e7fc3dc8066619065696e7cdfafa60be18c83bb3b9ce127a158c7f5b",
+    "size": 196652
    },
    "Media/Azeromon/Ground/hideout_0_0.tga": {
     "gz": 25029,
@@ -1855,6 +2230,96 @@
     "sha256": "22d3e2856fe53d845ebe5e712a6e4d59b719adde3367c1a690799d8e60101234",
     "size": 196652
    },
+   "Media/Azeromon/Ground/lakeshire_0_0.tga": {
+    "gz": 8728,
+    "sha256": "4d78f8cc0a725a3db3eafd298e1d74ceb13685ede517e10688af9f6c4b1df17f",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/lakeshire_0_1.tga": {
+    "gz": 8937,
+    "sha256": "1723797b7b908c358e8dc916f2e1bea924fe150d6ea504f86a79948fb975bba8",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/lakeshire_0_2.tga": {
+    "gz": 1293,
+    "sha256": "8646638de282718da83695c61776ff27a03e6bc2a6ac6ce2de07266ff00561bf",
+    "size": 49196
+   },
+   "Media/Azeromon/Ground/lakeshire_1_0.tga": {
+    "gz": 10617,
+    "sha256": "98295653d285dd41898fd784565b457572bd04f195977b9035f90cc199607eee",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/lakeshire_1_1.tga": {
+    "gz": 14864,
+    "sha256": "114e53d532f441a371505b651fc8dd40459a51082241065ef8d80d845cd32aeb",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/lakeshire_1_2.tga": {
+    "gz": 1667,
+    "sha256": "e7f5401e0ea96c690b7b18e9d41242e7ea913e134ba2bed2a17ef8303fdeec2c",
+    "size": 49196
+   },
+   "Media/Azeromon/Ground/lakeshire_2_0.tga": {
+    "gz": 5289,
+    "sha256": "ebef8755454f5fb3e1ca88786246178d6f1e2d6455770cbf04964faf521ade46",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/lakeshire_2_1.tga": {
+    "gz": 6601,
+    "sha256": "76e0611f2b76770e7e1fe0592b7772aec22bc7debacf82bd894a2beb2274ec6e",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/lakeshire_2_2.tga": {
+    "gz": 1774,
+    "sha256": "235c3b530338ca98f642d335fa93964a82127690d9cf9615cb4f04df83697cc5",
+    "size": 49196
+   },
+   "Media/Azeromon/Ground/lakeshire_3_0.tga": {
+    "gz": 931,
+    "sha256": "4f55fb6eebbf8c1ca0b54816d5de50e593d05e7f37a58aa8d94e5f39b9c67bff",
+    "size": 24620
+   },
+   "Media/Azeromon/Ground/lakeshire_3_1.tga": {
+    "gz": 1724,
+    "sha256": "167b6c6831b086fd3289c487a64c304cda7fe72497af3edd4211501cdb2c685c",
+    "size": 24620
+   },
+   "Media/Azeromon/Ground/lakeshire_3_2.tga": {
+    "gz": 604,
+    "sha256": "0480178d69b9af430d83f3d0822aaceea0e44e7c1ecbca8aeb8bf56d8c84070a",
+    "size": 6188
+   },
+   "Media/Azeromon/Ground/lakeshire_d_0_0.tga": {
+    "gz": 989,
+    "sha256": "aaa00ec4ff7445b74e45f10a9a2ab343708e4aa00b2967f551347613790af4e1",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/lakeshire_n_0_0.tga": {
+    "gz": 992,
+    "sha256": "f092eb4a1fda49df72c5333098b2e44d58c1b23e776e9e0f52d456a96c99b141",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/lakeshireinn_0_0.tga": {
+    "gz": 4282,
+    "sha256": "61944f0d437e83d559bdc96a19f80c379c23ba9f5dccba951e917268f0e0029d",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/lakeshireinn_e_0_0.tga": {
+    "gz": 4258,
+    "sha256": "d9d02970419ca55ad6229c26677966e28d920576cfb3afa7dcd74d17b9782915",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/lakeshireinn_n_0_0.tga": {
+    "gz": 237,
+    "sha256": "145ae5eb3282d5c6479bba8c7b50be8555f0c23cf3f74873b3d254912e51200c",
+    "size": 12332
+   },
+   "Media/Azeromon/Ground/lakeshireinn_s.tga": {
+    "gz": 556,
+    "sha256": "22d3e2856fe53d845ebe5e712a6e4d59b719adde3367c1a690799d8e60101234",
+    "size": 196652
+   },
    "Media/Azeromon/Ground/mist.tga": {
     "gz": 3819,
     "sha256": "10c10ece2b6d082bfade299dbd7243e5d15a68db6cdfa53b2fc27ce871417d1b",
@@ -1884,6 +2349,56 @@
     "gz": 525,
     "sha256": "d101d3da8d271e849a418a3f1e4354f0398422dfa15427697aa7ceedcde0c8b1",
     "size": 196652
+   },
+   "Media/Azeromon/Ground/moltencore_0_0.tga": {
+    "gz": 5415,
+    "sha256": "d68818b48813c9b1c90d871a49576db21d102b4446171f55a72512cdca9037b6",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/moltencore_0_1.tga": {
+    "gz": 5519,
+    "sha256": "441089cf33172ab4077a9ae2852d8c0be498c218e144d90054ec1c153fcd2a30",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/moltencore_1_0.tga": {
+    "gz": 10301,
+    "sha256": "032eba2c363dda8a5a3071c15d83697b219fda9cd032b8f493ae668385b8b9bf",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/moltencore_1_1.tga": {
+    "gz": 8224,
+    "sha256": "2d1251ceaad905c1d465ca9cd3be6627b8811dcbd1cd64009701c182d3de58a1",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/moltencore_2_0.tga": {
+    "gz": 1807,
+    "sha256": "a31f5997281c2cd506b8b8faf339ab8bf177b6df5b2891684fef2687f4e038bb",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/moltencore_2_1.tga": {
+    "gz": 1941,
+    "sha256": "2c70a2ee41254cf7f2ff974094830a46fc10cb7f858180af26ad76986c8c1876",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/moltencore_n_0_0.tga": {
+    "gz": 720,
+    "sha256": "6de33c995dccb0b630840722e5f1ff5bf6879290c8c647b5e87f3980d665eb56",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/moltencore_w1.tga": {
+    "gz": 8681,
+    "sha256": "970efeb606f50cbc27e0b0a9248a0546a9509ca34dcf3b373d855296d4b31e25",
+    "size": 1048620
+   },
+   "Media/Azeromon/Ground/moltencore_w2.tga": {
+    "gz": 2487,
+    "sha256": "6a47838d48e776dd66b805fec728db08d750b0cdacf4e34ad9397d08f57fcd5f",
+    "size": 262188
+   },
+   "Media/Azeromon/Ground/moltencore_w3.tga": {
+    "gz": 10698,
+    "sha256": "db7d76a2cd7879734bda89bb3042e17513fd47bc13e31dae738cc87deb300715",
+    "size": 2097196
    },
    "Media/Azeromon/Ground/moonbrook_0_0.tga": {
     "gz": 8720,
@@ -2295,6 +2810,166 @@
     "sha256": "a5cc5feaa6bd63a7f14dab0e4f5a510f5a8e03038b94d7d529570862f821d892",
     "size": 196652
    },
+   "Media/Azeromon/Ground/steppes_0_0.tga": {
+    "gz": 6760,
+    "sha256": "6ace4e32cc4bda61f7c649caf5f92d5c42fe8e69a4f31c50926c7fc78fcfc13d",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/steppes_0_1.tga": {
+    "gz": 11416,
+    "sha256": "81fe38124bce3fd1c17a7b4c6da2932a1a0355200de2007de474c2d9561e74b4",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/steppes_0_2.tga": {
+    "gz": 1992,
+    "sha256": "1a9dcb335e9e969ba9f2d14cfff02e029476114f608ec72a5019ce0b195e0d95",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/steppes_1_0.tga": {
+    "gz": 10599,
+    "sha256": "4bcf7093a692f96d77fecf0f2f33ae133f66693a22fee8431c6563d7cf8ebf1c",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/steppes_1_1.tga": {
+    "gz": 14754,
+    "sha256": "ebd6652286d898f7309de11887f07326814073f31452319ef3daa83f5ee7ae41",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/steppes_1_2.tga": {
+    "gz": 1749,
+    "sha256": "f039100994fae11dba173c8184ae40fb63691e1130e1f6ae42be3293a8009ed5",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/steppes_2_0.tga": {
+    "gz": 8332,
+    "sha256": "9e79e5ec6c66f7c49adebc51241360659d0b18cf4b681f0c819e8e9f3464206c",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/steppes_2_1.tga": {
+    "gz": 13945,
+    "sha256": "1207522c1569450bb84aade07fe29c651929b6263dae0322f2ed84ac7cb35b83",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/steppes_2_2.tga": {
+    "gz": 3675,
+    "sha256": "98ba245f82f782bfc1444e8fa7adcc6f460199f43a093a69b2716af491982f60",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/steppes_3_0.tga": {
+    "gz": 2623,
+    "sha256": "f1e8d5ab3290e058574d67a60a58d1d793c3e00ea52e19fbb02a3872b311bb26",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/steppes_3_1.tga": {
+    "gz": 2575,
+    "sha256": "9c8a73a11da03a7fc5d999f9648187a0a7bc18d40aab6a263b0fa474c47c7a3a",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/steppes_3_2.tga": {
+    "gz": 1327,
+    "sha256": "08434bf6747f681a9d69eebffd8812c2f2c65b6907614dd5f619a53ddc448bb5",
+    "size": 49196
+   },
+   "Media/Azeromon/Ground/steppes_d_0_0.tga": {
+    "gz": 742,
+    "sha256": "57cd69d3cb382881f930236b1708fb1427a70733e9cfe7efa576c3db3ce7e60e",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/steppes_m1.tga": {
+    "gz": 1049,
+    "sha256": "fc46e7fd4b9c4231c781902d080fceaabe60d0327b7eb2ad52df14c605a51727",
+    "size": 65580
+   },
+   "Media/Azeromon/Ground/steppes_m2.tga": {
+    "gz": 1179,
+    "sha256": "0b0ddde76e95be6f522452df54056ad73d3a4d82e75878aad40edd7cce9ce9ae",
+    "size": 65580
+   },
+   "Media/Azeromon/Ground/steppes_m3.tga": {
+    "gz": 1040,
+    "sha256": "85ec09c673f7045950de1806836adf5a7c09081668ea5a179a3754a6348f6a05",
+    "size": 32812
+   },
+   "Media/Azeromon/Ground/steppes_m4.tga": {
+    "gz": 1054,
+    "sha256": "da6f27d6237c73972334467a3ad7aede3af4d199c226bfb00705fdd00165c192",
+    "size": 65580
+   },
+   "Media/Azeromon/Ground/steppes_m5.tga": {
+    "gz": 383,
+    "sha256": "7f9ab9e125403199d551d101111c8adfe0f6e26f888b7d3deae3d91de3db2745",
+    "size": 8236
+   },
+   "Media/Azeromon/Ground/steppes_n_0_0.tga": {
+    "gz": 741,
+    "sha256": "27d7d5eb4b3b5ac98607fffb30fcf323ed82dc49efb84db003ffc71f128db37e",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/steppes_w1.tga": {
+    "gz": 5145,
+    "sha256": "740f54a5ca549ac5d441a1ed9fa8c9491e83dec2fb02e4b8b45ea3404677fdb6",
+    "size": 524332
+   },
+   "Media/Azeromon/Ground/steppes_w2.tga": {
+    "gz": 5149,
+    "sha256": "597342d899c2d2f5fae29aaf6ef0a614835e2113f0ae417492408d001e6f7f9d",
+    "size": 524332
+   },
+   "Media/Azeromon/Ground/stonewatch_0_0.tga": {
+    "gz": 5247,
+    "sha256": "6c3e14a863c44432a0ee2985e1051f843276cc6fbeea7997e1768c0b21616543",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/stonewatch_0_1.tga": {
+    "gz": 6269,
+    "sha256": "73b119fccf8684ddb066b6e8cfa35cdc16fd38a921c8630511fcf8989dbd0ca7",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/stonewatch_0_2.tga": {
+    "gz": 1890,
+    "sha256": "80dec89f9bfe0a2d388363ac6b805b2338faa92f7efac398d5ea2cdd2f7f0f2e",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/stonewatch_1_0.tga": {
+    "gz": 11331,
+    "sha256": "e07a442cd955d4360a959c1d27c23a5061d9e300a7d69cd318d8f461473690e8",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/stonewatch_1_1.tga": {
+    "gz": 15065,
+    "sha256": "27c5f599f488e66ef586dafe70ea76af870f538f6b0d27787cfe08e9db9481fa",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/stonewatch_1_2.tga": {
+    "gz": 3717,
+    "sha256": "dcfd0fada533edc2ecbe327cb929f84f76ded2b03f535bea5af20263f404b7ff",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/stonewatch_2_0.tga": {
+    "gz": 10633,
+    "sha256": "f56f6af16a63a3b240a0ca44c0c7bfb5e0075b97294c71fd469a35d461c7a3c1",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/stonewatch_2_1.tga": {
+    "gz": 5438,
+    "sha256": "46d2bb223d0e44f6220641eaf9c76dd8fc251bfa1670131eaf6ccc8c00c2c652",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/stonewatch_2_2.tga": {
+    "gz": 1897,
+    "sha256": "096b7044b88aeba8b012341246089ca50ddcb9ea14477438130ead089672a2c3",
+    "size": 98348
+   },
+   "Media/Azeromon/Ground/stonewatch_d_0_0.tga": {
+    "gz": 466,
+    "sha256": "e076e79542bea3984b01e021770a69358b52cb66a319673d95298f338d2105c4",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/stonewatch_n_0_0.tga": {
+    "gz": 465,
+    "sha256": "e8b9a253832aaf857053ff4f235afe279687b82427c96d955bc1c37059a8ad1a",
+    "size": 196652
+   },
    "Media/Azeromon/Ground/stvnorth_0_0.tga": {
     "gz": 9103,
     "sha256": "a415bc98de5af001ed81a6fbc36dc06dd9ecdf74d8ef7baa1e41ab2625e0a75c",
@@ -2484,6 +3159,101 @@
     "gz": 1985,
     "sha256": "1cc4e94ac04d826545f70e7084d7714ada99bc9816cdb3cbde0b38cf4de0262a",
     "size": 131116
+   },
+   "Media/Azeromon/Ground/threecorners_0_0.tga": {
+    "gz": 7453,
+    "sha256": "6e85a9b52eab12282e24af7c1b389af07cf1f876c07c864404dedf8534fe2852",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/threecorners_0_1.tga": {
+    "gz": 5927,
+    "sha256": "01f795ee37b91e6a01a3463f76cae1f3e84c3da75c4770f9a5fd8e866cd5a079",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/threecorners_0_2.tga": {
+    "gz": 822,
+    "sha256": "8d4f5d0d3620418c05c9d0a1c231d5b57c377cc240181154e828ce1de4e47ef0",
+    "size": 24620
+   },
+   "Media/Azeromon/Ground/threecorners_1_0.tga": {
+    "gz": 9607,
+    "sha256": "ebc9e06e3b635b2473debad225090fceeb8b363d2991bfb8656352c366780d11",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/threecorners_1_1.tga": {
+    "gz": 14570,
+    "sha256": "60a70e6f8b69c8be7b3e11d1261f02deb0d9861679c3522381adf1035d3e2860",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/threecorners_1_2.tga": {
+    "gz": 1503,
+    "sha256": "3491788603b01f950c72338e5f997348fe7e213bcfb820cf02fcfc0440f1e3d3",
+    "size": 24620
+   },
+   "Media/Azeromon/Ground/threecorners_2_0.tga": {
+    "gz": 10068,
+    "sha256": "301566e45af966f91d2c8b80b0d664f985badf3faf360333e3a3c5b911409286",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/threecorners_2_1.tga": {
+    "gz": 8715,
+    "sha256": "2711738aa2eaa4fda44938697f59372f44ca3cd4a2fd7b9c66e6ed6b543cb36b",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/threecorners_2_2.tga": {
+    "gz": 825,
+    "sha256": "d368e57559a0c15b97d76b197459451a26ad4699d04eedf744a01935f3b1e79f",
+    "size": 24620
+   },
+   "Media/Azeromon/Ground/threecorners_3_0.tga": {
+    "gz": 1414,
+    "sha256": "483cc5c8bb9acad83cd696500c3c5e271f747cd5ab1c8f820d4b8ed8baccaa97",
+    "size": 24620
+   },
+   "Media/Azeromon/Ground/threecorners_3_1.tga": {
+    "gz": 1030,
+    "sha256": "f66f05c1a866b666740eb6b138202dcaa4fd59b31292d5f63a6be1fe2f50fc57",
+    "size": 24620
+   },
+   "Media/Azeromon/Ground/threecorners_3_2.tga": {
+    "gz": 405,
+    "sha256": "6197cd4addcad545cdceb08e04209d6e83b93187074a0acb266daa88cb9541aa",
+    "size": 3116
+   },
+   "Media/Azeromon/Ground/threecorners_d_0_0.tga": {
+    "gz": 262,
+    "sha256": "435bb3589881b07ac1a29d723cab7f7cd944478845e96755080be36f0550bcbe",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/threecorners_m1.tga": {
+    "gz": 895,
+    "sha256": "898c2a12ae70a18b6c122106ec78b92146f2d816347755a00c31689c326825b0",
+    "size": 32812
+   },
+   "Media/Azeromon/Ground/threecorners_m2.tga": {
+    "gz": 706,
+    "sha256": "610bbb8d05f86a800ef3cff9acf5f51c598c9accec5e33d019254cf8c49feb16",
+    "size": 32812
+   },
+   "Media/Azeromon/Ground/threecorners_m3.tga": {
+    "gz": 1255,
+    "sha256": "995889ba77937d6ee7185654b2511bc9f3ab8890180ab805bd699320148902f2",
+    "size": 65580
+   },
+   "Media/Azeromon/Ground/threecorners_m4.tga": {
+    "gz": 669,
+    "sha256": "5c692f52bfddaf98f7de8799e58926548dda00cd76ae837308d277eb2937576a",
+    "size": 16428
+   },
+   "Media/Azeromon/Ground/threecorners_n_0_0.tga": {
+    "gz": 262,
+    "sha256": "224439ea3fe80e50a89edd6ea4e5328a8b2caceac6e05352f70616abed5cfd1a",
+    "size": 196652
+   },
+   "Media/Azeromon/Ground/threecorners_w1.tga": {
+    "gz": 4858,
+    "sha256": "84555b10a191ab8dfcef6a5810e8a313abc31ce8d5222ec9b0efbd80c140b607",
+    "size": 524332
    },
    "Media/Azeromon/Ground/town_0_0.tga": {
     "gz": 8530,
@@ -2785,25 +3555,60 @@
     "sha256": "224439ea3fe80e50a89edd6ea4e5328a8b2caceac6e05352f70616abed5cfd1a",
     "size": 196652
    },
-   "Media/Azeromon/atlas.tga": {
-    "gz": 28991,
-    "sha256": "21f80c5461fdbcf3bcca78cc7bc8c4fc55c6f8168d265e18115d5cd0e7a0f7cf",
+   "Media/Azeromon/WorldMap/worldmap.tga": {
+    "gz": 17322,
+    "sha256": "143b87b6fd08cdb07407f07324c2baf88718aead603f2f038ae5bed1ca999ab6",
+    "size": 393260
+   },
+   "Media/Azeromon/WorldMap/worldmap_dusk.tga": {
+    "gz": 713,
+    "sha256": "704dc78c6d0013deaa8975b0f2502fb911639206a7d8cc8795076b1202d3ad25",
     "size": 524332
+   },
+   "Media/Azeromon/WorldMap/worldmap_fog1.tga": {
+    "gz": 21045,
+    "sha256": "b64fcb44665c0063268de003c02d8e08a38bae98a3f04ab43a02409577853bb0",
+    "size": 524332
+   },
+   "Media/Azeromon/WorldMap/worldmap_fog2.tga": {
+    "gz": 20998,
+    "sha256": "51a961b3f73ea64f4b8728e1094584731ba83148a3e6ff9ae823e8b25878a89d",
+    "size": 524332
+   },
+   "Media/Azeromon/WorldMap/worldmap_lap.tga": {
+    "gz": 6185,
+    "sha256": "a058863e29069e693eccd3317d1af1a48ce6723a731f79f1ac77feccb2f7aa0d",
+    "size": 2097196
+   },
+   "Media/Azeromon/WorldMap/worldmap_sprites.tga": {
+    "gz": 435,
+    "sha256": "1e3aaec20ef784cf878aab07ac9cd1fdfcaa9acb35e827b592ac170460407c17",
+    "size": 32812
+   },
+   "Media/Azeromon/atlas.tga": {
+    "gz": 38945,
+    "sha256": "0fbc37ec36e70e4178ed59034a53608501dc21bc4065fd3cd418d484f2baf8cd",
+    "size": 1048620
    },
    "Media/Azeromon/chars.tga": {
     "gz": 6349,
     "sha256": "7f874a8773c82deba55c69cadb14bdf5aa35cbafa6b5392a9976d290f53e48a1",
     "size": 131116
    },
-   "Media/Azeromon/fonts/PixelOperator-Bold.ttf": {
-    "gz": 6440,
-    "sha256": "c1963fa21043a357212e0a9e8ae1986bc375c1759e68bd3533c4f71b164614b0",
-    "size": 16984
+   "Media/Azeromon/fonts/PixelifySans-Medium.ttf": {
+    "gz": 21456,
+    "sha256": "d7cf98ea1254485a94ff4bbeef87d6554d080d2c4a6d3e5b7299c2ff4bc42a0b",
+    "size": 51636
    },
-   "Media/Azeromon/fonts/PixelOperator.ttf": {
-    "gz": 6404,
-    "sha256": "8d805274eaf227855147153182a96a86ff395ddbc7d2d378095af8831b764a3e",
-    "size": 17272
+   "Media/Azeromon/fonts/PixelifySans-OFL.txt": {
+    "gz": 2011,
+    "sha256": "b66ba46f511a851ab09998b5a5a9fdbb102545a3864cb993095e1745996873a7",
+    "size": 4488
+   },
+   "Media/Azeromon/fonts/PixelifySans-SemiBold.ttf": {
+    "gz": 21581,
+    "sha256": "b86ef5dc4a28e933181192ef8345e5010c788899878bb11ef34b9a40dfd151f9",
+    "size": 51652
    },
    "Media/Azeromon/platform.tga": {
     "gz": 295,
@@ -3511,13 +4316,13 @@
     "size": 262188
    },
    "NOTICE.md": {
-    "gz": 6003,
-    "sha256": "515bc0e6bbb4cb08012f3cc009c721bc0cdd9167965b9923050dddfd591fc369",
-    "size": 14839
+    "gz": 6082,
+    "sha256": "2cc892a2de27183e74e15b1a73f431dc2b1b25d0afacc10e981afaaf62342c99",
+    "size": 15052
    },
    "README.md": {
     "gz": 24787,
-    "sha256": "cdfec7a9b2e86c45033d1aeebc80bdeb0dd427a02719b4f84c5980a821678450",
+    "sha256": "a7ce730ef86aadb084d4c074889288adceac25df29db0db94d6fcfbf65798794",
     "size": 70028
    },
    "Render3D/Probe.lua": {
@@ -3641,9 +4446,9 @@
     "size": 34443
    },
    "Sim/Runner.lua": {
-    "gz": 15493,
-    "sha256": "bd082dfc463e2f470064498d41302bb5305506e2a5ca3e7c74d2434e353aa36d",
-    "size": 52111
+    "gz": 16228,
+    "sha256": "6f4b95261c553783adcb035c306c2e53219e0e2d00e3682355fd78dc0a6f616f",
+    "size": 54062
    },
    "Sim/Setup.lua": {
     "gz": 1801,
@@ -3896,19 +4701,19 @@
     "size": 56141
    },
    "UI/LookBags.lua": {
-    "gz": 17826,
-    "sha256": "91ad3d3843febe9089413d259a5f545d1ccf1da186f0928dc54221295c1c22b7",
-    "size": 61667
+    "gz": 18841,
+    "sha256": "71042c3e0dd1ce99eae9807b4d22392c7a762e5ed3494975d716ec8d23f1cf18",
+    "size": 65533
    },
    "UI/LookBars.lua": {
-    "gz": 12287,
-    "sha256": "b794f8fed62e9f980039c17bcaf814e83b583553a034e786f3f26f32da3d7fbd",
-    "size": 46030
+    "gz": 12358,
+    "sha256": "de8749b28a0fd4675c38b8a3206a753d352660c5ec72537103fca5a8340b853c",
+    "size": 46222
    },
    "UI/LookCast.lua": {
-    "gz": 5787,
-    "sha256": "9920d7550ff1efcaec4d8e50ae5eaa1339d67f46de27a97752289cc989385a84",
-    "size": 19781
+    "gz": 6237,
+    "sha256": "8a6a161ba1bcb98df3a470806eccc016241b3f75f75c5fa304e10ec273c9977e",
+    "size": 21058
    },
    "UI/LookDock.lua": {
     "gz": 9933,
@@ -3916,9 +4721,9 @@
     "size": 32780
    },
    "UI/LookMinimap.lua": {
-    "gz": 6339,
-    "sha256": "853fb82c25ae41b4a21f35303565555d975b7d26243968c3e46fb42784633bbb",
-    "size": 21626
+    "gz": 7405,
+    "sha256": "ebee91a83f8cf742c480d2b0b7e661db42bb817bb9f752ff80cdc3729dac40d1",
+    "size": 25688
    },
    "UI/LookTanks.lua": {
     "gz": 8908,
@@ -4186,9 +4991,9 @@
     "size": 102811
    },
    "UI/StrategyMap3D.lua": {
-    "gz": 35348,
-    "sha256": "8791fffb93917254bfc641d17650256d94f0349c92a7bcba56408b702741a2d7",
-    "size": 122967
+    "gz": 36028,
+    "sha256": "c0036ef4a5b9cdaad21964d3117eb09fc263a8a5b6d8daf3448d6caf08015e0d",
+    "size": 124561
    },
    "UI/StrategyReminder.lua": {
     "gz": 8542,
@@ -4236,9 +5041,9 @@
     "size": 34227
    },
    "UI/Wardrobe.lua": {
-    "gz": 10525,
-    "sha256": "2e72314f37b803cc76f015c4c011b99d73913c249dbf8a3dbd168a51087224e4",
-    "size": 35145
+    "gz": 10582,
+    "sha256": "43d680440bc33d7d0036ca438bc38cf2ebb78fddfa2c33440a94c20a32a02275",
+    "size": 35267
    },
    "UI/WelcomeTour.lua": {
     "gz": 6759,
@@ -4253,8 +5058,8 @@
   },
   "DisasterZone_Rooms": {
    "DisasterZone_Rooms.toc": {
-    "gz": 1187,
-    "sha256": "6743f034cea96d4806ddcc2eb0700dae9828d0428fb7293654710308f61ce57e",
+    "gz": 1186,
+    "sha256": "4b444cca7fff5e10add7e177c1bcc99023dc2eade9227a38a2aed7c2bb100afe",
     "size": 4477
    },
    "Load.lua": {
@@ -4819,6 +5624,59 @@
  "notes": {
   "changelog": [
    {
+    "date": "15 October 2026",
+    "sections": [
+     {
+      "area": "games",
+      "heading": "Azeromon: Blackrock",
+      "kind": "new",
+      "lead": "A new region north of Darkshire, from Redridge to Blackrock Mountain.",
+      "lines": [
+       "Lakeshire, Stonewatch Keep, the Burning Steppes, the Searing Gorge and the Imperial Seat.",
+       "36 new beasts, 12 new moves, badges 6 and 7; Nefarius is your rival, twice.",
+       "Tame Magmadar once in the Molten Core; a Dark Iron Bar evolves a Harvest Watcher.",
+       "Professions go to 175, Dark Iron needs the Black Forge; beasts drop materials.",
+       "A painted world map with mist over places you haven't found yet.",
+       "A new pixel font, cream windows and a sun or moon for the time of day."
+      ]
+     },
+     {
+      "area": "gear",
+      "heading": "Gems for the hit cap",
+      "kind": "changed",
+      "lead": "Suggested gems now know whether your gear is hit capped.",
+      "lines": [
+       "Under the cap, Suggest adds hit gems where they cost least, up to the cap.",
+       "Already capped: no hit gems. Your meta gem stays active either way.",
+       "Counts your gear, enchants, talents, race and the Gear sim's buffs (dps specs it covers)."
+      ]
+     },
+     {
+      "area": "fixes",
+      "heading": "Fixes",
+      "kind": "fixed",
+      "lead": "",
+      "lines": [
+       {
+        "for": "",
+        "text": "Wardrobe: an outfit's items show their enchant and gems in the tooltip."
+       },
+       "3D strategy walks: others wear their race's clothes, not a white body.",
+       "Walking together: others run and turn smoothly, without jumping to and fro.",
+       "Square minimap: addon buttons, mail and queue icons sit on its edge, not on a circle.",
+       "Minimap: a long zone name is cut short before the clock instead of running under it.",
+       "Bank: buying a bank bag slot works again.",
+       "Bags: the bag slots in the footer equip and take off bags; round ringed slots in Halo.",
+       "Bars: the game's latency bar is hidden while a look is on.",
+       "Cast bars: learning a recipe shows the recipe's icon, not the game's placeholder face.",
+       "Azeromon: a move's info window shows again in the fight menu."
+      ]
+     }
+    ],
+    "title": "Azeromon: Blackrock",
+    "version": "1.4.6"
+   },
+   {
     "date": "14 October 2026",
     "sections": [
      {
@@ -5215,152 +6073,16 @@
     ],
     "title": "Edit layout and the UI in our looks",
     "version": "1.4.2"
-   },
-   {
-    "date": "13 October 2026",
-    "sections": [
-     {
-      "area": "games",
-      "heading": "Council Bingo: a new card set",
-      "kind": "new",
-      "lead": "Every square is a named raid moment now.",
-      "lines": [
-       "Every square is a named moment with its spell's icon: Bubble Hearth, Leeroy, Mrglglgl.",
-       "Five qualities like items: common, uncommon, rare, epic and legendary.",
-       "Every card is dealt the same mix: 1 legendary, 2 epic, 4 rare, 7 uncommon, 10 common.",
-       "Each raid has its own pool of 10+ squares; up to 6 of yours come from it in there.",
-       "Piranha Snack, Wolf Pack, Nova Party, Rock Bottom, What Goes Up: every raid has its own.",
-       "The /roll filler is gone: one roll square is left (Critical Fail)."
-      ]
-     },
-     {
-      "area": "games",
-      "heading": "Council Bingo: rarity that means something",
-      "kind": "new",
-      "lead": "The rarer the square, the louder it lands.",
-      "lines": [
-       "Points by quality (1, 2, 3, 5, 10) plus 10 a line; the season ladder counts points.",
-       "Rare squares on your card pop a toast; epic ones toast the whole raid.",
-       "A legendary takes over the card for everyone, with the legendary loot toast.",
-       "Fated: when your legendary goes off it also daubs your best gap. It can win you the night.",
-       "A line one square short gets a gold thread, and 1 AWAY on the square you need.",
-       "The header says which line is one away; the race shows everyone's card as a dot map."
-      ]
-     },
-     {
-      "area": "games",
-      "heading": "Council Bingo: the Codex",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "A Codex tab beside the card: every square, a silhouette until you've seen it happen.",
-       "Point at one for who set it off first, where, and how often you've seen it.",
-       "The season ladder and the legendaries you've witnessed sit beside it.",
-       "Demo mode shows a made-up game, with a button to try how each quality arrives."
-      ]
-     },
-     {
-      "area": "class",
-      "heading": "Shot timer (Hunters)",
-      "kind": "new",
-      "lead": "The swing timer's ring, for Auto Shot and Steady Shot.",
-      "lines": [
-       "New shot timer for every Hunter spec: the swing timer's ring, timed to your Auto Shot.",
-       "The orange window is when Steady Shot still fits before the next Auto Shot.",
-       "The red end is the next shot's windup: stand still and cast nothing there.",
-       "What to press comes from WoWSims' Hunter rotation, the one the gear sim plays.",
-       "Steady Shot when it fits, else Multi-Shot, else Arcane Shot; Kill Command after a crit.",
-       "Haste is read live: quiver, Rapid Fire, Bloodlust and haste rating all move the window.",
-       "Aspect hints: Viper when you run dry, Hawk once you have mana again.",
-       "After a fight: Auto Shots on time, clipped (and the time lost) and held by moving.",
-       "It skips shots you'd get under a quarter second to press (Reaction time in Settings).",
-       "Settings > Class tools > Shot timer; /dz shot. Demo mode plays the rotation by itself."
-      ]
-     },
-     {
-      "area": "class",
-      "heading": "Swing and shot timers: see the next press coming",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "The icon in the middle now has a cooldown swipe, like your action bars.",
-       "The dark part shrinks as the press comes closer; full colour means press it now."
-      ]
-     },
-     {
-      "area": "loot",
-      "heading": "Prized items: recipes and formulas",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       "New rule Profession: Enchanting 375 or higher (any profession, any skill).",
-       "Their alts can count, and someone who already knows the recipe can be left out.",
-       "Recipe / formula start: adding a recipe sets the profession and skill from the item."
-      ]
-     },
-     {
-      "area": "guild",
-      "heading": "Polls: several questions in one",
-      "kind": "new",
-      "lead": "",
-      "lines": [
-       {
-        "for": "",
-        "text": "A poll can ask up to five questions, each with its own kind and answers."
-       },
-       {
-        "for": "",
-        "text": "New poll: + Question adds one; who votes and when it closes are the whole poll's."
-       },
-       {
-        "for": "",
-        "text": "You answer question by question: it moves on to the next one by itself."
-       },
-       "Players still on an older version see each question as a poll of its own."
-      ]
-     },
-     {
-      "area": "guild",
-      "heading": "Your alts can change what you made",
-      "kind": "changed",
-      "lead": "",
-      "lines": [
-       "Strategies, polls and events you made: edit or remove them from any of your characters.",
-       "(Members still on 1.4.0 see those changes once they update.)"
-      ]
-     },
-     {
-      "area": "fixes",
-      "heading": "Fixes",
-      "kind": "fixed",
-      "lead": "",
-      "lines": [
-       "Deleted events and polls no longer come back when someone away for weeks logs in.",
-       "Removed prized items and deleted strategies stay gone after a long break too.",
-       "Calendar events and polls past their keep time no longer return from an old copy.",
-       "Reviews of an event deleted long ago no longer come back with it.",
-       "Chess: Resign asks first, so a stray click no longer ends your game.",
-       "The next raid's countdown and \"Pause pop-ups for an hour\" follow the server's clock.",
-       "Members: \"Last seen in\" times follow the server's clock too.",
-       "Members: unlocking someone's main is a lock icon, shown only while a raid runs.",
-       "Dungeon run notes are no longer cut in the middle of an accented letter.",
-       "Guests and pugs show in their class colour in more places.",
-       "The Events and Dungeons pages draw once when you open them, not twice."
-      ]
-     }
-    ],
-    "title": "Council Bingo, made epic",
-    "version": "1.4.1"
    }
   ]
  },
- "published": "2026-10-14T20:39:53Z",
- "seq": 7,
- "version": "1.4.5",
+ "published": "2026-10-15T00:27:56Z",
+ "seq": 8,
+ "version": "1.4.6",
  "zip": {
-  "name": "DisasterZone-1.4.5.zip",
-  "sha256": "3e35b2aef008e2a01aafc21e67da4aec555de769f332ed18e0d7b1da52da3184",
-  "size": 33207825,
-  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.4.5/DisasterZone-1.4.5.zip"
+  "name": "DisasterZone-1.4.6.zip",
+  "sha256": "84ffe2c089c62e195ffb3667b7433527bc0336e0d3c5223a9c01f27948673a76",
+  "size": 34132880,
+  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.4.6/DisasterZone-1.4.6.zip"
  }
 }
