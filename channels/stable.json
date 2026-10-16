@@ -1,8 +1,8 @@
 {
  "assetPack": 14,
- "build": "8535417e49a60bd3",
+ "build": "5a601dc56e533176",
  "channel": "stable",
- "commit": "98824a6384f66ef8d93193d665c80b12da9b51c5",
+ "commit": "455aabe420f5b9d0397b8cd642f5f17aa981e02d",
  "folders": {
   "DisasterZone": {
    "Bindings.xml": {
@@ -76,14 +76,14 @@
     "size": 461
    },
    "Core/BuildInfo.lua": {
-    "gz": 222,
-    "sha256": "7fafe34065da9f9b6b7c607566093997c967e915f20325e65c7d8f2f02d0040f",
+    "gz": 221,
+    "sha256": "54d911a26e71696eac75857cf3539880def103639b4b3da6404894a354af7e67",
     "size": 271
    },
    "Core/ClassKit.lua": {
-    "gz": 2446,
-    "sha256": "9b417446cec7c42258deeb2bcb2ca7c5872c9c5d0617c65857252e426b001521",
-    "size": 7029
+    "gz": 2559,
+    "sha256": "8a2d9e4563078da4f2975de31920267ad7b5fb1b2613900bd9294804badcb8b5",
+    "size": 7351
    },
    "Core/ClassPlanner.lua": {
     "gz": 6042,
@@ -106,9 +106,9 @@
     "size": 19770
    },
    "Core/Comm.lua": {
-    "gz": 7835,
-    "sha256": "cfb1c3f6c71384a23416170144632dbe2f6d2aa0249951b45882b16804f52cb1",
-    "size": 25722
+    "gz": 7903,
+    "sha256": "75313c0b4ee5a8e23dfb82297de243235f977ea6bc665a4cb78583b1cd3084ec",
+    "size": 25784
    },
    "Core/Constants.lua": {
     "gz": 7673,
@@ -121,9 +121,9 @@
     "size": 20717
    },
    "Core/DB.lua": {
-    "gz": 6809,
-    "sha256": "72f9cee23b39c6fb2a8d3bff531c6cad1f92510b362ecc4ba521eff4f535f7bc",
-    "size": 18927
+    "gz": 6982,
+    "sha256": "39057225b2c665455f9aa1ee06a23767d66ce990a52860af8d9d192e4660f773",
+    "size": 19412
    },
    "Core/Demo.lua": {
     "gz": 8451,
@@ -231,9 +231,9 @@
     "size": 22701
    },
    "Core/ItemDB.lua": {
-    "gz": 14710,
-    "sha256": "113e347a67f49ab7251486ca62454d940475d4391f4554b70f767822c8424396",
-    "size": 59081
+    "gz": 15025,
+    "sha256": "cd740de178fd9ccc850d2fd115f98b84cde122ec96b8d5fd89efb8baed186e0e",
+    "size": 59911
    },
    "Core/Kit.lua": {
     "gz": 7166,
@@ -426,9 +426,9 @@
     "size": 17715
    },
    "Core/ShotTimer.lua": {
-    "gz": 9221,
-    "sha256": "584022770eef408b9731f727f900bbc8b6d110ffc438cc5f2a2bf066cb48dae2",
-    "size": 30901
+    "gz": 9256,
+    "sha256": "a12c7307498fe5542e10328bd9920e81d7b92c6c3ebd10eb0bf4bcb90df4514d",
+    "size": 30965
    },
    "Core/Store.lua": {
     "gz": 12041,
@@ -466,9 +466,9 @@
     "size": 35544
    },
    "Core/SwingTimer.lua": {
-    "gz": 7985,
-    "sha256": "1d98a0915c60dfc74ffe6d398492416b7f4afb169153ba08b160eb371c622d01",
-    "size": 25738
+    "gz": 8011,
+    "sha256": "2c8de0653a8f1cbdde5f8f5fb1824aa8be1588ca681149371adca053f2b1dbcc",
+    "size": 25814
    },
    "Core/Sync.lua": {
     "gz": 12944,
@@ -501,9 +501,9 @@
     "size": 46279
    },
    "Core/WarriorSwing.lua": {
-    "gz": 8897,
-    "sha256": "2f2e881775290b776a887a41da3d50ed012d5d388f133756caf026dadc2e0ff8",
-    "size": 29994
+    "gz": 8924,
+    "sha256": "28c32981b28cada3112ac81470e9e97d9d6fac2e6f1cb16c39e4f26476c4586d",
+    "size": 30058
    },
    "Core/WornGems.lua": {
     "gz": 3293,
@@ -591,9 +591,9 @@
     "size": 9381
    },
    "Data/Changelog.lua": {
-    "gz": 53527,
-    "sha256": "7620f9473303eb6d3896e210395e3af9f5b64a83b6081b84fb0a335a7e3ac580",
-    "size": 182642
+    "gz": 53752,
+    "sha256": "8ca33c0b90d789f56ca96f23a6ec7c94b43e8a259726ebc4a4e009c000dc1fe1",
+    "size": 183578
    },
    "Data/Classes/Paladin.lua": {
     "gz": 1676,
@@ -707,7 +707,7 @@
    },
    "DisasterZone.toc": {
     "gz": 2635,
-    "sha256": "4b2126bd1825d7e47965ad164bb56bd3b07e6fcbb6b4184934b4ccf97a5c8c8d",
+    "sha256": "c8eb1c41924736a83b4ffcff911c9bbe96dea56fa52d950a58a04039e2f89f56",
     "size": 8148
    },
    "Games/Azeromon/Achievements.lua": {
@@ -4542,7 +4542,7 @@
    },
    "README.md": {
     "gz": 24786,
-    "sha256": "9e7bbb37957cd10881c67b5ca928b0581256081bbb5c2e015ed697e69fe97a5f",
+    "sha256": "8ec687bb06fa7533118ef20688017d998f3a5347a8abcf361810b3e9f69256e9",
     "size": 70028
    },
    "Render3D/Probe.lua": {
@@ -4726,9 +4726,9 @@
     "size": 36930
    },
    "UI/BlessingsBar.lua": {
-    "gz": 11144,
-    "sha256": "6ae89438e40e9ed9d3fa4620d4aba6ee8af39e47b49ceca1b98276853a15b9ee",
-    "size": 38514
+    "gz": 11138,
+    "sha256": "78ff01342e59dedeb97dbd200b95dd0cdddf1eadac39ac633e22b48cc611a4c9",
+    "size": 38484
    },
    "UI/BlessingsUI.lua": {
     "gz": 7726,
@@ -5001,9 +5001,9 @@
     "size": 33632
    },
    "UI/MainFrame.lua": {
-    "gz": 12240,
-    "sha256": "8938a55adda5ee618cd9960c104e970599364935ee3eea2c6567019a59733496",
-    "size": 40916
+    "gz": 12360,
+    "sha256": "1111fd57f5d59403acccaabb9a8cab818977cd69996a8e1db4514bc79ffbd1e6",
+    "size": 41271
    },
    "UI/Members.lua": {
     "gz": 23569,
@@ -5191,9 +5191,9 @@
     "size": 29944
    },
    "UI/Settings.lua": {
-    "gz": 64995,
-    "sha256": "9754023370fe5d4f52253ed586b5278611a9323f04965ecf548ce28cfe33c29e",
-    "size": 232791
+    "gz": 65003,
+    "sha256": "33bdd292ea1128ba6f4955196495550f34c8d685c8169c231e569176c9e11b37",
+    "size": 232809
    },
    "UI/Share.lua": {
     "gz": 12330,
@@ -5291,9 +5291,9 @@
     "size": 5863
    },
    "UI/TotemBar.lua": {
-    "gz": 7843,
-    "sha256": "f24d50679c51920aa8a373a56df2e14ee8d797549656b33772926a0381cd8b91",
-    "size": 27206
+    "gz": 7839,
+    "sha256": "b653fc977c95a2dcbc46e598d5b8120db4f7f413e89450afab561638a217421c",
+    "size": 27175
    },
    "UI/TotemsUI.lua": {
     "gz": 12539,
@@ -5321,15 +5321,15 @@
     "size": 22151
    },
    "UI/Widgets.lua": {
-    "gz": 51799,
-    "sha256": "b34609dd5e1a2d91072a904e624cb0d1771ab4fc305c2fb6efc26ee3c86e1849",
-    "size": 188288
+    "gz": 51861,
+    "sha256": "cef48b371aff2ba571454b25a8ab8417cb439057c26cfd1391348892548b3e84",
+    "size": 188515
    }
   },
   "DisasterZone_Rooms": {
    "DisasterZone_Rooms.toc": {
     "gz": 1187,
-    "sha256": "cefda3dda4f285563a091dd229b2e9ab5fcab5c3888c78df50f1f449d90e9572",
+    "sha256": "0f9779914307e543679b3be7c3fccf2a06031ca2473b137525d4d5cc91751ba5",
     "size": 4477
    },
    "Load.lua": {
@@ -5897,6 +5897,34 @@
     "date": "16 October 2026",
     "sections": [
      {
+      "area": "class",
+      "heading": "Class tools start off",
+      "kind": "changed",
+      "lead": "Swing and shot timers, Blessings and Totems are yours to turn on.",
+      "lines": [
+       "Every class tool starts switched off: turn on the ones you want in Settings > Class tools.",
+       "After this update they are all off once, even ones you had on: switch yours back on.",
+       "Demo mode still shows every tool to try them out."
+      ]
+     },
+     {
+      "area": "guild",
+      "heading": "Smoother logins",
+      "kind": "fixed",
+      "lead": "",
+      "lines": [
+       "Opening the window no longer asks the game for a whole raid's items in the background.",
+       "A council member whose guild list loads late now answers everyone who logged in with them."
+      ]
+     }
+    ],
+    "title": "Class tools by choice",
+    "version": "1.5.2"
+   },
+   {
+    "date": "16 October 2026",
+    "sections": [
+     {
       "area": "guild",
       "heading": "Recruitment",
       "kind": "new",
@@ -6309,53 +6337,16 @@
     ],
     "title": "Discord for everyone",
     "version": "1.4.5"
-   },
-   {
-    "date": "14 October 2026",
-    "sections": [
-     {
-      "area": "games",
-      "heading": "The Binding of Illidan",
-      "kind": "new",
-      "lead": "A roguelike through the Black Temple, played as your own class.",
-      "lines": [
-       "Five floors of random rooms, each ending in a raid boss with its real mechanics.",
-       "Magtheridon, Supremus, Teron Gorefiend, Mother Shahraz and Illidan himself.",
-       "Your class's bolt is your shot; 18 items, fel bargains and Naaru gifts on the way.",
-       "Locked vaults, a goblin vendor and a secret room behind a wall on every floor.",
-       "Today's dungeon: one a day for the whole guild; your first try goes on the board.",
-       "Fall in a counted run and guildmates find your grave in that room.",
-       "Rooms lit by flickering sconces; the Games poster plays the game itself."
-      ]
-     },
-     {
-      "area": "games",
-      "heading": "Azeromon, alive",
-      "kind": "changed",
-      "lead": "Every zone redrawn, with weather, light and a new title screen.",
-      "lines": [
-       "Elwynn, Westfall, Duskwood, Stranglethorn and the mines all redrawn.",
-       "Mist in Duskwood, sun shafts and fireflies in the jungle, rain for the whole guild.",
-       "Cosy houses and inns: hearths at night, sunlight through the windows by day.",
-       "The Guild Hall is a cathedral now: each raid's wing opens with the guild's first kill.",
-       "The game fills the whole window; battles have a painted scene for every zone.",
-       "A new title screen, and the Games poster plays a film of the zones.",
-       "Start menu: MOTION turns the world's motion off."
-      ]
-     }
-    ],
-    "title": "The Binding of Illidan and a living Azeromon",
-    "version": "1.4.4"
    }
   ]
  },
- "published": "2026-10-15T22:38:38Z",
- "seq": 10,
- "version": "1.5.1",
+ "published": "2026-10-16T09:45:59Z",
+ "seq": 11,
+ "version": "1.5.2",
  "zip": {
-  "name": "DisasterZone-1.5.1.zip",
-  "sha256": "1579c7070073b1a08de1d0f307106b972354631b9f2df7bce6d76b61622e28e1",
-  "size": 34972059,
-  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.5.1/DisasterZone-1.5.1.zip"
+  "name": "DisasterZone-1.5.2.zip",
+  "sha256": "782543720fec4bc50c7b2631f30e32857cb212b62efc070fa15c4e84a8db3ca7",
+  "size": 34973220,
+  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.5.2/DisasterZone-1.5.2.zip"
  }
 }
