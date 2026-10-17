@@ -8,16 +8,71 @@ use crate::core::state;
 use crate::core::wow;
 use crate::core::Result;
 use crate::{layout, run_update};
-use std::time::Duration;
+use serde::Serialize;
+use std::sync::Mutex;
+use std::time::{Duration, SystemTime, UNIX_EPOCH};
 use tauri::menu::{Menu, MenuItem, PredefinedMenuItem};
 use tauri::tray::{MouseButton, MouseButtonState, TrayIconBuilder, TrayIconEvent};
 use tauri::{AppHandle, Emitter, Manager};
 use tauri_plugin_notification::NotificationExt;
-use tauri_plugin_updater::UpdaterExt;
+use tauri_plugin_updater::{Update, UpdaterExt};
 
 pub const INTERVAL: Duration = Duration::from_secs(5 * 60);
 const FIRST_CHECK: Duration = Duration::from_secs(20);
 const TRAY_ID: &str = "main";
+/// To the window: the tray's check found a new launcher (payload LauncherUpdate; the window's bar installs it).
+pub const LAUNCHER_EVENT: &str = "launcher-update";
+/// To the window: the newest check for a new launcher, the tray's or the window's own (payload LauncherCheck).
+pub const LAUNCHER_CHECK_EVENT: &str = "launcher-check";
+/// To the window: it was hidden in the tray and is shown again (it looks for a new launcher then).
+pub const SHOWN_EVENT: &str = "window-shown";
+
+#[derive(Clone, Debug, Serialize, PartialEq)]
+pub struct LauncherUpdate {
+    pub version: String,
+}
+
+/// The newest check for a new launcher, for Settings > About (only in memory: every start checks again).
+#[derive(Clone, Debug, Serialize, PartialEq)]
+pub struct LauncherCheck {
+    /// unix time
+    pub at: u64,
+    /// the version it found
+    pub found: Option<String>,
+    /// why it failed, one short line
+    pub error: Option<String>,
+}
+
+#[derive(Default)]
+pub(crate) struct LauncherLog(Mutex<Option<LauncherCheck>>);
+
+impl LauncherLog {
+    pub fn get(&self) -> Option<LauncherCheck> {
+        self.0.lock().unwrap_or_else(|e| e.into_inner()).clone()
+    }
+
+    pub fn note(&self, found: Option<String>, error: Option<String>) -> LauncherCheck {
+        let at = SystemTime::now().duration_since(UNIX_EPOCH).map_or(0, |d| d.as_secs());
+        let c = LauncherCheck { at, found, error: error.map(|e| short_error(&e)) };
+        *self.0.lock().unwrap_or_else(|e| e.into_inner()) = Some(c.clone());
+        c
+    }
+}
+
+/// An updater error as one short line (a failed request names the whole URL and every cause).
+pub fn short_error(e: &str) -> String {
+    let line = e.lines().map(str::trim).find(|l| !l.is_empty()).unwrap_or("unknown error");
+    if line.chars().count() > 160 {
+        format!("{}…", line.chars().take(159).collect::<String>())
+    } else {
+        line.to_string()
+    }
+}
+
+fn log_launcher_check(app: &AppHandle, found: Option<String>, error: Option<String>) {
+    let c = app.state::<LauncherLog>().note(found, error);
+    let _ = app.emit(LAUNCHER_CHECK_EVENT, c);
+}
 
 #[derive(Debug, PartialEq)]
 pub enum Action {
@@ -47,15 +102,37 @@ pub fn decide(up_to_date: bool, hold: bool, auto_install: bool, wow_running: boo
     }
 }
 
+#[derive(Debug, PartialEq)]
+pub enum LauncherAction {
+    /// download, install and restart into the tray
+    InstallItself,
+    /// tell the window (its bar installs it); notify: and the user, once per version
+    Tell { notify: bool },
+}
+
+/// What the tray's check does with a new launcher. It installs itself with "install updates by itself" on, the
+/// window closed and no addon update running; otherwise the window hears of it at every check.
+pub fn decide_launcher(tray: bool, auto_install: bool, window_open: bool, busy: bool, notified: bool) -> LauncherAction {
+    if tray && auto_install && !window_open && !busy {
+        LauncherAction::InstallItself
+    } else {
+        LauncherAction::Tell { notify: !notified }
+    }
+}
+
 pub fn notify(app: &AppHandle, title: &str, body: &str) {
     let _ = app.notification().builder().title(title).body(body).show();
 }
 
 pub fn show_main(app: &AppHandle) {
     if let Some(w) = app.get_webview_window("main") {
+        let hidden = !w.is_visible().unwrap_or(true);
         let _ = w.unminimize();
         let _ = w.show();
         let _ = w.set_focus();
+        if hidden {
+            let _ = app.emit(SHOWN_EVENT, ());
+        }
     }
 }
 
@@ -210,35 +287,60 @@ async fn try_tick(app: &AppHandle, manual: bool) -> Result<()> {
     Ok(())
 }
 
-/// A new launcher. With "install updates by itself" on, the window closed and nothing installing, it updates
-/// itself and restarts into the tray; otherwise one notification per version (the window's bar installs it).
+/// A new launcher: it installs itself (decide_launcher), or the window's bar shows it at once and the user hears of
+/// it once per version. Every result, a failure too, goes to Settings > About.
 async fn check_launcher(app: &AppHandle) {
-    let Ok(updater) = app.updater() else { return };
-    let Ok(Some(u)) = updater.check().await else { return };
-    let mut s = state::load();
+    let found = match app.updater() {
+        Ok(updater) => updater.check().await.map_err(|e| e.to_string()),
+        Err(e) => Err(e.to_string()),
+    };
+    let u = match found {
+        Ok(Some(u)) => u,
+        Ok(None) => return log_launcher_check(app, None, None),
+        Err(e) => return log_launcher_check(app, None, Some(e)),
+    };
+    log_launcher_check(app, Some(u.version.clone()), None);
+    let s = state::load();
     let window_open = app.get_webview_window("main").and_then(|w| w.is_visible().ok()).unwrap_or(false);
-    if s.tray && s.auto_install && !window_open {
-        let busy = app.state::<crate::Busy>();
-        let guard = busy.0.try_lock();
-        if guard.is_ok() {
-            if u.download_and_install(|_, _| {}, || {}).await.is_ok() {
-                s = state::load();
-                s.start_hidden_once = true;
-                s.notified_launcher = u.version.clone();
-                let _ = state::save(&s);
-                notify(app, &format!("DisasterZone Launcher {} is installed", u.version),
-                    "It updated itself and keeps running in the tray.");
-                app.restart();
-            }
-            return; // (a failed download is tried again on the next check)
+    let busy = app.state::<crate::Busy>();
+    let guard = busy.0.try_lock();
+    let notified = s.notified_launcher == u.version;
+    let mut action = decide_launcher(s.tray, s.auto_install, window_open, guard.is_err(), notified);
+    if action == LauncherAction::InstallItself {
+        let Err(e) = install_itself(app, &u).await;
+        // (tried again at the next check; meanwhile the window and the user hear of it as without the setting)
+        log_launcher_check(app, Some(u.version.clone()), Some(format!("installing {} failed: {e}", u.version)));
+        action = LauncherAction::Tell { notify: !notified };
+    }
+    drop(guard);
+    if let LauncherAction::Tell { notify: tell_user } = action {
+        let _ = app.emit(LAUNCHER_EVENT, LauncherUpdate { version: u.version.clone() });
+        if tell_user {
+            notify(app, "A new DisasterZone Launcher is ready",
+                &format!("Version {}: open the launcher and click Install and restart.", u.version));
+            let mut s = state::load();
+            s.notified_launcher = u.version.clone();
+            let _ = state::save(&s);
         }
     }
-    if s.notified_launcher != u.version {
-        notify(app, "A new DisasterZone Launcher is ready",
-            &format!("Version {}: open the launcher and click Install and restart.", u.version));
-        s.notified_launcher = u.version.clone();
+}
+
+/// Download, then install and restart into the tray. Only returns when it failed. On Windows install() ends this
+/// process (the installer starts the new launcher), so the "start hidden" mark is saved before it.
+async fn install_itself(app: &AppHandle, u: &Update) -> std::result::Result<std::convert::Infallible, String> {
+    let bytes = u.download(|_, _| {}, || {}).await.map_err(|e| e.to_string())?;
+    let mut s = state::load();
+    s.start_hidden_once = true;
+    let _ = state::save(&s);
+    notify(app, &format!("DisasterZone Launcher {} is installing", u.version),
+        "It updates itself and keeps running in the tray.");
+    if let Err(e) = u.install(bytes) {
+        let mut s = state::load();
+        s.start_hidden_once = false;
         let _ = state::save(&s);
+        return Err(e.to_string());
     }
+    app.restart();
 }
 
 #[cfg(test)]
@@ -269,5 +371,51 @@ mod tests {
         // nothing to update (the folders a zip user copied in), or paused: no nagging
         assert_eq!(decide(true, false, true, false, false, true), Action::Nothing);
         assert_eq!(decide(false, true, true, false, false, true), Action::Nothing);
+    }
+
+    #[test]
+    fn what_the_tray_does_with_a_new_launcher() {
+        use LauncherAction::*;
+        // install by itself on, window closed, no addon update running: it updates itself
+        assert_eq!(decide_launcher(true, true, false, false, false), InstallItself);
+        assert_eq!(decide_launcher(true, true, false, false, true), InstallItself);
+        // the window is open, an addon update runs, or the setting is off: the window's bar, and one notification
+        assert_eq!(decide_launcher(true, true, true, false, false), Tell { notify: true });
+        assert_eq!(decide_launcher(true, true, false, true, false), Tell { notify: true });
+        assert_eq!(decide_launcher(true, false, false, false, false), Tell { notify: true });
+        assert_eq!(decide_launcher(false, true, false, false, false), Tell { notify: true });
+        // told already: the window still hears of it (it may have been opened since), the user doesn't again
+        assert_eq!(decide_launcher(true, false, true, false, true), Tell { notify: false });
+    }
+
+    #[test]
+    fn the_window_hears_of_a_new_launcher() {
+        // (ui/app.js listens for these names and reads payload.version, payload.at/found/error)
+        assert_eq!(LAUNCHER_EVENT, "launcher-update");
+        assert_eq!(LAUNCHER_CHECK_EVENT, "launcher-check");
+        assert_eq!(SHOWN_EVENT, "window-shown");
+        let ev = serde_json::to_value(LauncherUpdate { version: "0.4.2".into() }).unwrap();
+        assert_eq!(ev, serde_json::json!({ "version": "0.4.2" }));
+
+        let log = LauncherLog::default();
+        assert_eq!(log.get(), None);
+        log.note(None, Some("error sending request\ncaused by: dns error".into()));
+        let c = log.note(Some("0.4.2".into()), None);
+        assert_eq!(log.get(), Some(c.clone()), "the newest result wins");
+        let v = serde_json::to_value(&c).unwrap();
+        assert_eq!(v["found"], "0.4.2");
+        assert!(v["error"].is_null());
+        assert!(v["at"].as_u64().unwrap() > 1_700_000_000);
+    }
+
+    #[test]
+    fn updater_errors_are_one_short_line() {
+        assert_eq!(short_error("\n  error sending request\ncaused by: dns error\n"), "error sending request");
+        assert_eq!(short_error(""), "unknown error");
+        let long = "x".repeat(400);
+        let s = short_error(&long);
+        assert_eq!(s.chars().count(), 160);
+        assert!(s.ends_with('…'));
+        assert_eq!(LauncherLog::default().note(None, Some(long)).error.unwrap().chars().count(), 160);
     }
 }

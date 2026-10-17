@@ -260,6 +260,8 @@ main { flex: 1; position: relative; min-height: 0; }
 .row.off { opacity: .45; }
 .row.off .toggle { pointer-events: none; }
 .about { color: var(--faint); font-size: 12px; padding: 16px 0 4px; }
+.about-check { color: var(--faint); font-size: 12px; user-select: text; }
+.about-check.bad { color: rgb(230, 110, 100); }
 
 /* ---------- Buttons (SLEEK primary / secondary / chosen / danger) ---------- */
 .btn { height: 32px; padding: 0 16px; border-radius: 4px; cursor: pointer; font-weight: 600;

@@ -11,6 +11,9 @@ const api = DEMO ? demoApi() : {
   pickFolder: () => T.dialog.open({ directory: true, title: "Your World of Warcraft folder" }),
   minimize: () => T.window.getCurrentWindow().minimize(),
   close: () => T.window.getCurrentWindow().close(),
+  // the launcher's own update (tauri-plugin-updater): an Update or null
+  launcherCheck: () => (T.updater ? T.updater.check() : Promise.reject("the updater isn't loaded in this window")),
+  launcherInstall: async (upd, onEvent) => { await upd.downloadAndInstall(onEvent); await T.process.relaunch(); },
 };
 
 const FLAVOR_NAMES = { _anniversary_: "Anniversary", _classic_era_: "Classic Era", _classic_: "Classic", _retail_: "Retail" };
@@ -91,6 +94,7 @@ async function runCheck() {
   } catch (e) {
     check = null;
     checkErr = String(e);
+    if (needsNewLauncher()) checkLauncherUpdate();   // (the hero's button then updates the launcher)
   }
   checking = false;
   $("btn-check").classList.remove("spin");
@@ -179,11 +183,15 @@ function renderHero() {
     btn.textContent = inst && inst.present ? "Update" : "Install";
     return;
   }
+  if (checkErr && needsNewLauncher()) {
+    renderLauncherGate(btn, inst);
+    return;
+  }
   if (checkErr) {
     setHero("Can't check", "warn", inst && inst.version, null, checkErr);
     btn.textContent = "Try again";
     btn.disabled = false;
-    btn.onclick = runCheck;
+    btn.onclick = checkAgain;
     return;
   }
   if (!check) return;
@@ -866,7 +874,19 @@ function renderSettings() {
   }
   $("set-source").placeholder = status.source;
   renderSync();
+  renderAbout();
+}
+
+// About: the version, and how the newest look for a new launcher went (the window's or the tray's).
+function renderAbout() {
   $("about").textContent = "DisasterZone Launcher " + status.launcherVersion + " · releases from " + status.source;
+  const c = status.launcherCheck;
+  const line = $("about-check");
+  line.className = "about-check" + (c && c.error ? " bad" : "");
+  line.textContent = !c ? ""
+    : c.error ? "Launcher update check failed: " + c.error + " · " + ago(c.at)
+    : c.found ? "Launcher " + c.found + " is ready · checked " + ago(c.at)
+    : "No newer launcher · checked " + ago(c.at);
 }
 
 function wireSettings() {
@@ -979,31 +999,127 @@ function wireGames() {
   window.addEventListener("resize", close);
 }
 
-// The launcher's own update (tauri-plugin-updater; the feed is the release "launcher-latest").
-async function checkLauncherUpdate() {
-  if (DEMO || !T.updater) return;
-  let upd = null;
-  try {
-    upd = await T.updater.check();
-  } catch (e) {
-    return;                       // (offline, or no feed yet: the addon check reports connection problems)
+// ---------------------------------------------------------------------------------------------------------------
+// The launcher's own update (tauri-plugin-updater; the feed is the release "launcher-latest"). The window looks at
+// start, on the re-check timer, when it comes back from the tray, on Check again / Try again and when a release
+// needs a newer launcher; the tray's check tells it too (event "launcher-update"). One bar, whoever found it.
+// ---------------------------------------------------------------------------------------------------------------
+
+const SHOWN_GAP_MS = 60 * 1000;   // (back from the tray twice in a minute: one look)
+
+// upd: the plugin's Update for version (none when the tray told it); looking: the check under way
+const launcher = { upd: null, version: null, looking: null, at: 0, installing: false, pct: null };
+
+// A release this launcher can't read (a newer manifest format, or a new release key): the way on is a new launcher.
+function needsNewLauncher() { return !!checkErr && /newe(r|st) launcher/.test(checkErr); }
+
+function checkLauncherUpdate() {
+  if (launcher.installing) return Promise.resolve();
+  if (!launcher.looking) {
+    launcher.looking = lookForLauncher().finally(() => { launcher.looking = null; renderLauncher(); });
+    renderLauncher();
   }
-  if (!upd) return;
-  $("lbar-text").textContent = "A new launcher is ready: " + upd.version + ".";
-  $("lbar").classList.remove("hidden");
-  $("lbar-btn").onclick = async () => {
-    if (working) { toast("Wait for the addon update to finish first."); return; }
-    $("lbar-btn").disabled = true;
-    $("lbar-btn").textContent = "Downloading…";
-    try {
-      await upd.downloadAndInstall();
-      await T.process.relaunch();
-    } catch (e) {
-      toast(e);
-      $("lbar-btn").disabled = false;
-      $("lbar-btn").textContent = "Install and restart";
+  return launcher.looking;
+}
+
+async function lookForLauncher() {
+  let found = null, error = null;
+  try {
+    const upd = await api.launcherCheck();
+    found = upd ? upd.version : null;
+    if (!launcher.installing) {       // (Install was clicked meanwhile: it has its own)
+      launcher.upd = upd || null;
+      launcher.version = found;
     }
-  };
+  } catch (e) {
+    error = String(e);              // (a version the tray told of stays: Install looks again)
+  }
+  launcher.at = Date.now();
+  try {
+    const c = await api.invoke("launcher_checked", { found, error });
+    if (status) status.launcherCheck = c;
+  } catch (e) { /* (About shows the one before) */ }
+}
+
+function launcherButtonText() {
+  return launcher.pct == null ? "Downloading…" : launcher.pct >= 100 ? "Restarting…" : "Downloading… " + launcher.pct + "%";
+}
+
+// The bar, the hero while a release needs a newer launcher, and About.
+function renderLauncher() {
+  const v = launcher.version;
+  $("lbar").classList.toggle("hidden", !v);
+  if (v) {
+    $("lbar-text").textContent = "A new launcher is ready: " + v + ".";
+    const b = $("lbar-btn");
+    b.disabled = launcher.installing;
+    b.textContent = launcher.installing ? launcherButtonText() : "Install and restart";
+    b.onclick = installLauncher;
+  }
+  if (status) renderAbout();
+  if (needsNewLauncher()) renderHero();
+}
+
+// The hero when the release needs a newer launcher: update it from here, or get it from the releases page.
+function renderLauncherGate(btn, inst) {
+  const v = launcher.version;
+  const ver = inst && inst.version;
+  const lead = "This release of DisasterZone needs a newer launcher.";
+  if (launcher.installing) {
+    setHero("New launcher needed", "warn", ver, null, "Installing launcher " + v + ". It restarts by itself.");
+    btn.textContent = launcherButtonText();
+  } else if (v) {
+    setHero("New launcher needed", "warn", ver, null, lead + " Launcher " + v + " is ready: it installs and restarts in a moment.");
+    btn.textContent = "Update the launcher";
+    btn.disabled = false;
+    btn.onclick = installLauncher;
+  } else if (launcher.looking) {
+    setHero("New launcher needed", "warn", ver, null, lead + " Looking for it…");
+    btn.textContent = "Update the launcher";
+  } else {
+    const c = status.launcherCheck;
+    setHero("New launcher needed", "warn", ver, null, lead + " Get it from the releases page: your settings stay.");
+    if (c && c.error) setNotice("The launcher couldn't update itself: " + c.error);
+    btn.textContent = "Download the launcher";
+    btn.disabled = false;
+    btn.onclick = () => api.invoke("open_releases").catch(toast);
+  }
+}
+
+async function installLauncher() {
+  if (launcher.installing) return;
+  if (working) { toast("Wait for the addon update to finish first."); return; }
+  launcher.installing = true;
+  launcher.pct = null;
+  renderLauncher();
+  try {
+    // (told by the tray: this window has no Update of its own yet)
+    const upd = launcher.upd || await api.launcherCheck();
+    if (!upd) throw "No new launcher was found after all. Try again in a few minutes.";
+    launcher.version = upd.version;
+    let total = 0, got = 0;
+    await api.launcherInstall(upd, (ev) => {
+      if (ev.event === "Started") total = (ev.data && ev.data.contentLength) || 0;
+      else if (ev.event === "Progress") got += ev.data.chunkLength;
+      const pct = ev.event === "Finished" ? 100 : total ? Math.min(99, Math.floor((got * 100) / total)) : null;
+      if (pct !== launcher.pct) { launcher.pct = pct; renderLauncher(); }
+    });
+    // (the new launcher starts in this one's place: on Windows the installer has already taken over)
+  } catch (e) {
+    toast(e);
+    launcher.installing = false;
+    try {
+      const c = await api.invoke("launcher_checked", { found: launcher.version, error: "installing failed: " + e });
+      status.launcherCheck = c;
+    } catch (e2) { /* (the toast said it) */ }
+    renderLauncher();
+  }
+}
+
+// Check again (the round arrow) and Try again: the addon's release and the launcher's own update.
+function checkAgain() {
+  checkLauncherUpdate();
+  return runCheck();
 }
 
 async function start() {
@@ -1011,16 +1127,27 @@ async function start() {
   for (const l of document.querySelectorAll("[data-goto]")) l.onclick = () => showTab(l.dataset.goto);
   $("wmin").onclick = () => api.minimize();
   $("wclose").onclick = () => api.close();
-  $("btn-check").onclick = runCheck;
+  $("btn-check").onclick = checkAgain;
   $("btn-play").onclick = play;
   wireSettings();
   wireSync();
   wireGames();
   await api.listen("sync-status", (e) => { sync = { ...sync, ...e.payload }; if (status) renderSync(); });
-  setInterval(() => { if (status) renderSync(); }, 30000);   // ("synced 2 min ago" moves on)
+  setInterval(() => { if (status) { renderSync(); renderAbout(); } }, 30000);   // ("synced 2 min ago" moves on)
   await api.listen("progress", (e) => { if (working) showProgress(e.payload); });
   // the tray's background check installed something or found a new release
   await api.listen("state-changed", () => { if (!working) refreshAll(); });
+  // the tray's check found a new launcher: the bar at once (Install fetches the update itself)
+  await api.listen("launcher-update", (e) => {
+    const v = e.payload && e.payload.version;
+    if (!v || launcher.installing || v === launcher.version) return;
+    if (launcher.upd && launcher.upd.version !== v) launcher.upd = null;
+    launcher.version = v;
+    renderLauncher();
+  });
+  await api.listen("launcher-check", (e) => { if (status) { status.launcherCheck = e.payload; renderAbout(); } });
+  // back from the tray: the window may have sat hidden for days
+  await api.listen("window-shown", () => { if (Date.now() - launcher.at > SHOWN_GAP_MS) checkLauncherUpdate(); });
   try {
     sync = await api.invoke("sync_status");
     await loadStatus();
@@ -1033,7 +1160,7 @@ async function start() {
   renderBackups();
   checkLauncherUpdate();
   if (DEMO) { const tab = new URLSearchParams(location.search).get("tab"); if (tab) showTab(tab); }
-  setInterval(() => { if (!working && !checking) runCheck(); }, RECHECK_MS);
+  setInterval(() => { if (!working && !checking) runCheck(); checkLauncherUpdate(); }, RECHECK_MS);
 }
 
 start();
@@ -1045,11 +1172,25 @@ start();
 // The demo is 1.5.4 (every game inside DisasterZone) meeting 1.5.5, the first release with game packs: the picker
 // opens, Install / Remove / the 3D rooms switch / Restore all work on made-up folders. ?state=updated starts after
 // the update (four games kept), for screenshots.
+// The launcher's own update, ?launcher=
+//   ready      a new launcher (0.4.2) is ready: the bar
+//   tray       none at first; 5 s later the tray's check finds 0.4.2 (event "launcher-update")
+//   fail       the launcher's check fails (Settings > About says why)
+//   gate       the release needs a newer launcher and 0.4.2 is ready: the hero's "Update the launcher"
+//   gate-none  the release needs a newer launcher, none is found: "Download the launcher" (the releases page)
+//   gate-fail  the same, and the launcher's check failed
 function demoApi() {
   const MB = 1048576;
   const NEW = "1.5.5";
   const params = new URLSearchParams(location.search);
   const updated = params.get("state") === "updated";
+  const lmode = params.get("launcher") || "";
+  const NEW_LAUNCHER = "0.4.2";
+  let launcherOut = ["ready", "gate"].includes(lmode);
+  let launcherLog = null;
+  const handlers = {};
+  const emit = (ev, payload) => { for (const fn of handlers[ev] || []) fn({ payload }); };
+  if (lmode === "tray") setTimeout(() => { launcherOut = true; emit("launcher-update", { version: NEW_LAUNCHER }); }, 5000);
   const settings = { wowRoot: "C:\\World of Warcraft", flavor: "_anniversary_", channel: "stable", seenSeq: {}, hold: false,
     keepBackups: 3, checkOnStart: true, source: null, launchCode: "", playCommand: "", tray: false, autoInstall: false, autostart: false,
     syncServer: "", syncUser: "", packs: {}, packsPicked: updated };
@@ -1082,7 +1223,6 @@ function demoApi() {
     { heading: "Games hub", kind: "changed", lead: "Games you haven't installed still have a poster that says where to get them." }] }] };
   const notesReady = fetch("demo-notes.json").then((r) => r.json()).then((n) => { notes.changelog.push(...n.changelog); }).catch(() => {});
   const wait = (ms) => new Promise((r) => setTimeout(r, ms));
-  let progressFn = null;
   let demoSync = { linked: false, user: "", server: "https://bot.example", last: null, waiting: 0, error: null };
 
   const buildOf = (v) => (v === NEW ? "c0a1b2c3d4e5f607" : "4ad16fd3a1b2c3d4");
@@ -1113,10 +1253,11 @@ function demoApi() {
       await wait(250);
       switch (cmd) {
         case "status": return { settings: { ...settings, packs: { ...settings.packs } }, installs: [{ root: settings.wowRoot, flavors: ["_anniversary_", "_classic_era_", "_retail_"] }],
-          installed: installedNow(), flavorDir: settings.wowRoot + "\\" + settings.flavor, wowRunning: false, launcherVersion: "0.4.0",
-          source: "https://raw.githubusercontent.com/tsumilo/DisasterZone-releases/main/" };
+          installed: installedNow(), flavorDir: settings.wowRoot + "\\" + settings.flavor, wowRunning: false, launcherVersion: "0.4.1",
+          launcherCheck: launcherLog, source: "https://raw.githubusercontent.com/tsumilo/DisasterZone-releases/main/" };
         case "check": {
           await notesReady;
+          if (lmode.startsWith("gate")) throw "this release needs a newer launcher: download the newest launcher";
           const packs = release.map((p) => ({ id: p.id, folder: p.folder, kind: p.kind, title: p.title, tagline: p.tagline, required: p.required,
             defaultOn: p.defaultOn, installed: !!disk[p.folder], wanted: wanted(p), chosen: settings.packs[p.id] ?? null, action: action(p),
             files: p.files, bytes: p.bytes, gz: p.gz, downloadBytes: download(p), diskBytes: diskBytes(p), played: played[p.id] ?? null }));
@@ -1128,9 +1269,9 @@ function demoApi() {
         }
         case "update": {
           const total = release.reduce((n, p) => n + download(p), 0);
-          for (let i = 0; i <= 12; i++) { progressFn && progressFn({ payload: { step: "download", done: Math.round((i * total) / 12), total } }); await wait(140); }
-          for (let i = 0; i <= 4; i++) { progressFn && progressFn({ payload: { step: "stage", done: i * 120, total: 480 } }); await wait(110); }
-          progressFn && progressFn({ payload: { step: "swap", done: 0, total: 1 } });
+          for (let i = 0; i <= 12; i++) { emit("progress", { step: "download", done: Math.round((i * total) / 12), total }); await wait(140); }
+          for (let i = 0; i <= 4; i++) { emit("progress", { step: "stage", done: i * 120, total: 480 }); await wait(110); }
+          emit("progress", { step: "swap", done: 0, total: 1 });
           await wait(300);
           const moves = release.map((p) => ({ folder: p.folder, action: action(p) })).filter((m) => m.action && m.action !== "same");
           const id = backup("update", moves.filter((m) => m.action !== "install").map((m) => m.folder), moves.filter((m) => m.action === "install").map((m) => m.folder));
@@ -1166,10 +1307,29 @@ function demoApi() {
         case "sync_unlink": demoSync = { ...demoSync, linked: false, user: "", last: null, waiting: 0 }; return { ...demoSync };
         case "play": throw "Demo: Play would start Battle.net here.";
         case "open_folder": throw "Demo: this would open " + (args.folder || "the folder") + ".";
+        case "open_releases": throw "Demo: this would open https://github.com/tsumilo/DisasterZone-releases/releases/latest.";
+        case "launcher_checked":
+          launcherLog = { at: Math.floor(Date.now() / 1000), found: args.found, error: args.error && args.error.split("\n")[0].slice(0, 160) };
+          return { ...launcherLog };
       }
       throw "unknown command " + cmd;
     },
-    async listen(ev, fn) { if (ev === "progress") progressFn = fn; },
+    async listen(ev, fn) { (handlers[ev] = handlers[ev] || []).push(fn); },
+    async launcherCheck() {
+      await wait(600);
+      if (lmode === "fail" || lmode === "gate-fail") {
+        throw "error sending request for url (https://github.com/tsumilo/DisasterZone-releases/releases/download/launcher-latest/latest.json)";
+      }
+      return launcherOut ? { version: NEW_LAUNCHER } : null;
+    },
+    async launcherInstall(upd, onEvent) {
+      const total = Math.round(9.4 * MB);
+      onEvent({ event: "Started", data: { contentLength: total } });
+      for (let i = 1; i <= 20; i++) { await wait(120); onEvent({ event: "Progress", data: { chunkLength: total / 20 } }); }
+      onEvent({ event: "Finished" });
+      toast("Demo: launcher " + upd.version + " would install and restart here.", true);
+      await new Promise(() => {});   // (the real window goes away now)
+    },
     async pickFolder() { return null; },
     minimize() {},
     close() {},

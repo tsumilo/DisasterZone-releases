@@ -30,6 +30,10 @@ A development copy (BuildInfo id `"dev"`, or `DisasterZone` or any `DisasterZone
   (`dev\keys\updater_password.txt`) in the environment; CI has both as repository secrets.
 - Self-update: the launcher reads `latest.json` from the release `launcher-latest` (set in `tauri.conf.json`,
   public key from `dev\keys\updater.key.pub`). Losing `updater.key` means members must reinstall the launcher by hand.
+  The window looks at start, on its 30-minute re-check, when it comes back from the tray, on Check again and when
+  a release needs a newer launcher (then the hero's button updates it, or opens the releases page if none is found).
+  Tray mode's 5-minute check installs it by itself (that setting on, window closed) or shows the window's bar at once.
+  Settings > About shows the newest check and why it failed.
 - All three OSes: `dev\tools\release.py launcher-push` copies this folder into the releases repository and pushes
   tag `launcher-v<version>`; `ci/launcher.yml` builds and publishes the installers. Raise the version in
   `src-tauri/tauri.conf.json`, `src-tauri/Cargo.toml` and `package.json` first.
@@ -43,3 +47,4 @@ A development copy (BuildInfo id `"dev"`, or `DisasterZone` or any `DisasterZone
 - `dev\tests\launcher\test_publish.py` — the Python publisher.
 - Serving `ui/` and opening it in a browser runs the window on demo data: 1.5.4 meeting the first release with game
   packs (the picker opens); `?state=updated` starts after that update; `?tab=games` opens a tab.
+  `?launcher=ready|tray|fail|gate|gate-none|gate-fail` shows the launcher's own update states (see demoApi in app.js).

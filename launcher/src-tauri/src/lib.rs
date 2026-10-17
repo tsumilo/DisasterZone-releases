@@ -33,8 +33,13 @@ struct Status {
     flavor_dir: Option<String>,
     wow_running: bool,
     launcher_version: &'static str,
+    /// the newest check for a new launcher (Settings > About), none before the first
+    launcher_check: Option<background::LauncherCheck>,
     source: String,
 }
+
+/// Where a launcher that can't update itself sends people (the hero's "Download the launcher").
+const RELEASES_PAGE: &str = "https://github.com/tsumilo/DisasterZone-releases/releases/latest";
 
 pub(crate) fn layout(s: &Settings) -> Result<Layout> {
     match s.flavor_dir() {
@@ -60,7 +65,7 @@ fn autodetect(s: &mut Settings, installs: &[WowInstall]) {
 }
 
 #[tauri::command]
-fn status() -> Status {
+fn status(log: State<'_, background::LauncherLog>) -> Status {
     let mut s = state::load();
     let installs = wow::detect();
     autodetect(&mut s, &installs);
@@ -71,9 +76,26 @@ fn status() -> Status {
         installs,
         wow_running: wow::running(),
         launcher_version: env!("CARGO_PKG_VERSION"),
+        launcher_check: log.get(),
         source: s.source(),
         settings: s,
     }
+}
+
+/// The window looked for a new launcher itself (the updater plugin's check from the page): keep what it found or
+/// why it failed, as the tray's check does.
+#[tauri::command]
+fn launcher_checked(
+    found: Option<String>,
+    error: Option<String>,
+    log: State<'_, background::LauncherLog>,
+) -> background::LauncherCheck {
+    log.note(found, error)
+}
+
+#[tauri::command]
+fn open_releases() -> Result<()> {
+    tauri_plugin_opener::open_url(RELEASES_PAGE, None::<&str>).map_err(|e| crate::core::Error::Msg(e.to_string()))
 }
 
 #[tauri::command]
@@ -428,6 +450,7 @@ pub fn run() {
         .plugin(tauri_plugin_updater::Builder::new().build())
         .plugin(tauri_plugin_process::init())
         .manage(Busy::default())
+        .manage(background::LauncherLog::default())
         .setup(|app| {
             let handle = app.handle().clone();
             let mut s = state::load();
@@ -465,6 +488,8 @@ pub fn run() {
             set_packs,
             remove_pack,
             open_folder,
+            open_releases,
+            launcher_checked,
             play,
             sync_status,
             sync_link,
