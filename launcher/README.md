@@ -1,8 +1,11 @@
 # DisasterZone Launcher
 
-Desktop app (Windows, macOS, Linux) that installs and updates the DisasterZone addon — both folders,
-`DisasterZone` and `DisasterZone_Rooms` — and keeps backups you can go back to. Tauri 2: Rust in `src-tauri/`,
-the window is plain HTML/CSS/JS in `ui/` (no bundler).
+Desktop app (Windows, macOS, Linux) that installs and updates the DisasterZone addon and keeps backups you can go
+back to. A release is a set of folders, one per pack (manifest format 2, launcher 0.4): the core `DisasterZone`,
+the Extra `DisasterZone_Rooms` (3D rooms, on by default) and one `DisasterZone_<Game>` per game. The Games tab
+installs and removes games; the first release with games asks once which to keep (played ones ticked, from
+`DisasterZoneDB.games[id].opened` in the saved variables). Tauri 2: Rust in `src-tauri/`, the window is plain
+HTML/CSS/JS in `ui/` (no bundler; card art in `ui/games/`).
 
 ## How releases reach it
 
@@ -12,10 +15,12 @@ the window is plain HTML/CSS/JS in `ui/` (no bundler).
    GitHub release. Format: `dev\tools\launchlib.py`.
 3. The launcher reads `source.txt` + `channels/<channel>.json`, checks the Ed25519 signature against
    `release_key.json` (the public half of `dev\keys\launcher_key.json`), downloads only the files that differ,
-   builds the new folders under `<game>\Interface\DZLauncher\stage`, backs up the old folders and the
-   DisasterZone saved variables, and swaps them in.
+   builds the folders that change under `<game>\Interface\DZLauncher\stage`, backs up those folders and the
+   DisasterZone saved variables, and swaps them in. Folders that don't change aren't touched or backed up, so a
+   restore applies every newer backup first (newest down to the one picked). `DisasterZone_*` folders a release
+   doesn't list (the launcher's own `DisasterZone_Bridge`) are never touched.
 
-A development copy (BuildInfo id `"dev"`, or a linked folder) is never touched.
+A development copy (BuildInfo id `"dev"`, or `DisasterZone` or any `DisasterZone_*` folder being a link) is never touched.
 
 ## Building the launcher itself
 
@@ -33,6 +38,8 @@ A development copy (BuildInfo id `"dev"`, or a linked folder) is never touched.
 
 - `cd src-tauri && cargo test` — core: signatures, unsafe paths, install/update/repair, bad objects, dev copies,
   backups, restore, pruning, WoW folder detection.
-- `DZ_PUB=<folder from release.py publish --out> cargo test --test e2e_published` — installs a real published tree.
+- `DZ_PUB=<folder from release.py publish --out> cargo test --test e2e_published` — installs a real published tree
+  (every pack). `DZ_PUB_KEY=<public hex>` checks a tree signed with a test key instead of `release_key.json`.
 - `dev\tests\launcher\test_publish.py` — the Python publisher.
-- Opening `ui/index.html` in a browser runs the window on demo data.
+- Serving `ui/` and opening it in a browser runs the window on demo data: 1.5.4 meeting the first release with game
+  packs (the picker opens); `?state=updated` starts after that update; `?tab=games` opens a tab.

@@ -25,12 +25,17 @@ pub enum Action {
     Install,
     /// tell the user once; waits_for_wow: it installs by itself after the game closes
     Notify { waits_for_wow: bool },
+    /// the first release with games: nothing installs until the user picks theirs in the window (told once)
+    Pick,
 }
 
 /// What one background check does with what it found.
-pub fn decide(up_to_date: bool, hold: bool, auto_install: bool, wow_running: bool, notified: bool) -> Action {
+pub fn decide(up_to_date: bool, hold: bool, auto_install: bool, wow_running: bool, notified: bool, needs_pick: bool) -> Action {
     if up_to_date || hold {
         return Action::Nothing;
+    }
+    if needs_pick {
+        return if notified { Action::Nothing } else { Action::Pick };
     }
     if auto_install && !wow_running {
         return Action::Install;
@@ -149,9 +154,10 @@ async fn try_tick(app: &AppHandle, manual: bool) -> Result<()> {
     if m.seq < s.seen_seq.get(&s.channel).copied().unwrap_or(0) {
         return Ok(()); // a stale copy of the release list: the next check gets the current one
     }
-    let plan = install::make_plan(&lay, &m)?;
+    let plan = install::make_plan(&lay, &m, &install::wanted(&lay, &m, &s.packs))?;
     let notified = !manual && s.notified_seq.get(&s.channel).copied().unwrap_or(0) >= m.seq;
-    match decide(plan.up_to_date, s.hold, s.auto_install, wow::running(), notified) {
+    let needs_pick = m.has_games() && !s.packs_picked;
+    match decide(plan.up_to_date, s.hold, s.auto_install, wow::running(), notified, needs_pick) {
         Action::Nothing => {
             if plan.up_to_date {
                 set_tooltip(app, &format!("DisasterZone {} · up to date", m.version));
@@ -164,6 +170,8 @@ async fn try_tick(app: &AppHandle, manual: bool) -> Result<()> {
                     notify(app, &format!("DisasterZone {} is out", m.version),
                         "Updates are paused because you restored an older version. Open the launcher to update.");
                 }
+            } else if needs_pick {
+                set_tooltip(app, "DisasterZone · pick your games to update");
             } else {
                 set_tooltip(app, &format!("DisasterZone · {} is ready", m.version));
             }
@@ -174,6 +182,15 @@ async fn try_tick(app: &AppHandle, manual: bool) -> Result<()> {
             set_tooltip(app, &format!("DisasterZone {} · up to date", out.version));
             notify(app, &format!("DisasterZone {} is installed", out.version),
                 "Updated in the background. It loads the next time you start World of Warcraft.");
+            let _ = app.emit("state-changed", ());
+        }
+        Action::Pick => {
+            set_tooltip(app, "DisasterZone · pick your games to update");
+            notify(app, "Pick your games to finish updating DisasterZone",
+                &format!("DisasterZone {} gives every game its own download. Open the launcher to choose yours.", m.version));
+            s = state::load();
+            s.notified_seq.insert(s.channel.clone(), m.seq);
+            state::save(&s)?;
             let _ = app.emit("state-changed", ());
         }
         Action::Notify { waits_for_wow } => {
@@ -231,15 +248,26 @@ mod tests {
     #[test]
     fn what_a_background_check_does() {
         // nothing new, or paused after a restore
-        assert_eq!(decide(true, false, true, false, false), Action::Nothing);
-        assert_eq!(decide(false, true, true, false, false), Action::Nothing);
+        assert_eq!(decide(true, false, true, false, false, false), Action::Nothing);
+        assert_eq!(decide(false, true, true, false, false, false), Action::Nothing);
         // a new release, install by itself on, WoW closed: install
-        assert_eq!(decide(false, false, true, false, true), Action::Install);
+        assert_eq!(decide(false, false, true, false, true, false), Action::Install);
         // WoW running: tell once that it installs after the game closes, then stay quiet
-        assert_eq!(decide(false, false, true, true, false), Action::Notify { waits_for_wow: true });
-        assert_eq!(decide(false, false, true, true, true), Action::Nothing);
+        assert_eq!(decide(false, false, true, true, false, false), Action::Notify { waits_for_wow: true });
+        assert_eq!(decide(false, false, true, true, true, false), Action::Nothing);
         // install by itself off: tell once
-        assert_eq!(decide(false, false, false, false, false), Action::Notify { waits_for_wow: false });
-        assert_eq!(decide(false, false, false, true, true), Action::Nothing);
+        assert_eq!(decide(false, false, false, false, false, false), Action::Notify { waits_for_wow: false });
+        assert_eq!(decide(false, false, false, true, true, false), Action::Nothing);
+    }
+
+    #[test]
+    fn the_first_release_with_games_waits_for_the_picker() {
+        // install by itself on and WoW closed: still no install, one notification, then quiet
+        assert_eq!(decide(false, false, true, false, false, true), Action::Pick);
+        assert_eq!(decide(false, false, true, false, true, true), Action::Nothing);
+        assert_eq!(decide(false, false, false, true, false, true), Action::Pick);
+        // nothing to update (the folders a zip user copied in), or paused: no nagging
+        assert_eq!(decide(true, false, true, false, false, true), Action::Nothing);
+        assert_eq!(decide(false, true, true, false, false, true), Action::Nothing);
     }
 }

@@ -8,6 +8,7 @@
 use super::error::Result;
 use dz_proto::SyncDown;
 use serde_json::{Map, Value};
+use std::collections::BTreeMap;
 use std::fs;
 use std::path::{Path, PathBuf};
 use std::time::SystemTime;
@@ -267,8 +268,39 @@ impl<'a> Lua<'a> {
         }
     }
 
+    /// The key of the next table entry: `[k] =`, `name =`, or the next array number (`n` counts them).
+    fn key(&mut self, n: &mut usize) -> Option<String> {
+        self.skip();
+        if self.b.get(self.i) == Some(&b'[') {
+            self.i += 1;
+            let k = match self.value()? {
+                Value::String(s) => s,
+                other => other.to_string(),
+            };
+            if !self.eat(b']') || !self.eat(b'=') {
+                return None;
+            }
+            Some(k)
+        } else if let Some(k) = self.name_key() {
+            Some(k)
+        } else {
+            *n += 1;
+            Some(n.to_string())
+        }
+    }
+
     /// A table becomes a JSON object; array entries get keys "1", "2", ... (Lua's own numbering).
     fn table(&mut self) -> Option<Value> {
+        self.select(&[])
+    }
+
+    /// value(), keeping of tables only the keys along `path` ("*" = every key) and passing over the rest without
+    /// building them: a big SavedVariables file is read for one small part. An empty path keeps everything.
+    fn select(&mut self, path: &[&str]) -> Option<Value> {
+        self.skip();
+        if self.b.get(self.i) != Some(&b'{') {
+            return self.value();
+        }
         self.i += 1;
         let mut m = Map::new();
         let mut n = 0;
@@ -276,27 +308,51 @@ impl<'a> Lua<'a> {
             if self.eat(b'}') {
                 return Some(Value::Object(m));
             }
-            self.skip();
-            let key = if self.b.get(self.i) == Some(&b'[') {
-                self.i += 1;
-                let k = match self.value()? {
-                    Value::String(s) => s,
-                    other => other.to_string(),
-                };
-                if !self.eat(b']') || !self.eat(b'=') {
-                    return None;
+            let key = self.key(&mut n)?;
+            match path.split_first() {
+                None => {
+                    let v = self.value()?;
+                    m.insert(key, v);
                 }
-                k
-            } else if let Some(k) = self.name_key() {
-                k
-            } else {
-                n += 1;
-                n.to_string()
-            };
-            let v = self.value()?;
-            m.insert(key, v);
+                Some((first, rest)) if *first == "*" || *first == key => {
+                    let v = if rest.is_empty() { self.value()? } else { self.select(rest)? };
+                    m.insert(key, v);
+                }
+                Some(_) => self.pass()?,
+            }
             self.eat(b',');
             self.eat(b';');
+        }
+    }
+
+    /// Step over one value.
+    fn pass(&mut self) -> Option<()> {
+        self.skip();
+        match *self.b.get(self.i)? {
+            b'{' => {
+                self.i += 1;
+                let mut n = 0;
+                loop {
+                    if self.eat(b'}') {
+                        return Some(());
+                    }
+                    self.key(&mut n)?;
+                    self.pass()?;
+                    self.eat(b',');
+                    self.eat(b';');
+                }
+            }
+            q @ (b'"' | b'\'') => {
+                self.i += 1;
+                while let Some(&c) = self.b.get(self.i) {
+                    self.i += if c == b'\\' { 2 } else { 1 };
+                    if c == q {
+                        return Some(());
+                    }
+                }
+                None
+            }
+            _ => self.value().map(|_| ()),
         }
     }
 }
@@ -331,6 +387,37 @@ pub fn read_bridge_db(flavor_dir: &Path) -> Option<Value> {
     let (_, path) = saved_variables(flavor_dir).into_iter().next()?;
     let text = fs::read(&path).map(|d| String::from_utf8_lossy(&d).into_owned()).ok()?;
     read_global(&text, SV_NAME)
+}
+
+/// The global `name`, keeping of it only the keys along `path` (see Lua::select).
+pub fn read_selected(text: &str, name: &str, path: &[&str]) -> Option<Value> {
+    let head = format!("{name} = ");
+    let start = if text.starts_with(&head) { 0 } else { text.find(&format!("\n{head}"))? + 1 };
+    let mut p = Lua { b: text.as_bytes(), i: start + head.len() };
+    p.select(path)
+}
+
+/// The games played on this PC, from every account's SavedVariables: game id -> when it was last opened (unix time,
+/// the newest over all accounts). Played means DisasterZoneDB.games[id].opened is set (the hub sets it when the game
+/// opens): a game's table alone isn't enough, Bingo makes one without being played.
+pub fn played_games(flavor_dir: &Path) -> BTreeMap<String, i64> {
+    let mut out = BTreeMap::new();
+    for (_, path) in saved_variables(flavor_dir) {
+        let Ok(data) = fs::read(&path) else { continue };
+        let text = String::from_utf8_lossy(&data);
+        let Some(db) = read_selected(&text, "DisasterZoneDB", &["games", "*", "opened"]) else { continue };
+        let Some(games) = db.get("games").and_then(Value::as_object) else { continue };
+        for (id, g) in games {
+            let when = match g.get("opened") {
+                Some(Value::Number(n)) => n.as_f64().unwrap_or(0.0) as i64,
+                Some(Value::Bool(true)) => 0,
+                _ => continue,
+            };
+            let e = out.entry(id.clone()).or_insert(when);
+            *e = (*e).max(when);
+        }
+    }
+    out
 }
 
 #[cfg(test)]
@@ -441,5 +528,42 @@ DisasterZoneBridgeDB = {
         assert!(newest_saved_variables(dir.path()).is_some());
         assert!(read_bridge_db(dir.path()).is_some());
         assert!(newest_saved_variables(&dir.path().join("nope")).is_none());
+    }
+
+    #[test]
+    fn a_selected_read_skips_what_it_doesnt_keep() {
+        assert_eq!(read_selected(SV, "DisasterZoneBridgeDB", &[]), read_global(SV, "DisasterZoneBridgeDB"));
+        let v = read_selected(SV, "DisasterZoneBridgeDB", &["applied", "*", "ok"]).unwrap();
+        assert_eq!(v, json!({ "applied": { "dc_1": { "ok": true }, "dc_2": { "ok": false } } }));
+    }
+
+    #[test]
+    fn played_games_come_from_every_account() {
+        let dir = tempfile::tempdir().unwrap();
+        let write = |acct: &str, text: &str| {
+            let sv = dir.path().join("WTF/Account").join(acct).join("SavedVariables");
+            fs::create_dir_all(&sv).unwrap();
+            fs::write(sv.join("DisasterZone.lua"), text).unwrap();
+        };
+        write("A", r#"
+DisasterZoneDB = {
+	["profiles"] = { ["big"] = { "x", 'y', { 1, 2 }, }, ["s"] = "a \"quoted\" } { string\\", },
+	["games"] = {
+		["azeromon"] = {
+			["save"] = { ["beasts"] = { 1, 2, 3, }, ["name"] = "}", },
+			["opened"] = 1791900000,
+		},
+		["bingo"] = { ["cards"] = {}, },
+		["chess"] = { ["opened"] = 1791800000, },
+	},
+}
+DisasterZoneBridgeDB = {
+}
+"#);
+        write("B", "DisasterZoneDB = {\n\t[\"games\"] = {\n\t\t[\"chess\"] = {\n\t\t\t[\"opened\"] = 1791900500,\n\t\t},\n\t\t[\"illidan\"] = {\n\t\t\t[\"opened\"] = true,\n\t\t},\n\t},\n}\n");
+        let played: Vec<(String, i64)> = played_games(dir.path()).into_iter().collect();
+        // (bingo has a table but was never opened)
+        assert_eq!(played, vec![("azeromon".into(), 1791900000), ("chess".into(), 1791900500), ("illidan".into(), 0)]);
+        assert!(played_games(&dir.path().join("nope")).is_empty());
     }
 }

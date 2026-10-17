@@ -45,6 +45,11 @@ pub struct Settings {
     pub sync_server: String,
     /// the Discord name this PC's member key belongs to (the key itself is in the OS credential store)
     pub sync_user: String,
+    /// pack id -> keep it (the Games tab, the picker, the 3D rooms switch). A pack with no entry is kept when its
+    /// folder is installed or it is on by default (install.rs wanted()).
+    pub packs: BTreeMap<String, bool>,
+    /// the one-time games picker was answered (until then the tray doesn't install a release with games)
+    pub packs_picked: bool,
 }
 
 impl Default for Settings {
@@ -69,6 +74,8 @@ impl Default for Settings {
             start_hidden_once: false,
             sync_server: String::new(),
             sync_user: String::new(),
+            packs: BTreeMap::new(),
+            packs_picked: false,
         }
     }
 }

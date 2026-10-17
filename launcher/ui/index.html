@@ -24,6 +24,7 @@
     </div>
     <nav class="tabs">
       <button class="tab active" data-tab="home">Home</button>
+      <button class="tab" data-tab="games">Games<span class="new hidden" id="games-new">NEW</span></button>
       <button class="tab" data-tab="changelog">Changelog</button>
       <button class="tab" data-tab="backups">Backups</button>
       <button class="tab" data-tab="settings">Settings</button>
@@ -39,12 +40,14 @@
           <div class="chip" id="state-chip">Checking</div>
           <div class="ver"><span id="ver-main">…</span><span class="ver-next" id="ver-next"></span></div>
           <div class="detail" id="detail">Looking for the newest release…</div>
-          <div class="progress hidden" id="progress"><div class="bar"><i id="bar"></i></div><div class="ptext" id="ptext"></div></div>
+          <div class="packs hidden" id="h-packs"></div>
+          <div class="progress hidden" id="progress"><div class="bar"><i class="pbar-live" id="bar"></i></div><div class="ptext ptext-live" id="ptext"></div></div>
           <div class="notice hidden" id="notice"></div>
           <div class="actions">
             <button class="btn primary big" id="btn-update" disabled>Update</button>
             <button class="btn big" id="btn-play">Play</button>
             <button class="ibtn" id="btn-check" title="Check again" aria-label="Check again"><svg viewBox="0 0 16 16"><path d="M13.5 8a5.5 5.5 0 1 1-1.6-3.9M13.5 2.5v3h-3"/></svg></button>
+            <button class="link manage" data-goto="games">Manage games</button>
           </div>
         </div>
         <div class="card news">
@@ -57,6 +60,21 @@
       </div>
     </section>
 
+    <!-- Games: one card per game pack, the Extras below -->
+    <section class="page" id="page-games">
+      <div class="ghead">
+        <div class="gleft" id="g-left"></div>
+        <div class="dmeter">
+          <div class="top"><span class="muted">On this computer</span><b id="g-disk">—</b></div>
+          <div class="segs" id="g-segs"></div>
+        </div>
+      </div>
+      <div class="scroll gscroll">
+        <div class="ggrid" id="g-grid"></div>
+        <div id="g-extras"></div>
+      </div>
+    </section>
+
     <!-- Changelog -->
     <section class="page" id="page-changelog">
       <div class="scroll" id="changelog"><div class="muted">The changelog shows once the release list has been read.</div></div>
@@ -65,7 +83,7 @@
     <!-- Backups -->
     <section class="page" id="page-backups">
       <div class="page-head">
-        <p class="muted">Every update first saves the addon folders and your DisasterZone saved variables. Restore one to go back to that version.</p>
+        <p class="muted">Every update first saves the folders it changes, plus your DisasterZone saved variables; removing a game saves its folder too. Restore one to go back to how things were before it.</p>
         <button class="btn" id="btn-open-backups">Open folder</button>
       </div>
       <div class="scroll" id="backups"></div>
@@ -95,7 +113,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="rl"><div class="rt">Backups to keep</div><div class="rd">Each backup is a full copy of the addon (about 60 MB).</div></div>
+            <div class="rl"><div class="rt">Backups to keep</div><div class="rd">Each backup keeps only the folders an update changed, plus your saved variables.</div></div>
             <div class="rc stepper"><button class="ibtn" id="keep-minus" aria-label="Fewer">−</button><span id="keep">3</span><button class="ibtn" id="keep-plus" aria-label="More">+</button></div>
           </div>
           <div class="row">
@@ -158,6 +176,15 @@
       <div class="dtitle" id="m-title"></div>
       <div class="dbody" id="m-body"></div>
       <div class="dactions"><button class="btn" id="m-cancel">Cancel</button><button class="btn primary" id="m-ok">OK</button></div>
+    </div>
+  </div>
+  <!-- the one-time games picker (the first release with game packs) -->
+  <div class="modal hidden" id="picker">
+    <div class="dialog wide" role="dialog" aria-labelledby="p-title">
+      <div class="dtitle" id="p-title">Pick your games</div>
+      <div class="dbody">From <span id="p-ver">this version</span> each game is its own download. Keep the ones you play. Games you've played are ticked, and you can change this any time on the Games tab.</div>
+      <div class="prows" id="p-rows"></div>
+      <div class="dactions"><span class="sum" id="p-sum"></span><button class="btn" id="p-all">Keep all</button><button class="btn primary" id="p-save">Save</button></div>
     </div>
   </div>
   <div class="toast hidden" id="toast"></div>

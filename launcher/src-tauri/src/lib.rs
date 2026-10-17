@@ -4,14 +4,16 @@ mod background;
 pub mod core;
 mod sync;
 
+use crate::core::bridge;
 use crate::core::error::msg;
-use crate::core::install::{self, BackupInfo, Layout, Outcome, Progress};
-use crate::core::manifest::ReleaseKey;
+use crate::core::install::{self, BackupInfo, Layout, Outcome, Plan, Progress};
+use crate::core::manifest::{self, Manifest, ReleaseKey};
 use crate::core::source::Source;
 use crate::core::state::{self, Settings};
 use crate::core::wow::{self, WowInstall};
 use crate::core::Result;
 use serde::Serialize;
+use std::collections::BTreeMap;
 use std::path::PathBuf;
 use std::sync::Arc;
 use tauri::{AppHandle, Emitter, Manager, State, WindowEvent};
@@ -176,6 +178,72 @@ struct Check {
     older: bool,
     hold: bool,
     zip_url: Option<String>,
+    /// every folder of the release, core first
+    packs: Vec<PackView>,
+    /// the release has games and the one-time picker wasn't answered yet
+    needs_pick: bool,
+}
+
+/// One pack of the release as the Games tab and Home show it.
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+struct PackView {
+    id: String,
+    folder: String,
+    kind: String,
+    title: String,
+    tagline: String,
+    required: bool,
+    default_on: bool,
+    /// its folder is in AddOns now
+    installed: bool,
+    /// Update keeps it (required, chosen, or installed / on by default with no choice either way)
+    wanted: bool,
+    /// the user's own choice, if any
+    chosen: Option<bool>,
+    /// what Update does with it: "install" | "update" | "same" | "remove" | "" (not wanted, not installed)
+    action: String,
+    files: usize,
+    /// what the release's copy takes on disk, and its full download
+    bytes: u64,
+    gz: u64,
+    /// what Update downloads for it now
+    download_bytes: u64,
+    /// what the folder takes on disk now (0 when it isn't installed)
+    disk_bytes: u64,
+    /// games: when it was last opened in game (unix time, 0 = played at an unknown time); none = never played
+    played: Option<i64>,
+}
+
+fn pack_views(lay: &Layout, m: &Manifest, s: &Settings, plan: &Plan) -> Vec<PackView> {
+    let played = bridge::played_games(&lay.flavor_dir);
+    m.packs
+        .iter()
+        .map(|p| {
+            let fp = plan.folders.iter().find(|f| f.folder == p.folder);
+            let (bytes, gz) = m.folder_size(&p.folder);
+            let action = fp.map(|f| f.action).unwrap_or("");
+            PackView {
+                id: p.id.clone(),
+                folder: p.folder.clone(),
+                kind: p.kind.clone(),
+                title: p.title.clone(),
+                tagline: p.tagline.clone(),
+                required: p.required,
+                default_on: p.default_on,
+                installed: install::on_disk(lay, &p.folder),
+                wanted: !matches!(action, "remove" | ""),
+                chosen: s.packs.get(&p.id).copied(),
+                action: action.into(),
+                files: m.folders.get(&p.folder).map_or(0, |f| f.len()),
+                bytes,
+                gz,
+                download_bytes: fp.map_or(0, |f| f.download_bytes),
+                disk_bytes: fp.map_or(0, |f| f.disk_bytes),
+                played: played.get(&p.id).copied(),
+            }
+        })
+        .collect()
 }
 
 #[tauri::command]
@@ -184,8 +252,10 @@ async fn check() -> Result<Check> {
     let lay = layout(&s)?;
     let src = Source::parse(&s.source())?;
     let m = src.manifest(&ReleaseKey::builtin(), &s.channel).await?;
-    let plan = install::make_plan(&lay, &m)?;
+    let plan = install::make_plan(&lay, &m, &install::wanted(&lay, &m, &s.packs))?;
     Ok(Check {
+        packs: pack_views(&lay, &m, &s, &plan),
+        needs_pick: m.has_games() && !s.packs_picked,
         older: m.seq < s.seen_seq.get(&s.channel).copied().unwrap_or(0),
         hold: s.hold,
         files: m.file_count(),
@@ -227,7 +297,8 @@ pub(crate) async fn run_update(app: &AppHandle) -> Result<Outcome> {
     let progress: install::ProgressFn = Arc::new(move |p: Progress| {
         let _ = emitter.emit("progress", p);
     });
-    let out = install::update(&lay, &src, &m, s.keep_backups, progress).await?;
+    let wanted = install::wanted(&lay, &m, &s.packs);
+    let out = install::update(&lay, &src, &m, &wanted, s.keep_backups, progress).await?;
     s = state::load(); // (settings may have changed during the download)
     s.seen_seq.insert(s.channel.clone(), m.seq.max(seen));
     s.notified_seq.insert(s.channel.clone(), m.seq.max(seen));
@@ -245,20 +316,70 @@ fn backups() -> Result<Vec<BackupInfo>> {
 async fn restore(id: String, busy: State<'_, Busy>) -> Result<Option<String>> {
     let _guard = busy.0.try_lock().map_err(|_| crate::core::Error::Msg("already working".into()))?;
     let mut s = state::load();
-    let out = install::restore(&layout(&s)?, &id, s.keep_backups)?;
+    let lay = layout(&s)?;
+    let out = install::restore(&lay, &id, s.keep_backups)?;
     s.hold = true;
+    // a pack the restore put back (a removed game) is kept from now on. One it took out keeps its choice: going back
+    // to a version from before game packs mustn't lose the games at the next update.
+    for p in install::installed(&lay).packs {
+        s.packs.insert(p.id, true);
+    }
     state::save(&s)?;
     Ok(out)
 }
 
-/// Open one of the launcher's folders in the OS file manager.
+/// The Games tab and the picker: which packs to keep ({id: on}; Update then installs or takes them out).
+/// `picked`: the one-time picker was answered.
 #[tauri::command]
-fn open_folder(kind: String) -> Result<()> {
+fn set_packs(packs: BTreeMap<String, bool>, picked: Option<bool>) -> Result<Settings> {
+    let mut s = state::load();
+    for (id, on) in packs {
+        if !manifest::pack_id(&id) || id == "core" {
+            return msg(format!("unknown pack {id}"));
+        }
+        s.packs.insert(id, on);
+    }
+    if let Some(p) = picked {
+        s.packs_picked = p;
+    }
+    state::save(&s)?;
+    Ok(s)
+}
+
+/// Games tab > Remove, and 3D rooms off: the pack's folder goes into a backup (Backups can put it back) and Update
+/// leaves it out from now on. No download, so it works offline.
+#[tauri::command]
+async fn remove_pack(id: String, folder: Option<String>, busy: State<'_, Busy>) -> Result<Option<String>> {
+    let _guard = busy.0.try_lock().map_err(|_| crate::core::Error::Msg("already working".into()))?;
+    if !manifest::pack_id(&id) || id == "core" {
+        return msg("unknown pack");
+    }
+    let s = state::load();
+    let lay = layout(&s)?;
+    // (by the id in its TOC; else the release's folder for it, which the window passes along)
+    let folder = install::installed(&lay).packs.into_iter().find(|p| p.id == id).map(|p| p.folder).or(folder);
+    let out = match folder {
+        Some(f) => install::remove(&lay, &f, s.keep_backups)?,
+        None => None,
+    };
+    let mut s = state::load();
+    s.packs.insert(id, false);
+    state::save(&s)?;
+    Ok(out)
+}
+
+/// Open one of the launcher's folders in the OS file manager ("pack": an installed pack's folder).
+#[tauri::command]
+fn open_folder(kind: String, folder: Option<String>) -> Result<()> {
     let lay = layout(&state::load())?;
     let path = match kind.as_str() {
         "addons" => lay.addons(),
         "backups" => lay.backups(),
         "game" => lay.flavor_dir.clone(),
+        "pack" => match folder.filter(|f| install::release_folder(f)) {
+            Some(f) if lay.addons().join(&f).is_dir() => lay.addons().join(f),
+            _ => return msg("that game isn't installed"),
+        },
         _ => return msg("unknown folder"),
     };
     std::fs::create_dir_all(&path)?;
@@ -341,6 +462,8 @@ pub fn run() {
             update,
             backups,
             restore,
+            set_packs,
+            remove_pack,
             open_folder,
             play,
             sync_status,
