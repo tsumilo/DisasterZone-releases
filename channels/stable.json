@@ -1,8 +1,8 @@
 {
  "assetPack": 14,
- "build": "5a601dc56e533176",
+ "build": "4ad16fd378c20fd2",
  "channel": "stable",
- "commit": "455aabe420f5b9d0397b8cd642f5f17aa981e02d",
+ "commit": "3f6ab42dafd085b30a2e98806efb7272a464c065",
  "folders": {
   "DisasterZone": {
    "Bindings.xml": {
@@ -77,7 +77,7 @@
    },
    "Core/BuildInfo.lua": {
     "gz": 221,
-    "sha256": "54d911a26e71696eac75857cf3539880def103639b4b3da6404894a354af7e67",
+    "sha256": "3c4301e248ee63131a54333a3db5541271fe59598d6e95fc8cddf1550ef0562f",
     "size": 271
    },
    "Core/ClassKit.lua": {
@@ -135,6 +135,11 @@
     "sha256": "c5e329ff734111161321f915e1b25d1ba030c8102d5032d5ea50113ce7efbd75",
     "size": 11208
    },
+   "Core/DevPlan.lua": {
+    "gz": 170,
+    "sha256": "9f652a06b53f30b0db6ecd3c706379845e982a529bac9fbd2c3eb51fd502080c",
+    "size": 219
+   },
    "Core/DigestSync.lua": {
     "gz": 7935,
     "sha256": "71c5d1b81b25579baeda51b9e98355f48d496653f1ad8d6af60efcede50fbb55",
@@ -179,6 +184,11 @@
     "gz": 16332,
     "sha256": "63610b639db5dc06cb04b7ac1b964691b04f7f10e1a1c1cbbe7cdeb7539cb6ea",
     "size": 57811
+   },
+   "Core/FeedbackPlan.lua": {
+    "gz": 8562,
+    "sha256": "ab937cf2590abcc389988f15ceb274171d17dd4e61798a2a83d34ad01816e400",
+    "size": 30821
    },
    "Core/Gems.lua": {
     "gz": 13309,
@@ -266,9 +276,9 @@
     "size": 17494
    },
    "Core/Meter.lua": {
-    "gz": 10889,
-    "sha256": "774a5870a4832dc1816cd56fb8eb57c6986fb9cac86dd3e1774c5ceaef31baf6",
-    "size": 36245
+    "gz": 11111,
+    "sha256": "1b4c1f6e7a8764e0e773bce4a17430c334613e3275bb2199a0206ef8b47d80c0",
+    "size": 36879
    },
    "Core/MeterDemo.lua": {
     "gz": 6748,
@@ -366,9 +376,9 @@
     "size": 188636
    },
    "Core/Recruit.lua": {
-    "gz": 15231,
-    "sha256": "e802d3729afa7d6b6e3e8b5822430cafe55f32fc09aec0e39ad7bbc564086163",
-    "size": 54176
+    "gz": 15282,
+    "sha256": "20d270133f360709b3f40f3de03f91a6bdcd1f8b2959867d2bb2504fa40e138d",
+    "size": 54242
    },
    "Core/RecruitIntro.lua": {
     "gz": 3739,
@@ -591,9 +601,9 @@
     "size": 9381
    },
    "Data/Changelog.lua": {
-    "gz": 53752,
-    "sha256": "8ca33c0b90d789f56ca96f23a6ec7c94b43e8a259726ebc4a4e009c000dc1fe1",
-    "size": 183578
+    "gz": 54423,
+    "sha256": "c83fc57ab34770a245c5735e57e7a0fa36fc7c600e300828fc43edfa904e96d6",
+    "size": 186344
    },
    "Data/Classes/Paladin.lua": {
     "gz": 1676,
@@ -706,9 +716,9 @@
     "size": 17640
    },
    "DisasterZone.toc": {
-    "gz": 2635,
-    "sha256": "c8eb1c41924736a83b4ffcff911c9bbe96dea56fa52d950a58a04039e2f89f56",
-    "size": 8148
+    "gz": 2648,
+    "sha256": "a7e9c624010ee2a20294a9f9ce103efebf304716eeb9d5815e259c78a25a1954",
+    "size": 8207
    },
    "Games/Azeromon/Achievements.lua": {
     "gz": 7499,
@@ -741,9 +751,9 @@
     "size": 12887
    },
    "Games/Azeromon/Changelog.lua": {
-    "gz": 7051,
-    "sha256": "bf64cc692903845576ae329fa27ab499d16b682d52a366949a5fd87682c087ba",
-    "size": 20480
+    "gz": 7101,
+    "sha256": "8fb8e877c96a6afdfc181ec3af0917da12e78511b989a62127f664c11e7f551d",
+    "size": 20659
    },
    "Games/Azeromon/Chat.lua": {
     "gz": 3151,
@@ -766,9 +776,9 @@
     "size": 20727
    },
    "Games/Azeromon/Game.lua": {
-    "gz": 22751,
-    "sha256": "0dc7ffc146b05636d494a7b4db944de717050673594d277570f0f01ab50d2341",
-    "size": 78059
+    "gz": 22846,
+    "sha256": "7a1d10e7602b780374a6ce00b654e96e67e3f2a8bcc5a940b2692603be386e71",
+    "size": 78451
    },
    "Games/Azeromon/Ground.lua": {
     "gz": 8832,
@@ -881,9 +891,9 @@
     "size": 7509
    },
    "Games/Bingo/Detect.lua": {
-    "gz": 13535,
-    "sha256": "330c71a1a9a7605a65b9a775a10e52fd4a9ec9923215bb7c11c6f60c3a4d8ac0",
-    "size": 46195
+    "gz": 13715,
+    "sha256": "0324904ea9990f24532966f38082d06364480bb91819079c850fad4d3468889e",
+    "size": 45843
    },
    "Games/Bingo/Squares.lua": {
     "gz": 5866,
@@ -4542,7 +4552,7 @@
    },
    "README.md": {
     "gz": 24786,
-    "sha256": "8ec687bb06fa7533118ef20688017d998f3a5347a8abcf361810b3e9f69256e9",
+    "sha256": "ffd973f688fc2b2eb0ee3631320b597314db23274616a6a55de14f4c1ca4c165",
     "size": 70028
    },
    "Render3D/Probe.lua": {
@@ -4756,9 +4766,9 @@
     "size": 30415
    },
    "UI/Changelog.lua": {
-    "gz": 23525,
-    "sha256": "150bc675b3dba0e1dc69ddd28356aa00e5b3bce655593fd8977e1d1f2c515473",
-    "size": 87537
+    "gz": 24458,
+    "sha256": "70b873db71213d6dba4285475b0637548921a9751c67477c84114611850b2f32",
+    "size": 91151
    },
    "UI/ClassBar.lua": {
     "gz": 3755,
@@ -4796,9 +4806,9 @@
     "size": 5294
    },
    "UI/Comp/Overlays.lua": {
-    "gz": 11923,
-    "sha256": "a311ecc556e07099d4634817845679bae1c727afa5664b266ab4d3c030058c0d",
-    "size": 40218
+    "gz": 12191,
+    "sha256": "ac48e2ae3095a1fb82a782c772b04c7df77a446a2546d008c8a814208e92b297",
+    "size": 40955
    },
    "UI/Comp/PageParts.lua": {
     "gz": 12123,
@@ -4841,9 +4851,9 @@
     "size": 21059
    },
    "UI/DropPanel.lua": {
-    "gz": 49927,
-    "sha256": "2a479514eed96af3b9ef601ff9b1b9dc428262749f72ab32ec1909469aa22683",
-    "size": 181343
+    "gz": 49948,
+    "sha256": "d7d2bfdbbca351766ba96c1cef87e53ebfecf8ceaa23d7e2b149a7a26b37f403",
+    "size": 181396
    },
    "UI/DungeonsTab.lua": {
     "gz": 11421,
@@ -4886,9 +4896,14 @@
     "size": 253964
    },
    "UI/Feedback.lua": {
-    "gz": 15364,
-    "sha256": "6a4479aae456794c0ae6df1dd77f9a29e97456eb0f98df4ab5fe8c0af86741b5",
-    "size": 54370
+    "gz": 15809,
+    "sha256": "ae311739a5b41663930efe18999da8a2057da4a484e812f7310476395753c6fa",
+    "size": 55957
+   },
+   "UI/FeedbackPlan.lua": {
+    "gz": 13693,
+    "sha256": "766d0e773e187d8c9c04ba6e934d999b9af37788b5352a47f46d9344a004870b",
+    "size": 51459
    },
    "UI/FeedbackSheet.lua": {
     "gz": 12626,
@@ -4936,9 +4951,9 @@
     "size": 31534
    },
    "UI/KeyBinds.lua": {
-    "gz": 10371,
-    "sha256": "8b1d0102ae92f10da75207c8efafd2502afc68b7a28ce09c068fa9f1b8450a60",
-    "size": 35395
+    "gz": 11453,
+    "sha256": "d0374f6b3728a125803a31fa9a9557f5b7e679ecb97a179182d1811c5ea65892",
+    "size": 39688
    },
    "UI/KitView.lua": {
     "gz": 9544,
@@ -4986,9 +5001,9 @@
     "size": 31918
    },
    "UI/LookUnits.lua": {
-    "gz": 20285,
-    "sha256": "0d69a9861d9c79bd209072d564e6a7ca59c0a6071fc95fe34b292932b8b1db10",
-    "size": 76020
+    "gz": 20435,
+    "sha256": "496468554cd023d3f424b2574f39b5097dc2e9e56c73205e8bce0ad47e4c4cb4",
+    "size": 76527
    },
    "UI/LootLog.lua": {
     "gz": 9678,
@@ -5171,14 +5186,14 @@
     "size": 46759
    },
    "UI/RingFace.lua": {
-    "gz": 13976,
-    "sha256": "e3a7de024a4fc994269c703276eef3ac290e8bab18c9fd645057d54f1c92bfb3",
-    "size": 51160
+    "gz": 14448,
+    "sha256": "423e88b69ea0662b3c5c14d61fcec781877293af5553f6790517e2fe9c26b681",
+    "size": 52951
    },
    "UI/RollFrame.lua": {
-    "gz": 14585,
-    "sha256": "caadc83083df04668e4c5e4d83f3f4ea0eb1dd7d1c401bffc02edcd6166a3d9e",
-    "size": 52034
+    "gz": 14591,
+    "sha256": "e6c8f2eefeb8aba4e845ea41b3f7b79067cdda6009c7941bb254601fde822e83",
+    "size": 52049
    },
    "UI/SessionBar.lua": {
     "gz": 17337,
@@ -5191,9 +5206,9 @@
     "size": 29944
    },
    "UI/Settings.lua": {
-    "gz": 65003,
-    "sha256": "33bdd292ea1128ba6f4955196495550f34c8d685c8169c231e569176c9e11b37",
-    "size": 232809
+    "gz": 65037,
+    "sha256": "930d4b8c18a34be82ab5bb2173a885b4f017d2ea3947c2b591c18454c0f8977d",
+    "size": 232876
    },
    "UI/Share.lua": {
     "gz": 12330,
@@ -5276,9 +5291,9 @@
     "size": 43962
    },
    "UI/SwingTimerHUD.lua": {
-    "gz": 9148,
-    "sha256": "2357d72773f0fdfc0c11c3dfe81b40b86bcca315aefa65a0f2a157c2586bdd76",
-    "size": 28878
+    "gz": 10004,
+    "sha256": "11cbbf80a27893294193ea17931b9e257bc2533ab20c3616841c218b78088853",
+    "size": 31624
    },
    "UI/Tooltip.lua": {
     "gz": 11386,
@@ -5329,7 +5344,7 @@
   "DisasterZone_Rooms": {
    "DisasterZone_Rooms.toc": {
     "gz": 1187,
-    "sha256": "0f9779914307e543679b3be7c3fccf2a06031ca2473b137525d4d5cc91751ba5",
+    "sha256": "8909cf7a9c49617ea2dce18366e692f1e257537f2a3f80f2e67ab3b576ea8979",
     "size": 4477
    },
    "Load.lua": {
@@ -5894,6 +5909,88 @@
  "notes": {
   "changelog": [
    {
+    "date": "17 October 2026",
+    "sections": [
+     {
+      "area": "class",
+      "heading": "Keys on the next presses",
+      "kind": "new",
+      "lead": "The swing and shot timers show the key each next press is on, like your bars.",
+      "lines": [
+       "The key sits in the corner of the next press and of the presses after it.",
+       "The ability's name sits under the ring (Warriors: under the next press).",
+       "Read from your own bars: the game's, the Dock, Bartender, Dominos or ElvUI.",
+       "Shift, Ctrl and Alt show as S-, C- and A-, mouse buttons as M4 and M5.",
+       "Settings > Class tools: switch off the key or the name for each timer."
+      ]
+     },
+     {
+      "area": "class",
+      "heading": "Timer opacity",
+      "kind": "new",
+      "lead": "",
+      "lines": [
+       {
+        "for": "",
+        "text": "Swing and shot timers: pick how see-through they are in a fight and at rest."
+       },
+       "At rest can hide the timer completely until auto attack starts."
+      ]
+     },
+     {
+      "area": "other",
+      "heading": "Quiet fights",
+      "kind": "changed",
+      "lead": "",
+      "lines": [
+       "Every pop-up waits until the fight and the boss encounter are over.",
+       "Loot keeps showing straight away. Settings > Alerts > Quiet in combat turns it off."
+      ]
+     },
+     {
+      "area": "fixes",
+      "heading": "Fixes",
+      "kind": "fixed",
+      "lead": "",
+      "lines": [
+       {
+        "for": "",
+        "text": "Damage meters no longer flip between trash and the boss fight after a kill."
+       },
+       {
+        "for": "",
+        "text": "No more error spam from the main tank shield on your own unit frame."
+       },
+       {
+        "for": "",
+        "text": "Recruitment no longer errors when a friend's name hasn't loaded yet."
+       },
+       "Bingo: plain rezzes after a wipe no longer fill Phoenix Down or Not Dead Yet.",
+       "Classic look: the Warrior timer's spell name sits inside its bar again."
+      ]
+     }
+    ],
+    "title": "Keys on the timers and quiet fights",
+    "version": "1.5.4"
+   },
+   {
+    "date": "16 October 2026",
+    "sections": [
+     {
+      "area": "games",
+      "heading": "Azeromon: room at the inn",
+      "kind": "changed",
+      "lead": "A full Lion's Pride Inn at night no longer walls you in.",
+      "lines": [
+       "Guests sitting in the inn let you squeeze past their chairs.",
+       "Shopkeepers, trainers and people walking about still stand their ground."
+      ]
+     }
+    ],
+    "title": "Room at the Lion's Pride",
+    "version": "1.5.3"
+   },
+   {
     "date": "16 October 2026",
     "sections": [
      {
@@ -5939,8 +6036,14 @@
        "Bring them along: a group invite, a guest seat in a raid, or a member.",
        "Invite: a welcome in guild chat, the officer note, the team's bench, its leaders told.",
        "Then check-ins after a week and a month, level 58 and 70, first raid, gone quiet.",
-       "Message: build it from your words + helpers (classes a team needs, its nights).",
-       "Post to any channel, Say or Yell, each every 30 s or more; a key posts what is due.",
+       {
+        "for": "",
+        "text": "Message: build it from your words + helpers (classes a team needs, its nights)."
+       },
+       {
+        "for": "",
+        "text": "Post to any channel, Say or Yell, each every 30 s or more; a key posts what is due."
+       },
        "Raids > Guests: Recruit now puts the guest in Recruitment (one list, not two).",
        "Every member can introduce a friend from Guild > Members.",
        "The Guild Master sets it up in Settings > Guild > Recruitment."
@@ -5967,9 +6070,15 @@
       "kind": "new",
       "lead": "The swing timer's ring for Arms and Fury: both hands and your rage.",
       "lines": [
-       "The main hand on the outer ring, the off hand on an inner ring (gone with a two-hander).",
+       {
+        "for": "",
+        "text": "The main hand on the outer ring, the off hand on an inner ring (gone with a two-hander)."
+       },
        "Rage as a globe in the middle; Slate, Pips and Classic show it as a third bar.",
-       "A Heroic Strike lamp where the swing lands: pulsing = queue it, gold = queued.",
+       {
+        "for": "",
+        "text": "A Heroic Strike lamp where the swing lands: pulsing = queue it, gold = queued."
+       },
        "The gold line on your rage: queue over it. 40 rage, or 80 for Arms with a two-hander.",
        "Next presses from WoWSims: Bloodthirst, Whirlwind, Mortal Strike, Slam after the swing.",
        "Only what you have: known spells, your stance, Execute under 20%, Rampage when usable.",
@@ -6252,101 +6361,16 @@
     ],
     "title": "Groups, UI profiles and key binds",
     "version": "1.5.0"
-   },
-   {
-    "date": "15 October 2026",
-    "sections": [
-     {
-      "area": "games",
-      "heading": "Azeromon: Blackrock",
-      "kind": "new",
-      "lead": "A new region north of Darkshire, from Redridge to Blackrock Mountain.",
-      "lines": [
-       "Lakeshire, Stonewatch Keep, the Burning Steppes, the Searing Gorge and the Imperial Seat.",
-       "36 new beasts, 12 new moves, badges 6 and 7; Nefarius is your rival, twice.",
-       "Tame Magmadar once in the Molten Core; a Dark Iron Bar evolves a Harvest Watcher.",
-       "Professions go to 175, Dark Iron needs the Black Forge; beasts drop materials.",
-       "A painted world map with mist over places you haven't found yet.",
-       "A new pixel font, cream windows and a sun or moon for the time of day."
-      ]
-     },
-     {
-      "area": "gear",
-      "heading": "Gems for the hit cap",
-      "kind": "changed",
-      "lead": "Suggested gems now know whether your gear is hit capped.",
-      "lines": [
-       "Under the cap, Suggest adds hit gems where they cost least, up to the cap.",
-       "Already capped: no hit gems. Your meta gem stays active either way.",
-       "Counts your gear, enchants, talents, race and the Gear sim's buffs (dps specs it covers)."
-      ]
-     },
-     {
-      "area": "fixes",
-      "heading": "Fixes",
-      "kind": "fixed",
-      "lead": "",
-      "lines": [
-       {
-        "for": "",
-        "text": "Wardrobe: an outfit's items show their enchant and gems in the tooltip."
-       },
-       "3D strategy walks: others wear their race's clothes, not a white body.",
-       "Walking together: others run and turn smoothly, without jumping to and fro.",
-       "Square minimap: addon buttons, mail and queue icons sit on its edge, not on a circle.",
-       "Minimap: a long zone name is cut short before the clock instead of running under it.",
-       "Bank: buying a bank bag slot works again.",
-       "Bags: the bag slots in the footer equip and take off bags; round ringed slots in Halo.",
-       "Bars: the game's latency bar is hidden while a look is on.",
-       "Cast bars: learning a recipe shows the recipe's icon, not the game's placeholder face.",
-       "Azeromon: a move's info window shows again in the fight menu."
-      ]
-     }
-    ],
-    "title": "Azeromon: Blackrock",
-    "version": "1.4.6"
-   },
-   {
-    "date": "14 October 2026",
-    "sections": [
-     {
-      "area": "guild",
-      "heading": "Discord without a host",
-      "kind": "changed",
-      "lead": "The guild's Discord bot runs on its own server now, always on.",
-      "lines": [
-       "Link your launcher once: /launcher in Discord, then paste the code in Settings > Discord.",
-       "After every save (login, /reload, logout) your game's raids and lists reach Discord.",
-       "Changes made in Discord reach the game when anyone linked logs in or reloads.",
-       "The first game to load them passes them on to everyone online.",
-       "Every change from Discord is signed by the bot: the game checks it and ignores fakes.",
-       "Guests from Discord wait for a raid leader; lists of non-addon players, for the council."
-      ]
-     },
-     {
-      "area": "other",
-      "heading": "The launcher",
-      "kind": "changed",
-      "lead": "Launcher 0.3.0 updates itself; it has a new Settings > Discord.",
-      "lines": [
-       "Settings > Discord: link, sync now, unlink, and when it last synced.",
-       "It asks the bot only while WoW runs, so it stays quiet the rest of the time.",
-       "Host mode is gone: nobody's PC has to run the bot any more."
-      ]
-     }
-    ],
-    "title": "Discord for everyone",
-    "version": "1.4.5"
    }
   ]
  },
- "published": "2026-10-16T09:45:59Z",
- "seq": 11,
- "version": "1.5.2",
+ "published": "2026-10-17T07:56:22Z",
+ "seq": 12,
+ "version": "1.5.4",
  "zip": {
-  "name": "DisasterZone-1.5.2.zip",
-  "sha256": "782543720fec4bc50c7b2631f30e32857cb212b62efc070fa15c4e84a8db3ca7",
-  "size": 34973220,
-  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.5.2/DisasterZone-1.5.2.zip"
+  "name": "DisasterZone-1.5.4.zip",
+  "sha256": "96da83777d14b7a151a286f63478d6a6f94a020b92e62fbf893d027763686378",
+  "size": 35001558,
+  "url": "https://github.com/tsumilo/DisasterZone-releases/releases/download/release-1.5.4/DisasterZone-1.5.4.zip"
  }
 }
